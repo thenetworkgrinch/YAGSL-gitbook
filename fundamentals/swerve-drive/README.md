@@ -14,15 +14,13 @@ Swerve Drives move around by moving each wheel to a specific angle/azimuth and r
 
 A Swerve Drive typically consists of 4 Swerve Modules (which are in essence a drive motor, a angle/azimuth motor, and an absolute encoder),  and a gyroscope (centered is best). The motors, absolute encoders, and gyroscope do not matter and can all work together with varying degrees of success. As a rule of thumb if you can stick to one system do it (all REV, all CTRE). This will give you the best feature set however they are not the same! For all other use cases YAGSL is the best choice because YAGSL was built with abstraction in mind to make all sensors and motor controllers functionally equivalent.&#x20;
 
-## How does a Swerve Drive work programmatically?
+## How does a Swerve Drive work in code?
 
-Swerve Drives move each module into a specific angle determined by the direction you want to go and heading you want to face. For FRC we can get these value's by hand by calculating the kinematics of the robot or use [`SwerveDriveKinematics`](https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/SwerveDriveKinematics.html)  which uses the module locations to determine what the rotation and speed of each wheel should be given a [`ChassisSpeeds`](https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/ChassisSpeeds.html) object and returns an [`SwerveModuleState`](https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/SwerveModuleState.html) array. The `SwerveModuleState` can then be used to set the angle/azimuth and speed corresponding with each Swerve Module to go in the desired direction facing the desired heading.&#x20;
+Swerve Drives move each module into a specific angle determined by the direction you want to go and heading you want to face. For FRC we can get these value's by hand by calculating the kinematics of the robot or use [`SwerveDriveKinematics`](https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/SwerveDriveKinematics.html)  which uses the module locations to determine what the rotation and speed of each wheel should be given a [`ChassisSpeeds`](https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/ChassisSpeeds.html) object and returns an [`SwerveModuleState`](https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/SwerveModuleState.html) array. The [`SwerveModuleState`](https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/SwerveModuleState.html) can then be used to set the angle/azimuth and speed corresponding with each Swerve Module to go in the desired direction facing the desired heading.&#x20;
 
-### Creating a `SwerveDriveKinematics` object
+### `SwerveDriveKinematics`
 
-{% code title="SwerveDrive.java" lineNumbers="true" fullWidth="true" %}
-```java
-// Import relevant classes.
+<pre class="language-java" data-title="SwerveDrive.java" data-line-numbers data-full-width="false"><code class="lang-java">// Import relevant classes.
 import edu.wpi.first.math.kinematics.SwerveDriveKinematics;
 import edu.wpi.first.math.geometry.Translation2d;
 import edu.wpi.first.math.util.Units;
@@ -31,34 +29,35 @@ import edu.wpi.first.math.util.Units;
 public class SwerveDrive {
 
     // Attributes
-    SwerveDriveKinematics kinematics;
-    
+<strong>    SwerveDriveKinematics kinematics;
+</strong>    
     // Constructor
     public SwerveDrive() {
         // Create SwerveDriveKinematics object
         // 12.5in from center of robot to center of wheel.
         // 12.5in is converted to meters to work with object.
         // Translation2d(x,y) == Translation2d(front, left)
-        kinematics = new SwerveDriveKinematics(
-            new Translation2d(Units.inchesToMeters(12.5), Units.inchesToMeters(12.5)), // Front Left
-            new Translation2d(Units.inchesToMeters(12.5), Units.inchesToMeters(12.5)), // Front Right
-            new Translation2d(Units.inchesToMeters(12.5), Units.inchesToMeters(12.5)), // Back Left
-            new Translation2d(Units.inchesToMeters(12.5), Units.inchesToMeters(12.5))  // Back Right
-        );
-    }
+<strong>        kinematics = new SwerveDriveKinematics(
+</strong><strong>            new Translation2d(Units.inchesToMeters(12.5), Units.inchesToMeters(12.5)), // Front Left
+</strong><strong>            new Translation2d(Units.inchesToMeters(12.5), Units.inchesToMeters(-12.5)), // Front Right
+</strong><strong>            new Translation2d(Units.inchesToMeters(-12.5), Units.inchesToMeters(12.5)), // Back Left
+</strong><strong>            new Translation2d(Units.inchesToMeters(-12.5), Units.inchesToMeters(-12.5))  // Back Right
+</strong><strong>        );
+</strong>    }
 }
-```
-{% endcode %}
+</code></pre>
 
 {% hint style="info" %}
 The order is defines what the output order of module angle/azimuth's and speeds will be!
 {% endhint %}
 
-### Using a SwerveDriveKinematics object
+### `SwerveModuleState`
 
-{% code title="SwerveDrive.java" lineNumbers="true" fullWidth="true" %}
-```java
-// Import relevant classes.
+[`SwerveDriveKinematics`](https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/SwerveDriveKinematics.html) are used to generate the [`SwerveModuleState`](https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/SwerveModuleState.html) of each module in the given order, the example below shows how you can do this in the `drive()` function with a given `ChassisSpeeds` object.
+
+[`SwerveModuleState`](https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/SwerveModuleState.html) have 2 properties reflecting the properties of a Swerve Module, `angle` and `speedMetersPerSecond`. The goal after getting them is setting the correct swerve module (based on the order given at the construction of the [`SwerveDriveKinematics`](https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/SwerveDriveKinematics.html) object) to the angle and speed given in the [`SwerveModuleState`](https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/SwerveModuleState.html)!
+
+<pre class="language-java" data-title="SwerveDrive.java" data-line-numbers data-full-width="false"><code class="lang-java">// Import relevant classes.
 import edu.wpi.first.math.kinematics.SwerveDriveKinematics;
 import edu.wpi.first.math.geometry.Translation2d;
 import edu.wpi.first.math.util.Units;
@@ -80,35 +79,34 @@ public class SwerveDrive
         // Translation2d(x,y) == Translation2d(front, left)
         kinematics = new SwerveDriveKinematics(
             new Translation2d(Units.inchesToMeters(12.5), Units.inchesToMeters(12.5)), // Front Left
-            new Translation2d(Units.inchesToMeters(12.5), Units.inchesToMeters(12.5)), // Front Right
-            new Translation2d(Units.inchesToMeters(12.5), Units.inchesToMeters(12.5)), // Back Left
-            new Translation2d(Units.inchesToMeters(12.5), Units.inchesToMeters(12.5))  // Back Right
+            new Translation2d(Units.inchesToMeters(12.5), Units.inchesToMeters(-12.5)), // Front Right
+            new Translation2d(Units.inchesToMeters(-12.5), Units.inchesToMeters(12.5)), // Back Left
+            new Translation2d(Units.inchesToMeters(-12.5), Units.inchesToMeters(-12.5))  // Back Right
         );
     }
     
     // Simple drive function
     public void drive()
     {
-        // Create test ChassisSpeeds going X = 14in, Y=4in, and spins at 30deg per second.
-        ChassisSpeeds testSpeeds = new ChassisSpeeds(Units.inchesToMeters(14), Units.inchesToMeters(4), Units.degreesToRadians(30));
-        
+<strong>        // Create test ChassisSpeeds going X = 14in, Y=4in, and spins at 30deg per second.
+</strong><strong>        ChassisSpeeds testSpeeds = new ChassisSpeeds(Units.inchesToMeters(14), Units.inchesToMeters(4), Units.degreesToRadians(30));
+</strong>        
         // Get the SwerveModuleStates for each module given the desired speeds.
-        SwerveModuleState[] swerveModuleStates = kinematics.toSwerveModuleStates(testSpeeds);
-        // Output order is Front-Left, Front-Right, Back-Left, Back-Right
-    }
+<strong>        SwerveModuleState[] swerveModuleStates = kinematics.toSwerveModuleStates(testSpeeds);
+</strong><strong>        // Output order is Front-Left, Front-Right, Back-Left, Back-Right
+</strong>    }
 }
-```
-{% endcode %}
+</code></pre>
 
-## How do I use `SwerveModuleState`?&#x20;
+{% hint style="danger" %}
+Swerve Drive code does not work without [`SwerveDriveOdometry`](https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/SwerveDriveOdometry.html) or [`SwerveDrivePoseEstimator`](https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/estimator/SwerveDrivePoseEstimator.html) to keep track of module positions and angles!
+{% endhint %}
 
-[`SwerveModuleState`](https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/SwerveModuleState.html)'s have 2 properties reflecting the properties of a Swerve Module, `angle` and `speedMetersPerSecond`. The goal after getting them is setting the correct swerve module (based on the order given at the construction of the `SwerveDriveKinematics` object) to the angle and speed given in the `SwerveModuleState`! Easy right?
+### `SwerveDriveOdometry`
 
-## The catch `SwerveDriveOdometry`
+Unfortunately life isn't that easy. We have to keep continuous track of our current positioning of the robot, specifically the **heading**, **speed**, and **module positions** collectively known as **odometry**. This is the only way to correctly generate [`SwerveModuleState`](https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/SwerveModuleState.html) which are usable.&#x20;
 
-Unfortunately life isn't that easy. We have to keep continuous track of our current positioning of the robot, specifically the **heading**, **speed**, and **module positions** collectively known as **odometry**. This is the only way to correctly generate `SwerveModuleState`'s which are usable.&#x20;
-
-<pre class="language-java" data-title="SwerveDrive.java" data-line-numbers data-full-width="true"><code class="lang-java">// Import relevant classes.
+<pre class="language-java" data-title="SwerveDrive.java" data-line-numbers data-full-width="false"><code class="lang-java">// Import relevant classes.
 import edu.wpi.first.math.kinematics.SwerveDriveKinematics;
 import edu.wpi.first.math.geometry.Translation2d;
 import edu.wpi.first.math.util.Units;
@@ -126,9 +124,9 @@ public class SwerveDrive extends SubsystemBase
 
     // Attributes
     SwerveDriveKinematics kinematics;
-    SwerveDriveOdometry   odometry;
-    Gyroscope             gyro; // Psuedo-class representing a gyroscope.
-<strong>    SwerveModule[]        swerveModules; // Psuedo-class representing swerve modules.
+<strong>    SwerveDriveOdometry   odometry;
+</strong><strong>    Gyroscope             gyro; // Psuedo-class representing a gyroscope.
+</strong><strong>    SwerveModule[]        swerveModules; // Psuedo-class representing swerve modules.
 </strong>    
     // Constructor
     public SwerveDrive() 
@@ -142,21 +140,21 @@ public class SwerveDrive extends SubsystemBase
         // Translation2d(x,y) == Translation2d(front, left)
         kinematics = new SwerveDriveKinematics(
             new Translation2d(Units.inchesToMeters(12.5), Units.inchesToMeters(12.5)), // Front Left
-            new Translation2d(Units.inchesToMeters(12.5), Units.inchesToMeters(12.5)), // Front Right
-            new Translation2d(Units.inchesToMeters(12.5), Units.inchesToMeters(12.5)), // Back Left
-            new Translation2d(Units.inchesToMeters(12.5), Units.inchesToMeters(12.5))  // Back Right
+            new Translation2d(Units.inchesToMeters(12.5), Units.inchesToMeters(-12.5)), // Front Right
+            new Translation2d(Units.inchesToMeters(-12.5), Units.inchesToMeters(12.5)), // Back Left
+            new Translation2d(Units.inchesToMeters(-12.5), Units.inchesToMeters(-12.5))  // Back Right
         );
         
-        gyro = new Gyroscope(); // Psuedo-constructor for generating gyroscope.
-
-        // Create the SwerveDriveOdometry given the current angle, the robot is at x=0, r=0, and heading=0
-        odometry = new SwerveDriveOdometry(
-            kinematics,
-            gyro.getAngle(), // returns current gyro reading as a Rotation2d
-            new SwerveModulePosition[]{new SwerveModulePosition(), new SwerveModulePosition(), new SwerveModulePosition(), new SwerveModulePosition},
-            // Front-Left, Front-Right, Back-Left, Back-Right
-            new Pose2d(0,0,new Rotation2d()) // x=0, y=0, heading=0
-        );
+<strong>        gyro = new Gyroscope(); // Psuedo-constructor for generating gyroscope.
+</strong>
+<strong>        // Create the SwerveDriveOdometry given the current angle, the robot is at x=0, r=0, and heading=0
+</strong><strong>        odometry = new SwerveDriveOdometry(
+</strong><strong>            kinematics,
+</strong><strong>            gyro.getAngle(), // returns current gyro reading as a Rotation2d
+</strong><strong>            new SwerveModulePosition[]{new SwerveModulePosition(), new SwerveModulePosition(), new SwerveModulePosition(), new SwerveModulePosition},
+</strong><strong>            // Front-Left, Front-Right, Back-Left, Back-Right
+</strong><strong>            new Pose2d(0,0,new Rotation2d()) // x=0, y=0, heading=0
+</strong>        );
             
     }
     
