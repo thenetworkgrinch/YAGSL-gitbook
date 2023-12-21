@@ -6,6 +6,14 @@ description: How does Swerve Drive work?
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Swerve Drive simulation from YAGSL</p></figcaption></figure>
 
+## Tips while building a Swerve Drive
+
+* Center the gyroscope in the robot, this will help prevent a small drift and ensure more accurate odometry.
+* Make sure the magnets (if you're using them) are glue'd in right!
+* Set aside time, assume you will mess up building 1 module or otherwise need a spare during competitions.
+* Programming a Swerve Drive is hard, and while YAGSL tries to make it easier there are many things you must know to fully understand what you are doing!
+* Use the right tools for the job! Debugging a Swerve Drive is difficult enough by text only, try out other Dashboards like [AdvantageScope](https://github.com/Mechanical-Advantage/AdvantageScope/blob/main/docs/NAVIGATION.md), or [FRC Web Components](https://github.com/frc-web-components/app/releases) they have excellent visualization tools that are sure to help you out!
+
 ## The Basics
 
 Swerve Drives move around by moving each wheel to a specific angle/azimuth and rotating the wheel to go in that direction. Swerve Drives are unique because they can rotate independently of their translational movement, meaning you can move in any direction while facing any direction. As a result of the you can "turn in-place" and rotate while moving around an area. The rotation of your robot is referred to as the **heading.**
@@ -13,6 +21,16 @@ Swerve Drives move around by moving each wheel to a specific angle/azimuth and r
 ## What is a Swerve Drive?
 
 A Swerve Drive typically consists of 4 Swerve Modules (which are in essence a drive motor, a angle/azimuth motor, and an absolute encoder),  and a gyroscope (centered is best). The motors, absolute encoders, and gyroscope do not matter and can all work together with varying degrees of success. As a rule of thumb if you can stick to one system do it (all REV, all CTRE). This will give you the best feature set however they are not the same! For all other use cases YAGSL is the best choice because YAGSL was built with abstraction in mind to make all sensors and motor controllers functionally equivalent.&#x20;
+
+#### TL;DR
+
+A swerve drive is composed of
+
+* [ ] Gyroscope
+* [ ] Swerve Module
+  * [ ] Angle/Azimuth Motor (+ controller)
+  * [ ] Drive Motor
+  * [ ] Absolute Encoder
 
 ## How does a Swerve Drive work in code?
 
