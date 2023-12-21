@@ -38,6 +38,6 @@ We've put together some helpful guides for you to get setup with our product qui
 [getting-to-know-your-robot.md](fundamentals/getting-set-up/getting-to-know-your-robot.md)
 {% endcontent-ref %}
 
-{% content-ref url="configuring-yagsl/" %}
-[configuring-yagsl](configuring-yagsl/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
