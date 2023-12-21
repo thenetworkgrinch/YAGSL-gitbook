@@ -2,7 +2,7 @@
 
 <details>
 
-<summary>Step1: Creating your organization</summary>
+<summary>Step 1: Install Tuner X</summary>
 
 
 
@@ -10,7 +10,7 @@
 
 <details>
 
-<summary>Step 2: Inviting your team</summary>
+<summary>Step 2: Install REV Hardware Client</summary>
 
 
 
@@ -18,7 +18,7 @@
 
 <details>
 
-<summary>Step 3: Making your first post</summary>
+<summary>Step 3: Adding vendor libraries</summary>
 
 
 
@@ -26,7 +26,7 @@
 
 <details>
 
-<summary>Step 4: Publishing a post</summary>
+<summary>Step 4: Add YAGSL</summary>
 
 
 

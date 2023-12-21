@@ -2,7 +2,7 @@
 description: Yet Another Generic Swerve Library
 ---
 
-# 👋 Welcome to YAGSL
+# Welcome to YAGSL
 
 ## Overview
 
@@ -34,10 +34,10 @@ We've put together some helpful guides for you to get setup with our product qui
 [getting-set-up](fundamentals/getting-set-up/)
 {% endcontent-ref %}
 
-{% content-ref url="fundamentals/getting-set-up/setting-permissions.md" %}
-[setting-permissions.md](fundamentals/getting-set-up/setting-permissions.md)
+{% content-ref url="fundamentals/getting-set-up/getting-to-know-your-robot.md" %}
+[getting-to-know-your-robot.md](fundamentals/getting-set-up/getting-to-know-your-robot.md)
 {% endcontent-ref %}
 
-{% content-ref url="fundamentals/getting-set-up/inviting-members.md" %}
-[inviting-members.md](fundamentals/getting-set-up/inviting-members.md)
+{% content-ref url="configuring-yagsl/" %}
+[configuring-yagsl](configuring-yagsl/)
 {% endcontent-ref %}

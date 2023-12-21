@@ -12,11 +12,11 @@ You may see a bunch of different classes in other teams code which represent a `
 
 ## What is in a Swerve Module?
 
-* Drive Gears (ratio must be known)
-* Steerinng Gears (ratio must be known)
-* Drive Motor (+ controller)
-* Angle/Azimuth/Steering Motor (+ controller)
-* Absolute Encoder
+* [ ] Drive Gears (ratio must be known)
+* [ ] Steerinng Gears (ratio must be known)
+* [ ] Drive Motor (+ controller)
+* [ ] Angle/Azimuth/Steering Motor (+ controller)
+* [ ] Absolute Encoder
 
 ## A review of a typical brushless motor controller
 
@@ -24,15 +24,22 @@ This may seem out of place but when debugging swerve drives this comes in handy 
 
 Smart Motor Controllers typically have the following features
 
-* Rotate in either direction.
-* Have sensors on the motor that read in either direction.
-* Burn up when jammed or can't move, causing very high amperage utilization.
-* Drop the voltage level available when running.
-* Need a minimum amount of voltage to turn against friction.
-* Greased gears attaches to shaft.
-* Ramp up to speed at a configurable rate to avoid using too much power instantly.
-* Have integrated PID loops which can control the output based off of a connected sensors input (typically an encoder).
-* Are connected to a CAN bus, by default the `rio` but if a [CANivore](https://store.ctr-electronics.com/canivore/) is connected it could be the name of the CANivore as long as the motor controller supports it.
-* Rotate the wheel in more than one shaft rotation proportional to the gears.
+* [ ] Rotate in either direction.
+* [ ] Have sensors on the motor that read in either direction.
+* [ ] Burn up when jammed or can't move, causing very high amperage utilization.
+* [ ] Drop the voltage level available when running.
+* [ ] Need a minimum amount of voltage to turn against friction.
+* [ ] Greased gears attaches to shaft.
+* [ ] Ramp up to speed at a configurable rate to avoid using too much power instantly.
+* [ ] Have integrated PID loops which can control the output based off of a connected sensors input (typically an encoder).
+* [ ] Are connected to a CAN bus, by default the `rio` but if a [CANivore](https://store.ctr-electronics.com/canivore/) is connected it could be the name of the CANivore as long as the motor controller supports it.
+* [ ] Rotate the wheel in more than one shaft rotation proportional to the gears.
 
 All of these need to be set correctly in order to configure a Swerve Module properly. If one of these are not set correctly you might experience behavior that you won't easily be able to identify.
+
+#### TL;DR
+
+1. Motors can break in many ways and are only expected to operate in one way, refer to here while debugging.
+2. Swerve Modules contain, **drive gears**, **steering gears**, **drive motor**, **steering motor**, and a **absolute encoder**.
+
+## How do you program&#x20;

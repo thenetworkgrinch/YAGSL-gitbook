@@ -2,7 +2,7 @@
 description: How does Swerve Drive work?
 ---
 
-# Swerve Drive
+# 🦀 Swerve Drive
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Swerve Drive simulation from YAGSL</p></figcaption></figure>
 
