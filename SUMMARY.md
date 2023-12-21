@@ -28,20 +28,17 @@
 
 ## Devices
 
-* [Devices](devices/devices.md)
 * [Gyroscope](devices/gyroscope.md)
 * [Motor Controllers](devices/motor-controllers.md)
 * [Absolute Encoders](devices/absolute-encoders.md)
 
 ## Product Guides
 
-* [📪 Making a post](product-guides/making-a-post.md)
-* [📎 Understanding Projects](product-guides/understanding-projects.md)
-
-## Use Cases
-
-* [🎨 For Designers](use-cases/for-designers.md)
-* [🖥 For Developers](use-cases/for-developers.md)
+* [Java API](https://broncbotz3481.github.io/YAGSL/)
+* [Drive Code](product-guides/drive-code.md)
+* [Autonomous with PathPlanner](product-guides/autonomous-with-pathplanner.md)
+* [Feature1](product-guides/feature1.md)
+* [Feature2](product-guides/feature2.md)
 
 ***
 
@@ -55,3 +52,8 @@
   * [Device Configuration](documentation/device-configuration.md)
   * [PIDF](documentation/pidf.md)
   * [Tested configurations](documentation/tested-configurations.md)
+
+## Use Cases
+
+* [🎨 For Designers](use-cases/for-designers.md)
+* [🖥 For Developers](use-cases/for-developers.md)
