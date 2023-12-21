@@ -11,8 +11,7 @@
 
 * [🦀 Swerve Drive](fundamentals/swerve-drive/README.md)
   * [Swerve Modules](fundamentals/swerve-drive/swerve-modules.md)
-* [🛠 Getting set up](fundamentals/getting-set-up/README.md)
-  * [📝 Getting to know your robot](fundamentals/getting-set-up/getting-to-know-your-robot.md)
+* [📝 Getting to know your robot](fundamentals/getting-to-know-your-robot.md)
 
 ## Configuring YAGSL
 

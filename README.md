@@ -30,12 +30,12 @@ Most swerve drive code out there are templates teams are just expected to modify
 
 We've put together some helpful guides for you to get setup with our product quickly and easily.
 
-{% content-ref url="fundamentals/getting-set-up/" %}
-[getting-set-up](fundamentals/getting-set-up/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="fundamentals/getting-set-up/getting-to-know-your-robot.md" %}
-[getting-to-know-your-robot.md](fundamentals/getting-set-up/getting-to-know-your-robot.md)
+{% content-ref url="fundamentals/getting-to-know-your-robot.md" %}
+[getting-to-know-your-robot.md](fundamentals/getting-to-know-your-robot.md)
 {% endcontent-ref %}
 
 {% content-ref url="broken-reference" %}
