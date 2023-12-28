@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Welcome to YAGSL](README.md)
+* [Welcome to Yet Another Swerve Document](README.md)
 
 ## Overview
 
@@ -15,7 +15,7 @@
 
 ## Configuring YAGSL
 
-* [Getting Started](configuring-yagsl/getting-started.md)
+* [✏ Guide to YAGSL](configuring-yagsl/guide-to-yagsl.md)
 * [Dependency Installation](configuring-yagsl/dependency-installation.md)
 * [Code Setup](configuring-yagsl/code-setup.md)
 * [Configuration Directory](configuring-yagsl/configuration-directory/README.md)

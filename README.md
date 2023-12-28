@@ -1,8 +1,12 @@
 ---
-description: Yet Another Generic Swerve Library
+description: Brought to you by Yet Another Generic Swerve Library (YAGSL)
 ---
 
-# Welcome to YAGSL
+# Welcome to Yet Another Swerve Document
+
+{% hint style="warning" %}
+If your swerve drive uses only [CANivore](https://store.ctr-electronics.com/canivore/), [Falcon500](https://store.ctr-electronics.com/falcon-500-powered-by-talon-fx/)/[Kraken](https://store.ctr-electronics.com/kraken-x60/), [Pigeon2.0](https://store.ctr-electronics.com/pigeon-2/), and [CANCoder](https://store.ctr-electronics.com/cancoder/) from [CTRE](https://pro.docs.ctr-electronics.com/en/latest/index.html) please use the [Tuner X Swerve Drive Generator](https://pro.docs.ctr-electronics.com/en/latest/docs/tuner/tuner-swerve/index.html)!
+{% endhint %}
 
 ## Overview
 
@@ -30,14 +34,14 @@ Most swerve drive code out there are templates teams are just expected to modify
 
 We've put together some helpful guides for you to get setup with our product quickly and easily.
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="fundamentals/swerve-drive/" %}
+[swerve-drive](fundamentals/swerve-drive/)
 {% endcontent-ref %}
 
 {% content-ref url="fundamentals/getting-to-know-your-robot.md" %}
 [getting-to-know-your-robot.md](fundamentals/getting-to-know-your-robot.md)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="configuring-yagsl/guide-to-yagsl.md" %}
+[guide-to-yagsl.md](configuring-yagsl/guide-to-yagsl.md)
 {% endcontent-ref %}

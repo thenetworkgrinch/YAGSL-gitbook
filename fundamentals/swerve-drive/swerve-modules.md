@@ -42,4 +42,6 @@ All of these need to be set correctly in order to configure a Swerve Module prop
 1. Motors can break in many ways and are only expected to operate in one way, refer to here while debugging.
 2. Swerve Modules contain, **drive gears**, **steering gears**, **drive motor**, **steering motor**, and a **absolute encoder**.
 
-## How do you program&#x20;
+## How do you code a Swerve Module?
+
+Swerve Module's can get very complicated, very quickly. I will keep this example simple and may expand on it in the future. It will not include all of the steps above however there will be space for that in the constructor. For the purposes of this tutorial I will use `CANSparkMax` from REVLib simply because it can be more verbose.
