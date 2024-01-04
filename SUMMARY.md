@@ -7,6 +7,11 @@
 * [💡 What we do](overview/what-we-do.md)
 * [✨ Our Features](overview/our-features.md)
 
+## Analytics and Debugging
+
+* [FRC Web Components](analytics-and-debugging/frc-web-components.md)
+* [Advantage Scope](analytics-and-debugging/advantage-scope.md)
+
 ## Fundamentals
 
 * [🦀 Swerve Drive](fundamentals/swerve-drive/README.md)
