@@ -45,5 +45,20 @@ Gyroscopes are sensitive to ambient temperature, so it is imperative that you re
 
 ## Connection Methods
 
+### SPI (`navx`, `navx_spi`)
 
+YAGSL supports the NavX SPI communication over the roboRIO MXP. This is the recommended method of communicating with NavX devices.
 
+### Serial (`navx_mxp`, `navx_usb`)
+
+Serial communication is slower than SPI communication and could be more prone to interference however this is the only out of the box way to communicate with the [NavX2 micro](https://www.andymark.com/products/navx2-micro-navigation-sensor) (`navx_usb`) so this must be selected if you are using one. The MXP serial communication can be used incase the SPI MXP communication is not working at the moment.
+
+### I2C
+
+I2C communication on the MXP is supported however this is known to cause permanent lockouts on the roboRIO randomly, this issue has been thoroughly investigated and no known cause can be found. It is encouraged to avoid using this option at all costs!!
+
+## NavX Micro
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>NavX micro from andymark</p></figcaption></figure>
+
+If you are using the NavX micro please select the type of `navx_usb` to indicate you are communicating over serial via the USB or else the gyrscope will not work with YAGSL!

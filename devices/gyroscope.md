@@ -73,16 +73,17 @@ In `swervedrive.json` you specify the gyroscope with the
 
 ### Possible Gyroscope Types
 
-| Device                              | type                            | Communication                                 |
-| ----------------------------------- | ------------------------------- | --------------------------------------------- |
-| [Pigeon](gyroscope/pigeon.md)       | `pigeon`                        | CAN; does not support CANivore.               |
-| [Pigeon2](gyroscope/pigeon2.md)     | `pigeon2`                       | CAN; supports CANivore                        |
-| [NavX](gyroscope/navx.md)           | `navx` , `navx_mxp`, `navx_spi` | SPI                                           |
-| [NavX ](gyroscope/navx.md)          | `navx_i2c`                      | I2C port on the roboRIO MXP. Not recommended! |
-| [NavX](gyroscope/navx.md)           | `navx_usb`                      | USB Cable to roboRIO (not recommended)        |
-| [ADIS16448](gyroscope/adis16448.md) | `adis16448`                     | roboRIO MXP                                   |
-| [ADIS16470](gyroscope/adis16470.md) | `adis16470`                     | roboRIO SPI port                              |
-| [ADXRS450](gyroscope/adxrs450.md)   | `adxrs450`                      | roboRIO SPI port.                             |
+| Device                              | type                | Communication                                      |
+| ----------------------------------- | ------------------- | -------------------------------------------------- |
+| [Pigeon](gyroscope/pigeon.md)       | `pigeon`            | CAN; does not support CANivore.                    |
+| [Pigeon2](gyroscope/pigeon2.md)     | `pigeon2`           | CAN; supports CANivore                             |
+| [NavX](gyroscope/navx.md)           | `navx` , `navx_spi` | roboRIO MXP SPI                                    |
+| [NavX ](gyroscope/navx.md)          | `navx_i2c`          | I2C port on the roboRIO MXP. Not recommended!      |
+| [NavX](gyroscope/navx.md)           | `navx_usb`          | Serial over USB Cable to roboRIO (not recommended) |
+| [NavX](gyroscope/navx.md)           | `navx_mxp`          | Serial over roboRIO MXP                            |
+| [ADIS16448](gyroscope/adis16448.md) | `adis16448`         | roboRIO MXP                                        |
+| [ADIS16470](gyroscope/adis16470.md) | `adis16470`         | roboRIO SPI port                                   |
+| [ADXRS450](gyroscope/adxrs450.md)   | `adxrs450`          | roboRIO SPI port.                                  |
 
 [^1]: NavX `AHRS` class which is used to represent and communicate with the NavX in Java.
 
