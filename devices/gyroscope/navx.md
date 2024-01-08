@@ -58,8 +58,8 @@ YAGSL supports the NavX SPI communication over the roboRIO MXP. This is the reco
 
 <pre class="language-json"><code class="lang-json">{
   "imu": {
-    "type": <a data-footnote-ref href="#user-content-fn-1">"navx_spi"</a>,
-    "id": <a data-footnote-ref href="#user-content-fn-2">0</a>,
+<strong>    "type": <a data-footnote-ref href="#user-content-fn-1">"navx_spi"</a>,
+</strong>    "id": <a data-footnote-ref href="#user-content-fn-2">0</a>,
     "canbus": <a data-footnote-ref href="#user-content-fn-3">null</a>
   },
   "invertedIMU": true,
@@ -74,8 +74,8 @@ YAGSL supports the NavX SPI communication over the roboRIO MXP. This is the reco
 
 <pre class="language-json"><code class="lang-json">{
   "imu": {
-    "type": <a data-footnote-ref href="#user-content-fn-4">"navx"</a>,
-    "id": <a data-footnote-ref href="#user-content-fn-5">0</a>,
+<strong>    "type": <a data-footnote-ref href="#user-content-fn-4">"navx"</a>,
+</strong>    "id": <a data-footnote-ref href="#user-content-fn-5">0</a>,
     "canbus": <a data-footnote-ref href="#user-content-fn-6">null</a>
   },
   "invertedIMU": true,
@@ -94,8 +94,8 @@ Serial communication is slower than SPI communication and could be more prone to
 
 <pre class="language-json"><code class="lang-json">{
   "imu": {
-    "type": <a data-footnote-ref href="#user-content-fn-7">"navx_mxp"</a>,
-    "id": <a data-footnote-ref href="#user-content-fn-8">0</a>,
+<strong>    "type": <a data-footnote-ref href="#user-content-fn-7">"navx_mxp"</a>,
+</strong>    "id": <a data-footnote-ref href="#user-content-fn-8">0</a>,
     "canbus": <a data-footnote-ref href="#user-content-fn-9">null</a>
   },
   "invertedIMU": true,
@@ -110,8 +110,8 @@ Serial communication is slower than SPI communication and could be more prone to
 
 <pre class="language-json"><code class="lang-json">{
   "imu": {
-    "type": <a data-footnote-ref href="#user-content-fn-10">"navx_usb"</a>,
-    "id": <a data-footnote-ref href="#user-content-fn-11">0</a>,
+<strong>    "type": <a data-footnote-ref href="#user-content-fn-10">"navx_usb"</a>,
+</strong>    "id": <a data-footnote-ref href="#user-content-fn-11">0</a>,
     "canbus": <a data-footnote-ref href="#user-content-fn-12">null</a>
   },
   "invertedIMU": true,
@@ -130,8 +130,8 @@ I2C communication on the MXP is supported however this is known to cause permane
 
 <pre class="language-json"><code class="lang-json">{
   "imu": {
-    "type": <a data-footnote-ref href="#user-content-fn-13">"navx_i2c"</a>,
-    "id": <a data-footnote-ref href="#user-content-fn-14">0</a>,
+<strong>    "type": <a data-footnote-ref href="#user-content-fn-13">"navx_i2c"</a>,
+</strong>    "id": <a data-footnote-ref href="#user-content-fn-14">0</a>,
     "canbus": <a data-footnote-ref href="#user-content-fn-15">null</a>
   },
   "invertedIMU": true,
