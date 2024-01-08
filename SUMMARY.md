@@ -32,7 +32,7 @@
 
 ## Devices
 
-* [Gyroscope](devices/gyroscope/README.md)
+* [Gyroscope](devices/gyroscope.md)
   * [NavX](devices/gyroscope/navx.md)
 * [Motor Controllers](devices/motor-controllers.md)
 * [Absolute Encoders](devices/absolute-encoders.md)

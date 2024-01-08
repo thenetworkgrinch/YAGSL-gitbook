@@ -43,7 +43,7 @@ YAGSL creates wrappers over all supported Gyroscope types to uniformly fetch and
 
 These gyroscopes have been thoroughly tested and are used by many FRC teams. Generally speaking these will give you the best performance and reliability as well as help from the community at large.
 
-### [NavX](navx.md)2 MXP by Studica
+### [NavX](gyroscope/navx.md)2 MXP by Studica
 
 {% embed url="https://www.studica.ca/en/navx-2-mxp-robotics-navigation-sensor" %}
 
