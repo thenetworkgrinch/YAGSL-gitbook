@@ -42,6 +42,18 @@ All of these need to be set correctly in order to configure a Swerve Module prop
 1. Motors can break in many ways and are only expected to operate in one way, refer to here while debugging.
 2. Swerve Modules contain, **drive gears**, **steering gears**, **drive motor**, **steering motor**, and a **absolute encoder**.
 
+## Checklist
+
+* [ ] Steering/Azimuth/Angle motor[ increases with the absolute encoder](#user-content-fn-1)[^1] value.
+* [ ] Drive motors increase propelling the robot "forwards"
+* [ ] Absolute Encoders are securely seated into the Swerve Module.
+* [ ] Conversion Factor is correctly calculated.
+* [ ] Absolute encoder offset of which the wheel facing the same way is configured.
+
+{% hint style="warning" %}
+Wheels should be aligned with the bevels facing the same way to get the absolute encoder offset.
+{% endhint %}
+
 ## Overview
 
 Swerve Module's can get very complicated, very quickly. I will keep this example simple and may expand on it in the future. It will not include all of the steps above however there will be space for that in the constructor. For the purposes of this tutorial I will use [`CANSparkMax`](https://codedocs.revrobotics.com/java/com/revrobotics/cansparkmax) from REVLib simply because it can be more verbose.
@@ -428,3 +440,5 @@ public class SwerveModule {
 
 }
 ```
+
+[^1]: This can be corrected with inverting the motor controller in code.
