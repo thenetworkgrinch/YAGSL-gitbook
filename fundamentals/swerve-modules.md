@@ -91,6 +91,12 @@ Unless your mechanical team is working with extreme precision and places the mag
 
 You can and should get this value using a hardware client but if you don't want to you can always write a simple program like bellow to print out what the current value of the absolute encoder is.
 
+{% hint style="warning" %}
+The Absolute Encoder offsets determine where the module should point to. When modules do not point straight forwards on boot or after being commanded to go straight there **IS** an issue with your Absolute Encoder Offsets.
+
+Sometimes if the offset is off just a little bit a module will be dragged which could **result in penalties**.
+{% endhint %}
+
 ```java
 // Copyright (c) FIRST and other WPILib contributors.
 // Open Source Software; you can modify and/or share it under the terms of
@@ -168,6 +174,10 @@ public class Robot extends TimedRobot
 
 Depending on your swerve module your motors may need to be inverted to run as expected.
 
+{% hint style="warning" %}
+When the inversion state of your motor controller is incorrect for your steering/angle/azimuth the Swerve Module **WILL** spin out of control when any input is given and sometimes even at rest.
+{% endhint %}
+
 ```java
 import com.revrobotics.CANSparkMax;
 import com.ctre.phoenix6.hardware.CANcoder;
@@ -243,6 +253,10 @@ DriveConversionFactor = \frac{\frac{1_{meter}}{1_{sec}}}{\frac{1_{rot}}{1_{min}}
 $$
 
 All of this is the long way to show you that math is important and your conversion factors are not magic numbers!!
+
+{% hint style="warning" %}
+The conversion factor is extremely important and if it is wrong the motor **COULD** spin out of control or your odometry will always be slightly off resulting in more exagerated motion while driving around.
+{% endhint %}
 
 ### PID Control
 

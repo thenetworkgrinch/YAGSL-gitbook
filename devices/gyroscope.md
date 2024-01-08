@@ -2,6 +2,11 @@
 
 YAGSL supports a wide variety of Gyroscopes in an effort to best help teams of all budgets, while we do recommend the NavX or Pigeon2 and officially support and have tested them, we do try to support others with varying degrees of success.&#x20;
 
+## Gyroscope Checklist
+
+* [ ] [Gyroscope readings increase when rotated counter clockwise](#user-content-fn-1)[^1].
+* [ ] Yaw reading is the robot heading.
+
 ## Swerve IMU wrapper
 
 YAGSL creates wrappers over all supported Gyroscope types to uniformly fetch and set data that is needed for a Swerve Drive to operate, this wrapper is called [`SwerveIMU`](https://broncbotz3481.github.io/YAGSL/swervelib/imu/SwerveIMU.html). All Gyroscope's can be fetched from the [`SwerveDrive`](https://broncbotz3481.github.io/YAGSL/swervelib/SwerveDrive.html#swerveDriveConfiguration) object via the [`SwerveDriveConfiguration`](https://broncbotz3481.github.io/YAGSL/swervelib/parser/SwerveDriveConfiguration.html) object which is generated from the `swervedrive.json` file given. For a user program to fetch the raw gyroscope object all you must do is as follows while casting the object to the right type, in our case this will be a NavX `AHRS` class.
@@ -34,7 +39,7 @@ YAGSL creates wrappers over all supported Gyroscope types to uniformly fetch and
     }
     swerveDrive.setHeadingCorrection(false); // Heading correction should only be used while controlling the robot via angle.
 
-<strong>    <a data-footnote-ref href="#user-content-fn-1">AHRS</a> navx = (<a data-footnote-ref href="#user-content-fn-2">AHRS</a>)swerveDrive.swerveDriveConfiguration.imu.getIMU();
+<strong>    <a data-footnote-ref href="#user-content-fn-2">AHRS</a> navx = (<a data-footnote-ref href="#user-content-fn-3">AHRS</a>)swerveDrive.swerveDriveConfiguration.imu.getIMU();
 </strong>
   }
 </code></pre>
@@ -57,9 +62,9 @@ In `swervedrive.json` you specify the gyroscope with the
 
 <pre class="language-json"><code class="lang-json">{
   "imu": {
-<strong>    "type": "<a data-footnote-ref href="#user-content-fn-3">pigeon2</a>",
-</strong><strong>    <a data-footnote-ref href="#user-content-fn-4">"id"</a>: <a data-footnote-ref href="#user-content-fn-5">13</a>,
-</strong><strong>    <a data-footnote-ref href="#user-content-fn-6">"canbus"</a>: "<a data-footnote-ref href="#user-content-fn-7">canivore</a>"
+<strong>    "type": "<a data-footnote-ref href="#user-content-fn-4">pigeon2</a>",
+</strong><strong>    <a data-footnote-ref href="#user-content-fn-5">"id"</a>: <a data-footnote-ref href="#user-content-fn-6">13</a>,
+</strong><strong>    <a data-footnote-ref href="#user-content-fn-7">"canbus"</a>: "<a data-footnote-ref href="#user-content-fn-8">canivore</a>"
 </strong>  },
   "invertedIMU": true,
   "modules": [
@@ -86,16 +91,18 @@ In `swervedrive.json` you specify the gyroscope with the
 | [ADXRS450](gyroscope/adxrs450.md)   | `adxrs450`          | roboRIO SPI port.                                  |
 | Analog Gyro                         | `analog`            | AnalogInput                                        |
 
-[^1]: NavX `AHRS` class which is used to represent and communicate with the NavX in Java.
+[^1]: Also known as CounterClockWise Positive or CCW+
 
-[^2]: Casts java `Object` to `AHRS` class this should be changed to whatever the native class is for your Gyroscope.
+[^2]: NavX `AHRS` class which is used to represent and communicate with the NavX in Java.
 
-[^3]: Selects the `pigeon2` IMU device to instantiate and use.
+[^3]: Casts java `Object` to `AHRS` class this should be changed to whatever the native class is for your Gyroscope.
 
-[^4]: This refers to the CAN ID in this case however it could refer to the AnalogInput of the roboRIO depending on the selected type.
+[^4]: Selects the `pigeon2` IMU device to instantiate and use.
 
-[^5]: CAN ID of the Pigeon 2 is 13
+[^5]: This refers to the CAN ID in this case however it could refer to the AnalogInput of the roboRIO depending on the selected type.
 
-[^6]: The CAN bus is not always used and can be `null` or `""` to select the default (roboRIO) CAN bus which is normally `"rio"`
+[^6]: CAN ID of the Pigeon 2 is 13
 
-[^7]: name should match the canivore name if the device is on that CAN bus, else it should be `"rio"` or `null` or `""` to indicate the roboRIO CAN bus.
+[^7]: The CAN bus is not always used and can be `null` or `""` to select the default (roboRIO) CAN bus which is normally `"rio"`
+
+[^8]: name should match the canivore name if the device is on that CAN bus, else it should be `"rio"` or `null` or `""` to indicate the roboRIO CAN bus.
