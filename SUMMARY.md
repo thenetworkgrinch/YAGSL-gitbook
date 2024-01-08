@@ -22,18 +22,19 @@
   * [❌ Physical Properties Configuration](configuring-yagsl/configuration/physical-properties-configuration.md)
   * [❌ PIDF Properties Configuration](configuring-yagsl/configuration/pidf-properties-configuration.md)
   * [❌ Swerve Module Configuration](configuring-yagsl/configuration/swerve-module-configuration.md)
-  * [Controller Properties Configuration](configuring-yagsl/configuration/controller-properties-configuration.md)
+  * [❌ Controller Properties Configuration](configuring-yagsl/configuration/controller-properties-configuration.md)
 * [❌ Code Setup](configuring-yagsl/code-setup.md)
 
 ## Devices
 
 * [Gyroscope](devices/gyroscope.md)
   * [NavX](devices/gyroscope/navx.md)
+  * [Pigeon](devices/gyroscope/pigeon.md)
   * [❌ Pigeon2](devices/gyroscope/pigeon2.md)
-  * [❌ Pigeon](devices/gyroscope/pigeon.md)
   * [❌ ADXRS450](devices/gyroscope/adxrs450.md)
   * [❌ ADIS16448](devices/gyroscope/adis16448.md)
   * [❌ ADIS16470](devices/gyroscope/adis16470.md)
+  * [❌ Analog Gyro](devices/gyroscope/analog-gyro.md)
 * [❌ Motor Controllers](devices/motor-controllers.md)
 * [❌ Absolute Encoders](devices/absolute-encoders.md)
 

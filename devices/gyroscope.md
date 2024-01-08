@@ -84,6 +84,7 @@ In `swervedrive.json` you specify the gyroscope with the
 | [ADIS16448](gyroscope/adis16448.md) | `adis16448`         | roboRIO MXP                                        |
 | [ADIS16470](gyroscope/adis16470.md) | `adis16470`         | roboRIO SPI port                                   |
 | [ADXRS450](gyroscope/adxrs450.md)   | `adxrs450`          | roboRIO SPI port.                                  |
+| Analog Gyro                         | `analog`            | AnalogInput                                        |
 
 [^1]: NavX `AHRS` class which is used to represent and communicate with the NavX in Java.
 
