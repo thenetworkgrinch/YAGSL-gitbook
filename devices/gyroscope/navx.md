@@ -12,6 +12,8 @@ The NavX2 is the latest iteration of the NavX series by Studica (formally by Kau
 
 You now have a NavX, congratulations! Time to configure and calibrate it, if you do not follow these steps it will not work as good as possible.
 
+The java class for the NavX is `AHRS` imported from `import com.kauailabs.navx.frc.AHRS;`
+
 ## NavXUI Installation
 
 Java 1.7 or higher is required

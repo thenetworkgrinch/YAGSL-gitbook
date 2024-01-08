@@ -43,14 +43,57 @@ YAGSL creates wrappers over all supported Gyroscope types to uniformly fetch and
 
 These gyroscopes have been thoroughly tested and are used by many FRC teams. Generally speaking these will give you the best performance and reliability as well as help from the community at large.
 
-### [NavX](gyroscope/navx.md)2 MXP by Studica
+### [NavX2 MXP](gyroscope/navx.md) by Studica
 
 {% embed url="https://www.studica.ca/en/navx-2-mxp-robotics-navigation-sensor" %}
 
-## Pigeon2 IMU
+## [Pigeon2 IMU](gyroscope/pigeon2.md) by CTRE
 
+{% embed url="https://store.ctr-electronics.com/pigeon-2/" %}
 
+## Gyroscope Configuration
+
+In `swervedrive.json` you specify the gyroscope with the
+
+<pre class="language-json"><code class="lang-json">{
+  "imu": {
+<strong>    "type": "<a data-footnote-ref href="#user-content-fn-3">pigeon2</a>",
+</strong><strong>    <a data-footnote-ref href="#user-content-fn-4">"id"</a>: <a data-footnote-ref href="#user-content-fn-5">13</a>,
+</strong><strong>    <a data-footnote-ref href="#user-content-fn-6">"canbus"</a>: "<a data-footnote-ref href="#user-content-fn-7">canivore</a>"
+</strong>  },
+  "invertedIMU": true,
+  "modules": [
+    "frontleft.json",
+    "frontright.json",
+    "backleft.json",
+    "backright.json"
+  ]
+}
+</code></pre>
+
+### Possible Gyroscope Types
+
+| Device                              | type                            | Communication                                 |
+| ----------------------------------- | ------------------------------- | --------------------------------------------- |
+| [Pigeon](gyroscope/pigeon.md)       | `pigeon`                        | CAN; does not support CANivore.               |
+| [Pigeon2](gyroscope/pigeon2.md)     | `pigeon2`                       | CAN; supports CANivore                        |
+| [NavX](gyroscope/navx.md)           | `navx` , `navx_mxp`, `navx_spi` | SPI                                           |
+| [NavX ](gyroscope/navx.md)          | `navx_i2c`                      | I2C port on the roboRIO MXP. Not recommended! |
+| [NavX](gyroscope/navx.md)           | `navx_usb`                      | USB Cable to roboRIO (not recommended)        |
+| [ADIS16448](gyroscope/adis16448.md) | `adis16448`                     | roboRIO MXP                                   |
+| [ADIS16470](gyroscope/adis16470.md) | `adis16470`                     | roboRIO SPI port                              |
+| [ADXRS450](gyroscope/adxrs450.md)   | `adxrs450`                      | roboRIO SPI port.                             |
 
 [^1]: NavX `AHRS` class which is used to represent and communicate with the NavX in Java.
 
 [^2]: Casts java `Object` to `AHRS` class this should be changed to whatever the native class is for your Gyroscope.
+
+[^3]: Selects the `pigeon2` IMU device to instantiate and use.
+
+[^4]: This refers to the CAN ID in this case however it could refer to the AnalogInput of the roboRIO depending on the selected type.
+
+[^5]: CAN ID of the Pigeon 2 is 13
+
+[^6]: The CAN bus is not always used and can be `null` or `""` to select the default (roboRIO) CAN bus which is normally `"rio"`
+
+[^7]: name should match the canivore name if the device is on that CAN bus, else it should be `"rio"` or `null` or `""` to indicate the roboRIO CAN bus.

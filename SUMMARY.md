@@ -25,17 +25,22 @@
   * [Swerve Module Configuration](configuring-yagsl/configuration/swerve-module-configuration.md)
   * [Controller Properties Configuration](configuring-yagsl/configuration/controller-properties-configuration.md)
 
-## Analytics and Debugging
-
-* [FRC Web Components](analytics-and-debugging/frc-web-components.md)
-* [Advantage Scope](analytics-and-debugging/advantage-scope.md)
-
 ## Devices
 
 * [Gyroscope](devices/gyroscope.md)
   * [NavX](devices/gyroscope/navx.md)
+  * [Pigeon2](devices/gyroscope/pigeon2.md)
+  * [Pigeon](devices/gyroscope/pigeon.md)
+  * [ADXRS450](devices/gyroscope/adxrs450.md)
+  * [ADIS16448](devices/gyroscope/adis16448.md)
+  * [ADIS16470](devices/gyroscope/adis16470.md)
 * [Motor Controllers](devices/motor-controllers.md)
 * [Absolute Encoders](devices/absolute-encoders.md)
+
+## Analytics and Debugging
+
+* [FRC Web Components](analytics-and-debugging/frc-web-components.md)
+* [Advantage Scope](analytics-and-debugging/advantage-scope.md)
 
 ## Product Guides
 
