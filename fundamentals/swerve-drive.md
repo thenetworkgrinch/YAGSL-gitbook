@@ -4,7 +4,7 @@ description: How does Swerve Drive work?
 
 # Swerve Drive
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Swerve Drive simulation from YAGSL</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption><p>Swerve Drive simulation from YAGSL</p></figcaption></figure>
 
 ## Tips while building a Swerve Drive
 

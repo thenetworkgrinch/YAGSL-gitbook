@@ -1,2 +1,2 @@
-# Advantage Scope
+# ❌ Advantage Scope
 

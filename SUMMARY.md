@@ -40,7 +40,7 @@
 
 ## Analytics and Debugging
 
-* [❌ FRC Web Components](analytics-and-debugging/frc-web-components.md)
+* [FRC Web Components](analytics-and-debugging/frc-web-components.md)
 * [❌ Advantage Scope](analytics-and-debugging/advantage-scope.md)
 
 ## Product Guides

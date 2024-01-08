@@ -1,2 +1,2 @@
-# Absolute Encoders
+# ❌ Absolute Encoders
 
