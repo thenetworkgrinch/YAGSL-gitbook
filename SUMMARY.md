@@ -5,7 +5,7 @@
 ## Overview
 
 * [What we do](overview/what-we-do.md)
-* [Our Features](overview/our-features.md)
+* [❌ Our Features](overview/our-features.md)
 
 ## Fundamentals
 
@@ -17,38 +17,38 @@
 * [Getting to know your robot](configuring-yagsl/getting-to-know-your-robot/README.md)
   * [Gear Ratio](fundamentals/swerve-modules.md#conversion-factor)
 * [Dependency Installation](configuring-yagsl/dependency-installation.md)
-* [Code Setup](configuring-yagsl/code-setup.md)
-* [Configuration](configuring-yagsl/configuration/README.md)
-  * [Swerve Drive Configuration](configuring-yagsl/configuration/swerve-drive-configuration.md)
-  * [Physical Properties Configuration](configuring-yagsl/configuration/physical-properties-configuration.md)
-  * [PIDF Properties Configuration](configuring-yagsl/configuration/pidf-properties-configuration.md)
-  * [Swerve Module Configuration](configuring-yagsl/configuration/swerve-module-configuration.md)
+* [❌ Configuration](configuring-yagsl/configuration/README.md)
+  * [❌ Swerve Drive Configuration](configuring-yagsl/configuration/swerve-drive-configuration.md)
+  * [❌ Physical Properties Configuration](configuring-yagsl/configuration/physical-properties-configuration.md)
+  * [❌ PIDF Properties Configuration](configuring-yagsl/configuration/pidf-properties-configuration.md)
+  * [❌ Swerve Module Configuration](configuring-yagsl/configuration/swerve-module-configuration.md)
   * [Controller Properties Configuration](configuring-yagsl/configuration/controller-properties-configuration.md)
+* [❌ Code Setup](configuring-yagsl/code-setup.md)
 
 ## Devices
 
 * [Gyroscope](devices/gyroscope.md)
   * [NavX](devices/gyroscope/navx.md)
-  * [Pigeon2](devices/gyroscope/pigeon2.md)
-  * [Pigeon](devices/gyroscope/pigeon.md)
-  * [ADXRS450](devices/gyroscope/adxrs450.md)
-  * [ADIS16448](devices/gyroscope/adis16448.md)
-  * [ADIS16470](devices/gyroscope/adis16470.md)
-* [Motor Controllers](devices/motor-controllers.md)
-* [Absolute Encoders](devices/absolute-encoders.md)
+  * [❌ Pigeon2](devices/gyroscope/pigeon2.md)
+  * [❌ Pigeon](devices/gyroscope/pigeon.md)
+  * [❌ ADXRS450](devices/gyroscope/adxrs450.md)
+  * [❌ ADIS16448](devices/gyroscope/adis16448.md)
+  * [❌ ADIS16470](devices/gyroscope/adis16470.md)
+* [❌ Motor Controllers](devices/motor-controllers.md)
+* [❌ Absolute Encoders](devices/absolute-encoders.md)
 
 ## Analytics and Debugging
 
-* [FRC Web Components](analytics-and-debugging/frc-web-components.md)
-* [Advantage Scope](analytics-and-debugging/advantage-scope.md)
+* [❌ FRC Web Components](analytics-and-debugging/frc-web-components.md)
+* [❌ Advantage Scope](analytics-and-debugging/advantage-scope.md)
 
 ## Product Guides
 
 * [Java API](https://broncbotz3481.github.io/YAGSL/)
-* [Drive Code](product-guides/drive-code.md)
-* [Autonomous with PathPlanner](product-guides/autonomous-with-pathplanner.md)
-* [Feature1](product-guides/feature1.md)
-* [Feature2](product-guides/feature2.md)
+* [❌ Drive Code](product-guides/drive-code.md)
+* [❌ Autonomous with PathPlanner](product-guides/autonomous-with-pathplanner.md)
+* [❌ Feature1](product-guides/feature1.md)
+* [❌ Feature2](product-guides/feature2.md)
 
 ***
 
