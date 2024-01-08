@@ -34,14 +34,14 @@ Most swerve drive code out there are templates teams are just expected to modify
 
 We've put together some helpful guides for you to get setup with our product quickly and easily.
 
-{% content-ref url="fundamentals/swerve-drive/" %}
-[swerve-drive](fundamentals/swerve-drive/)
+{% content-ref url="fundamentals/swerve-drive.md" %}
+[swerve-drive.md](fundamentals/swerve-drive.md)
 {% endcontent-ref %}
 
-{% content-ref url="fundamentals/getting-to-know-your-robot.md" %}
-[getting-to-know-your-robot.md](fundamentals/getting-to-know-your-robot.md)
+{% content-ref url="configuring-yagsl/getting-to-know-your-robot/" %}
+[getting-to-know-your-robot](configuring-yagsl/getting-to-know-your-robot/)
 {% endcontent-ref %}
 
-{% content-ref url="configuring-yagsl/guide-to-yagsl.md" %}
-[guide-to-yagsl.md](configuring-yagsl/guide-to-yagsl.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
