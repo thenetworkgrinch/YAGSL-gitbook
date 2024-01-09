@@ -26,7 +26,13 @@ Pay close attention to the LED status code to help you debug this at any time.  
 * [ ] Pigeon 2.0 is updated to a unique CAN ID.
 * [ ] Calibrate the Pigeon 2.0 when it is placed on the robot.
 
-## Example Configuration
+## Communication
+
+This device communicated with the roboRIO over the CAN bus and can be paired with the [CANivore ](https://store.ctr-electronics.com/canivore/)that way it does not take up bandwidth on the roboRIO's CAN bus. To do this you need to set a name for the [CANivore ](https://pro.docs.ctr-electronics.com/en/latest/docs/canivore/canivore-setup.html)and use that as the `canbus` name in YAGSL.
+
+{% embed url="https://pro.docs.ctr-electronics.com/en/latest/docs/canivore/canivore-setup.html" %}
+
+## Example `swervedrive.json`
 
 The following is an example of `swervedrive.json` which sets up the Pigeon 2.0. Keep in mind that the Pigeon 2.0 is compatible with the CANivore so the `canbus` parameter actually works!
 

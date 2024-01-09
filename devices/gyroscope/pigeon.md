@@ -10,7 +10,7 @@ To communicate and update this device you need to install the Phoenix tuner.
 Phoenix Tuner is available under "Phoenix Framework for HERO C#"&#x20;
 {% endembed %}
 
-## Pigeon Documentation
+## Documentation
 
 The Pigeon is only available in Phoenix 5 so the documentation is located below. You must include Phoenix 5 libraries in YAGSL partly because of this device.
 
