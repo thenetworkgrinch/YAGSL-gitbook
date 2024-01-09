@@ -45,6 +45,7 @@ All of these need to be set correctly in order to configure a Swerve Module prop
 ## Checklist
 
 * [ ] Steering/Azimuth/Angle motor[ increases with the absolute encoder](#user-content-fn-1)[^1] value.
+* [ ] Steering/Azimuth/Angle motor increases counterclockwise positive.
 * [ ] Drive motors increase propelling the robot "forwards"
 * [ ] Absolute Encoders are securely seated into the Swerve Module.
 * [ ] Conversion Factor is correctly calculated.
