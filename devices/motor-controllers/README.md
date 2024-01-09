@@ -9,6 +9,7 @@ YAGSL supports most common FRC motor controllers (except [Venom](https://www.pla
 * [ ] Motor is updated to the latest firmware.
 * [ ] Motor has unique CAN ID.
 * [ ] CAN ID given corresponds to the one in the JSON module.
+* [ ] Wheels are aligned forwards with all bevels facing the same way.
 
 ## Swerve Motor Wrapper
 
