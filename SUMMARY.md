@@ -50,6 +50,7 @@
     * [❌ Thriftybot](devices/absolute-encoders/sparkmax-roborio-encoders/thriftybot.md)
     * [❌ MA3](devices/absolute-encoders/sparkmax-roborio-encoders/ma3.md)
     * [❌ AM Mag](devices/absolute-encoders/sparkmax-roborio-encoders/am-mag.md)
+    * [❌ CTRE Mag](devices/absolute-encoders/sparkmax-roborio-encoders/ctre-mag.md)
     * [❌ Analog](devices/absolute-encoders/sparkmax-roborio-encoders/analog.md)
     * [❌ PWM DutyCycle Encoder](devices/absolute-encoders/sparkmax-roborio-encoders/pwm-dutycycle-encoder.md)
 
