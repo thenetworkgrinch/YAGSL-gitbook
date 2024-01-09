@@ -39,7 +39,19 @@
   * [❌ SparkFLEX](devices/motor-controllers/sparkflex.md)
   * [❌ TalonFX](devices/motor-controllers/talonfx.md)
   * [❌ TalonSRX](devices/motor-controllers/talonsrx.md)
-* [❌ Absolute Encoders](devices/absolute-encoders.md)
+* [❌ Absolute Encoders](devices/absolute-encoders/README.md)
+  * [❌ CANcoder](devices/absolute-encoders/cancoder.md)
+  * [❌ CANandCoder](devices/absolute-encoders/canandcoder.md)
+  * [❌ SparkMAX Attached Absolute Encoder](devices/absolute-encoders/sparkmax-attached-absolute-encoder.md)
+  * [❌ SparkMAX Attached Analog Encoder](devices/absolute-encoders/sparkmax-attached-analog-encoder.md)
+  * [❌ SparkMAX/RoboRIO Encoders](devices/absolute-encoders/sparkmax-roborio-encoders/README.md)
+    * [❌ REV Throughbore](devices/absolute-encoders/sparkmax-roborio-encoders/rev-throughbore.md)
+    * [❌ CANandCoder](devices/absolute-encoders/sparkmax-roborio-encoders/canandcoder.md)
+    * [❌ Thriftybot](devices/absolute-encoders/sparkmax-roborio-encoders/thriftybot.md)
+    * [❌ MA3](devices/absolute-encoders/sparkmax-roborio-encoders/ma3.md)
+    * [❌ AM Mag](devices/absolute-encoders/sparkmax-roborio-encoders/am-mag.md)
+    * [❌ Analog](devices/absolute-encoders/sparkmax-roborio-encoders/analog.md)
+    * [❌ PWM DutyCycle Encoder](devices/absolute-encoders/sparkmax-roborio-encoders/pwm-dutycycle-encoder.md)
 
 ## Analytics and Debugging
 
