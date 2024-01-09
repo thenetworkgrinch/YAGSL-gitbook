@@ -30,7 +30,7 @@
 * [Gyroscope](devices/gyroscope.md)
   * [NavX](devices/gyroscope/navx.md)
   * [Pigeon](devices/gyroscope/pigeon.md)
-  * [❌ Pigeon2](devices/gyroscope/pigeon2.md)
+  * [Pigeon 2.0](devices/gyroscope/pigeon-2.0.md)
   * [❌ ADXRS450](devices/gyroscope/adxrs450.md)
   * [❌ ADIS16448](devices/gyroscope/adis16448.md)
   * [❌ ADIS16470](devices/gyroscope/adis16470.md)

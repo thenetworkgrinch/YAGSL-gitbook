@@ -52,7 +52,7 @@ These gyroscopes have been thoroughly tested and are used by many FRC teams. Gen
 
 {% embed url="https://www.studica.ca/en/navx-2-mxp-robotics-navigation-sensor" %}
 
-## [Pigeon2 IMU](gyroscope/pigeon2.md) by CTRE
+## [Pigeon2 IMU](gyroscope/pigeon-2.0.md) by CTRE
 
 {% embed url="https://store.ctr-electronics.com/pigeon-2/" %}
 
@@ -81,7 +81,7 @@ In `swervedrive.json` you specify the gyroscope with the
 | Device                              | type                | Communication                                      |
 | ----------------------------------- | ------------------- | -------------------------------------------------- |
 | [Pigeon](gyroscope/pigeon.md)       | `pigeon`            | CAN; does not support CANivore.                    |
-| [Pigeon2](gyroscope/pigeon2.md)     | `pigeon2`           | CAN; supports CANivore                             |
+| [Pigeon2](gyroscope/pigeon-2.0.md)  | `pigeon2`           | CAN; supports CANivore                             |
 | [NavX](gyroscope/navx.md)           | `navx` , `navx_spi` | roboRIO MXP SPI                                    |
 | [NavX ](gyroscope/navx.md)          | `navx_i2c`          | I2C port on the roboRIO MXP. Not recommended!      |
 | [NavX](gyroscope/navx.md)           | `navx_usb`          | Serial over USB Cable to roboRIO (not recommended) |
