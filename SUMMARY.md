@@ -34,7 +34,7 @@
   * [ADXRS450](devices/gyroscope/adxrs450.md)
   * [ADIS16448](devices/gyroscope/adis16448.md)
   * [ADIS16470](devices/gyroscope/adis16470.md)
-* [❌ Motor Controllers](devices/motor-controllers/README.md)
+* [Motor Controllers](devices/motor-controllers/README.md)
   * [❌ SparkMAX](devices/motor-controllers/sparkmax.md)
   * [❌ SparkFLEX](devices/motor-controllers/sparkflex.md)
   * [❌ TalonFX](devices/motor-controllers/talonfx.md)
