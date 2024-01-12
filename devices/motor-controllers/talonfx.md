@@ -8,6 +8,14 @@ The TalonFX is the motor controller used to control Kraken X60's and Falcon 500'
 
 They are commonly used as drive motors since they can be more powerful and efficient than REV NEO's.
 
+```java
+import com.ctre.phoenix6.hardware.TalonFX;
+import com.ctre.phoenix6.controls.DutyCycleOut;
+
+TalonFX motor = new TalonFX(10);
+motor.setControl(new DutyCycleOut(1.0)); // 100% full speed positive.
+```
+
 ## Documentation
 
 This device can be upgraded via CTRE Tuner X.
