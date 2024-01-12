@@ -149,7 +149,7 @@ The following example is one for a module configuration file, e.g. `frontleft.js
 
 [^13]: This is the static feedforward as a percentage of voltage to have the wheel spin.
 
-[^14]: This is the kP which is used on the SparkMAX to maintain the desired velocity as meters/second.
+[^14]: This is the kP which is used on the SparkMAX to maintain the desired angle as degrees.
 
 [^15]: kI usually does not need to be set.
 
@@ -157,9 +157,9 @@ The following example is one for a module configuration file, e.g. `frontleft.js
 
 [^17]: This is the static feedforward as a percentage of voltage to have the wheel spin.
 
-[^18]: Conversion factor for an MK4i L2 with all NEO's. This is set on the motor controller using [`CANSparkMax.getEncoder().setPositionConversionFactor()`](https://codedocs.revrobotics.com/java/com/revrobotics/relativeencoder#setPositionConversionFactor\(double\))
+[^18]: Conversion factor for an MK4i L2 with all NEO's. This converts rotations/minute to meters/second. This is set on the motor controller using [`CANSparkMax.getEncoder().setPositionConversionFactor()`](https://codedocs.revrobotics.com/java/com/revrobotics/relativeencoder#setPositionConversionFactor\(double\))
 
-[^19]: Conversion factor for an MK4i L2 with all NEO's. This is set on the motor controller using [`CANSparkMax.getEncoder().setPositionConversionFactor()`](https://codedocs.revrobotics.com/java/com/revrobotics/relativeencoder#setPositionConversionFactor\(double\))
+[^19]: Conversion factor for an MK4i L2 with all NEO's. This converts rotations to degrees. This is set on the motor controller using [`CANSparkMax.getEncoder().setPositionConversionFactor()`](https://codedocs.revrobotics.com/java/com/revrobotics/relativeencoder#setPositionConversionFactor\(double\))
 
 [^20]: The maximum current the drive motor can draw is `40`Amps. Set using [`CANSparkMax.setSmartCurrentLimit`](https://codedocs.revrobotics.com/java/com/revrobotics/cansparkbase#setSmartCurrentLimit\(int\))
 

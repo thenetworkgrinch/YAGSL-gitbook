@@ -6,6 +6,7 @@ YAGSL supports a wide variety of Gyroscopes in an effort to best help teams of a
 
 * [ ] [Gyroscope readings increase when rotated counter clockwise](#user-content-fn-1)[^1].
 * [ ] Yaw reading is the robot heading.
+* [ ] Gyroscope `0` is the desired robot "front".
 
 ## Swerve IMU wrapper
 

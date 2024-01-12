@@ -28,7 +28,7 @@ Useful for advanced calibration to ensure optimal accuracy on the robot.
 
 ## Calibration
 
-Full documentation for calibration is here.
+Full documentation for calibration is here. The original calibration is done at the factory in Hawaii so it is highly reccommended you do this at least once!
 
 {% embed url="https://pdocs.kauailabs.com/navx-mxp/guidance/gyroaccelcalibration/" %}
 

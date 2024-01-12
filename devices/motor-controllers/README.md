@@ -89,7 +89,7 @@ Inside any module JSON such as `frontleft.json`,`frontright.json`,`backleft.json
 | Device                    | type               |
 | ------------------------- | ------------------ |
 | [SparkMAX](sparkmax.md)   | `sparkmax`         |
-| [SparkFLEX](sparkflex.md) | `sparkflex`        |
+| [SparkFlex](sparkflex.md) | `sparkflex`        |
 | [TalonFX](talonfx.md)     | `talonfx`          |
 | [TalonSRX](talonsrx.md)   | `talonsrx`         |
 | SparkMAX Brushed          | `sparkmax_brushed` |
