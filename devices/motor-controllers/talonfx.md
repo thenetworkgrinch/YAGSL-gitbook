@@ -6,6 +6,11 @@ The TalonFX is the motor controller used to control Kraken X60's and Falcon 500'
 
 {% embed url="https://wcproducts.com/products/kraken" %}
 
+{% hint style="warning" %}
+If you are using Falcon 500 v2 (which are effectively discontinued) make sure that you apply the loctite fix described here!\
+[https://content.vexrobotics.com/vexpro/Falcon/217-6515-753-Falcon500-V2-Upgrade.pdf](https://content.vexrobotics.com/vexpro/Falcon/217-6515-753-Falcon500-V2-Upgrade.pdf)
+{% endhint %}
+
 They are commonly used as drive motors since they can be more powerful and efficient than REV NEO's.
 
 ```java
