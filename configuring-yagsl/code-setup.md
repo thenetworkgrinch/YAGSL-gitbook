@@ -1,5 +1,31 @@
 # Code Setup
 
+## Import YAGSL
+
+### Online
+
+Use WPILib vendor deps to install it.
+
+{% embed url="https://docs.wpilib.org/en/stable/docs/software/vscode-overview/3rd-party-libraries.html#rd-party-libraries" %}
+
+The URL for YAGSL vendordep is
+
+```
+https://broncbotz3481.github.io/YAGSL-Lib/yagsl/yagsl.json
+```
+
+### Offline
+
+Copy the `swervelib` directory from YAGSL-Example into `src/main/java` into your project.
+
+{% hint style="warning" %}
+You cannot have both the offline and online versions installed at the same time! Errors will occur!
+{% endhint %}
+
+{% hint style="info" %}
+Be sure to [install all dependencies](dependency-installation.md) too!
+{% endhint %}
+
 ## How to create a swerve drive?
 
 YAGSL is unique in the fact that you can create a swerve drive based entirely off of JSON configuration files. The JSON configuration files should be located in the [`deploy`](https://github.com/BroncBotz3481/YAGSL-Example/tree/main/src/main/deploy/swerve/neo) directory. You can also create the Configuration objects manually and instantiate your Swerve Drive that way.
