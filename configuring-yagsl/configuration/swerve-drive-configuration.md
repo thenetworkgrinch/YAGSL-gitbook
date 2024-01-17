@@ -6,9 +6,9 @@ The Swerve Drive JSON configuration file configures everything related to the ov
 
 ## JSON Fields
 
-| Name          | Units                                                            | Required | Description                                                     |
-| ------------- | ---------------------------------------------------------------- | -------- | --------------------------------------------------------------- |
-| `imu`         | [Gyroscope](../../devices/gyroscope.md#possible-gyroscope-types) | Y        | Robot IMU used to determine heading of the robot.               |
-| `invertedIMU` | Boolean                                                          | Y        | Inversion state of the IMU.                                     |
-| `modules`     | String array                                                     | Y        | Module JSONs in order clockwise order starting from front left. |
+| Name          | Units                                                           | Required | Description                                                     |
+| ------------- | --------------------------------------------------------------- | -------- | --------------------------------------------------------------- |
+| `imu`         | [Gyroscope](../../devices/gyroscope.md#gyroscope-configuration) | Y        | Robot IMU used to determine heading of the robot.               |
+| `invertedIMU` | Boolean                                                         | Y        | Inversion state of the IMU.                                     |
+| `modules`     | String array                                                    | Y        | Module JSONs in order clockwise order starting from front left. |
 
