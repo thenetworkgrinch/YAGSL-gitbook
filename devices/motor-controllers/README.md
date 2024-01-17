@@ -2,6 +2,8 @@
 
 YAGSL supports most common FRC motor controllers (except [Venom](https://www.playingwithfusion.com/productview.php?pdid=99\&catid=1014)'s) and while we recommend using a brushless motor with an integrated encoder if at all possible we support brushed motors with external quadrature encoders as well **ONLY** with SparkMAX's.
 
+The integrated encoder value will show up in shuffleboard under `Module[...] Raw Motor Encoder` as directly outputting the encoder value from the motor.
+
 ## Motor Checklist
 
 * [ ] All motors spin counterclockwise positive, if not document inversions required to achieve that.
