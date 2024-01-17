@@ -60,15 +60,15 @@ Inside any module JSON such as `frontleft.json`,`frontright.json`,`backleft.json
 
 <pre class="language-json"><code class="lang-json">{
   "drive": {
-    "type": <a data-footnote-ref href="#user-content-fn-5">"sparkmax"</a>,
-    "id": <a data-footnote-ref href="#user-content-fn-6">5</a>,
-    "canbus": <a data-footnote-ref href="#user-content-fn-7">null</a>
-  },
+<strong>    "type": <a data-footnote-ref href="#user-content-fn-5">"sparkmax"</a>,
+</strong><strong>    "id": <a data-footnote-ref href="#user-content-fn-6">5</a>,
+</strong><strong>    "canbus": <a data-footnote-ref href="#user-content-fn-7">null</a>
+</strong>  },
   "angle": {
-    "type": <a data-footnote-ref href="#user-content-fn-8">"sparkmax"</a>,
-    "id": <a data-footnote-ref href="#user-content-fn-9">6</a>,
-    "canbus": <a data-footnote-ref href="#user-content-fn-10">null</a>
-  },
+<strong>    "type": <a data-footnote-ref href="#user-content-fn-8">"sparkmax"</a>,
+</strong><strong>    "id": <a data-footnote-ref href="#user-content-fn-9">6</a>,
+</strong><strong>    "canbus": <a data-footnote-ref href="#user-content-fn-10">null</a>
+</strong>  },
   "encoder": {
     "type": "cancoder",
     "id": 11,
