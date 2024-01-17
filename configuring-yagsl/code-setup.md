@@ -16,6 +16,8 @@ https://broncbotz3481.github.io/YAGSL-Lib/yagsl/yagsl.json
 
 ### Offline
 
+{% embed url="https://github.com/BroncBotz3481/YAGSL-Example/tree/main/src/main/java" %}
+
 Copy the `swervelib` directory from YAGSL-Example into `src/main/java` into your project.
 
 {% hint style="warning" %}
