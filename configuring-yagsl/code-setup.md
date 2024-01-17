@@ -65,6 +65,51 @@ import swervelib.telemetry.SwerveDriveTelemetry.TelemetryVerbosity;
 
 Sometimes I like to include really advanced features in the example (like last year I had a drive to point command) so be sure to check back and see what we have done!
 
+## Drive Code
+
+Inside the `SwerveSubsystem` you can make your own drive code as easy as a few lines.
+
+```java
+  /**
+   * Command to drive the robot using translative values and heading as a setpoint.
+   *
+   * @param translationX Translation in the X direction.
+   * @param translationY Translation in the Y direction.
+   * @param headingX     Heading X to calculate angle of the joystick.
+   * @param headingY     Heading Y to calculate angle of the joystick.
+   * @return Drive command.
+   */
+  public Command driveCommand(DoubleSupplier translationX, DoubleSupplier translationY, DoubleSupplier headingX,
+                              DoubleSupplier headingY)
+  {
+    return run(() -> {
+      // Make the robot move
+      driveFieldOriented(getTargetSpeeds(translationX.getAsDouble(), translationY.getAsDouble(),
+                                         headingX.getAsDouble(),
+                                         headingY.getAsDouble()));
+    });
+  }
+
+  /**
+   * Command to drive the robot using translative values and heading as angular velocity.
+   *
+   * @param translationX     Translation in the X direction.
+   * @param translationY     Translation in the Y direction.
+   * @param angularRotationX Rotation of the robot to set
+   * @return Drive command.
+   */
+  public Command driveCommand(DoubleSupplier translationX, DoubleSupplier translationY, DoubleSupplier angularRotationX)
+  {
+    return run(() -> {
+      // Make the robot move
+      swerveDrive.drive(new Translation2d(translationX.getAsDouble() * maximumSpeed, translationY.getAsDouble()),
+                        angularRotationX.getAsDouble() * swerveDrive.swerveController.config.maxAngularVelocity,
+                        true,
+                        false);
+    });
+  }
+```
+
 [^1]: Maximum speed **MUST** be in Meters!
 
 [^2]: Maximum speed **MUST** be in Meters!
