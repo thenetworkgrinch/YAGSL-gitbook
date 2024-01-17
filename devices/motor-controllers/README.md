@@ -15,7 +15,7 @@ The integrated encoder value will show up in shuffleboard under `Module[...] Raw
 
 ## Swerve Motor Wrapper
 
-YAGSL created wrappers over all supported Motor Controllers to uniformly fetch and set data that is needed for a Swerve Drive to operate. This wrapper is called [`SwerveMotor`](https://broncbotz3481.github.io/YAGSL/swervelib/motors/SwerveMotor.html). All Motor can be fetched via the [`SwerveModule`](https://broncbotz3481.github.io/YAGSL/swervelib/SwerveModule.html#configuration) configuration object [`SwerveModuleConfiguration`](https://broncbotz3481.github.io/YAGSL/swervelib/parser/SwerveModuleConfiguration.html) motor definitions [`angleMotor`](https://broncbotz3481.github.io/YAGSL/swervelib/parser/SwerveModuleConfiguration.html#angleMotor) and [`driveMotor`](https://broncbotz3481.github.io/YAGSL/swervelib/parser/SwerveModuleConfiguration.html#driveMotor). The [`SwerveModule`](https://broncbotz3481.github.io/YAGSL/swervelib/SwerveModule.html) is able to be fetched by [`SwerveDrive.getModules()`](https://broncbotz3481.github.io/YAGSL/swervelib/SwerveDrive.html#getModules\(\)) easily.
+YAGSL created wrappers over all supported Motor Controllers to uniformly fetch and set data that is needed for a Swerve Drive to operate. This wrapper is called [`SwerveMotor`](https://broncbotz3481.github.io/YAGSL/swervelib/motors/SwerveMotor.html). All [`SwerveMotor`](https://broncbotz3481.github.io/YAGSL/swervelib/motors/SwerveMotor.html)'s can be fetched via the [`SwerveModule`](https://broncbotz3481.github.io/YAGSL/swervelib/SwerveModule.html#configuration) configuration object [`SwerveModuleConfiguration`](https://broncbotz3481.github.io/YAGSL/swervelib/parser/SwerveModuleConfiguration.html) motor definitions [`angleMotor`](https://broncbotz3481.github.io/YAGSL/swervelib/parser/SwerveModuleConfiguration.html#angleMotor) and [`driveMotor`](https://broncbotz3481.github.io/YAGSL/swervelib/parser/SwerveModuleConfiguration.html#driveMotor). The [`SwerveModule`](https://broncbotz3481.github.io/YAGSL/swervelib/SwerveModule.html) is able to be fetched by [`SwerveDrive.getModules()`](https://broncbotz3481.github.io/YAGSL/swervelib/SwerveDrive.html#getModules\(\)) easily.
 
 <pre class="language-java"><code class="lang-java"> /**
    * Initialize {@link SwerveDrive} with the directory provided.
@@ -93,8 +93,12 @@ Inside any module JSON such as `frontleft.json`,`frontright.json`,`backleft.json
 | [SparkMAX](sparkmax.md)   | `sparkmax`         |
 | [SparkFlex](sparkflex.md) | `sparkflex`        |
 | [TalonFX](talonfx.md)     | `talonfx`          |
-| [TalonSRX](talonsrx.md)   | `talonsrx`         |
+| TalonSRX                  | `talonsrx`         |
 | SparkMAX Brushed          | `sparkmax_brushed` |
+
+{% hint style="warning" %}
+At this time I do not provide documentation on brushed motor utilization, like `sparkmax_brushed` and `talonsrx`.
+{% endhint %}
 
 [^1]: Type of motor controller that is being used.
 
