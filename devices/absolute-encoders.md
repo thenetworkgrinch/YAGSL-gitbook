@@ -97,7 +97,7 @@ Inside any module JSON such as `frontleft.json`,`frontright.json`,`backleft.json
 Conversion Factor for angle motors should be `360` if the absolute encoder is attached to the SparkMAX!
 {% endhint %}
 
-<table data-full-width="true"><thead><tr><th>Device</th><th width="201">type</th></tr></thead><tbody><tr><td>None</td><td><code>none</code></td></tr><tr><td><a href="https://docs.revrobotics.com/brushless/spark-max/encoders/absolute#data-port-connector-information">Integrated/Attached</a></td><td><code>attached</code></td></tr><tr><td><a href="https://docs.revrobotics.com/brushless/spark-max/encoders/absolute#data-port-connector-information">SparkMax Analog</a></td><td><code>sparkmax_analog</code></td></tr><tr><td><a href="https://docs.reduxrobotics.com/canandcoder/spark-max#using-the-pwm-output-with-spark-max">Canandcoder (via SparkMAX)</a></td><td><code>canandcoder</code></td></tr><tr><td><a href="https://docs.reduxrobotics.com/canandcoder/getting-started">Canandcover (via CAN)</a></td><td><code>canandcoder_can</code></td></tr><tr><td><a href="https://pro.docs.ctr-electronics.com/en/latest/docs/hardware-reference/cancoder/index.html">CANcoder</a></td><td><code>cancoder</code></td></tr><tr><td><a href="https://www.revrobotics.com/rev-11-1271/">Throughbore</a> (via PWM)</td><td><code>throughbore</code></td></tr><tr><td><a href="https://www.thethriftybot.com/products/thrifty-absolute-magnetic-encoder">Thrifty Absolute Magnetic Encoder</a>  (via PWM)</td><td><code>thrifty</code></td></tr><tr><td><a href="https://www.andymark.com/products/ma3-absolute-encoder-with-cable">MA3</a> </td><td><code>ma3</code></td></tr><tr><td><a href="https://store.ctr-electronics.com/srx-mag-encoder/">SRX Mag</a></td><td><code>ctre_mag</code></td></tr><tr><td><a href="https://www.andymark.com/products/am-mag-encoder">AM Mag</a></td><td><code>am_mag</code></td></tr><tr><td>PWM DutyCycle</td><td><code>dutycycle</code></td></tr><tr><td>Analog Encoder</td><td><code>analog</code></td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th>Device</th><th width="269">type</th></tr></thead><tbody><tr><td>None</td><td><code>none</code></td></tr><tr><td><a href="https://docs.revrobotics.com/brushless/spark-max/encoders/absolute#data-port-connector-information">Integrated/Attached</a></td><td><a data-footnote-ref href="#user-content-fn-17"><code>attached</code></a></td></tr><tr><td><a href="https://docs.revrobotics.com/brushless/spark-max/encoders/absolute#data-port-connector-information">SparkMax Analog</a></td><td><a data-footnote-ref href="#user-content-fn-18"><code>sparkmax_analog</code></a></td></tr><tr><td><a href="https://docs.reduxrobotics.com/canandcoder/spark-max#using-the-pwm-output-with-spark-max">Canandcoder (via SparkMAX)</a></td><td><a data-footnote-ref href="#user-content-fn-19"><code>canandcoder</code></a></td></tr><tr><td><a href="https://docs.reduxrobotics.com/canandcoder/getting-started">Canandcover (via CAN)</a></td><td><a data-footnote-ref href="#user-content-fn-20"><code>canandcoder_can</code></a></td></tr><tr><td><a href="https://pro.docs.ctr-electronics.com/en/latest/docs/hardware-reference/cancoder/index.html">CANcoder</a></td><td><a data-footnote-ref href="#user-content-fn-21"><code>cancoder</code></a></td></tr><tr><td><a href="https://www.revrobotics.com/rev-11-1271/">Throughbore</a> (via PWM)</td><td><a data-footnote-ref href="#user-content-fn-22"><code>throughbore</code></a></td></tr><tr><td><a href="https://www.thethriftybot.com/products/thrifty-absolute-magnetic-encoder">Thrifty Absolute Magnetic Encoder</a>  (via PWM)</td><td><a data-footnote-ref href="#user-content-fn-23"><code>thrifty</code></a></td></tr><tr><td><a href="https://www.andymark.com/products/ma3-absolute-encoder-with-cable">MA3</a> </td><td><a data-footnote-ref href="#user-content-fn-24"><code>ma3</code></a></td></tr><tr><td><a href="https://store.ctr-electronics.com/srx-mag-encoder/">SRX Mag</a></td><td><a data-footnote-ref href="#user-content-fn-25"><code>ctre_mag</code></a></td></tr><tr><td><a href="https://www.andymark.com/products/am-mag-encoder">AM Mag</a></td><td><a data-footnote-ref href="#user-content-fn-26"><code>am_mag</code></a></td></tr><tr><td>PWM DutyCycle</td><td><code>dutycycle</code></td></tr><tr><td>Analog Encoder</td><td><code>analog</code></td></tr></tbody></table>
 
 [^1]: [`CANcoder`](https://api.ctr-electronics.com/phoenix6/release/java/com/ctre/phoenix6/hardware/CANcoder.html) from Phoenix 6, initialized via CAN bus and CAN ID from configurations.
 
@@ -132,3 +132,73 @@ Conversion Factor for angle motors should be `360` if the absolute encoder is at
 [^15]: The center of this module is `-12`in from the center of the robot "frontwise".
 
 [^16]: The center of this module is `-12`in from the center of the robot "left".
+
+[^17]: <pre class="language-json"><code class="lang-json">"encoder": {
+        "type": <a data-footnote-ref href="#user-content-fn-27">"attached"</a>,
+        "id": <a data-footnote-ref href="#user-content-fn-28">11</a>,
+        "canbus": <a data-footnote-ref href="#user-content-fn-29">null</a>
+      },
+    </code></pre>
+
+[^18]: <pre class="language-json"><code class="lang-json">"encoder": {
+        "type": <a data-footnote-ref href="#user-content-fn-30">"sparkmax_analog"</a>,
+        "id": <a data-footnote-ref href="#user-content-fn-31">11</a>,
+        "canbus": <a data-footnote-ref href="#user-content-fn-32">null</a>
+      },
+    </code></pre>
+
+[^19]: <pre class="language-json"><code class="lang-json">"encoder": {
+        "type": <a data-footnote-ref href="#user-content-fn-33">"canandcoder"</a>,
+        "id": <a data-footnote-ref href="#user-content-fn-34">11</a>,
+        "canbus": <a data-footnote-ref href="#user-content-fn-35">null</a>
+      },
+    </code></pre>
+
+[^20]: <pre class="language-json"><code class="lang-json">"encoder": {
+        "type": <a data-footnote-ref href="#user-content-fn-36">"canandcoder_can"</a>,
+        "id": <a data-footnote-ref href="#user-content-fn-37">11</a>,
+        "canbus": <a data-footnote-ref href="#user-content-fn-38">null</a>
+      },
+    </code></pre>
+
+[^21]: <pre class="language-json"><code class="lang-json">"encoder": {
+        "type": <a data-footnote-ref href="#user-content-fn-39">"cancoder"</a>,
+        "id": <a data-footnote-ref href="#user-content-fn-40">11</a>,
+        "canbus": <a data-footnote-ref href="#user-content-fn-41">null</a>
+      },
+    </code></pre>
+
+[^22]: <pre class="language-json"><code class="lang-json">"encoder": {
+        "type": <a data-footnote-ref href="#user-content-fn-42">"throughbore"</a>,
+        "id": <a data-footnote-ref href="#user-content-fn-43">11</a>,
+        "canbus": <a data-footnote-ref href="#user-content-fn-44">null</a>
+      },
+    </code></pre>
+
+[^23]: <pre class="language-json"><code class="lang-json">"encoder": {
+        "type": <a data-footnote-ref href="#user-content-fn-45">"thrifty"</a>,
+        "id": <a data-footnote-ref href="#user-content-fn-46">11</a>,
+        "canbus": <a data-footnote-ref href="#user-content-fn-47">null</a>
+      },
+    </code></pre>
+
+[^24]: <pre class="language-json"><code class="lang-json">"encoder": {
+        "type": <a data-footnote-ref href="#user-content-fn-48">"ma3"</a>,
+        "id": <a data-footnote-ref href="#user-content-fn-49">11</a>,
+        "canbus": <a data-footnote-ref href="#user-content-fn-50">null</a>
+      },
+    </code></pre>
+
+[^25]: <pre class="language-json"><code class="lang-json">"encoder": {
+        "type": <a data-footnote-ref href="#user-content-fn-51">"ctre_mag"</a>,
+        "id": <a data-footnote-ref href="#user-content-fn-52">11</a>,
+        "canbus": <a data-footnote-ref href="#user-content-fn-53">null</a>
+      },
+    </code></pre>
+
+[^26]: <pre class="language-json"><code class="lang-json">"encoder": {
+        "type": <a data-footnote-ref href="#user-content-fn-54">"am_mag"</a>,
+        "id": <a data-footnote-ref href="#user-content-fn-55">11</a>,
+        "canbus": <a data-footnote-ref href="#user-content-fn-56">null</a>
+      },
+    </code></pre>
