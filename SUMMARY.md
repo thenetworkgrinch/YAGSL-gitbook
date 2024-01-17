@@ -26,6 +26,7 @@
     * [PIDF](configuring-yagsl/configuration/pidf-properties-configuration/pidf.md)
   * [Swerve Module Configuration](configuring-yagsl/configuration/swerve-module-configuration.md)
   * [Controller Properties Configuration](configuring-yagsl/configuration/controller-properties-configuration.md)
+  * [Device Configuration](configuring-yagsl/configuration/device-configuration.md)
 * [Code Setup](configuring-yagsl/code-setup.md)
 
 ## Devices
@@ -71,5 +72,4 @@
   * [Swerve Module Physical Properties](legacy-documentation/documentation/swerve-module-physical-properties.md)
   * [Swerve Module PIDF Properties](legacy-documentation/documentation/swerve-module-pidf-properties.md)
   * [Controller Properties](legacy-documentation/documentation/controller-properties.md)
-  * [Device Configuration](legacy-documentation/documentation/device-configuration.md)
   * [Tested configurations](legacy-documentation/documentation/tested-configurations.md)

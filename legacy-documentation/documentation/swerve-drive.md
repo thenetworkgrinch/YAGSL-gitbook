@@ -6,8 +6,9 @@ The Swerve Drive JSON configuration file configures everything related to the ov
 
 ## JSON Fields
 
-| Name          | Units                             | Required | Description                                                     |
-| ------------- | --------------------------------- | -------- | --------------------------------------------------------------- |
-| `imu`         | [Device](device-configuration.md) | Y        | Robot IMU used to determine heading of the robot.               |
-| `invertedIMU` | Boolean                           | Y        | Inversion state of the IMU.                                     |
-| `modules`     | String array                      | Y        | Module JSONs in order clockwise order starting from front left. |
+| Name          | Units                                                                   | Required | Description                                                     |
+| ------------- | ----------------------------------------------------------------------- | -------- | --------------------------------------------------------------- |
+| `imu`         | [Device](../../configuring-yagsl/configuration/device-configuration.md) | Y        | Robot IMU used to determine heading of the robot.               |
+| `invertedIMU` | Boolean                                                                 | Y        | Inversion state of the IMU.                                     |
+| `modules`     | String array                                                            | Y        | Module JSONs in order clockwise order starting from front left. |
+
