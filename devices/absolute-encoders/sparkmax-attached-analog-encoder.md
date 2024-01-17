@@ -1,2 +1,0 @@
-# ❌ SparkMAX Attached Analog Encoder
-

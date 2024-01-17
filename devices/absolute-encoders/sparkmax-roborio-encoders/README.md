@@ -1,2 +1,0 @@
-# ❌ SparkMAX/RoboRIO Encoders
-

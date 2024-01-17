@@ -91,6 +91,14 @@ Inside any module JSON such as `frontleft.json`,`frontright.json`,`backleft.json
 }
 </code></pre>
 
+## Possible Absolute Encoder Types
+
+{% hint style="warning" %}
+Conversion Factor for angle motors should be `360` if the absolute encoder is attached to the SparkMAX!
+{% endhint %}
+
+<table data-full-width="true"><thead><tr><th>Device</th><th width="201">type</th></tr></thead><tbody><tr><td>None</td><td><code>none</code></td></tr><tr><td><a href="https://docs.revrobotics.com/brushless/spark-max/encoders/absolute#data-port-connector-information">Integrated/Attached</a></td><td><code>attached</code></td></tr><tr><td><a href="https://docs.revrobotics.com/brushless/spark-max/encoders/absolute#data-port-connector-information">SparkMax Analog</a></td><td><code>sparkmax_analog</code></td></tr><tr><td><a href="https://docs.reduxrobotics.com/canandcoder/spark-max#using-the-pwm-output-with-spark-max">Canandcoder (via SparkMAX)</a></td><td><code>canandcoder</code></td></tr><tr><td><a href="https://docs.reduxrobotics.com/canandcoder/getting-started">Canandcover (via CAN)</a></td><td><code>canandcoder_can</code></td></tr><tr><td><a href="https://pro.docs.ctr-electronics.com/en/latest/docs/hardware-reference/cancoder/index.html">CANcoder</a></td><td><code>cancoder</code></td></tr><tr><td><a href="https://www.revrobotics.com/rev-11-1271/">Throughbore</a> (via PWM)</td><td><code>throughbore</code></td></tr><tr><td><a href="https://www.thethriftybot.com/products/thrifty-absolute-magnetic-encoder">Thrifty Absolute Magnetic Encoder</a>  (via PWM)</td><td><code>thrifty</code></td></tr><tr><td><a href="https://www.andymark.com/products/ma3-absolute-encoder-with-cable">MA3</a> </td><td><code>ma3</code></td></tr><tr><td><a href="https://store.ctr-electronics.com/srx-mag-encoder/">SRX Mag</a></td><td><code>ctre_mag</code></td></tr><tr><td><a href="https://www.andymark.com/products/am-mag-encoder">AM Mag</a></td><td><code>am_mag</code></td></tr><tr><td>PWM DutyCycle</td><td><code>dutycycle</code></td></tr><tr><td>Analog Encoder</td><td><code>analog</code></td></tr></tbody></table>
+
 [^1]: [`CANcoder`](https://api.ctr-electronics.com/phoenix6/release/java/com/ctre/phoenix6/hardware/CANcoder.html) from Phoenix 6, initialized via CAN bus and CAN ID from configurations.
 
 [^2]: [`CANcoder`](https://api.ctr-electronics.com/phoenix6/release/java/com/ctre/phoenix6/hardware/CANcoder.html) from Phoenix 6, initialized via CAN bus and CAN ID from configurations. Cast `Object` to [`CANcoder`](https://api.ctr-electronics.com/phoenix6/release/java/com/ctre/phoenix6/hardware/CANcoder.html)

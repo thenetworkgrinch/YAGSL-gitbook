@@ -1,2 +1,0 @@
-# ❌ PWM DutyCycle Encoder
-
