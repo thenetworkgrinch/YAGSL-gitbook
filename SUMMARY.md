@@ -53,8 +53,8 @@
 * [Java API](https://broncbotz3481.github.io/YAGSL/)
 * [❌ Drive Code](product-guides/drive-code.md)
 * [❌ Autonomous with PathPlanner](product-guides/autonomous-with-pathplanner.md)
-* [❌ Feature1](product-guides/feature1.md)
-* [❌ Feature2](product-guides/feature2.md)
+* [❌ Heading Correction](product-guides/heading-correction.md)
+* [❌ Vision Processing](product-guides/vision-processing.md)
 
 ## Use Cases
 

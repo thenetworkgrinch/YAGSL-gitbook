@@ -2,24 +2,47 @@
 
 ## How to create a swerve drive?
 
-YAGSL is unique in the fact that you can create a swerve drive based entirely off of JSON configuration files. The JSON configuration files should be located in the [`deploy`](https://github.com/BroncBotz3481/YAGSL-Example/src/main/deploy) directory. You can also create the Configuration objects manually and instantiate your Swerve Drive that way.
+YAGSL is unique in the fact that you can create a swerve drive based entirely off of JSON configuration files. The JSON configuration files should be located in the [`deploy`](https://github.com/BroncBotz3481/YAGSL-Example/tree/main/src/main/deploy/swerve/neo) directory. You can also create the Configuration objects manually and instantiate your Swerve Drive that way.
 
 ### How to create a SwerveDrive using JSON.
 
-This example program creates the [`SwerveDrive`](https://github.com/BroncBotz3481/YAGSL-Example/tree/main/src/main/java/swervelib/SwerveDrive.java) in the [`SwerveSubsystem`](https://github.com/BroncBotz3481/YAGSL-Example/tree/main/src/main/java/frc/robot/subsystems/swervedrive2/SwerveSubsystem.java), as you should only interact with it in the SwerveSubsystem if you are using command based programming.
+This example program creates the [`SwerveDrive`](https://broncbotz3481.github.io/YAGSL/swervelib/SwerveDrive.html) in the [`SwerveSubsystem`](https://github.com/BroncBotz3481/YAGSL-Example/blob/main/src/main/java/frc/robot/subsystems/swervedrive/SwerveSubsystem.java), as you should only interact with it in the [`SwerveSubsystem`](https://github.com/BroncBotz3481/YAGSL-Example/blob/main/src/main/java/frc/robot/subsystems/swervedrive/SwerveSubsystem.java) if you are using command based programming.
 
-```java
-import java.io.File;
+<pre class="language-java"><code class="lang-java">import java.io.File;
 import edu.wpi.first.wpilibj.Filesystem;
 import swervelib.parser.SwerveParser;
 import swervelib.SwerveDrive;
 import edu.wpi.first.math.util.Units;
 
 
-double maximumSpeed = Units.feetToMeters(4.5)
+double <a data-footnote-ref href="#user-content-fn-1">maximumSpeed </a>= Units.feetToMeters(4.5)
 File swerveJsonDirectory = new File(Filesystem.getDeployDirectory(),"swerve");
-SwerveDrive  swerveDrive = new SwerveParser(directory).createSwerveDrive(maximumSpeed);
+SwerveDrive  swerveDrive = new SwerveParser(directory).createSwerveDrive(<a data-footnote-ref href="#user-content-fn-2">maximumSpeed</a>);
 
-```
+</code></pre>
 
 This way is fast and easy, no more large unmaintainable and daunting constants file to worry about! To create a JSON directory look at the [configuration documentation](configuration/).
+
+## Telemetry
+
+Telemetry can be great when you want it and YAGSL has no shortage of useful telemetry, such as the `Module[...]` fields you will see in Shuffleboard or SmartDashboard. However Telemetry causes delays and slowdowns to the program so sometimes it is best to the them off. To do this change
+
+<pre class="language-java"><code class="lang-java">import swervelib.telemetry.SwerveDriveTelemetry;
+import swervelib.telemetry.SwerveDriveTelemetry.TelemetryVerbosity;
+
+<a data-footnote-ref href="#user-content-fn-3">SwerveDriveTelemetry.verbosity</a> = <a data-footnote-ref href="#user-content-fn-4">TelemetryVerbosity.HIGH</a>;
+</code></pre>
+
+## Follow along the example here!
+
+{% embed url="https://github.com/BroncBotz3481/YAGSL-Example/tree/main/src/main/java/frc/robot" %}
+
+Sometimes I like to include really advanced features in the example (like last year I had a drive to point command) so be sure to check back and see what we have done!
+
+[^1]: Maximum speed **MUST** be in Meters!
+
+[^2]: Maximum speed **MUST** be in Meters!
+
+[^3]: This [value ](https://broncbotz3481.github.io/YAGSL/swervelib/telemetry/SwerveDriveTelemetry.html#verbosity)is static and changes the telemetry given to the DriverStation and SmartDashboard.
+
+[^4]: [Telemetry Verbosity](https://broncbotz3481.github.io/YAGSL/swervelib/telemetry/SwerveDriveTelemetry.TelemetryVerbosity.html) comes in several different modes.
