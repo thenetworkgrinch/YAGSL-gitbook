@@ -13,6 +13,7 @@ I highly encourage anyone who wants to help make YAGSL better to create pull req
   2. Conversion factor needed to be inverted.
   3. setPosition update to reflect current position.
 * [ ] Changed `ma3` encoders to be read via analog input. (Discovered by [@CoZm0](https://github.com/CoZ-m0))
+* [ ] Support 3 wheel swerve module setups with PathPlanner helper function. (PR #139 by [@TechnologyMan00](https://github.com/Technologyman00))
 
 ## 2024.4.2
 
