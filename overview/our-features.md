@@ -25,7 +25,7 @@ Just download all of the vendordeps from WPILib online with this list.[#vendor-u
 ### Motors
 
 * [Neo](https://www.revrobotics.com/rev-21-1650/)
-* [Falcon 500](https://store.ctr-electronics.com/falcon-500-powered-by-talon-fx/)
+* [Falcon 500](https://store.ctr-electronics.com/falcon-500-powered-by-talon-fx/) / [Kraken X60](https://wcproducts.com/products/kraken)
 * [Brushed Motors Controlled by SparkMAX](https://www.andymark.com/products/rs775-5-motor-with-encoder-for-pg71-pg188-gearbox) with [an](https://www.mouser.com/ProductDetail/Grayhill/63R256) [attached](https://store.ctr-electronics.com/srx-mag-encoder/) [encoder](https://www.revrobotics.com/rev-11-1271/). Angle motors do not require quadrature encoders and should use duty cycle encoders attached to the dataport of the spark max.
 
 ### Absolute Encoders
@@ -33,6 +33,13 @@ Just download all of the vendordeps from WPILib online with this list.[#vendor-u
 * [Thrifty Absolute Encoders](https://www.thethriftybot.com/bearings/Thrifty-Absolute-Magnetic-Encoder-p421607500)
 * [CANCoder](https://store.ctr-electronics.com/cancoder/)
 * [REV Through Bore](https://www.revrobotics.com/rev-11-1271/)
+* [Canandcoder (via SparkMAX)](https://docs.reduxrobotics.com/canandcoder/spark-max#using-the-pwm-output-with-spark-max)
+* [Canandcover (via CAN)](https://docs.reduxrobotics.com/canandcoder/getting-started)
+* [Throughbore](https://www.revrobotics.com/rev-11-1271/) (via PWM)
+* [Thrifty Absolute Magnetic Encoder](https://www.thethriftybot.com/products/thrifty-absolute-magnetic-encoder)  (via PWM)
+* [MA3](https://www.andymark.com/products/ma3-absolute-encoder-with-cable)&#x20;
+* [SRX Mag](https://store.ctr-electronics.com/srx-mag-encoder/)
+* [AM Mag](https://www.andymark.com/products/am-mag-encoder)
 * Any PWM Absolute Encoder!
 
 ### IMUs (Gyroscopes)
