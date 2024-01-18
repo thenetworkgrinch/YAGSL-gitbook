@@ -77,6 +77,10 @@ In `swervedrive.json` you specify the gyroscope with the
 }
 </code></pre>
 
+{% hint style="warning" %}
+If your robot spins out of control without any controller input you probably need to invert your IMU here.
+{% endhint %}
+
 ### Possible Gyroscope Types
 
 | Device                              | type                | Communication                                      |
