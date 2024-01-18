@@ -16,7 +16,7 @@ Example code repository
 
 ## Easy installation
 
-Just download all of the vendordeps from WPILib online with this list.[#vendor-urls](../configuring-yagsl/dependency-installation.md#vendor-urls "mention")
+Just download all of the vendordeps from WPILib online with this list.[#vendor-urls](../../configuring-yagsl/dependency-installation.md#vendor-urls "mention")
 
 {% embed url="https://docs.wpilib.org/en/stable/docs/software/vscode-overview/3rd-party-libraries.html#rd-party-libraries" %}
 

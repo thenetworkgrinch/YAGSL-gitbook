@@ -28,8 +28,8 @@ Do you have multiple robots and don't want to change any code to get them to wor
 [what-we-do.md](overview/what-we-do.md)
 {% endcontent-ref %}
 
-{% content-ref url="overview/our-features.md" %}
-[our-features.md](overview/our-features.md)
+{% content-ref url="overview/our-features/" %}
+[our-features](overview/our-features/)
 {% endcontent-ref %}
 
 ## Get Started

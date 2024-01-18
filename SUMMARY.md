@@ -5,7 +5,8 @@
 ## Overview
 
 * [What we do](overview/what-we-do.md)
-* [Our Features](overview/our-features.md)
+* [Our Features](overview/our-features/README.md)
+  * [Heading Correction](overview/our-features/heading-correction.md)
 * [Changelog](overview/changelog.md)
 * [Java API](https://broncbotz3481.github.io/YAGSL/)
 * [Example Code](https://github.com/BroncBotz3481/YAGSL-Example/tree/main)
@@ -59,11 +60,6 @@
 * [❌ Autonomous with PathPlanner](product-guides/autonomous-with-pathplanner.md)
 * [❌ Heading Correction](product-guides/heading-correction.md)
 * [❌ Vision Processing](product-guides/vision-processing.md)
-
-## Use Cases
-
-* [🎨 For Designers](use-cases/for-designers.md)
-* [🖥 For Developers](use-cases/for-developers.md)
 
 ## Legacy Documentation
 
