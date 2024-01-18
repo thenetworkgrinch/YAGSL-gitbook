@@ -83,10 +83,14 @@ Inside the `SwerveSubsystem` you can make your own drive code as easy as a few l
                               DoubleSupplier headingY)
   {
     return run(() -> {
+      double xInput = Math.pow(translationX.getAsDouble(), 3); // Smooth controll out
+      double yInput = Math.pow(translationY.getAsDouble(), 3); // Smooth controll out
       // Make the robot move
-      driveFieldOriented(getTargetSpeeds(translationX.getAsDouble(), translationY.getAsDouble(),
-                                         headingX.getAsDouble(),
-                                         headingY.getAsDouble()));
+      driveFieldOriented(swerveDrive.swerveController.getTargetSpeeds(xInput, yInput,
+                                                                      headingX.getAsDouble(),
+                                                                      headingY.getAsDouble(),
+                                                                      swerveDrive.getYaw().getRadians(),
+                                                                      swerveDrive.getMaximumVelocity()));
     });
   }
 
@@ -102,7 +106,8 @@ Inside the `SwerveSubsystem` you can make your own drive code as easy as a few l
   {
     return run(() -> {
       // Make the robot move
-      swerveDrive.drive(new Translation2d(translationX.getAsDouble() * swerveDrive.getMaximumVelocity(), translationY.getAsDouble() * swerveDrive.getMaximumVelocity()),
+      swerveDrive.drive(new Translation2d(translationX.getAsDouble() * swerveDrive.getMaximumVelocity(),
+                                          translationY.getAsDouble() * swerveDrive.getMaximumVelocity()),
                         angularRotationX.getAsDouble() * swerveDrive.getMaximumAngularVelocity(),
                         true,
                         false);
