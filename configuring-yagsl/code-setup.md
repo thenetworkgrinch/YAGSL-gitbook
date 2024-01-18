@@ -102,8 +102,8 @@ Inside the `SwerveSubsystem` you can make your own drive code as easy as a few l
   {
     return run(() -> {
       // Make the robot move
-      swerveDrive.drive(new Translation2d(translationX.getAsDouble() * maximumSpeed, translationY.getAsDouble()),
-                        angularRotationX.getAsDouble() * swerveDrive.swerveController.config.maxAngularVelocity,
+      swerveDrive.drive(new Translation2d(translationX.getAsDouble() * swerveDrive.getMaximumVelocity(), translationY.getAsDouble() * swerveDrive.getMaximumVelocity()),
+                        angularRotationX.getAsDouble() * swerveDrive.getMaximumAngularVelocity(),
                         true,
                         false);
     });
