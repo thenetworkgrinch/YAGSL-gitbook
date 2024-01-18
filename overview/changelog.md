@@ -8,7 +8,7 @@ I highly encourage anyone who wants to help make YAGSL better to create pull req
 
 ## 2024.4.5
 
-* [ ] Fix for TalonFX Angle motor control (by @Ben | 217 Alum | CTRE Intern, and @Wackyvert 2225 Mentor) .
+* [ ] Fix for TalonFX Angle motor control (by [@bhall-ctre](https://github.com/bhall-ctre), and @Wackyvert 2225 Mentor) .
   1. TalonFX's needed to use conversion factor as gear ratio rather than gear ratio + unit conversion.&#x20;
   2. Conversion factor needed to be inverted.
   3. setPosition update to reflect current position.
