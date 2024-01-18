@@ -36,11 +36,12 @@ Just download all of the vendordeps from WPILib online with this list.[#vendor-u
 * [Canandcoder (via SparkMAX)](https://docs.reduxrobotics.com/canandcoder/spark-max#using-the-pwm-output-with-spark-max)
 * [Canandcover (via CAN)](https://docs.reduxrobotics.com/canandcoder/getting-started)
 * [Throughbore](https://www.revrobotics.com/rev-11-1271/) (via PWM)
-* [Thrifty Absolute Magnetic Encoder](https://www.thethriftybot.com/products/thrifty-absolute-magnetic-encoder)  (via PWM)
+* [Thrifty Absolute Magnetic Encoder](https://www.thethriftybot.com/products/thrifty-absolute-magnetic-encoder)  (via AnalogInput)
 * [MA3](https://www.andymark.com/products/ma3-absolute-encoder-with-cable)&#x20;
 * [SRX Mag](https://store.ctr-electronics.com/srx-mag-encoder/)
 * [AM Mag](https://www.andymark.com/products/am-mag-encoder)
 * Any PWM Absolute Encoder!
+* Any Anolog Absolute Encoder
 
 ### IMUs (Gyroscopes)
 
