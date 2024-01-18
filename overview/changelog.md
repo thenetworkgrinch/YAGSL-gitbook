@@ -12,6 +12,7 @@ I highly encourage anyone who wants to help make YAGSL better to create pull req
   1. TalonFX's needed to use conversion factor as gear ratio rather than gear ratio + unit conversion.&#x20;
   2. Conversion factor needed to be inverted.
   3. setPosition update to reflect current position.
+* [ ] Changed `ma3` encoders to be read via analog input. (Discovered by [@CoZm0](https://github.com/CoZ-m0))
 
 ## 2024.4.2
 
