@@ -21,6 +21,7 @@
 
 * [Getting to know your robot](configuring-yagsl/getting-to-know-your-robot/README.md)
   * [Gear Ratio](fundamentals/swerve-modules.md#conversion-factor)
+  * [Standard Conversion Factor](configuring-yagsl/getting-to-know-your-robot/standard-conversion-factor.md)
 * [Dependency Installation](configuring-yagsl/dependency-installation.md)
 * [Configuration](configuring-yagsl/configuration/README.md)
   * [Swerve Drive Configuration](configuring-yagsl/configuration/swerve-drive-configuration.md)
