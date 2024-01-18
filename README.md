@@ -44,6 +44,8 @@ We've put together some helpful guides for you to get setup with our product qui
 [getting-to-know-your-robot](configuring-yagsl/getting-to-know-your-robot/)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
+## YAGSL Online Installation
+
+```
+https://broncbotz3481.github.io/YAGSL-Lib/yagsl/yagsl.json
+```
