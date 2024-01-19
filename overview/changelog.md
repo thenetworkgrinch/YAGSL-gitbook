@@ -17,6 +17,7 @@ I highly encourage anyone who wants to help make YAGSL better to create pull req
 * [ ] Added `SwerveModule.getAbsoluteEncoder()` `SwerveDrive.getMaximumVelocity()` and `SwerveDrive.getMaximumAngularVelocity()`.
 * [ ] Reccommend Tuner X when a compatible Tuner X config is used.
 * [ ] Added ability to change heading correction deadband.
+* [ ] Simplified `SwerveMath.calculateDegreesPerRotation` and `SwerveMath.calculateMetersPerRotation` to exclude encoder resolution and add a default.
 
 ## 2024.4.2
 
