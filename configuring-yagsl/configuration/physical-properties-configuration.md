@@ -4,6 +4,10 @@
 
 This JSON configures the physical properties shared with all the Swerve Modules. It maps 1:1 with [`PhysicalPropertiesJson`](https://broncbotz3481.github.io/YAGSL/swervelib/parser/json/PhysicalPropertiesJson.html) which creates [`SwerveModulePhysicalCharacteristics`](https://broncbotz3481.github.io/YAGSL/swervelib/parser/SwerveModulePhysicalCharacteristics.html).
 
+{% hint style="info" %}
+Use the [standard-conversion-factors.md](../standard-conversion-factors.md "mention") page to set the conversion factors for your robot if you're using a COTS swerve module!
+{% endhint %}
+
 ## Fields
 
 | Name                             | Units                                                                                                                                                                     | Required | Description                                                                                            |
