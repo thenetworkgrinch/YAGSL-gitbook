@@ -1,4 +1,4 @@
-# How to tune PIDF Values
+# How to tune PIDF
 
 ## The basic idea
 
@@ -20,6 +20,22 @@ Manual tuning typically follows this process:
 1. Set $$P$$, $$I$$ and $$D$$ to zero.
 2. Increase $$P$$ until the output **starts** to **oscillate** **around** the setpoint.
 3. Increase $$D$$ as much as possible **without** introducing **jittering** to the response.
+
+## WPI Walkthrough
+
+WPILib has lots of great documentation including PID so I would highly encourage you to check it out!
+
+{% embed url="https://docs.wpilib.org/en/stable/docs/software/advanced-controls/introduction/introduction-to-pid.html" %}
+Basics of PID
+{% endembed %}
+
+{% embed url="https://docs.wpilib.org/en/stable/docs/software/advanced-controls/introduction/tuning-flywheel.html" %}
+Tuning Velocity, like the drive motors!
+{% endembed %}
+
+{% embed url="https://docs.wpilib.org/en/stable/docs/software/advanced-controls/introduction/tuning-turret.html" %}
+Tuning position, like the steering/angle/azimuth motors!
+{% endembed %}
 
 ## Starting Points
 
