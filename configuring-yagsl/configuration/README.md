@@ -49,6 +49,10 @@ Steps:
 
 </details>
 
+This may help you in your endeavors!
+
+{% file src="../../.gitbook/assets/SwerveDiagram.docx" %}
+
 ## Configuration Directory
 
 ### JSON Files
