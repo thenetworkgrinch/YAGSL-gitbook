@@ -30,7 +30,7 @@ Here is a challenge for you, how can you solve this misconfiguration?
 
  
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt="" width="331"><figcaption><p>Translating Left</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10).png" alt="" width="331"><figcaption><p>Translating right</p></figcaption></figure>
 
 </div>
 
