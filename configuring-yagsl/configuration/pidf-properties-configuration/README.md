@@ -32,8 +32,8 @@ TalonFX/Kraken/Falcon angle motors require a high PID (around \~`50` kP, and \~`
 }
 </code></pre>
 
-[how-to-tune-pidf-values.md](../../how-to-tune-pidf-values.md "mention")
+[how-to-tune-pidf.md](../../how-to-tune-pidf.md "mention")
 
-[^1]: For TalonFX motor controllers like Krakens and Falcons, this should be around `50`. See more information [how-to-tune-pidf-values.md](../../how-to-tune-pidf-values.md "mention")
+[^1]: For TalonFX motor controllers like Krakens and Falcons, this should be around `50`. See more information [how-to-tune-pidf.md](../../how-to-tune-pidf.md "mention")
 
-[^2]: For TalonFX motor controllers this should be around `0.32`. See more information [how-to-tune-pidf-values.md](../../how-to-tune-pidf-values.md "mention")
+[^2]: For TalonFX motor controllers this should be around `0.32`. See more information [how-to-tune-pidf.md](../../how-to-tune-pidf.md "mention")

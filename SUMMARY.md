@@ -32,7 +32,7 @@
   * [Device Configuration](configuring-yagsl/configuration/device-configuration.md)
 * [Code Setup](configuring-yagsl/code-setup.md)
 * [Standard Conversion Factors](configuring-yagsl/standard-conversion-factors.md)
-* [How to tune PIDF Values](configuring-yagsl/how-to-tune-pidf-values.md)
+* [How to tune PIDF](configuring-yagsl/how-to-tune-pidf.md)
 
 ## Devices
 
