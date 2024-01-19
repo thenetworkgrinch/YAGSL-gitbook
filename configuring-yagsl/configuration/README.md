@@ -22,6 +22,33 @@ If not your modules could end up like this!
 
 <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Modules flipped around</p></figcaption></figure>
 
+Here is a challenge for you, how can you solve this misconfiguration?
+
+<div>
+
+<figure><img src="../../.gitbook/assets/image (9).png" alt="" width="353"><figcaption><p>While rotating right</p></figcaption></figure>
+
+ 
+
+<figure><img src="../../.gitbook/assets/image (10).png" alt="" width="331"><figcaption><p>Translating Left</p></figcaption></figure>
+
+</div>
+
+<details>
+
+<summary>Solution</summary>
+
+
+
+<img src="../../.gitbook/assets/image (11).png" alt="" data-size="original">
+
+Steps:
+
+1. Invert 4 and 2.
+2. Swap 1 and 4.
+
+</details>
+
 ## Configuration Directory
 
 ### JSON Files
