@@ -6,6 +6,10 @@ I highly encourage anyone who wants to help make YAGSL better to create pull req
 
 {% embed url="https://github.com/BroncBotz3481/YAGSL-Example/pulls?q=is%3Apr+is%3Aclosed" %}
 
+## 2024.4.6
+
+* [ ] Simplified `SwerveMath.calculateDegreesPerRotation` and `SwerveMath.calculateMetersPerRotation` to exclude encoder resolution and add a default.
+
 ## 2024.4.5
 
 * [ ] Fix for TalonFX Angle motor control (by [@bhall-ctre](https://github.com/bhall-ctre), and @Wackyvert 2225 Mentor) .
@@ -17,7 +21,6 @@ I highly encourage anyone who wants to help make YAGSL better to create pull req
 * [ ] Added `SwerveModule.getAbsoluteEncoder()` `SwerveDrive.getMaximumVelocity()` and `SwerveDrive.getMaximumAngularVelocity()`.
 * [ ] Reccommend Tuner X when a compatible Tuner X config is used.
 * [ ] Added ability to change heading correction deadband.
-* [ ] Simplified `SwerveMath.calculateDegreesPerRotation` and `SwerveMath.calculateMetersPerRotation` to exclude encoder resolution and add a default.
 
 ## 2024.4.2
 
