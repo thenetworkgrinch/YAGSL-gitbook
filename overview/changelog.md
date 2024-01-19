@@ -9,6 +9,8 @@ I highly encourage anyone who wants to help make YAGSL better to create pull req
 ## 2024.4.6
 
 * [ ] Simplified `SwerveMath.calculateDegreesPerRotation` and `SwerveMath.calculateMetersPerRotation` to exclude encoder resolution and add a default.
+* [ ] Changed `Module[...] Raw Motor Encoder` to `Module[...] Raw Angle Encoder`.
+* [ ] Added `Module[...] Raw Drive Encoder`
 
 ## 2024.4.5
 
