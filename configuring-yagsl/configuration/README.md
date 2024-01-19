@@ -16,6 +16,12 @@ We also maintain a repository for known working configurations here!
 
 {% embed url="https://github.com/BroncBotz3481/YAGSL-Configs" %}
 
+## Make sure you know what module is what!
+
+If not your modules could end up like this!
+
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Modules flipped around</p></figcaption></figure>
+
 ## Configuration Directory
 
 ### JSON Files
