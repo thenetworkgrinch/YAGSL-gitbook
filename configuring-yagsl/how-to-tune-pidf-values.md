@@ -2,7 +2,7 @@
 
 ## The basic idea
 
-YAGSL has PIDF values in `pidfproperties.json` within the swerve module folder.
+YAGSL has PIDF values in [`pidfproperties.json`](configuration/pidf-properties-configuration/) within the swerve module folder.
 
 This has been hashed and boiled down to the simplest form like this before.&#x20;
 
