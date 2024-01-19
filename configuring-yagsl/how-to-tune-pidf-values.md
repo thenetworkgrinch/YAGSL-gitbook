@@ -18,8 +18,8 @@ Another good way to describe it [from CTRE](https://pro.docs.ctr-electronics.com
 Manual tuning typically follows this process:
 
 1. Set $$P$$, $$I$$ and $$D$$ to zero.
-2. Increase $$P$$ until the output starts to oscillate around the setpoint.
-3. Increase $$D$$ as much as possible without introducing jittering to the response.
+2. Increase $$P$$ until the output **starts** to **oscillate** **around** the setpoint.
+3. Increase $$D$$ as much as possible **without** introducing **jittering** to the response.
 
 ## Starting Points
 
