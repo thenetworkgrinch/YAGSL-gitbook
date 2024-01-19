@@ -63,7 +63,9 @@ import swervelib.telemetry.SwerveDriveTelemetry.TelemetryVerbosity;
 
 {% embed url="https://github.com/BroncBotz3481/YAGSL-Example/tree/main/src/main/java/frc/robot" %}
 
+{% hint style="info" %}
 Sometimes I like to include really advanced features in the example (like last year I had a drive to point command) so be sure to check back and see what we have done!
+{% endhint %}
 
 ## Drive Code
 
