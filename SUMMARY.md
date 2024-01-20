@@ -60,9 +60,8 @@
 * [Java API](https://broncbotz3481.github.io/YAGSL/)
 * [❌ Tuning PID with REV Hardware Client](product-guides/tuning-pid-with-rev-hardware-client.md)
 * [❌ Drive Code](product-guides/drive-code.md)
-* [❌ Autonomous with PathPlanner](product-guides/autonomous-with-pathplanner.md)
-* [❌ Heading Correction](product-guides/heading-correction.md)
 * [❌ Vision Processing](product-guides/vision-processing.md)
+* [PathPlanner](https://pathplanner.dev/home.html)
 
 ## Legacy Documentation
 
