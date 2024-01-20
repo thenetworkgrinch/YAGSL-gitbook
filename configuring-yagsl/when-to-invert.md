@@ -2,6 +2,10 @@
 
 Swerve Modules and Swerve Drives require some inversions to get working properly. The goal is to get everything to increase counter clockwise positive!
 
+{% hint style="warning" %}
+When your gears are grinding on the ground but not while on blocks and your wheels are facing and spinning in the right directions you may need to tune PID instead of inverting!
+{% endhint %}
+
 ## Swerve Motors
 
 When you spin your motor counterclockwise the value in Shuffleboard/NetworkTables `Module[...] Raw Absolute Encoder` and `Module[...] Raw Relative Encoder` should both increase.
