@@ -12,7 +12,9 @@ IF you are inverted incorrectly your modules may spin "out-of-control"
 
 ## Swerve Motors
 
-When you spin your motor counterclockwise the value in Shuffleboard/NetworkTables `Module[...] Raw Absolute Encoder` and `Module[...] Raw Relative Encoder` should both increase.
+When you spin your motor counterclockwise the value in Shuffleboard/NetworkTables `Module[...] Raw Absolute Encoder` and `Module[...] Raw Angle Encoder` should both increase.
+
+## Spin your module counterclockwise
 
 ### If the `Module[...] Raw Angle Encoder` is decreasing...
 
@@ -79,6 +81,8 @@ Invert the absolute encoder in the module JSON with `absoluteEncoderInverted` as
   }
 }
 </code></pre>
+
+## Spin your wheel counterclockwise
 
 ### If the `Module[...] Raw Drive Encoder` is decreasing...
 
