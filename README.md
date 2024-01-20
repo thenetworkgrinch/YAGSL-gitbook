@@ -44,6 +44,18 @@ We've put together some helpful guides for you to get setup with our product qui
 [getting-to-know-your-robot](configuring-yagsl/getting-to-know-your-robot/)
 {% endcontent-ref %}
 
+{% content-ref url="configuring-yagsl/configuration/" %}
+[configuration](configuring-yagsl/configuration/)
+{% endcontent-ref %}
+
+{% content-ref url="configuring-yagsl/dependency-installation.md" %}
+[dependency-installation.md](configuring-yagsl/dependency-installation.md)
+{% endcontent-ref %}
+
+{% content-ref url="configuring-yagsl/code-setup.md" %}
+[code-setup.md](configuring-yagsl/code-setup.md)
+{% endcontent-ref %}
+
 ## YAGSL Online Installation
 
 ```
