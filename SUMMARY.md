@@ -17,13 +17,13 @@
 * [Swerve Drive](fundamentals/swerve-drive.md)
 * [Swerve Modules](fundamentals/swerve-modules.md)
 
-## Brining up swerve
+## Bringing up swerve
 
-* [Preface](brining-up-swerve/preface.md)
-* [❌ Check your motors](brining-up-swerve/check-your-motors.md)
-* [❌ Check your gyroscope](brining-up-swerve/check-your-gyroscope.md)
-* [❌ Swerve Information](brining-up-swerve/swerve-information.md)
-* [❌ Creating your first configuration](brining-up-swerve/creating-your-first-configuration.md)
+* [Preface](bringing-up-swerve/preface.md)
+* [❌ Check your motors](bringing-up-swerve/check-your-motors.md)
+* [❌ Check your gyroscope](bringing-up-swerve/check-your-gyroscope.md)
+* [❌ Swerve Information](bringing-up-swerve/swerve-information.md)
+* [❌ Creating your first configuration](bringing-up-swerve/creating-your-first-configuration.md)
 
 ## Configuring YAGSL
 
