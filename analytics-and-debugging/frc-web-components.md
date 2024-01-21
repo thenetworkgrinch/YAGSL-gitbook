@@ -5,9 +5,9 @@ FRC Web Components is an easy way to visualize the Swerve Drive and give helpful
 ## Download
 
 To download and install this please choose the correct file and run it from this page.\
-[https://github.com/frc-web-components/app/releases/tag/app-v0.6.0](https://github.com/frc-web-components/app/releases/tag/app-v0.6.0)
 
-{% @github-files/github-code-block %}
+
+{% embed url="https://github.com/frc-web-components/app/releases/latest" %}
 
 ## Configuring FRC Web Components
 
