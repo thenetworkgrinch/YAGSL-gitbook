@@ -17,6 +17,10 @@
 * [Swerve Drive](fundamentals/swerve-drive.md)
 * [Swerve Modules](fundamentals/swerve-modules.md)
 
+## Brining up swerve
+
+* [Preface](brining-up-swerve/preface.md)
+
 ## Configuring YAGSL
 
 * [Getting to know your robot](configuring-yagsl/getting-to-know-your-robot/README.md)
