@@ -20,6 +20,10 @@
 ## Brining up swerve
 
 * [Preface](brining-up-swerve/preface.md)
+* [❌ Check your motors](brining-up-swerve/check-your-motors.md)
+* [❌ Check your gyroscope](brining-up-swerve/check-your-gyroscope.md)
+* [❌ Swerve Information](brining-up-swerve/swerve-information.md)
+* [❌ Creating your first configuration](brining-up-swerve/creating-your-first-configuration.md)
 
 ## Configuring YAGSL
 
