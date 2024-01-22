@@ -90,7 +90,7 @@ If your robot spins out of control without any controller input you probably nee
 | [NavX](gyroscope/navx.md)           | `navx` , `navx_spi` | roboRIO MXP SPI                                    |
 | [NavX ](gyroscope/navx.md)          | `navx_i2c`          | I2C port on the roboRIO MXP. Not recommended!      |
 | [NavX](gyroscope/navx.md)           | `navx_usb`          | Serial over USB Cable to roboRIO (not recommended) |
-| [NavX](gyroscope/navx.md)           | `navx_mxp`          | Serial over roboRIO MXP                            |
+| [NavX](gyroscope/navx.md)           | `navx_mxp_serial`   | Serial over roboRIO MXP                            |
 | [ADIS16448](gyroscope/adis16448.md) | `adis16448`         | roboRIO MXP                                        |
 | [ADIS16470](gyroscope/adis16470.md) | `adis16470`         | roboRIO SPI port                                   |
 | [ADXRS450](gyroscope/adxrs450.md)   | `adxrs450`          | roboRIO SPI port.                                  |
