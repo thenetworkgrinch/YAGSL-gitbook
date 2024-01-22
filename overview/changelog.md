@@ -6,6 +6,16 @@ I highly encourage anyone who wants to help make YAGSL better to create pull req
 
 {% embed url="https://github.com/BroncBotz3481/YAGSL-Example/pulls?q=is%3Apr+is%3Aclosed" %}
 
+## Contributing
+
+YAGSL development is done on the YAGSL-Example repository's `dev` branch here.
+
+{% embed url="https://github.com/BroncBotz3481/YAGSL-Example/tree/dev" %}
+YAGSL-Example dev branch
+{% endembed %}
+
+All PR's should be based off of and merged into here. YAGSL is propogated often to the other repositories.
+
 ## 2024.4.6.1
 
 * [ ] Fixed `SwerveDrive.resetOdometry` and utilize the pose estimation instead. (PR [#142](https://github.com/BroncBotz3481/YAGSL-Example/pull/142) by [@MarshallTappen](https://github.com/MarshallTappen) and @nstrike [commit](https://github.com/BroncBotz3481/YAGSL-Example/commit/039e5c2867690cfdd5ebd0c1e84eefc6b165adee))
