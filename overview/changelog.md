@@ -24,6 +24,8 @@ All PR's should be based off of and merged into here. YAGSL is propogated often 
 * [ ] Fixed `SwerveDrive.addVisionMeasurement` with vision standard deviations.
 * [ ] Added IMU readings to SmartDashboard via `Raw IMU Yaw` (gyro with invert applied) and `Adjusted IMU Yaw` (pose estimation rotation).
 * [ ] Changed `navx_mxp` to `navx_mxp_serial` to notate that it's serial over MXP.
+* [ ] Added warning when using `navx_mxp_serial` or `navx_usb`.
+* [ ] Added back wheel speed desaturation.
 
 ## 2024.4.6
 
