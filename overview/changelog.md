@@ -8,7 +8,7 @@ I highly encourage anyone who wants to help make YAGSL better to create pull req
 
 ## Contributing
 
-YAGSL development is done on the YAGSL-Example repository's `dev` branch here.
+YAGSL development is done on the YAGSL-Example repository's `dev` branch here at `src/main/java/swervelib`.
 
 {% embed url="https://github.com/BroncBotz3481/YAGSL-Example/tree/dev" %}
 YAGSL-Example dev branch
