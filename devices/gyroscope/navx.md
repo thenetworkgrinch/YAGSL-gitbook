@@ -14,6 +14,12 @@ You now have a NavX, congratulations! Time to configure and calibrate it, if you
 
 The java class for the NavX is `AHRS` imported from `import com.kauailabs.navx.frc.AHRS;`
 
+## NavX Omni-Mount
+
+NavX can reconfigure the yaw to any position! Here is their guide one how.
+
+{% embed url="https://pdocs.kauailabs.com/navx-mxp/installation/omnimount/" %}
+
 ## NavXUI Installation
 
 Java 1.7 or higher is required
