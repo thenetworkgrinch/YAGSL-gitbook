@@ -53,6 +53,12 @@ This may help you in your endeavors!
 
 {% file src="../../.gitbook/assets/SwerveDiagram.docx" %}
 
+## Orient your swerve modules correctly!
+
+To correctly get the `absoluteEncoderOffset` your swerve modules must be facing this way while reading the values.
+
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
 ## Configuration Directory
 
 ### JSON Files

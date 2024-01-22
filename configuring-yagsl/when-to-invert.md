@@ -16,6 +16,10 @@ When you spin your motor counterclockwise the value in Shuffleboard/NetworkTable
 
 ## Spin your module counterclockwise
 
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Purple shows the way your bevels should be facing</p></figcaption></figure>
+
+The swerve drive should be on it's side or otherwise lifted. Your swerve module bevels must be facing the left like shown. To rotate the swerve modules they must be rotated counterclockwise like shown.
+
 ### If the `Module[...] Raw Angle Encoder` is decreasing...
 
 Invert your angle motor for every module that is decreasing!

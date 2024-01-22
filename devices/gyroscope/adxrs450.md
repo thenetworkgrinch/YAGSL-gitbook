@@ -14,7 +14,7 @@ Official documentation
 WPILib Documentation on how to initialize it
 {% endembed %}
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Single-axis reading.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Single-axis reading.</p></figcaption></figure>
 
 The ADXRS450 is an old single axis gyroscope meaning it must be parallel to the earth for it to work!
 
