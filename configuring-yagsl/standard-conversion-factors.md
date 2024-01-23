@@ -1,9 +1,9 @@
-# Standard Conversion Factor
+# Standard Conversion Factors
 
 This page serves a standard set of conversion factors for a few typical modules.
 
 {% hint style="warning" %}
-IF you are using absolute encoders attached to your SparkMax the `angle` conversion factor will be `360`!
+IF you are using absolute encoders attached to your SparkMAX data port (on the top of the SparkMAX) the `angle` conversion factor should be set to `360`!
 {% endhint %}
 
 ## How I found these?
