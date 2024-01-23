@@ -269,6 +269,10 @@ $$
 DriveConversionFactor = \frac{\frac{1_{meter}}{1_{sec}}}{\frac{1_{rot}}{1_{min}}} = \frac{1_{rot}}{1_{min}} * \frac{1_{rot}}{6.75_{rot}} * \frac{60_{sec}}{1_{min}} * \frac{\pi*d_{meters}}{1_{rot}}
 $$
 
+{% hint style="warning" %}
+The drive conversion factor for YAGSL converts rotations to meters, not RPM to MPS like the example bellow.
+{% endhint %}
+
 All of this is the long way to show you that math is important and your conversion factors are not magic numbers!!
 
 {% hint style="warning" %}
