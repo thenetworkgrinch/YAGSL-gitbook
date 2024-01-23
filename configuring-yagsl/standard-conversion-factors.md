@@ -9,7 +9,7 @@ For example an MK4i L1 with an absolute encoder attached to the SparkMAX (like a
 
 ```json
 "conversionFactor": {
-	"angle": 16.8,
+	"angle": 360,
 	"drive": 0.03921201641335663
 }
 ```
