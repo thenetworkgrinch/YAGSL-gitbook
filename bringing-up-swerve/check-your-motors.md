@@ -15,3 +15,7 @@ When you spin your motor while the robot is disabled you will notice `Motor[...]
 {% content-ref url="../configuring-yagsl/when-to-invert.md" %}
 [when-to-invert.md](../configuring-yagsl/when-to-invert.md)
 {% endcontent-ref %}
+
+## Conversion Factors and your motors
+
+Conversion factors are applied to your motor convert from native units (usually _**rotations**_) to degrees for steering/azimuth/angle motors, and meters for drive motors. Conversion factors are only relevant to motor controllers, except if there is an absolute encoder attached to your motor controller.
