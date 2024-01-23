@@ -35,12 +35,38 @@ For example an MK4i L1 with an absolute encoder attached to the SparkMAX (like a
 
 ## MAX Swerve
 
+{% hint style="warning" %}
+These conversion factors assume you are using 3in wheels!
+{% endhint %}
+
+{% tabs %}
+{% tab title="12T" %}
 ```json
 "conversionFactor": {
     "angle": 360,
-    "drive": 0.047286787200699704
-  }
+    "drive": 0.04352533821882586
+}
 ```
+{% endtab %}
+
+{% tab title="13T" %}
+```json
+"conversionFactor": {
+    "angle": 360,
+    "drive": 0.04712388980384689
+}
+```
+{% endtab %}
+
+{% tab title="14T" %}
+```json
+"conversionFactor": {
+    "angle": 360,
+    "drive": 0.05082576649756735
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ## Swerve Drive Specialties (SDS)
 
