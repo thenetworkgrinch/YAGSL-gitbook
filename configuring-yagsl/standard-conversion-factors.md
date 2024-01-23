@@ -4,6 +4,15 @@ This page serves a standard set of conversion factors for a few typical modules.
 
 {% hint style="warning" %}
 IF you are using absolute encoders attached to your SparkMAX data port (on the top of the SparkMAX) the `angle` conversion factor should be set to `360`!
+
+For example an MK4i L1 with an absolute encoder attached to the SparkMAX (like a canandcoder) should be set with these conversion factors.
+
+```json
+"conversionFactor": {
+	"angle": 16.8,
+	"drive": 0.03921201641335663
+}
+```
 {% endhint %}
 
 ## How I found these?
@@ -41,12 +50,11 @@ These conversion factors assume you are using 4in wheels!&#x20;
 
 {% tabs %}
 {% tab title="MK4i L1 " %}
-```json
-"conversionFactor": {
-	"angle": 16.8,
+<pre class="language-json"><code class="lang-json"><strong>"conversionFactor": {
+</strong>	"angle": 16.8,
 	"drive": 0.03921201641335663
 }
-```
+</code></pre>
 {% endtab %}
 
 {% tab title="MK4i L2" %}
