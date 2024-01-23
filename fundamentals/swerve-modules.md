@@ -251,6 +251,8 @@ Kahn Academy Explanation of Dimensional Analysis for unit conversions
 
 Swerve Modules are given a [`SwerveModuleState`](https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/SwerveModuleState.html) object to set the velocity (Meters per Second) and a Angle (which we will give as degrees for simplicity) of the module. Which means we must convert native units (in our case rotations, and rotations per minute) to the velocity and angle units. We also know the gear ratio of which the motor runs to get a complete wheel rotation.
 
+The steering conversion factor takes _**rotations**_ of the rotor (or absolute encoder if attached to the sparkmax dataport) and converts them to _**degrees**_.
+
 For this example we will assume the gear ratio is `12.8:1` [(SDS MK4 Steering Ratio)](https://www.swervedrivespecialties.com/collections/kits/products/mk4-swerve-module) which means the rotor spins `12.8` times to complete one mechanism rotation.
 
 $$
@@ -258,6 +260,8 @@ SteeringConverionFactor = \frac{1_{degree}}{1_{rot}} = \frac{1_{rot}}{12.8_{rot}
 $$
 
 
+
+The drive conversion factor will take _**rotations/minute**_ given by the motor encoder and convert them to _**meters/second**_.
 
 For the following example we will use the gear ratio `6.75:1` [(SDS MK4 L2 Drive Ratio)](https://www.swervedrivespecialties.com/collections/kits/products/mk4-swerve-module) which means the rotor spins `6.75` times for the wheel to complete a rotation.
 
