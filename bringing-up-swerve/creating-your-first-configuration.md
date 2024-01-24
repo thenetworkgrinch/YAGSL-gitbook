@@ -80,7 +80,7 @@ _Note: When viewed from the top, make sure the sides of the wheel with the bevel
    <td>
    </td>
    <td colspan="4" >
-<strong>Location (Inches)</strong>
+<strong>Location (inches)</strong>
    </td>
   </tr>
   <tr>
