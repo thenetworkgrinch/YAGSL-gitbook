@@ -163,9 +163,9 @@ _Note: For Absolute Encoders attached **directly** to the dataport on the SparkM
    </td>
    <td><strong>Encoder Resolution (CPR)</strong>
    </td>
-   <td><strong>Gear Ratio</strong>
-   </td>
    <td><strong>Conversion Factor</strong>
+   </td>
+   <td><strong>Gear Ratio</strong>
    </td>
   </tr>
   <tr>
