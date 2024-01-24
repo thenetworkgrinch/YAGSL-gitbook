@@ -8,7 +8,7 @@ I strongly suggest you find the information from the [getting-to-know-your-robot
 
 ## Motors should spin counter clockwise positive
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption><p>Motors with purple bevels</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption><p>The left and right are physical left and right.</p></figcaption></figure>
 
 When you spin your motor while the robot is disabled you will notice `Motor[...] Raw Angle Encoder` (angle/steering/azimuth relative encoder) and `Motor[...] Raw Absolute Encoder` (absolute encoder) . Both of these should increase while the motor is spun counter clockwise. For more information see here.
 
