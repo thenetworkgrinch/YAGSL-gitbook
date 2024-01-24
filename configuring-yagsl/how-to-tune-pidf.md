@@ -1,5 +1,11 @@
 # How to tune PIDF
 
+## An untuned PID can make your modules do this.
+
+{% embed url="https://eu-central.storage.cloudconvert.com/tasks/355c3e04-29fd-4427-901b-14e0621bcbcd/pidIssue.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20240124%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20240124T193819Z&X-Amz-Expires=86400&X-Amz-Signature=11c11247798c8ae927a391740212c048e2c0007d700cedce0082cde51df458d2&X-Amz-SignedHeaders=host&response-content-disposition=inline%3B%20filename%3D%22pidIssue.mp4%22&response-content-type=video%2Fmp4&x-id=GetObject" %}
+P is so high it bypasses the setpoint and wraps back around
+{% endembed %}
+
 ## The basic idea
 
 YAGSL has PIDF values in [`pidfproperties.json`](configuration/pidf-properties-configuration/) within the swerve module folder.
