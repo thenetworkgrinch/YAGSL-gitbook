@@ -14,6 +14,21 @@ IF you are inverted incorrectly your modules or robot may spin "out-of-control"
 
 When you spin your motor counterclockwise the value in Shuffleboard/NetworkTables `Module[...] Raw Absolute Encoder` and `Module[...] Raw Angle Encoder` should both increase.
 
+## How to open Shuffleboard
+
+1. Open shuffleboard.
+2.
+
+    <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Open network tables</p></figcaption></figure>
+
+
+3.
+
+    <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+
+4. Take note of the `Module[...] Raw Absolute Encoder` value's and use them for `absoluteEncoderOffset` in the module JSONs.
+
 ## Spin your module counterclockwise
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Purple shows the way your bevels should be facing (photo by Team 2445)</p></figcaption></figure>
