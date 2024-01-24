@@ -17,6 +17,8 @@ This has been hashed and boiled down to the simplest form like this before.&#x20
 * D: if you’re getting close to where you want to be, slow down.
   * [Video](https://www.youtube.com/watch?v=qKy98Cbcltw) found by 78 found by [this CD Post](https://www.chiefdelphi.com/t/finally-i-understand-pid/450811)
 
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+
 ## Tuning PIDF
 
 Another good way to describe it [from CTRE](https://pro.docs.ctr-electronics.com/en/latest/docs/api-reference/device-specific/talonfx/closed-loop-requests.html) is&#x20;
