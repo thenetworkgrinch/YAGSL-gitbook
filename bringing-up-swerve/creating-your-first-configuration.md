@@ -205,8 +205,8 @@ _Note: For Absolute Encoders attached **directly** to the dataport on the SparkM
     * Rotate the _drive_ wheel **CCW** (moving “forward”)
         1. The built-in encoder value should **increase**. If not, invert the drive motor.
     * Rotate the _angle_ wheel **CCW** (when viewed from the top)
-        2. The built-in encoder value should **increase**. If not, invert the angle motor.
-        3. The absolute encoder value should **increase. **If not, invert the absolute encoder.
+        1. The built-in encoder value should **increase**. If not, invert the angle motor.
+        2. The absolute encoder value should **increase. **If not, invert the absolute encoder.
     * Rotate the entire _robot_ **CCW**. The gyro angle (yaw) should **increase**. If not, invert the IMU
 
 _Note: If you are using the hardware utilities for accessing the motors controllers and/or absolute encoders, the RoboRio must **not** be active on the CAN bus. The most reliable way to disable the RoboRio is to temporarily disconnect it from power._
