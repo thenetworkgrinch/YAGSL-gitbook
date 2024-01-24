@@ -51,7 +51,7 @@ _Note: When viewed from the top, make sure the sides of the wheel with the bevel
    </td>
   </tr>
   <tr>
-   <td><em>_Absolute Encoder_</em>
+   <td><em>Absolute Encoder</em>
 
    </td>
    <td>
