@@ -1,5 +1,9 @@
 # Flowcharts
 
+## Swerve Drive Diagram
+
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+
 ## Swerve Modules
 
 ### Swerve modules spinning "out of control"
