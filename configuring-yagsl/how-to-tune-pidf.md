@@ -6,6 +6,10 @@
 P is so high it bypasses the setpoint and wraps back around
 {% endembed %}
 
+{% hint style="warning" %}
+Swerve steering/angle/azimuth motors have PID wrapping enabled at the topmost and bottommost point (e.g "front" and "back") when tuning your PID you may want to test with left or right translation.
+{% endhint %}
+
 ## The basic idea
 
 YAGSL has PIDF values in [`pidfproperties.json`](configuration/pidf-properties-configuration/) within the swerve module folder.
