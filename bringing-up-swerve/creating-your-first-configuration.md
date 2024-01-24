@@ -200,8 +200,8 @@ _Note: For Absolute Encoders attached **directly** to the dataport on the SparkM
 
 
 
-6. Set/Verify the CAN IDs for each module
-7. Check Inversion
+1. Set/Verify the CAN IDs for each module
+2. Check Inversion
     * Rotate the _drive_ wheel **CCW** (moving “forward”)
         1. The built-in encoder value should **increase**. If not, invert the drive motor.
     * Rotate the _angle_ wheel **CCW** (when viewed from the top)
