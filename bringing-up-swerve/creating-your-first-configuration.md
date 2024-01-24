@@ -183,6 +183,7 @@ _Note: For Absolute Encoders attached **directly** to the dataport on the SparkM
   <tr>
    <td><em>Angle</em>
    </td>
+     N/A
    <td>
    </td>
    <td>
