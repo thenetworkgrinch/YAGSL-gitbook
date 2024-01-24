@@ -17,7 +17,7 @@ Compliments of the [DevilBotz 2876]([https://devilbotz.org/](https://www.theblue
 
 
 ## Swerve Orientation Diagram
-
+![DevilBotz 2876 Swerve Orientation Diagram](DevilBotz 2876 Swerve Orientation Diagram.svg)
 _Note: When viewed from the top, make sure the sides of the wheel with the bevel gear are pointing to the **left**_
 
 
