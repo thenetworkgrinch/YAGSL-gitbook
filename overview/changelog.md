@@ -20,6 +20,7 @@ All PR's should be based off of and merged into here. YAGSL is propogated often 
 
 * [ ] Fixed Pigeon2Swerve only using X acceleration (PR [#146](https://github.com/BroncBotz3481/YAGSL-Example/pull/146#event-11577147896) by [@dezash123](https://github.com/dezash123))
 * [ ] Prevent drive motors from moving when `absoluteEncoderOffset` is not tuned. (Found by [@fovea1959](https://github.com/fovea1959))
+* [ ] Updated javadocs for `SwerveDrive.addVisionMeasurement` so that they reflect the latest changes.
 
 ## 2024.4.6.1
 
