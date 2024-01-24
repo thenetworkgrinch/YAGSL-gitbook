@@ -22,17 +22,19 @@ If not your modules could end up like this!
 
 <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Modules flipped around</p></figcaption></figure>
 
+This happens when you input module locations incorrectly due to where the gyroscope actually is on the robot or you have the wrong CANID's in the wrong relative location of the robot. **The robot determines its own directions, you do not.**
+
+<details>
+
+<summary>Challenge</summary>
+
+
+
 Here is a challenge for you, how can you solve this misconfiguration?
 
-<div>
+<img src="../../.gitbook/assets/image (9).png" alt="While rotating right" data-size="original"><img src="../../.gitbook/assets/image (10).png" alt="Translating right" data-size="original">
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt="" width="353"><figcaption><p>While rotating right</p></figcaption></figure>
-
- 
-
-<figure><img src="../../.gitbook/assets/image (10).png" alt="" width="331"><figcaption><p>Translating right</p></figcaption></figure>
-
-</div>
+</details>
 
 <details>
 
