@@ -20,29 +20,21 @@ Updated: 2024-01-24
 
 ## Swerve Orientation Diagram
 
-&#x20;_Note: When viewed from the top, make sure the sides of the wheel with the bevel gear are pointing to the **left**_
+{% hint style="warning" %}
+_Note: When viewed from the top, make sure the sides of the wheel with the bevel gear are pointing to the **left**_
+{% endhint %}
 
 <figure><img src="swerve-orientation-diagram-devilbotz-2876.png" alt=""><figcaption></figcaption></figure>
 
 ### Step 1: Module Types
 
-|                    | **Model, Version, Etc** |
-| ------------------ | ----------------------- |
-| _Motor_            |                         |
-| _Controller_       |                         |
-| _Absolute Encoder_ |                         |
-| _IMU_              |                         |
+<table data-header-hidden data-full-width="true"><thead><tr><th></th><th></th></tr></thead><tbody><tr><td></td><td><strong>Model, Version, Etc</strong></td></tr><tr><td><em>Motor</em></td><td></td></tr><tr><td><em>Controller</em></td><td></td></tr><tr><td><em>Absolute Encoder</em></td><td></td></tr><tr><td><em>IMU</em></td><td></td></tr></tbody></table>
 
 ### Step 2: Build Specific Details
 
 1. Measure the module center relative to the **robot center**
 
-| Module             | X "Front" (Inches) | Y "Left" (Inches) |
-| ------------------ | ------------------ | ----------------- |
-| _Front Left (FL)_  | +                  | +                 |
-| _Front Right (FR)_ | +                  | -                 |
-| _Back Left (BL)_   | -                  | +                 |
-| _Back Right (BR)_  | -                  | -                 |
+<table data-full-width="true"><thead><tr><th>Module</th><th>X "Front" (Inches)</th><th>Y "Left" (Inches)</th></tr></thead><tbody><tr><td><em>Front Left (FL)</em></td><td>+</td><td>+</td></tr><tr><td><em>Front Right (FR)</em></td><td>+</td><td>-</td></tr><tr><td><em>Back Left (BL)</em></td><td>-</td><td>+</td></tr><tr><td><em>Back Right (BR)</em></td><td>-</td><td>-</td></tr></tbody></table>
 
 2. Measure the wheel diameter _in meters_
 3. [Determine the _reported_ internal encoder resolution](#user-content-fn-1)[^1]
@@ -56,10 +48,7 @@ Updated: 2024-01-24
 _Note: For Absolute Encoders attached **directly** to the dataport on the SparkMAX, the Conversion Factor is **`360`**_
 {% endhint %}
 
-| Motor   | Wheel Diameter (meters) | Gear Ratio | Encoder Resolution (CPR) | Conversion Factor |
-| ------- | ----------------------- | ---------- | ------------------------ | ----------------- |
-| _Drive_ |                         |            | 1                        |                   |
-| _Angle_ | **N/A**                 |            | 1                        |                   |
+<table data-full-width="true"><thead><tr><th>Motor</th><th align="center">Wheel Diameter (meters)</th><th>Gear Ratio</th><th align="center">Encoder Resolution (CPR)</th><th>Conversion Factor</th></tr></thead><tbody><tr><td><em>Drive</em></td><td align="center"></td><td></td><td align="center">1</td><td></td></tr><tr><td><em>Angle</em></td><td align="center"><strong>N/A</strong></td><td></td><td align="center">1</td><td></td></tr></tbody></table>
 
 ### Step 3: Electrical Characteristics
 
@@ -76,21 +65,9 @@ _Note: For Absolute Encoders attached **directly** to the dataport on the SparkM
 _Note: If you are using the hardware utilities for accessing the motors controllers and/or absolute encoders, the RoboRio must **not** be active on the CAN bus. The most reliable way to disable the RoboRio is to temporarily disconnect it from power._
 {% endhint %}
 
-| Module             | Motor CAN IDs | Motor CAN IDs | Encoder CAN/Channel ID |
-| ------------------ | ------------- | ------------- | ---------------------- |
-|                    | **Drive**     | **Angle**     | **Absolute Encoder**   |
-| _Front Left (FL)_  |               |               |                        |
-| _Front Right (FR)_ |               |               |                        |
-| _Back Left (BL)_   |               |               |                        |
-| _Back Right (BR)_  |               |               |                        |
+<table data-full-width="true"><thead><tr><th>Module</th><th>Motor CAN IDs</th><th>Motor CAN IDs</th><th>Encoder CAN/Channel ID</th></tr></thead><tbody><tr><td></td><td><strong>Drive</strong></td><td><strong>Angle</strong></td><td><strong>Absolute Encoder</strong></td></tr><tr><td><em>Front Left (FL)</em></td><td></td><td></td><td></td></tr><tr><td><em>Front Right (FR)</em></td><td></td><td></td><td></td></tr><tr><td><em>Back Left (BL)</em></td><td></td><td></td><td></td></tr><tr><td><em>Back Right (BR)</em></td><td></td><td></td><td></td></tr></tbody></table>
 
-| Module             | Inverted? |           |                      |         |
-| ------------------ | --------- | --------- | -------------------- | ------- |
-|                    | **Drive** | **Angle** | **Absolute Encoder** | **IMU** |
-| _Front Left (FL)_  |           |           |                      |         |
-| _Front Right (FR)_ |           |           |                      |         |
-| _Back Left (BL)_   |           |           |                      |         |
-| _Back Right (BR)_  |           |           |                      |         |
+<table data-full-width="true"><thead><tr><th>Module</th><th>Inverted?</th><th></th><th></th><th></th></tr></thead><tbody><tr><td></td><td><strong>Drive</strong></td><td><strong>Angle</strong></td><td><strong>Absolute Encoder</strong></td><td><strong>IMU</strong></td></tr><tr><td><em>Front Left (FL)</em></td><td></td><td></td><td></td><td></td></tr><tr><td><em>Front Right (FR)</em></td><td></td><td></td><td></td><td></td></tr><tr><td><em>Back Left (BL)</em></td><td></td><td></td><td></td><td></td></tr><tr><td><em>Back Right (BR)</em></td><td></td><td></td><td></td><td></td></tr></tbody></table>
 
 ### Step 4: Absolute Encoder Offsets
 
@@ -98,13 +75,7 @@ _Note: If you are using the hardware utilities for accessing the motors controll
 2. Manually Turn All 4 wheels so that they are all pointing forward and forward rotation results in increasing drive encoder values (see the black arrows in [Orientation Diagram](creating-your-first-configuration.md#swerve-orientation-diagram-1)).
 3. Measure the absolute encoder value for each module (the offset is the **negative** of the value reported)
 
-| Module             | Angle Absolute Offset |                     |
-| ------------------ | --------------------- | ------------------- |
-|                    | **(rotations 0-1)**   | **(degrees 0-360)** |
-| _Front Left (FL)_  |                       |                     |
-| _Front Right (FR)_ |                       |                     |
-| _Back Left (BL)_   |                       |                     |
-| _Back Right (BR)_  |                       |                     |
+<table data-full-width="true"><thead><tr><th>Module</th><th>Angle Absolute Offset</th><th></th></tr></thead><tbody><tr><td></td><td><strong>(rotations 0-1)</strong></td><td><strong>(degrees 0-360)</strong></td></tr><tr><td><em>Front Left (FL)</em></td><td></td><td></td></tr><tr><td><em>Front Right (FR)</em></td><td></td><td></td></tr><tr><td><em>Back Left (BL)</em></td><td></td><td></td></tr><tr><td><em>Back Right (BR)</em></td><td></td><td></td></tr></tbody></table>
 
 ### Step 5: Input data into the configuration webpage
 
