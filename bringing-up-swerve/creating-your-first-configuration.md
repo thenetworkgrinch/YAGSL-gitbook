@@ -6,6 +6,10 @@ Compliments of the [DevilBotz 2876](https://www.thebluealliance.com/team/2876/20
 
 Updated: 2024-01-24
 
+## Printable version
+
+{% file src="../.gitbook/assets/2024-01-24 DevilBotz 2876 Swerve Bring-Up Checklist.pdf" %}
+
 ## Resources
 
 * [ ] [YAGSL Wiki](https://yagsl.gitbook.io/yagsl/) - [https://yagsl.gitbook.io/yagsl/](https://yagsl.gitbook.io/yagsl/)
