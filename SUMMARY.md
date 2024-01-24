@@ -42,6 +42,7 @@
 * [Standard Conversion Factors](configuring-yagsl/standard-conversion-factors.md)
 * [How to tune PIDF](configuring-yagsl/how-to-tune-pidf.md)
 * [When to invert?](configuring-yagsl/when-to-invert.md)
+* [Flowcharts](configuring-yagsl/flowcharts.md)
 
 ## Devices
 

@@ -19,19 +19,19 @@ When you spin your motor counterclockwise the value in Shuffleboard/NetworkTable
 1. Open shuffleboard.
 2.
 
-    <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Open network tables</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>Open network tables</p></figcaption></figure>
 
 
 3.
 
-    <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 4. Take note of the `Module[...] Raw Absolute Encoder` value's and use them for `absoluteEncoderOffset` in the module JSONs.
 
 ## Spin your module counterclockwise
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Purple shows the way your bevels should be facing (photo by Team 2445)</p></figcaption></figure>
+<figure><img src="../bringing-up-swerve/swerve-orientation-diagram-devilbotz-2876.png" alt=""><figcaption><p>Purple shows the way your bevels should be facing (photo by Team 2876)</p></figcaption></figure>
 
 The swerve drive should be on it's side or otherwise lifted. Your swerve module bevels must be facing the left like shown. To rotate the swerve modules they must be rotated counterclockwise like shown.
 
@@ -163,5 +163,7 @@ You should notice the `Raw IMU Yaw` field in Shuffleboard increase. If it doesn'
   ]
 }
 </code></pre>
+
+
 
 [^1]: See more information [gyroscope.md](../devices/gyroscope.md "mention")
