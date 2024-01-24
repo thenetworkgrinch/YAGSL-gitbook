@@ -22,7 +22,7 @@ If not your modules could end up like this!
 
 <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Modules flipped around</p></figcaption></figure>
 
-This happens when you input module locations incorrectly due to where the gyroscope actually is on the robot or you have the wrong CANID's in the wrong relative location of the robot. **If this happens to you, you HAVE misconfigured your modules.**
+This happens when you input module locations incorrectly due to where the gyroscope is oriented on the robot or you have the wrong CANID's in the wrong relative location of the robot. **If this happens to you, you HAVE misconfigured your modules.**
 
 <details>
 
