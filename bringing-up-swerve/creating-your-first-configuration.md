@@ -144,7 +144,7 @@ _Note: When viewed from the top, make sure the sides of the wheel with the bevel
 
 
 
-2. Measure the wheel diameter
+2. Measure the wheel diameter _in meters_
 3. Determine the _reported_ internal encoder resolution
     * _Note: Most encoders now normalize the reported values to -1 to 1, so the Encoder Resolution when computing the conversion factors should generally be “1”. One known exception is the TalonSRX._
 4. Find the drive/angle gear ratio from the swerve module manufacturer specs
@@ -159,7 +159,7 @@ _Note: For Absolute Encoders attached **directly** to the dataport on the SparkM
   <tr>
    <td><strong>Motor</strong>
    </td>
-   <td><strong>Wheel Diameter</strong>
+   <td><strong>Wheel Diameter (meters)</strong>
    </td>
    <td><strong>Encoder Resolution (CPR)</strong>
    </td>
