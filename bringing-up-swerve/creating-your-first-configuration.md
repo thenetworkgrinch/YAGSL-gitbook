@@ -28,26 +28,38 @@ _Note: When viewed from the top, make sure the sides of the wheel with the bevel
 
 
 <table>
+
   <tr>
-   <td><em>Motor</em>
+   <td>
+   </td>
+   <td>**Model, Version, Etc**
+
+   </td>
+  </tr>
+  <tr>
+   <td>_Motor_
+
    </td>
    <td>
    </td>
   </tr>
   <tr>
-   <td><em>Controller</em>
+   <td>_Controller_
+
    </td>
    <td>
    </td>
   </tr>
   <tr>
-   <td><em>Absolute Encoder</em>
+   <td>_Absolute Encoder_
+
    </td>
    <td>
    </td>
   </tr>
   <tr>
-   <td><em>IMU</em>
+   <td>_IMU_
+
    </td>
    <td>
    </td>
