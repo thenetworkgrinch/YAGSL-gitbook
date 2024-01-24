@@ -17,7 +17,7 @@ Updated: 2024-01-24
     * _for configuring CanCoders and other CTR devices_
 
 
-## Swerve Orientation Diagram
+## Swerve Orientation Diagram [1]
 ![DevilBotz 2876 Swerve Orientation Diagram](swerve-orientation-diagram-devilbotz-2876.png)
 _Note: When viewed from the top, make sure the sides of the wheel with the bevel gear are pointing to the **left**_
 
@@ -315,8 +315,8 @@ _Note: If you are using the hardware utilities for accessing the motors controll
 
 
 1. Turn Robot On (Disabled so the wheels can be turned manually)
-2. Manually Turn All 4 wheels so that they are all pointing forward and forward rotation results in increasing drive encoder values (see the black arrows in [Orientation Diagram](#heading=h.u8eagn3t9su4)).
-3. Measure the absolute encoder value for each module (the offset is the **negative **of the value reported)
+2. Manually Turn All 4 wheels so that they are all pointing forward and forward rotation results in increasing drive encoder values (see the black arrows in [Orientation Diagram][1]).
+3. Measure the absolute encoder value for each module (the offset is the **negative** of the value reported)
 
 <table>
   <tr>
