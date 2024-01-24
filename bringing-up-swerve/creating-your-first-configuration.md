@@ -1,7 +1,7 @@
 # Creating your first configuration
 
 ## DevilBotz 2876 Swerve Bring-Up Checklist
-Compliments of the [DevilBotz 2876]([https://devilbotz.org/](https://www.thebluealliance.com/team/2876/2024)
+Compliments of the [DevilBotz 2876](https://www.thebluealliance.com/team/2876/2024)
 2024-01-24
 
 
