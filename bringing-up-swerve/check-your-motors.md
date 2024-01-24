@@ -8,7 +8,7 @@ I strongly suggest you find the information from the [getting-to-know-your-robot
 
 ## Motors should spin counter clockwise positive
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Motors with purple bevels</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Motors with purple bevels</p></figcaption></figure>
 
 When you spin your motor while the robot is disabled you will notice `Motor[...] Raw Angle Encoder` (angle/steering/azimuth relative encoder) and `Motor[...] Raw Absolute Encoder` (absolute encoder) . Both of these should increase while the motor is spun counter clockwise. For more information see here.
 
@@ -19,3 +19,36 @@ When you spin your motor while the robot is disabled you will notice `Motor[...]
 ## Conversion Factors and your motors
 
 Conversion factors are applied to your motor convert from native units (usually _**rotations**_) to degrees for steering/azimuth/angle motors, and meters for drive motors. Conversion factors are only relevant to motor controllers, except if there is an absolute encoder attached to your motor controller.
+
+## Special note to MAXSwerve teams!
+
+When you align and find the `absoluteEncoderOffset` for each module you may need to add or subtract `90` from the offset to correct the module position. The `absoluteEncoderInverted` must also be `true` in every module configuration as well.
+
+<pre class="language-json"><code class="lang-json">{
+  "drive": {
+    "type": "sparkmax",
+    "id": 12,
+    "canbus": null
+  },
+  "angle": {
+    "type": "sparkmax",
+    "id": 11,
+    "canbus": null
+  },
+  "encoder": {
+    "type": "attached",
+    "id": 0,
+    "canbus": null
+  },
+  "inverted": {
+    "drive": false,
+<strong>    "angle": false
+</strong>  },
+<strong>  "absoluteEncoderInverted": true,
+</strong>  "absoluteEncoderOffset": -90,
+  "location": {
+    "front": 12,
+    "left": -12
+  }
+}
+</code></pre>
