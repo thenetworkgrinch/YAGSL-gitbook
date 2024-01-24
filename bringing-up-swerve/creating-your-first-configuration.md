@@ -27,7 +27,7 @@ _Note: When viewed from the top, make sure the sides of the wheel with the bevel
 ### Step 1: Module Types
 
 
-<table style="width:100%">
+<table>
 
   <tr>
    <td>
