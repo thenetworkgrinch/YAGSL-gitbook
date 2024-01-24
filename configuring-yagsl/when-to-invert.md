@@ -7,7 +7,7 @@ When your gears are grinding on the ground but not while on blocks and your whee
 {% endhint %}
 
 {% hint style="warning" %}
-IF you are inverted incorrectly your modules may spin "out-of-control"
+IF you are inverted incorrectly your modules or robot may spin "out-of-control"
 {% endhint %}
 
 ## Swerve Motors
@@ -88,6 +88,10 @@ Invert the absolute encoder in the module JSON with `absoluteEncoderInverted` as
 
 ## Spin your wheel counterclockwise
 
+{% hint style="warning" %}
+Sometimes you may need to invert these if when you rotate the robot changes it's front/back while driving in field-oriented mode.
+{% endhint %}
+
 ### If the `Module[...] Raw Drive Encoder` is decreasing...
 
 Invert your drive motor for every module that is decreasing!
@@ -120,3 +124,29 @@ Invert your drive motor for every module that is decreasing!
   }
 }
 </code></pre>
+
+## Rotate your robot counterclockwise
+
+{% hint style="warning" %}
+IF this is wrong your robot WILL spin out of control, invert this to fix it.
+{% endhint %}
+
+You should notice the `Raw IMU Yaw` field in Shuffleboard increase. If it doesn't you need to invert your IMU like this.
+
+<pre class="language-json"><code class="lang-json">{
+  "imu": {
+    <a data-footnote-ref href="#user-content-fn-1">"type": "pigeon2"</a>,
+    "id": 13,
+    "canbus": "canivore"
+  },
+<strong>  "invertedIMU": true,
+</strong>  "modules": [
+    "frontleft.json",
+    "frontright.json",
+    "backleft.json",
+    "backright.json"
+  ]
+}
+</code></pre>
+
+[^1]: See more information [gyroscope.md](../devices/gyroscope.md "mention")
