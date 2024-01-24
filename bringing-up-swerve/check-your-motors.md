@@ -46,7 +46,9 @@ The absolute encoder offset is what allows your swerve module to maintain the wh
 {% hint style="warning" %}
 ## Special note to MAXSwerve teams!
 
-If you align using the MAXSwerve alignment tool and find the `absoluteEncoderOffset` for each module you may need to **+/-`90` from the `absoluteEncoderOffset`** to correct the module position. The `absoluteEncoderInverted` must also be `true` in every module configuration as well.
+**IF** the calibration bracket that comes with the max swerve modules it **WILL** make two of the wheels not face front to back!
+
+When you align using the calibration bracket and find the `absoluteEncoderOffset` for each module you may need to **+/-`90` from the `absoluteEncoderOffset`** to correct the module position. The `absoluteEncoderInverted` must also be `true` in every module configuration as well.
 
 <pre class="language-json"><code class="lang-json">{
   "drive": {
