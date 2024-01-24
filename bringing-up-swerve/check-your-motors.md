@@ -8,7 +8,7 @@ I strongly suggest you find the information from the [getting-to-know-your-robot
 
 ## Motors should spin counter clockwise positive
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Motors with purple bevels</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Motors with purple bevels</p></figcaption></figure>
 
 When you spin your motor while the robot is disabled you will notice `Motor[...] Raw Angle Encoder` (angle/steering/azimuth relative encoder) and `Motor[...] Raw Absolute Encoder` (absolute encoder) . Both of these should increase while the motor is spun counter clockwise. For more information see here.
 
@@ -20,10 +20,33 @@ When you spin your motor while the robot is disabled you will notice `Motor[...]
 
 Conversion factors are applied to your motor convert from native units (usually _**rotations**_) to degrees for steering/azimuth/angle motors, and meters for drive motors. Conversion factors are only relevant to motor controllers, except if there is an absolute encoder attached to your motor controller.
 
+## The Absolute Encoder Offset
+
+The absolute encoder offset is what allows your swerve module to maintain the wheel orientation between power offs. It is vital to a functioning swerve drive.&#x20;
+
+1. Line up all wheels so that the bevels are facing to the left like this.
+
+<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
+2. Deploy your code.
+3. **DO NOT ENABLE YOUR ROBOT!**
+4. Open shuffleboard.
+5.
+
+    <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Open network tables</p></figcaption></figure>
+
+
+6.
+
+    <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+
+7. Take note of the `Module[...] Raw Absolute Encoder` value's and use them for `absoluteEncoderOffset` in the module JSONs.
+
 {% hint style="warning" %}
 ## Special note to MAXSwerve teams!
 
-When you align and find the `absoluteEncoderOffset` for each module you may need to add or subtract `90` from the offset to correct the module position. The `absoluteEncoderInverted` must also be `true` in every module configuration as well.
+When you align and find the `absoluteEncoderOffset` for each module you may need to **+/-`90` from the `absoluteEncoderOffset`** to correct the module position. The `absoluteEncoderInverted` must also be `true` in every module configuration as well.
 
 <pre class="language-json"><code class="lang-json">{
   "drive": {

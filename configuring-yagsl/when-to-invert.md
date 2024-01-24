@@ -16,7 +16,7 @@ When you spin your motor counterclockwise the value in Shuffleboard/NetworkTable
 
 ## Spin your module counterclockwise
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Purple shows the way your bevels should be facing (photo by Team 2445)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Purple shows the way your bevels should be facing (photo by Team 2445)</p></figcaption></figure>
 
 The swerve drive should be on it's side or otherwise lifted. Your swerve module bevels must be facing the left like shown. To rotate the swerve modules they must be rotated counterclockwise like shown.
 
