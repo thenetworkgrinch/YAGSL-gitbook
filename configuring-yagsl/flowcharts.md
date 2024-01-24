@@ -8,6 +8,8 @@
 
 ## Swerve Module does not spin correctly.
 
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+
 I will add a flow chart for this later but essentially its.
 
 1. Are the CAN ID's, motor types, and absolute encoder types correct?
