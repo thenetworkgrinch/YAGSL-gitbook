@@ -23,7 +23,7 @@
 * [Swerve Information](bringing-up-swerve/swerve-information.md)
 * [Check your gyroscope](bringing-up-swerve/check-your-gyroscope.md)
 * [Check your motors](bringing-up-swerve/check-your-motors.md)
-* [❌ Creating your first configuration](bringing-up-swerve/creating-your-first-configuration.md)
+* [Creating your first configuration](bringing-up-swerve/creating-your-first-configuration.md)
 
 ## Configuring YAGSL
 
