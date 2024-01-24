@@ -20,6 +20,7 @@ When you spin your motor while the robot is disabled you will notice `Motor[...]
 
 Conversion factors are applied to your motor convert from native units (usually _**rotations**_) to degrees for steering/azimuth/angle motors, and meters for drive motors. Conversion factors are only relevant to motor controllers, except if there is an absolute encoder attached to your motor controller.
 
+{% hint style="warning" %}
 ## Special note to MAXSwerve teams!
 
 When you align and find the `absoluteEncoderOffset` for each module you may need to add or subtract `90` from the offset to correct the module position. The `absoluteEncoderInverted` must also be `true` in every module configuration as well.
@@ -52,3 +53,4 @@ When you align and find the `absoluteEncoderOffset` for each module you may need
   }
 }
 </code></pre>
+{% endhint %}
