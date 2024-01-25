@@ -18,6 +18,11 @@ All PR's should be based off of and merged into here. YAGSL is propagated often 
 
 ## 2024.4.6.3
 
+* [ ] Added `SwerveMotor.setVoltage` and `SwerveMotor.getVoltage` and `SwerveMotor.getAppliledOutput` to the `SwerveMotor` wrapper for future use with SysId.
+* [ ] Added functions to test setting voltage of all swerve module motor.
+* [ ] Added function to find coupling ratio of all swerve modules.
+* [ ] Added function to set steering/azimuth/angle using of all swerve modules.
+* [ ] Added function to find kV for drive motors to move.
 * [ ] Set the angle motor relative encoder position AFTER changing the conversion factor. (Issue [#155](https://github.com/BroncBotz3481/YAGSL-Example/issues/155))
 * [ ] Fixed module open loop control by sending `maxSpeed` to the module. (by @nstrike and [@MarshallTappen](https://github.com/MarshallTappen))
 * [ ] Fixed Pigeon2Swerve only using X acceleration (PR [#146](https://github.com/BroncBotz3481/YAGSL-Example/pull/146#event-11577147896) by [@dezash123](https://github.com/dezash123))
