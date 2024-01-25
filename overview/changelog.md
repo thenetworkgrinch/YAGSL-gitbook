@@ -14,10 +14,11 @@ YAGSL development is done on the YAGSL-Example repository's `dev` branch here at
 YAGSL-Example dev branch
 {% endembed %}
 
-All PR's should be based off of and merged into here. YAGSL is propogated often to the other repositories.
+All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
 ## 2024.4.6.3
 
+* [ ] Set the angle motor relative encoder position AFTER changing the conversion factor. (Issue [#155](https://github.com/BroncBotz3481/YAGSL-Example/issues/155))
 * [ ] Fixed module open loop control by sending `maxSpeed` to the module. (by @nstrike and [@MarshallTappen](https://github.com/MarshallTappen))
 * [ ] Fixed Pigeon2Swerve only using X acceleration (PR [#146](https://github.com/BroncBotz3481/YAGSL-Example/pull/146#event-11577147896) by [@dezash123](https://github.com/dezash123))
 * [ ] Prevent drive motors from moving when `absoluteEncoderOffset` is not tuned. (Found by [@fovea1959](https://github.com/fovea1959))
