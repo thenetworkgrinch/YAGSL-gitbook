@@ -18,6 +18,7 @@ All PR's should be based off of and merged into here. YAGSL is propogated often 
 
 ## 2024.4.6.3
 
+* [ ] Fixed module open loop control by sending `maxSpeed` to the module. (by @nstrike and [@MarshallTappen](https://github.com/MarshallTappen))
 * [ ] Fixed Pigeon2Swerve only using X acceleration (PR [#146](https://github.com/BroncBotz3481/YAGSL-Example/pull/146#event-11577147896) by [@dezash123](https://github.com/dezash123))
 * [ ] Prevent drive motors from moving when `absoluteEncoderOffset` is not tuned. (Found by [@fovea1959](https://github.com/fovea1959))
 * [ ] Updated javadocs for `SwerveDrive.addVisionMeasurement` so that they reflect the latest changes.
