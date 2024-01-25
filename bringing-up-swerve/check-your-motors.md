@@ -26,7 +26,7 @@ The absolute encoder offset is what allows your swerve module to maintain the wh
 
 1. Line up all wheels so that the bevels are facing to the left like this.
 
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 2. Deploy your code.
 3. **DO NOT ENABLE YOUR ROBOT!**
