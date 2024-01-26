@@ -7,7 +7,7 @@ description: What is a Swerve Module?
 You may see a bunch of different classes in other teams code which represent a `SwerveModule` and wonder why there isn't a standard class. There is a very good reason for that, every motor, absolute encoder, gear ratio, and installation can be different! Some teams try to prevent more issue's in their Swerve Drive than others because they had more time to debug it. YAGSL aims to take into account all common issues and address them in JSON configuration files.
 
 {% hint style="warning" %}
-If you are using a magnetic encoder ensure that the magnet is glued correctly so it does not slip. Modules typically have installation guides that can be found on their respective webpages.
+If you are using a magnetic encoder ensure that the magnet is glued correctly so it does not slip. Modules typically have installation guides that can be found on their respective webpages where the module was purchased.
 {% endhint %}
 
 ## What is in a Swerve Module?
@@ -44,11 +44,11 @@ All of these need to be set correctly in order to configure a Swerve Module prop
 
 ## Checklist
 
-* [ ] Steering/Azimuth/Angle motor[ increases with the absolute encoder](#user-content-fn-1)[^1] value.
+* [ ] Steering/Azimuth/Angle motor[ increases with the absolute encoder](#user-content-fn-1)[^1] value (see [When To Invert](../configuring-yagsl/when-to-invert.md)).
 * [ ] Steering/Azimuth/Angle motor increases counterclockwise positive when looking down on the robot.
 * [ ] Drive motors increase propelling the robot "forwards".
 * [ ] Absolute Encoders are securely seated into the Swerve Module.
-* [ ] Conversion Factor is correctly calculated (see Conversion Factor).
+* [ ] Conversion Factor is correctly calculated (see [Conversion Factor](https://yagsl.gitbook.io/yagsl/fundamentals/swerve-modules#conversion-factor)).
 * [ ] Absolute encoder offset of which the wheel facing the same way is configured.
 
 {% hint style="warning" %}

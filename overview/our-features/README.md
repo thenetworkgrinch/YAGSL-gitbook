@@ -1,17 +1,24 @@
+---
+description: >-
+  YAGSL offers a suite of features designed to streamline the implementation and
+  optimization of swerve drive systems, from easy installation to advanced
+  control and safety mechanisms we have it all.
+---
+
 # Our Features
 
 ## Documentation
 
 {% embed url="https://broncbotz3481.github.io/YAGSL/" %}
-Javadocs for YAGSL
+**Javadocs for YAGSL**
 {% endembed %}
 
 {% embed url="https://broncbotz3481.github.io/YAGSL-Example/" %}
-Tuning webpage to create configurations
+**Tuning webpage to create configurations**
 {% endembed %}
 
 {% embed url="https://github.com/BroncBotz3481/YAGSL-Example" %}
-Example code repository
+**Example code repository**
 {% endembed %}
 
 ## Easy installation
@@ -20,7 +27,7 @@ Just download all of the vendordeps from WPILib online with this list.[#vendor-u
 
 {% embed url="https://docs.wpilib.org/en/stable/docs/software/vscode-overview/3rd-party-libraries.html#rd-party-libraries" %}
 
-## Hardware Support
+## Supported Hardware
 
 ### Motors
 
@@ -36,8 +43,8 @@ Just download all of the vendordeps from WPILib online with this list.[#vendor-u
 * [Canandcoder (via SparkMAX)](https://docs.reduxrobotics.com/canandcoder/spark-max#using-the-pwm-output-with-spark-max)
 * [Canandcover (via CAN)](https://docs.reduxrobotics.com/canandcoder/getting-started)
 * [Throughbore](https://www.revrobotics.com/rev-11-1271/) (via PWM)
-* [Thrifty Absolute Magnetic Encoder](https://www.thethriftybot.com/products/thrifty-absolute-magnetic-encoder)  (via AnalogInput)
-* [MA3](https://www.andymark.com/products/ma3-absolute-encoder-with-cable)&#x20;
+* [Thrifty Absolute Magnetic Encoder](https://www.thethriftybot.com/products/thrifty-absolute-magnetic-encoder) (via AnalogInput)
+* [MA3](https://www.andymark.com/products/ma3-absolute-encoder-with-cable)
 * [SRX Mag](https://store.ctr-electronics.com/srx-mag-encoder/)
 * [AM Mag](https://www.andymark.com/products/am-mag-encoder)
 * Any PWM Absolute Encoder!
@@ -63,7 +70,7 @@ Just download all of the vendordeps from WPILib online with this list.[#vendor-u
 
 ## Control
 
-* PathPlanner is supported and there is a example in `YAGSL-Example`
+* PathPlanner is supported (see example in [`YAGSL-Example`](https://github.com/BroncBotz3481/YAGSL-Example))
 * Control can be based entirely off of desired angle compared to current angle (`SwerveController.getTargetSpeeds`) or passed directly to the `SwerveDrive` in the correct units.
 * The function `SwerveDrive.lockPose` moves all of the wheels to face inwards making the robot nearly impossible to move.
 * Drive motors can be set to coast or brake using the function `SwerveDrive.setMotorIdleMode`
@@ -91,7 +98,7 @@ Just download all of the vendordeps from WPILib online with this list.[#vendor-u
 ## Odometry
 
 * ~~`SwerveDrive.updateOdometry` should be called periodically (every 20ms)~~
-* `SwerveDrive.updateOdometry` is called every 20ms, the period can be changed via `SwerveDrive.setOdometryPeriod`.
+* `SwerveDrive.updateOdometry` is called every 20ms to ensure accurate tracking of the robot, the period can be changed via `SwerveDrive.setOdometryPeriod`.
 * To stop the odometry thread use `SwerveDrive.stopOdometryThread` and update odometry in a periodic.
 * To zero the gyroscope call `SwerveDrive.zeroGyro`
 * Robot centric velocity can be fetched via `SwerveDrive.getRobotVelocity` and field-centric is `SwerveDrive.getFieldVelocity`.

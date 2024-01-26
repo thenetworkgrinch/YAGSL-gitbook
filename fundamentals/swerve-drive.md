@@ -4,12 +4,20 @@ description: How does Swerve Drive work?
 
 # Swerve Drive
 
+## Introduction
+
 <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption><p>Swerve Drive simulation from YAGSL</p></figcaption></figure>
+
+* Swerve drives allow robots to move in any direction while facing any orientation, offering unparalleled agility on the field.
+
+<figure><img src="../.gitbook/assets/BmhK4k.gif" alt=""><figcaption><p>FRC 2910 Off Season Swerve Drive</p></figcaption></figure>
+
+## dfdgfdgdf
 
 ## Tips while building a Swerve Drive
 
-* Center the gyroscope in the robot, this will help prevent a small drift and ensure more accurate odometry.
-* Make sure the magnets (if you're using them) are glue'd in right!
+* Center the gyroscope in the robot, this will help prevent a small drift and ensure more accurate odometry as calculations are based on distances from your gyroscope to your modules.
+* Make sure the encoder magnets (if you're using them) are glue'd in right!
 * Set aside time, assume you will mess up building 1 module or otherwise need a spare during competitions.
 * Programming a Swerve Drive is hard, and while YAGSL tries to make it easier there are many things you must know to fully understand what you are doing!
 * Use the right tools for the job! Debugging a Swerve Drive is difficult enough by text only, try out other Dashboards like [AdvantageScope](https://github.com/Mechanical-Advantage/AdvantageScope/blob/main/docs/NAVIGATION.md), or [FRC Web Components](https://github.com/frc-web-components/app/releases) they have excellent visualization tools that are sure to help you out!
