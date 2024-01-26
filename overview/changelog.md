@@ -16,7 +16,7 @@ YAGSL-Example dev branch
 
 All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
-## 2024.4.6.4
+## 2024.4.7
 
 * [ ] Modules will stay in the previous position if the desired velocity is 0.
 * [ ] Cosine compensation is now reported through telemetry as expected.
