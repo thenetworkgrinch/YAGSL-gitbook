@@ -20,6 +20,7 @@ All PR's should be based off of and merged into here. YAGSL is propagated often 
 
 ## 2024.4.6.3
 
+* [ ] Modules will stay in the previous position if the desired velocity is 0.
 * [ ] Updated heading correction to use `getOdometryHeading()` instead of `getYaw()` (PR [#150](https://github.com/BroncBotz3481/YAGSL-Example/pull/150) by [@Blargleflakes](https://github.com/Blargleflakes)) This does impact heading correction PID values in `controllerproperties.json` and may NEED these value's increased by 50x.
 * [ ] Added ability to disable the cosine compensator via config files. (PR [#148](https://github.com/BroncBotz3481/YAGSL-Example/pull/148) by [@fovea1959](https://github.com/fovea1959))
 * [ ] Added `SwerveDrive.getGyro()` to return `SwerveIMU`.
