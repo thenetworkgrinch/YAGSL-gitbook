@@ -20,7 +20,7 @@ Swerve Drives move around by moving each wheel to a specific angle/azimuth and r
 
 ## What is a Swerve Drive?
 
-A Swerve Drive typically consists of 4 Swerve Modules (which are in essence a drive motor, a angle/azimuth motor, and an absolute encoder),  and a gyroscope (centered is best). The motors, absolute encoders, and gyroscope do not matter and can all work together with varying degrees of success. As a rule of thumb if you can stick to one system do it (all REV, all CTRE). This will give you the best feature set however they are not the same! For all other use cases YAGSL is the best choice because YAGSL was built with abstraction in mind to make all sensors and motor controllers functionally equivalent.&#x20;
+A Swerve Drive typically consists of 4 Swerve Modules (which are in essence a drive motor, a angle/azimuth motor, and an absolute encoder), and a gyroscope (centered is best). The motors, absolute encoders, and gyroscope do not matter and can all work together with varying degrees of success. As a rule of thumb if you can stick to one system do it (all REV, all CTRE). This will give you the best feature set however they are not the same! For all other use cases YAGSL is the best choice because YAGSL was built with abstraction in mind to make all sensors and motor controllers functionally equivalent.
 
 #### TL;DR
 
@@ -31,18 +31,23 @@ A swerve drive is composed of
   * [ ] Angle/Azimuth Motor (+ controller)
   * [ ] Drive Motor
   * [ ] Absolute Encoder
+* [ ] Control System
+* [ ] Power Source
 
 #### TL;DR Things that cause issues
 
 * [ ] Bad Center of Gravity
 * [ ] Non-centered gyroscope
 * [ ] Non-square drive train
+* [ ] Mechanical Faults
+* [ ] Inconsistent Calibration
+* [ ] Faulty Wiring
 
 This is not a complete list and will grow over time.
 
 ## How does a Swerve Drive work in code?
 
-Swerve Drives move each module into a specific angle determined by the direction you want to go and heading you want to face. For FRC we can get these value's by hand by calculating the kinematics of the robot or use [`SwerveDriveKinematics`](https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/SwerveDriveKinematics.html)  which uses the module locations to determine what the rotation and speed of each wheel should be given a [`ChassisSpeeds`](https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/ChassisSpeeds.html) object and returns an [`SwerveModuleState`](https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/SwerveModuleState.html) array. The [`SwerveModuleState`](https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/SwerveModuleState.html) can then be used to set the angle/azimuth and speed corresponding with each Swerve Module to go in the desired direction facing the desired heading.&#x20;
+Swerve Drives move each module into a specific angle determined by the direction you want to go and heading you want to face. For FRC we can get these value's by hand by calculating the kinematics of the robot or use [`SwerveDriveKinematics`](https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/SwerveDriveKinematics.html) which uses the module locations to determine what the rotation and speed of each wheel should be given a [`ChassisSpeeds`](https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/ChassisSpeeds.html) object and returns an [`SwerveModuleState`](https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/SwerveModuleState.html) array. The [`SwerveModuleState`](https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/SwerveModuleState.html) can then be used to set the angle/azimuth and speed corresponding with each Swerve Module to go in the desired direction facing the desired heading.
 
 ### `SwerveDriveKinematics`
 
@@ -130,7 +135,7 @@ Swerve Drive code does not work without [`SwerveDriveOdometry`](https://github.w
 
 ### `SwerveDriveOdometry`
 
-Unfortunately life isn't that easy. We have to keep continuous track of our current positioning of the robot, specifically the **heading**, **speed**, and **module positions** collectively known as **odometry**. This is the only way to correctly generate [`SwerveModuleState`](https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/SwerveModuleState.html) which are usable.&#x20;
+Unfortunately life isn't that easy. We have to keep continuous track of our current positioning of the robot, specifically the **heading**, **speed**, and **module positions** collectively known as **odometry**. This is the only way to correctly generate [`SwerveModuleState`](https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/SwerveModuleState.html) which are usable.
 
 <pre class="language-java" data-title="SwerveDrive.java" data-line-numbers data-full-width="false"><code class="lang-java">// Import relevant classes.
 import edu.wpi.first.math.kinematics.SwerveDriveKinematics;
@@ -230,8 +235,6 @@ Swerve Drive odometry must be updated every single run in a similar fashion to t
 ## Conclusion
 
 There are many more intricacies to Swerve Drive's than covered on this page however this is sufficient for a basic understanding of how to program a Swerve Drive. I would highly encourage the reader to look at as many examples they can find to understand some of the gotcha's more or continue on to use YAGSL, Good Luck!
-
-
 
 [^1]: This will not work as is and is representative of a \`SwerveModule\` class.
 
