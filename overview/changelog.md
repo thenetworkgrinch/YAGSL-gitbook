@@ -8,7 +8,7 @@ I highly encourage anyone who wants to help make YAGSL better to create pull req
 
 ## Contributing
 
-YAGSL development is done on the YAGSL-Example repository's `dev` branch here at `src/main/java/swervelib`.
+YAGSL development is done on the `dev` branch of the YAGSL-Example repository here at `src/main/java/swervelib`.
 
 {% embed url="https://github.com/BroncBotz3481/YAGSL-Example/tree/dev" %}
 YAGSL-Example dev branch
@@ -18,6 +18,8 @@ All PR's should be based off of and merged into here. YAGSL is propagated often 
 
 ## 2024.4.6.3
 
+* [ ] Added ability to disable the cosine compensator via config files. (PR [#148](https://github.com/BroncBotz3481/YAGSL-Example/pull/148) by [@fovea1959](https://github.com/fovea1959))
+* [ ] Added `SwerveDrive.getGyro()` to return `SwerveIMU`.
 * [ ] Added `SwerveMotor.setVoltage` and `SwerveMotor.getVoltage` and `SwerveMotor.getAppliledOutput` to the `SwerveMotor` wrapper for future use with SysId.
 * [ ] Added functions to test setting voltage of all swerve module motor.
 * [ ] Added function to find coupling ratio of all swerve modules.
