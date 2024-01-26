@@ -12,8 +12,6 @@ description: How does Swerve Drive work?
 
 <figure><img src="../.gitbook/assets/BmhK4k.gif" alt=""><figcaption><p>FRC 2910 Off Season Swerve Drive</p></figcaption></figure>
 
-## dfdgfdgdf
-
 ## Tips while building a Swerve Drive
 
 * Center the gyroscope in the robot, this will help prevent a small drift and ensure more accurate odometry as calculations are based on distances from your gyroscope to your modules.
