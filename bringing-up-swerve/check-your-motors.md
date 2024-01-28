@@ -38,7 +38,7 @@ The absolute encoder offset is what allows your swerve module to maintain the wh
 
 6.
 
-    <figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 7. Take note of the `Module[...] Raw Absolute Encoder` value's and use them for `absoluteEncoderOffset` in the module JSONs.

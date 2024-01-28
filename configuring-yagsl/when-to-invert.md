@@ -24,7 +24,7 @@ When you spin your motor counterclockwise the value in Shuffleboard/NetworkTable
 
 3.
 
-    <figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 4. Take note of the `Module[...] Raw Absolute Encoder` value's and use them for `absoluteEncoderOffset` in the module JSONs.
@@ -151,8 +151,6 @@ Keep in mind that your robot spinning counter clockwise should look like this wh
 {% endhint %}
 
 <figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption><p>ID's relocated in swerve module files</p></figcaption></figure>
-
-
 
 You should notice the `Raw IMU Yaw` field in Shuffleboard increase. If it doesn't you need to invert your IMU like this.
 

@@ -1,6 +1,6 @@
 # Configuration
 
-## Tuning Webpage
+Tuning Webpage
 
 YAGSL maintains a somewhat complete configuration tool to aid you in creating configuration files from scratch here.
 
@@ -18,9 +18,9 @@ We also maintain a repository for known working configurations here!
 
 ## Make sure you know what module is what!
 
-If not your modules could end up like this!
+If not your modules could end up like this!.
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Modules flipped around</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Modules flipped around</p></figcaption></figure>
 
 This happens when you input module locations incorrectly due to where the gyroscope is oriented on the robot or you have the wrong CANID's in the wrong relative location of the robot. **If this happens to you, you HAVE misconfigured your modules.**
 

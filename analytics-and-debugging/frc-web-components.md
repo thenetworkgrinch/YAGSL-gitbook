@@ -21,11 +21,11 @@ To download and install this please choose the correct file and run it from this
 
 {% embed url="https://docs.wpilib.org/en/stable/docs/networking/networking-introduction/ip-configurations.html#te-am-ip-notation" %}
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Dashboard settings for FRC Web Components.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Dashboard settings for FRC Web Components.</p></figcaption></figure>
 
 5. Open the widget menu.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption><p>Press here.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Press here.</p></figcaption></figure>
 
 6. Select the `Swerve Drivebase` and click `Append`
 
