@@ -146,9 +146,13 @@ Invert your drive motor for every module that is decreasing!
 
 ## Rotate your robot counterclockwise
 
-{% hint style="warning" %}
-IF this is wrong your robot WILL spin out of control, invert this to fix it.
+{% hint style="danger" %}
+Keep in mind that your robot spinning counter clockwise should look like this when the wheels are powered! You **WILL** need to change your IDs for each module file if they don't.
 {% endhint %}
+
+<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption><p>ID's relocated in swerve module files</p></figcaption></figure>
+
+
 
 You should notice the `Raw IMU Yaw` field in Shuffleboard increase. If it doesn't you need to invert your IMU like this.
 
