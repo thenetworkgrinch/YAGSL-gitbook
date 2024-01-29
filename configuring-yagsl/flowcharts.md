@@ -9,7 +9,7 @@
 
 
 {% hint style="danger" %}
-Older gyroscope's like the Pigeon 1 and NavX 1 experience drift the longer they are on. Consider rebooting or zero'ing your gyroscope at the start of your program.
+Older gyroscope's like the Pigeon 1 and NavX 1 experience drift the longer they are on. Consider rebooting or zeroing your gyroscope at the start of your program.
 {% endhint %}
 
 ## Swerve Modules
