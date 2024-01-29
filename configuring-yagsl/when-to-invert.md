@@ -19,12 +19,12 @@ When you spin your motor counterclockwise the value in Shuffleboard/NetworkTable
 1. Open shuffleboard.
 2.
 
-    <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>Open network tables</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/shuffleboard_open_tab.png" alt=""><figcaption><p>Open network tables</p></figcaption></figure>
 
 
 3.
 
-    <figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/shuffleboard_read_vals.png" alt=""><figcaption></figcaption></figure>
 
 
 4. Take note of the `Module[...] Raw Absolute Encoder` value's and use them for `absoluteEncoderOffset` in the module JSONs.

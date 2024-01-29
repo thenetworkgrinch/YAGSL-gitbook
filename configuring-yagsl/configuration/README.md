@@ -32,7 +32,7 @@ This happens when you input module locations incorrectly due to where the gyrosc
 
 Here is a challenge for you, how can you solve this misconfiguration?
 
-<img src="../../.gitbook/assets/image (9).png" alt="While rotating right" data-size="original"><img src="../../.gitbook/assets/challenge_reorder2.png" alt="Translating right" data-size="original">
+<img src="../../.gitbook/assets/id_spin1.png" alt="While rotating right" data-size="original"><img src="../../.gitbook/assets/challenge_reorder2.png" alt="Translating right" data-size="original">
 
 </details>
 
