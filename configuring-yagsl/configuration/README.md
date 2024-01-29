@@ -20,7 +20,7 @@ We also maintain a repository for known working configurations here!
 
 If not your modules could end up like this!.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Modules flipped around, spinning CCW+</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/id_change3.png" alt=""><figcaption><p>Modules flipped around, spinning CCW+</p></figcaption></figure>
 
 This happens when you input module locations incorrectly due to where the gyroscope is oriented on the robot or you have the wrong CANID's in the wrong relative location of the robot. **If this happens to you, you HAVE misconfigured your modules.**
 
@@ -32,7 +32,7 @@ This happens when you input module locations incorrectly due to where the gyrosc
 
 Here is a challenge for you, how can you solve this misconfiguration?
 
-<img src="../../.gitbook/assets/image (9).png" alt="While rotating right" data-size="original"><img src="../../.gitbook/assets/image (10).png" alt="Translating right" data-size="original">
+<img src="../../.gitbook/assets/image (9).png" alt="While rotating right" data-size="original"><img src="../../.gitbook/assets/challenge_reorder2.png" alt="Translating right" data-size="original">
 
 </details>
 
@@ -42,7 +42,7 @@ Here is a challenge for you, how can you solve this misconfiguration?
 
 
 
-<img src="../../.gitbook/assets/image (11).png" alt="" data-size="original">
+<img src="../../.gitbook/assets/challenge_reorder1.png" alt="" data-size="original">
 
 Steps:
 
@@ -59,7 +59,7 @@ This may help you in your endeavors!
 
 To correctly get the `absoluteEncoderOffset` your swerve modules must be facing this way while reading the values.
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/devilbots_cropped_swerve_orientation.png" alt=""><figcaption></figcaption></figure>
 
 ## Configuration Directory
 

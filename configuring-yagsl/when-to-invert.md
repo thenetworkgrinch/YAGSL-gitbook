@@ -35,7 +35,7 @@ When you spin your motor counterclockwise the value in Shuffleboard/NetworkTable
 Spin your modules **COUNTERclockwise** from the top down view.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption><p>Purple shows the way your bevels should be facing (photo by Team 2876)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/devilbots_cropped_swerve_orientation.png" alt=""><figcaption><p>Purple shows the way your bevels should be facing (photo by Team 2876)</p></figcaption></figure>
 
 The swerve drive should be on it's side or otherwise lifted. Your swerve module bevels must be facing the left like shown. To rotate the swerve modules they must be rotated counterclockwise like shown.
 
@@ -150,7 +150,7 @@ Invert your drive motor for every module that is decreasing!
 Keep in mind that your robot spinning counter clockwise should look like this when the wheels are powered! You **WILL** need to change your IDs for each module file if they don't.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption><p>ID's relocated in swerve module files</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/id_change1.png" alt=""><figcaption><p>ID's relocated in swerve module files</p></figcaption></figure>
 
 You should notice the `Raw IMU Yaw` field in Shuffleboard increase. If it doesn't you need to invert your IMU like this.
 

@@ -2,13 +2,13 @@
 
 ## Swerve Drive Diagram
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/devilbots_cropped_swerve_orientation.png" alt=""><figcaption></figcaption></figure>
 
 ## Swerve Modules
 
 ### Swerve modules spinning "out of control"
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/flowchart2.png" alt=""><figcaption></figcaption></figure>
 
 ## Swerve Module does not spin correctly.
 
@@ -25,4 +25,4 @@ I will add a flow chart for this later but essentially its.
 
 ## Swerve Drive "spins out of control"
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/flowchart4.png" alt=""><figcaption></figcaption></figure>
