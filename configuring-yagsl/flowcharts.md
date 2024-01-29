@@ -4,6 +4,14 @@
 
 <figure><img src="../.gitbook/assets/devilbots_cropped_swerve_orientation.png" alt=""><figcaption></figcaption></figure>
 
+## Things to note
+
+
+
+{% hint style="danger" %}
+Older gyroscope's like the Pigeon 1 and NavX 1 experience drift the longer they are on. Consider rebooting or zero'ing your gyroscope at the start of your program.
+{% endhint %}
+
 ## Swerve Modules
 
 ### Swerve modules spinning "out of control"
