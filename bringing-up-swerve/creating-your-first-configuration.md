@@ -24,7 +24,7 @@ Updated: 2024-01-24
 _Note: When viewed from the top, make sure the sides of the wheel with the bevel gear are pointing to the **left**_
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/devilbots_cropped_swerve_orientation.png" alt=""><figcaption></figcaption></figure>
 
 ### Step 1: Module Types
 

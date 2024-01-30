@@ -152,7 +152,7 @@ I2C communication on the MXP is supported however this is known to cause permane
 
 ## NavX Micro
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>NavX micro from andymark</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/navx2_micro.png" alt=""><figcaption><p>NavX micro from andymark</p></figcaption></figure>
 
 If you are using the NavX micro please select the type of `navx_usb` to indicate you are communicating over serial via the USB or else the gyrscope will not work with YAGSL!
 

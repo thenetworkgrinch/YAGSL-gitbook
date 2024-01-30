@@ -4,9 +4,10 @@ description: How does Swerve Drive work?
 
 # Swerve Drive
 
-## Introduction
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption><p>Swerve Drive simulation from YAGSL</p></figcaption></figure>
+## Introduction
+<figure><img src="../.gitbook/assets/sim_sample.png" alt=""><figcaption><p>Swerve Drive simulation from YAGSL</p></figcaption></figure>
+
 
 * Swerve drives allow robots to move in any direction while facing any orientation, offering unparalleled agility on the field.
 

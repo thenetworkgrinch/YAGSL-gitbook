@@ -1,11 +1,5 @@
 # How to tune PIDF
 
-## An untuned PID can make your modules do this.
-
-{% embed url="https://eu-central.storage.cloudconvert.com/tasks/355c3e04-29fd-4427-901b-14e0621bcbcd/pidIssue.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20240124%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20240124T193819Z&X-Amz-Expires=86400&X-Amz-Signature=11c11247798c8ae927a391740212c048e2c0007d700cedce0082cde51df458d2&X-Amz-SignedHeaders=host&response-content-disposition=inline%3B%20filename%3D%22pidIssue.mp4%22&response-content-type=video%2Fmp4&x-id=GetObject" %}
-P is so high it bypasses the setpoint and wraps back around
-{% endembed %}
-
 {% hint style="warning" %}
 Swerve steering/angle/azimuth motors have PID wrapping enabled at the topmost and bottommost point (e.g "front" and "back") when tuning your PID you may want to test with left or right translation.
 {% endhint %}
@@ -21,7 +15,7 @@ This has been hashed and boiled down to the simplest form like this before.
 * D: if you’re getting close to where you want to be, slow down.
   * [Video](https://www.youtube.com/watch?v=qKy98Cbcltw) found by 78 found by [this CD Post](https://www.chiefdelphi.com/t/finally-i-understand-pid/450811)
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/pid_explainer.png" alt=""><figcaption></figcaption></figure>
 
 ## Tuning PIDF
 

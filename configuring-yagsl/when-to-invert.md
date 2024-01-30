@@ -19,12 +19,12 @@ When you spin your motor counterclockwise the value in Shuffleboard/NetworkTable
 1. Open shuffleboard.
 2.
 
-    <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>Open network tables</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/shuffleboard_open_tab.png" alt=""><figcaption><p>Open network tables</p></figcaption></figure>
 
 
 3.
 
-    <figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/shuffleboard_read_vals.png" alt=""><figcaption></figcaption></figure>
 
 
 4. Take note of the `Module[...] Raw Absolute Encoder` value's and use them for `absoluteEncoderOffset` in the module JSONs.
@@ -35,7 +35,7 @@ When you spin your motor counterclockwise the value in Shuffleboard/NetworkTable
 Spin your modules **COUNTERclockwise** from the top down view.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption><p>Purple shows the way your bevels should be facing (photo by Team 2876)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/devilbots_cropped_swerve_orientation.png" alt=""><figcaption><p>Purple shows the way your bevels should be facing (photo by Team 2876)</p></figcaption></figure>
 
 The swerve drive should be on it's side or otherwise lifted. Your swerve module bevels must be facing the left like shown. To rotate the swerve modules they must be rotated counterclockwise like shown.
 
@@ -146,9 +146,11 @@ Invert your drive motor for every module that is decreasing!
 
 ## Rotate your robot counterclockwise
 
-{% hint style="warning" %}
-IF this is wrong your robot WILL spin out of control, invert this to fix it.
+{% hint style="danger" %}
+Keep in mind that your robot spinning counter clockwise should look like this when the wheels are powered! You **WILL** need to change your IDs for each module file if they don't.
 {% endhint %}
+
+<figure><img src="../.gitbook/assets/id_change1.png" alt=""><figcaption><p>ID's relocated in swerve module files</p></figcaption></figure>
 
 You should notice the `Raw IMU Yaw` field in Shuffleboard increase. If it doesn't you need to invert your IMU like this.
 

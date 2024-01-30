@@ -8,7 +8,7 @@ I strongly suggest you find the information from the [getting-to-know-your-robot
 
 ## Motors should spin counter clockwise positive
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption><p>The left and right are physical left and right.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/devilbots_cropped_swerve_orientation.png" alt=""><figcaption><p>The left and right are physical left and right.</p></figcaption></figure>
 
 When you spin your motor while the robot is disabled you will notice `Motor[...] Raw Angle Encoder` (angle/steering/azimuth relative encoder) and `Motor[...] Raw Absolute Encoder` (absolute encoder) . Both of these should increase while the motor is spun counter clockwise. For more information see here.
 
@@ -26,22 +26,19 @@ The absolute encoder offset is what allows your swerve module to maintain the wh
 
 1. Line up all wheels so that the bevels are facing to the left like this.
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/devilbots_cropped_swerve_orientation.png" alt=""><figcaption></figcaption></figure>
 
 2. Deploy your code.
 3. **DO NOT ENABLE YOUR ROBOT!**
 4. Open shuffleboard.
 5.
 
-```
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>Open network tables</p></figcaption></figure>
-```
+    <figure><img src="../.gitbook/assets/shuffleboard_open_tab.png" alt=""><figcaption><p>Open network tables</p></figcaption></figure>
+
 
 6.
 
-```
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
-```
+    <figure><img src="../.gitbook/assets/shuffleboard_read_vals.png" alt=""><figcaption></figcaption></figure>
 
 7. Take note of the `Module[...] Raw Absolute Encoder` value's and use them for `absoluteEncoderOffset` in the module JSONs.
 

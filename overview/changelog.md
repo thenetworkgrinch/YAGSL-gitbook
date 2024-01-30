@@ -8,16 +8,31 @@ I highly encourage anyone who wants to help make YAGSL better to create pull req
 
 ## Contributing
 
-YAGSL development is done on the YAGSL-Example repository's `dev` branch here at `src/main/java/swervelib`.
+YAGSL development is done on the `dev` branch of the YAGSL-Example repository here at `src/main/java/swervelib`.
 
 {% embed url="https://github.com/BroncBotz3481/YAGSL-Example/tree/dev" %}
 YAGSL-Example dev branch
 {% endembed %}
 
-All PR's should be based off of and merged into here. YAGSL is propogated often to the other repositories.
+All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
+
+## 2024.4.7
+
+* [ ] Modules will stay in the previous position if the desired velocity is 0.
+* [ ] Cosine compensation is now reported through telemetry as expected.
 
 ## 2024.4.6.3
 
+* [ ] Updated heading correction to use `getOdometryHeading()` instead of `getYaw()` (PR [#150](https://github.com/BroncBotz3481/YAGSL-Example/pull/150) by [@Blargleflakes](https://github.com/Blargleflakes)) This does impact heading correction PID values in `controllerproperties.json` and may NEED these value's increased by 50x.
+* [ ] Added ability to disable the cosine compensator via config files. (PR [#148](https://github.com/BroncBotz3481/YAGSL-Example/pull/148) by [@fovea1959](https://github.com/fovea1959))
+* [ ] Added `SwerveDrive.getGyro()` to return `SwerveIMU`.
+* [ ] Added `SwerveMotor.setVoltage` and `SwerveMotor.getVoltage` and `SwerveMotor.getAppliledOutput` to the `SwerveMotor` wrapper for future use with SysId.
+* [ ] Added functions to test setting voltage of all swerve module motor.
+* [ ] Added function to find coupling ratio of all swerve modules.
+* [ ] Added function to set steering/azimuth/angle using of all swerve modules.
+* [ ] Added function to find kV for drive motors to move.
+* [ ] Set the angle motor relative encoder position AFTER changing the conversion factor. (Issue [#155](https://github.com/BroncBotz3481/YAGSL-Example/issues/155))
+* [ ] Fixed module open loop control by sending `maxSpeed` to the module. (by @nstrike and [@MarshallTappen](https://github.com/MarshallTappen))
 * [ ] Fixed Pigeon2Swerve only using X acceleration (PR [#146](https://github.com/BroncBotz3481/YAGSL-Example/pull/146#event-11577147896) by [@dezash123](https://github.com/dezash123))
 * [ ] Prevent drive motors from moving when `absoluteEncoderOffset` is not tuned. (Found by [@fovea1959](https://github.com/fovea1959))
 * [ ] Updated javadocs for `SwerveDrive.addVisionMeasurement` so that they reflect the latest changes.
