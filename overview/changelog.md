@@ -21,6 +21,7 @@ All PR's should be based off of and merged into here. YAGSL is propagated often 
 * [ ] Added SysId support. (PR [#160](https://github.com/BroncBotz3481/YAGSL-Example/pull/160) by [Team 5010](https://github.com/5010TigerDynasty))
 * [ ] `waitForStatusUpdate` is used instead of `refresh` with default timeouts of 20ms.
 * [ ] Added `Cache` class to cache variables over a `validityPeriod` which will speed up processing and reduce CAN utilization.
+* [ ] Added `SwerveDrive.updateCacheValidityPeriods` so the user can change the cache validity period to their hearts desire.
 
 ## 2024.4.7
 
