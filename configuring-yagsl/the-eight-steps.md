@@ -12,20 +12,6 @@ Affectionally known as _"Translational Axis change based off of the robot headin
 You are not expected to complete all of these steps to achieve a functioning swerve drive, somewhere along the way your issue should disappear.&#x20;
 {% endhint %}
 
-```kotlin
-Start by uninverting your IMU and drive motors
-THEN inverting your IMU
-THEN invert your drive motors
-THEN uninvert your IMU
-
-THEN flip modules
-THEN uninvert your drive motors
-THEN invert your IMU
-THEN invert your drive motors
-
-Then you must be testing wrong, have bad hardware, or something of that nature if you get to this step.
-```
-
 1. Start by setting `invertIMU` in `swervedrive.json` to `false` **AND** the `drive` `invert` to `false` in module JSONs.
 2. THEN set `invertIMU` to `true`.
 3. THEN invert all of the drive motors in the module JSONs by setting them to `true`.
