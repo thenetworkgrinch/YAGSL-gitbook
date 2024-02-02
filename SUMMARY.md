@@ -43,6 +43,7 @@
 * [How to tune PIDF](configuring-yagsl/how-to-tune-pidf.md)
 * [When to invert?](configuring-yagsl/when-to-invert.md)
 * [Flowcharts](configuring-yagsl/flowcharts.md)
+* [The eight steps](configuring-yagsl/the-eight-steps.md)
 
 ## Devices
 
