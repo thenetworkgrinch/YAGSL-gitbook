@@ -22,6 +22,7 @@ All PR's should be based off of and merged into here. YAGSL is propagated often 
 * [ ] `waitForStatusUpdate` is used instead of `refresh` with default timeouts of 20ms.
 * [ ] Added `Cache` class to cache variables over a `validityPeriod` which will speed up processing and reduce CAN utilization.
 * [ ] Added `SwerveDrive.updateCacheValidityPeriods` so the user can change the cache validity period to their hearts desire.
+* [ ] Added `SwerveDrive.getModuleMap()` which will fetch all of the `SwerveModule`'s as a HashMap where the key is the module's filename without `.json` so `frontleft.json` would have the key of `frontleft`.
 
 ## 2024.4.7
 
