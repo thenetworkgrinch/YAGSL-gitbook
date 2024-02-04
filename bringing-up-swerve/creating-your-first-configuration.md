@@ -4,18 +4,18 @@
 
 Compliments of the [DevilBotz 2876](https://www.thebluealliance.com/team/2876/2024)!
 
-Updated: 2024-01-24
+Updated: 2024-02-03
 
 ## Printable version
 
-{% file src="../.gitbook/assets/2024-01-24 DevilBotz 2876 Swerve Bring-Up Checklist.pdf" %}
+{% file src="../.gitbook/assets/2024-02-03 DevilBotz 2876 Swerve Bring-Up Checklist.pdf" %}
 
 ## Resources
 
-* [ ] [YAGSL Wiki](https://yagsl.gitbook.io/yagsl/) - [https://yagsl.gitbook.io/yagsl/](https://yagsl.gitbook.io/yagsl/)
-* [ ] [REV Robotics Hardware Client](https://docs.revrobotics.com/rev-hardware-client/) - [https://docs.revrobotics.com/rev-hardware-client/](https://docs.revrobotics.com/rev-hardware-client/)
+* [YAGSL Wiki](https://yagsl.gitbook.io/yagsl/) - [https://yagsl.gitbook.io/yagsl/](https://yagsl.gitbook.io/yagsl/)
+* [REV Robotics Hardware Client](https://docs.revrobotics.com/rev-hardware-client/) - [https://docs.revrobotics.com/rev-hardware-client/](https://docs.revrobotics.com/rev-hardware-client/)
   * _for configuring Spark Max Motor Controllers and other Rev devices_
-* [ ] [Phoenix Tuner X](https://pro.docs.ctr-electronics.com/en/stable/docs/hardware-reference/cancoder/index.html) - [https://v6.docs.ctr-electronics.com/en/stable/docs/tuner/index.html](https://v6.docs.ctr-electronics.com/en/stable/docs/tuner/index.html)
+* [Phoenix Tuner X](https://pro.docs.ctr-electronics.com/en/stable/docs/hardware-reference/cancoder/index.html) - [https://v6.docs.ctr-electronics.com/en/stable/docs/tuner/index.html](https://v6.docs.ctr-electronics.com/en/stable/docs/tuner/index.html)
   * _for configuring CanCoders and other CTR devices_
 
 ## Swerve Orientation Diagram
@@ -52,30 +52,35 @@ _Note: For Absolute Encoders attached **directly** to the dataport on the SparkM
 
 ### Step 3: Electrical Characteristics
 
-* [ ] Set/Verify the CAN IDs for each module
-* [ ] Check Inversion
-  1. Rotate the _drive_ wheel **CCW** (moving “forward”)
-     * [ ] The built-in encoder value should **increase**. If not, _invert_ the drive motor.
-  2. Rotate the _angle_ wheel **CCW** (when viewed from the top)
-     * [ ] The built-in encoder value should **increase**. If not, _invert_ the angle motor.
-     * [ ] The absolute encoder value should **increase**. If not, _invert_ the absolute encoder.
-  3. Rotate the entire _robot_ **CCW**. The gyro angle (yaw) should **increase**. If not, _invert_ the IMU
+6. Set/Verify the CAN IDs for each module
 
 {% hint style="warning" %}
-_Note: If you are using the hardware utilities for accessing the motors controllers and/or absolute encoders, the RoboRio must **not** be active on the CAN bus. The most reliable way to disable the RoboRio is to temporarily disconnect it from power._
+_Note: Update the FW for each module and reset any stored settings to factory defaults_
 {% endhint %}
 
 <table data-full-width="true"><thead><tr><th>Module</th><th>Motor CAN IDs</th><th>Motor CAN IDs</th><th>Encoder CAN/Channel ID</th></tr></thead><tbody><tr><td></td><td><strong>Drive</strong></td><td><strong>Angle</strong></td><td><strong>Absolute Encoder</strong></td></tr><tr><td><em>Front Left (FL)</em></td><td></td><td></td><td></td></tr><tr><td><em>Front Right (FR)</em></td><td></td><td></td><td></td></tr><tr><td><em>Back Left (BL)</em></td><td></td><td></td><td></td></tr><tr><td><em>Back Right (BR)</em></td><td></td><td></td><td></td></tr></tbody></table>
+
+7. Check Inversion
+   1. Rotate the _drive_ wheel **CCW** (moving “forward”)
+      * The built-in encoder value should **increase**. If not, _invert_ the drive motor.
+   2. Rotate the _angle_ wheel **CCW** (when viewed from the top)
+      * The built-in encoder value should **increase**. If not, _invert_ the angle motor.
+      * The absolute encoder value should **increase**. If not, _invert_ the absolute encoder.
+   3. Rotate the entire _robot_ **CCW**. The gyro angle (yaw) should **increase**. If not, _invert_ the IMU
+
+{% hint style="warning" %}
+_Note: If you are using the hardware utilities for accessing the motors controllers and/or absolute encoders, the RoboRio must **not** be active on the CAN bus. The most reliable way to disable the RoboRio, **without affecting the CAN BUS termination**, is to temporarily disconnect it from power by pulling the 10A fuse on the Power Distribution Panel (PDP) feeding the RoboRio and **then** power cycle the robot._
+{% endhint %}
 
 <table data-full-width="true"><thead><tr><th>Module</th><th>Inverted?</th><th></th><th></th><th></th></tr></thead><tbody><tr><td></td><td><strong>Drive</strong></td><td><strong>Angle</strong></td><td><strong>Absolute Encoder</strong></td><td><strong>IMU</strong></td></tr><tr><td><em>Front Left (FL)</em></td><td></td><td></td><td></td><td></td></tr><tr><td><em>Front Right (FR)</em></td><td></td><td></td><td></td><td></td></tr><tr><td><em>Back Left (BL)</em></td><td></td><td></td><td></td><td></td></tr><tr><td><em>Back Right (BR)</em></td><td></td><td></td><td></td><td></td></tr></tbody></table>
 
 ### Step 4: Absolute Encoder Offsets
 
-1. Turn Robot On (Disabled so the wheels can be turned manually)
-2. Manually Turn All 4 wheels so that they are all pointing forward and forward rotation results in increasing drive encoder values (see the black arrows in [Orientation Diagram](creating-your-first-configuration.md#swerve-orientation-diagram-1)).
-3. Measure the absolute encoder value for each module (the offset is the **negative** of the value reported)
+8. Turn Robot On (Disabled so the wheels can be turned manually)
+9. Manually Turn All 4 wheels so that they are all pointing forward and forward rotation results in increasing drive encoder values (see the black arrows in [Orientation Diagram](creating-your-first-configuration.md#swerve-orientation-diagram-1)).
+10. Measure the absolute encoder value for each module
 
-<table data-full-width="true"><thead><tr><th>Module</th><th>Angle Absolute Offset</th><th></th></tr></thead><tbody><tr><td></td><td><strong>(rotations 0-1)</strong></td><td><strong>(degrees 0-360)</strong></td></tr><tr><td><em>Front Left (FL)</em></td><td></td><td></td></tr><tr><td><em>Front Right (FR)</em></td><td></td><td></td></tr><tr><td><em>Back Left (BL)</em></td><td></td><td></td></tr><tr><td><em>Back Right (BR)</em></td><td></td><td></td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th>Module</th><th>Angle Absolute Offset (degrees)</th><th></th></tr></thead><tbody><tr><td><em>Front Left (FL)</em></td><td></td><td></td></tr><tr><td><em>Front Right (FR)</em></td><td></td><td></td></tr><tr><td><em>Back Left (BL)</em></td><td></td><td></td></tr><tr><td><em>Back Right (BR)</em></td><td></td><td></td></tr></tbody></table>
 
 ### Step 5: Input data into the configuration webpage
 
