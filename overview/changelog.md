@@ -16,6 +16,10 @@ YAGSL-Example dev branch
 
 All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
+## 2024.4.8.1
+
+* [ ] Added `SwerveDrive.setCosineCompensation` function which can enable and disable cosine compensation as desired, disabled by default in sim because of discrepancies with real robots.
+
 ## 2024.4.8
 
 * [ ] Added SysId support. (PR [#160](https://github.com/BroncBotz3481/YAGSL-Example/pull/160) and [#165](https://github.com/BroncBotz3481/YAGSL-Example/pull/165) by [Team 5010](https://github.com/5010TigerDynasty))
