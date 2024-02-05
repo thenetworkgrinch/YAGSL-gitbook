@@ -1,5 +1,7 @@
 ---
-description: We make your swerve drive run!
+description: >-
+  YAGSL aims to simplify the implementation of swerve drive systems in robotics,
+  making advanced mobility accessible to teams at all skill levels.
 ---
 
 # What we do
@@ -17,3 +19,7 @@ YAGSL essentially boils down to one class [`SwerveDrive`](https://broncbotz3481.
 * Your program will be capable of the following with this guide
   * Autonomous (with PathPlanner + integrated commands)
   * Swerve Drive teleop code.
+
+## Next Step!
+
+* Ready to start with YAGSL? Head over to our [Installation Guide](../bringing-up-swerve/preface.md) to take the first step towards transforming your robotics project's mobility.

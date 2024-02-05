@@ -7,16 +7,16 @@ description: What is a Swerve Module?
 You may see a bunch of different classes in other teams code which represent a `SwerveModule` and wonder why there isn't a standard class. There is a very good reason for that, every motor, absolute encoder, gear ratio, and installation can be different! Some teams try to prevent more issue's in their Swerve Drive than others because they had more time to debug it. YAGSL aims to take into account all common issues and address them in JSON configuration files.
 
 {% hint style="warning" %}
-If you are using a magnetic encoder ensure that the magnet is glued correctly so it does not slip.
+If you are using a magnetic encoder ensure that the magnet is glued correctly so it does not slip. Modules typically have installation guides that can be found on their respective webpages where the module was purchased.
 {% endhint %}
 
 ## What is in a Swerve Module?
 
-* [ ] Drive Gears (ratio must be known)
-* [ ] Steering Gears (ratio must be known)
-* [ ] Drive Motor (+ controller)
-* [ ] Angle/Azimuth/Steering Motor (+ controller)
-* [ ] Absolute Encoder
+* [ ] **Drive Gears** (ratio can be found on modules website)
+* [ ] **Steering Gears** (ratio can be found on modules website)
+* [ ] **Drive Motor** (+ controller \[ex. Rev Spark MAX if using NEO's])
+* [ ] **Angle/Azimuth/Steering Motor** (+ controller \[ex. Rev Spark MAX if using NEO's])
+* [ ] **Absolute Encoder** (ex. CTRE CANCoder)
 
 ## Review
 
@@ -44,11 +44,11 @@ All of these need to be set correctly in order to configure a Swerve Module prop
 
 ## Checklist
 
-* [ ] Steering/Azimuth/Angle motor[ increases with the absolute encoder](#user-content-fn-1)[^1] value.
-* [ ] Steering/Azimuth/Angle motor increases counterclockwise positive.
-* [ ] Drive motors increase propelling the robot "forwards"
+* [ ] Steering/Azimuth/Angle motor[ increases with the absolute encoder](#user-content-fn-1)[^1] value (see [When To Invert](../configuring-yagsl/when-to-invert.md)).
+* [ ] Steering/Azimuth/Angle motor increases counterclockwise positive when looking down on the robot.
+* [ ] Drive motors increase propelling the robot "forwards".
 * [ ] Absolute Encoders are securely seated into the Swerve Module.
-* [ ] Conversion Factor is correctly calculated.
+* [ ] Conversion Factor is correctly calculated (see [Conversion Factor](https://yagsl.gitbook.io/yagsl/fundamentals/swerve-modules#conversion-factor)).
 * [ ] Absolute encoder offset of which the wheel facing the same way is configured.
 
 {% hint style="warning" %}
@@ -259,8 +259,6 @@ $$
 SteeringConverionFactor = \frac{1_{degree}}{1_{rot}} = \frac{1_{rot}}{12.8_{rot}} * \frac{1_{rot}}{360_{deg}}
 $$
 
-
-
 The drive conversion factor will take _**rotations/minute**_ given by the motor encoder and convert them to _**meters/second**_.
 
 For the following example we will use the gear ratio `6.75:1` [(SDS MK4 L2 Drive Ratio)](https://www.swervedrivespecialties.com/collections/kits/products/mk4-swerve-module) which means the rotor spins `6.75` times for the wheel to complete a rotation.
@@ -281,7 +279,7 @@ The conversion factor is extremely important and if it is wrong the motor **COUL
 
 ### PID Control
 
-PID stands for Percent-Integral-Derivative. Swerve Drive's should try to use the most up to date feedback sensors so we will be using the on-board PID feature of the SparkMAX.&#x20;
+PID stands for Percent-Integral-Derivative. Swerve Drive's should try to use the most up to date feedback sensors so we will be using the on-board PID feature of the SparkMAX.
 
 WPILib has a great guide to learning PID's here. The turret position example is how we will control the steering motors.
 
@@ -291,7 +289,7 @@ REV's documentation on this is available and shows how it works (mostly) on the 
 
 {% embed url="https://docs.revrobotics.com/sparkmax/operating-modes/closed-loop-control" %}
 
-There are 2 PID's you need to control create to control a Swerve Module one for the drive motor, the other for the steering motors.&#x20;
+There are 2 PID's you need to control create to control a Swerve Module one for the drive motor, the other for the steering motors.
 
 #### Drive Motor PID
 
@@ -303,7 +301,7 @@ For a drive wheel there may be a feedforward you want to always use to ensure th
 
 #### Steering Motor PID
 
-The Steering Motor PID controls the angle of the wheel in degrees based off of the feedback sensor. A few tricks are necessary to do this effectively though.&#x20;
+The Steering Motor PID controls the angle of the wheel in degrees based off of the feedback sensor. A few tricks are necessary to do this effectively though.
 
 1. PID Wrapping ensures the wheel will always choose the shortest path to the destination angle.
 2. Grease your gears often!!!

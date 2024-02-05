@@ -8,7 +8,7 @@ Swerve steering/angle/azimuth motors have PID wrapping enabled at the topmost an
 
 YAGSL has PIDF values in [`pidfproperties.json`](configuration/pidf-properties-configuration/) within the swerve module folder.
 
-This has been hashed and boiled down to the simplest form like this before.&#x20;
+This has been hashed and boiled down to the simplest form like this before.
 
 * P: if you’re not where you want to be, get there.
 * I: if you haven’t been where you want to be for a long time, get there faster
@@ -19,7 +19,7 @@ This has been hashed and boiled down to the simplest form like this before.&#x20
 
 ## Tuning PIDF
 
-Another good way to describe it [from CTRE](https://pro.docs.ctr-electronics.com/en/latest/docs/api-reference/device-specific/talonfx/closed-loop-requests.html) is&#x20;
+Another good way to describe it [from CTRE](https://pro.docs.ctr-electronics.com/en/latest/docs/api-reference/device-specific/talonfx/closed-loop-requests.html) is
 
 Manual tuning typically follows this process:
 
@@ -49,7 +49,7 @@ The PIDF values will vary for every robot so tuning and testing are required. He
 
 {% tabs %}
 {% tab title="Drive Motor" %}
-## SparkMax
+### SparkMax
 
 When the `drive` motor `type` for every module is `sparkmax` then this is what the starting point can be.
 
@@ -71,7 +71,7 @@ When the `drive` motor `type` for every module is `sparkmax` then this is what t
 }
 </code></pre>
 
-## TalonFX
+### TalonFX
 
 When the drive motor `type` for every module is `talonfx` or alike (`kraken`/`falcon`) then this is what the starting point can be.
 
@@ -95,7 +95,7 @@ When the drive motor `type` for every module is `talonfx` or alike (`kraken`/`fa
 {% endtab %}
 
 {% tab title="Angle Motor" %}
-## SparkMax
+### SparkMax
 
 When the `angle` motor `type` for every module is `sparkmax` then this is what the starting point can be.
 
@@ -117,7 +117,7 @@ When the `angle` motor `type` for every module is `sparkmax` then this is what t
 </strong>}
 </code></pre>
 
-## TalonFX
+### TalonFX
 
 When the `angle` motor `type` for every module is `talonfx` or alike (`kraken`/`falcon`) then this is what the starting point can be.
 

@@ -2,13 +2,17 @@
 
 ## What is Heading Correction?
 
-Heading correction is used to keep the robot heading the same as the previous heading while the robot is translating. It is aggressive and will prevent angular rotation based control schemes from working.
+Heading correction ensures your robot maintains its intended direction even as it moves sideways or diagonally. This feature is crucial for precise maneuvers and maintaining alignment during complex movements. It is aggressive and will prevent angular rotation based control schemes from working.
 
 Heading correction was added to YAGSL by Team 1466 and improved upon by 7525 Pioneers and BoiledBurntBagel of 6036.
 
+Below is a rough example of heading correction in action. Keep in mind this is not representing the modules position but the Robots Heading. This will give you a good idea of possible solution if your robot is struggling to maintain it's heading during matches or you are experiencing module drift.
+
+<figure><img src="../../.gitbook/assets/ezgif.com-animated-gif-maker.gif" alt=""><figcaption><p>Heading Correction may not be needed!</p></figcaption></figure>
+
 ## How do I enable it?
 
-You can enable or disable heading correction using [`SwerveDrive.setHeadingCorrection`](https://broncbotz3481.github.io/YAGSL/swervelib/SwerveDrive.html#setHeadingCorrection\(boolean\)) from anywhere. The deadband is an arbitrary value that represents both meters persecond and radians epr second.&#x20;
+You can enable or disable heading correction using [`SwerveDrive.setHeadingCorrection`](https://broncbotz3481.github.io/YAGSL/swervelib/SwerveDrive.html#setHeadingCorrection\(boolean\)) from anywhere. The deadband is an arbitrary value that represents both meters persecond and radians epr second.
 
 ## What does heading correction do in code?
 

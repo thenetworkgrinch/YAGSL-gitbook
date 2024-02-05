@@ -10,6 +10,8 @@ Try to measure module locations in CAD to be as precise as possible and go from 
 
 ## How to measure module locations (by Team 5010)
 
-1. Lay the robot on its side and rotate the wheels perpendicular to the direction you’re measuring.&#x20;
-2. Measure to the outside of each wheel and subtract 1 wheel width to get the measurement from center to center.&#x20;
+1. Lay the robot on its side and rotate the wheels perpendicular to the direction you’re measuring.
+2. Measure to the outside of each wheel and subtract 1 wheel width to get the measurement from center to center.
 3. Do the same thing in the other direction.
+
+<figure><img src="../.gitbook/assets/Measuring Swerve Drive Module Positions (1).png" alt=""><figcaption><p>Measuring Module Locations</p></figcaption></figure>

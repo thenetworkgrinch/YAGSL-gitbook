@@ -2,7 +2,7 @@
 
 ## Define a front and expect to change it.
 
-It's easiest to define a front, maybe it's one that you want but expect to change it. Relative locations of modules are determined by the gyroscope. If your gyroscope is installed in the wrong orientation and can't be changed you WILL have to compensate for it in code that is not in any existing examples or apart of YAGSL.&#x20;
+It's easiest to define a front, maybe it's one that you want but expect to change it. Relative locations of modules are determined by the gyroscope. If your gyroscope is installed in the wrong orientation and can't be changed you WILL have to compensate for it in code that is not in any existing examples or apart of YAGSL.
 
 {% hint style="warning" %}
 FRONT is determined by gyroscope `0`!
@@ -18,4 +18,4 @@ If you are using a NavX or any gyroscope I would highly recommend that you calib
 
 ## Why should you invert your gyorscope?
 
-Gyrscope's should be inverted ONLY if they do not increase their yaw while moving counterclockwise!
+Gyrscope's should be inverted ONLY if they do not increase their yaw while moving counterclockwise! (See Gyroscope on the [Swerve Orientation Diagram](https://yagsl.gitbook.io/yagsl/bringing-up-swerve/creating-your-first-configuration#swerve-orientation-diagram))
