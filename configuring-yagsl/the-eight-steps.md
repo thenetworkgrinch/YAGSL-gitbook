@@ -8,6 +8,16 @@ Affectionally known as _"Translational Axis change based off of the robot headin
 
 ## The eight steps.
 
+{% hint style="danger" %}
+**The steps are dangerous!**
+
+6 of them will cause your robot to spin out of control.
+
+1 of them will be correct.
+
+1 of them will appear to be correct but have the translational axis change based off of the robot heading.
+{% endhint %}
+
 {% hint style="warning" %}
 You are not expected to complete all of these steps to achieve a functioning swerve drive, somewhere along the way your issue should disappear.&#x20;
 {% endhint %}
