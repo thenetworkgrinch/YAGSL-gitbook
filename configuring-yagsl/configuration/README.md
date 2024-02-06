@@ -35,7 +35,7 @@ For the examples we label with numbers as to be less confused, however when chan
 3. `backleft.json`
 4. `backright.json`
 
-#### Swapping `frontleft.json` with `backright.json`
+#### Swapping `frontleft.json` with `backleft.json`
 
 <pre class="language-json" data-title="frontleft.json"><code class="lang-json">{
 <strong>  "drive": {
@@ -65,30 +65,30 @@ For the examples we label with numbers as to be less confused, however when chan
 }
 </code></pre>
 
-<pre class="language-json" data-title="backright.json"><code class="lang-json"><strong>{
+<pre class="language-json" data-title="backleft.json"><code class="lang-json"><strong>{
 </strong><strong>  "drive": {
 </strong><strong>    "type": "sparkmax",
-</strong><strong>    "id": 5,
+</strong><strong>    "id": 7,
 </strong><strong>    "canbus": null
 </strong><strong>  },
 </strong><strong>  "angle": {
 </strong><strong>    "type": "sparkmax",
-</strong><strong>    "id": 6,
+</strong><strong>    "id": 8,
 </strong><strong>    "canbus": null
 </strong><strong>  },
 </strong><strong>  "encoder": {
 </strong><strong>    "type": "cancoder",
-</strong><strong>    "id": 11,
+</strong><strong>    "id": 12,
 </strong><strong>    "canbus": null
 </strong><strong>  },
 </strong><strong>  "inverted": {
 </strong><strong>    "drive": false,
 </strong><strong>    "angle": false
 </strong><strong>  },
-</strong><strong>  "absoluteEncoderOffset": -18.281,
+</strong><strong>  "absoluteEncoderOffset": 6.504,
 </strong>  "location": {
     "front": -12,
-    "left": -12
+    "left": 12
   }
 }
 </code></pre>
