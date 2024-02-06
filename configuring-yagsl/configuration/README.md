@@ -22,7 +22,82 @@ If not your modules could end up like this!.
 
 <figure><img src="../../.gitbook/assets/id_change3.png" alt=""><figcaption><p>Modules flipped around, spinning CCW+</p></figcaption></figure>
 
-This happens when you input module locations incorrectly due to where the gyroscope is oriented on the robot or you have the wrong CANID's in the wrong relative location of the robot. **If this happens to you, you HAVE misconfigured your modules.**
+This happens when you input module locations incorrectly due to where the gyroscope is oriented on the robot or you have the device configurations in the wrong module locations in the configuration files. **If this happens to you, you HAVE misconfigured your modules.**
+
+<details>
+
+<summary>How to swap module configurations</summary>
+
+For the examples we label with numbers as to be less confused, however when changing module files around we assign the numbers to the respective initial module configuration names. For the example above we have as follows
+
+1. `frontleft.json`
+2. `frontright.json`
+3. `backleft.json`
+4. `backright.json`
+
+#### Swapping `frontleft.json` with `backright.json`
+
+<pre class="language-json" data-title="frontleft.json"><code class="lang-json">{
+<strong>  "drive": {
+</strong><strong>    "type": "sparkmax",
+</strong><strong>    "id": 4,
+</strong><strong>    "canbus": null
+</strong><strong>  },
+</strong><strong>  "angle": {
+</strong><strong>    "type": "sparkmax",
+</strong><strong>    "id": 3,
+</strong><strong>    "canbus": null
+</strong><strong>  },
+</strong><strong>  "encoder": {
+</strong><strong>    "type": "cancoder",
+</strong><strong>    "id": 9,
+</strong><strong>    "canbus": null
+</strong><strong>  },
+</strong><strong>  "inverted": {
+</strong><strong>    "drive": false,
+</strong><strong>    "angle": false
+</strong><strong>  },
+</strong><strong>  "absoluteEncoderOffset": -114.609,
+</strong>  "location": {
+    "front": 12,
+    "left": 12
+  }
+}
+</code></pre>
+
+<pre class="language-json" data-title="backright.json"><code class="lang-json"><strong>{
+</strong><strong>  "drive": {
+</strong><strong>    "type": "sparkmax",
+</strong><strong>    "id": 5,
+</strong><strong>    "canbus": null
+</strong><strong>  },
+</strong><strong>  "angle": {
+</strong><strong>    "type": "sparkmax",
+</strong><strong>    "id": 6,
+</strong><strong>    "canbus": null
+</strong><strong>  },
+</strong><strong>  "encoder": {
+</strong><strong>    "type": "cancoder",
+</strong><strong>    "id": 11,
+</strong><strong>    "canbus": null
+</strong><strong>  },
+</strong><strong>  "inverted": {
+</strong><strong>    "drive": false,
+</strong><strong>    "angle": false
+</strong><strong>  },
+</strong><strong>  "absoluteEncoderOffset": -18.281,
+</strong>  "location": {
+    "front": -12,
+    "left": -12
+  }
+}
+</code></pre>
+
+Swap the highlighted lines and you have swapped the module configurations correctly.
+
+</details>
+
+#### Example configuration challenge
 
 <details>
 
