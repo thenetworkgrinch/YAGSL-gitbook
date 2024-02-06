@@ -95,6 +95,11 @@ For the examples we label with numbers as to be less confused, however when chan
 
 Swap the highlighted lines and you have swapped the module configurations correctly.
 
+## The easy way
+
+1. Change the location negations to the desired module side.
+2. Rename the files without overwriting eachother.
+
 </details>
 
 #### Example configuration challenge
