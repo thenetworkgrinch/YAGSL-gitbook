@@ -16,6 +16,10 @@ YAGSL-Example dev branch
 
 All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
+## 2024.4.8.2
+
+* [ ] Made CTRE wait for status times static for user modification. `CANCoderSwerve.STATUS_TIMEOUT_SECONDS`,`TalonFXSwerve.STATUS_TIMEOUT_SECONDS`, and `Pigeon2Swerve.STATUS_TIMEOUT_SECONDS` can be modified for desired use case.
+
 ## 2024.4.8.1
 
 * [ ] Added `SwerveDrive.setCosineCompensation` function which can enable and disable cosine compensation as desired, disabled by default in sim because of discrepancies with real robots.
