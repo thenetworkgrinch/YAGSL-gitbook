@@ -11,6 +11,7 @@
 * [Java API](https://broncbotz3481.github.io/YAGSL/)
 * [Example Code](https://github.com/BroncBotz3481/YAGSL-Example/tree/main)
 * [Config Generator](https://broncbotz3481.github.io/YAGSL-Example/)
+* [💸 Donations](https://ko-fi.com/yagsl)
 
 ## Fundamentals
 
