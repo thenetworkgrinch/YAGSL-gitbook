@@ -19,6 +19,7 @@ All PR's should be based off of and merged into here. YAGSL is propagated often 
 ## 2024.4.8.3
 
 * [ ] Updated `Pigeon2Swerve` to use `imu.getRotation3d()` instead of handling the CAN timeouts.
+* [ ] Massively reduced memory footprint required.
 
 ## 2024.4.8.2
 

@@ -94,13 +94,13 @@ YAGSL supports the NavX SPI communication over the roboRIO MXP. This is the reco
 }
 </code></pre>
 
-### Serial (`navx_mxp`, `navx_usb`)
+### Serial (`navx_mxp_serial`, `navx_usb`)
 
 Serial communication is slower than SPI communication and could be more prone to interference however this is the only out of the box way to communicate with the [NavX2 micro](https://www.andymark.com/products/navx2-micro-navigation-sensor) (`navx_usb`) so this must be selected if you are using one. The MXP serial communication can be used incase the SPI MXP communication is not working at the moment.
 
 <pre class="language-json"><code class="lang-json">{
   "imu": {
-<strong>    "type": <a data-footnote-ref href="#user-content-fn-7">"navx_mxp"</a>,
+<strong>    "type": <a data-footnote-ref href="#user-content-fn-7">"navx_mxp_serial"</a>,
 </strong>    "id": <a data-footnote-ref href="#user-content-fn-8">0</a>,
     "canbus": <a data-footnote-ref href="#user-content-fn-9">null</a>
   },
