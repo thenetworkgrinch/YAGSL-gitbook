@@ -16,6 +16,10 @@ YAGSL-Example dev branch
 
 All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
+## 2024.4.8.5
+
+* [ ] Fixed NavX inversion state not taking any affect on the robot.
+
 ## 2024.4.8.4
 
 * [ ] Updated anti jitter to run before cosine compensation.
