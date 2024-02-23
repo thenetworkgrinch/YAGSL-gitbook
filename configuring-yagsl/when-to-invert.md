@@ -10,6 +10,10 @@ When your gears are grinding on the ground but not while on blocks and your whee
 IF you are inverted incorrectly your modules or robot may spin "out-of-control"
 {% endhint %}
 
+## My robot drives backwards....
+
+To fix this you must add `180` to every `absoluteEncoderOffset` in every module file to correct this.&#x20;
+
 ## Swerve Motors
 
 When you spin your motor counterclockwise the value in Shuffleboard/NetworkTables `Module[...] Raw Absolute Encoder` and `Module[...] Raw Angle Encoder` should both increase.
