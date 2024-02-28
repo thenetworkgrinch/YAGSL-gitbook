@@ -16,6 +16,13 @@ YAGSL-Example dev branch
 
 All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
+## 2024.4.8.6
+
+* [ ] Added PIDF helper functions `SwerveModule.setDrivePIDF` and `SwerveModule.setAnglePIDF` alongside `SwerveModule.getDrivePIDF` and `SwerveModule.getAnglePIDF`.
+* [ ] Changed feedforward around to use `SwerveModule.setFeedforward` instead of directly modifying `SwerveModule.feedforward`&#x20;
+* [ ] Renamed `SwerveModule.feedforward` to `SwerveModule.driveFeedforward`.
+* [ ] Added anti-jitter disabling option via `SwerveModule.setAntiJitter` which also modifies the encoder offsets that are pushed to the motor controllers.
+
 ## 2024.4.8.5
 
 * [ ] Fixed NavX inversion state not taking any affect on the robot.
