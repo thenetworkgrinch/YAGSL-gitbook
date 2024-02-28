@@ -22,6 +22,7 @@ All PR's should be based off of and merged into here. YAGSL is propagated often 
 * [ ] Changed feedforward around to use `SwerveModule.setFeedforward` instead of directly modifying `SwerveModule.feedforward`&#x20;
 * [ ] Renamed `SwerveModule.feedforward` to `SwerveModule.driveFeedforward`.
 * [ ] Added anti-jitter disabling option via `SwerveModule.setAntiJitter` which also modifies the encoder offsets that are pushed to the motor controllers.
+* [ ] Updated vendordeps
 
 ## 2024.4.8.5
 
