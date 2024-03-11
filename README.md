@@ -44,6 +44,10 @@ We've put together some helpful guides for you to get setup with our product qui
 [getting-to-know-your-robot](configuring-yagsl/getting-to-know-your-robot/)
 {% endcontent-ref %}
 
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
+
 {% content-ref url="configuring-yagsl/configuration/" %}
 [configuration](configuring-yagsl/configuration/)
 {% endcontent-ref %}
@@ -54,6 +58,22 @@ We've put together some helpful guides for you to get setup with our product qui
 
 {% content-ref url="configuring-yagsl/code-setup.md" %}
 [code-setup.md](configuring-yagsl/code-setup.md)
+{% endcontent-ref %}
+
+{% content-ref url="analytics-and-debugging/frc-web-components.md" %}
+[frc-web-components.md](analytics-and-debugging/frc-web-components.md)
+{% endcontent-ref %}
+
+{% content-ref url="configuring-yagsl/when-to-invert.md" %}
+[when-to-invert.md](configuring-yagsl/when-to-invert.md)
+{% endcontent-ref %}
+
+{% content-ref url="configuring-yagsl/how-to-tune-pidf.md" %}
+[how-to-tune-pidf.md](configuring-yagsl/how-to-tune-pidf.md)
+{% endcontent-ref %}
+
+{% content-ref url="configuring-yagsl/the-eight-steps.md" %}
+[the-eight-steps.md](configuring-yagsl/the-eight-steps.md)
 {% endcontent-ref %}
 
 ## YAGSL Online Installation
