@@ -56,6 +56,10 @@ YAGSL created wrappers over all supported Motor Controllers to uniformly fetch a
 
 ## Motor Controller Configuration
 
+{% hint style="warning" %}
+Only CTRE devices currently support the `canbus` option, if your device is using the roboRIO `canbus` you must use the value of `null` or `"rio"` for supported CTRE devices. If you are using a CANivore, and the device is on the CANivore bus, the name must match the CANivore name.
+{% endhint %}
+
 Inside any module JSON such as `frontleft.json`,`frontright.json`,`backleft.json`,`backright.json` this is what you would see to configure a motor controller.
 
 <pre class="language-json"><code class="lang-json">{
