@@ -10,10 +10,6 @@ When your gears are grinding on the ground but not while on blocks and your whee
 IF you are inverted incorrectly your modules or robot may spin "out-of-control"
 {% endhint %}
 
-## My robot drives backwards....
-
-To fix this you must add `180` to every `absoluteEncoderOffset` in every module file to correct this.&#x20;
-
 ## Swerve Motors
 
 When you spin your motor counterclockwise the value in Shuffleboard/NetworkTables `Module[...] Raw Absolute Encoder` and `Module[...] Raw Angle Encoder` should both increase.
@@ -113,6 +109,14 @@ Invert the absolute encoder in the module JSON with `absoluteEncoderInverted` as
 
 {% hint style="warning" %}
 Sometimes you may need to invert these if when you rotate the robot changes it's front/back while driving in field-oriented mode.
+{% endhint %}
+
+{% hint style="danger" %}
+## Odometry mismatch
+
+Whenever your robot is driving backwards in odometry and forwards in real life while maintaining that a spin-in-place generates Counter-Clockwise-Positive movement you may need to apply this patch.
+
+You must add `180` to every `absoluteEncoderOffset` in every module file to correct this behavior.&#x20;
 {% endhint %}
 
 ### If the `Module[...] Raw Drive Encoder` is decreasing...

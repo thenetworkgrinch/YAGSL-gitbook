@@ -16,6 +16,10 @@ YAGSL-Example dev branch
 
 All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
+## 2024.4.8.7
+
+* [ ] Increased logging verbosity to introduce logging modes for the field and data. (PR [#185](https://github.com/BroncBotz3481/YAGSL-Example/pull/185) by [5010](https://github.com/5010TigerDynasty))
+
 ## 2024.4.8.6
 
 * [ ] Added PIDF helper functions `SwerveModule.setDrivePIDF` and `SwerveModule.setAnglePIDF` alongside `SwerveModule.getDrivePIDF` and `SwerveModule.getAnglePIDF`.
