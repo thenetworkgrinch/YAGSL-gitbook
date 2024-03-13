@@ -6,6 +6,76 @@ When the inversion state changes do not work and nothing else you know of fixes 
 
 Affectionally known as _"Translational Axis change based off of the robot heading"_ (the X and Y axis change in field oriented based off your robot turning.) these steps will resolve it somewhere along the way.
 
+## Prepare your robot code.
+
+In order for these tests to be conducted quickly and effectively please use the following or a variation of the following as your drive code. You may need to port it to a joystick or negate the axis' data retrieved but this will help you debug your issues faster.
+
+{% code title="RobotContainer.java" %}
+```java
+...
+    SwerveSubsystem drivebase;
+    CommandXboxController driverXbox;
+...
+    // Applies deadbands and inverts controls because joysticks
+    // are back-right positive while robot
+    // controls are front-left positive
+    // left stick controls translation
+    // right stick controls the desired angle NOT angular rotation
+    Command driveFieldOrientedDirectAngle = drivebase.driveCommand(
+        () -> MathUtil.applyDeadband(driverXbox.getLeftY(), OperatorConstants.LEFT_Y_DEADBAND),
+        () -> MathUtil.applyDeadband(driverXbox.getLeftX(), OperatorConstants.LEFT_X_DEADBAND),
+        () -> driverXbox.getRightX(),
+        () -> driverXbox.getRightY());
+        
+    drivebase.setDefaultCommand(driveFieldOrientedDirectAngle);
+....
+```
+{% endcode %}
+
+<pre class="language-java" data-title="SwerveSubsystem.java"><code class="lang-java">...
+public class SwerveSubsytem extends SubsystemBase
+{
+...
+  SwerveDrive swerveDrive;
+  /**
+   * Command to drive the robot using translative values and heading as a setpoint.
+   *
+   * @param translationX Translation in the X direction. Cubed for smoother controls.
+   * @param translationY Translation in the Y direction. Cubed for smoother controls.
+   * @param headingX     Heading X to calculate angle of the joystick.
+   * @param headingY     Heading Y to calculate angle of the joystick.
+   * @return Drive command.
+   */
+  public Command driveCommand(DoubleSupplier translationX, DoubleSupplier translationY, DoubleSupplier headingX,
+                              DoubleSupplier headingY)
+  {
+    // swerveDrive.setHeadingCorrection(true); // Normally you would want heading correction for this kind of control.
+    return run(() -> {
+      double xInput = Math.pow(translationX.getAsDouble(), 3); // Smooth controll out
+      double yInput = Math.pow(translationY.getAsDouble(), 3); // Smooth controll out
+      // Make the robot move
+<strong>      driveFieldOriented(swerveDrive.swerveController.getTargetSpeeds(xInput, yInput,
+</strong><strong>                                                                      headingX.getAsDouble(),
+</strong><strong>                                                                      headingY.getAsDouble(),
+</strong><strong>                                                                      swerveDrive.getOdometryHeading().getRadians(),
+</strong><strong>                                                                      swerveDrive.getMaximumVelocity()));
+</strong><strong>    });
+</strong>  }
+  
+  /**
+   * Drive the robot given a chassis field oriented velocity.
+   *
+   * @param velocity Velocity according to the field.
+   */
+  public void driveFieldOriented(ChassisSpeeds velocity)
+  {
+    swerveDrive.driveFieldOriented(velocity);
+  }
+...
+</code></pre>
+
+This snippet is taken directly from the YAGSL-Example project, if you are using that project you just need to be sure you use `driveFieldOrientedDirectAngle` as the default command for the `SwerveSubsystem` and correct any joystick inversions necessary.
+
 ## The eight steps.
 
 {% hint style="danger" %}
