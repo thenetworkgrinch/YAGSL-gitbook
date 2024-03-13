@@ -13,8 +13,8 @@ The Swerve Drive JSON configuration file configures everything related to the ov
 <pre class="language-json"><code class="lang-json">{
   "imu": {
     <a data-footnote-ref href="#user-content-fn-1">"type": "pigeon2"</a>,
-    "id": 13,
-    "canbus": "canivore"
+    <a data-footnote-ref href="#user-content-fn-2">"id": 13</a>,
+    <a data-footnote-ref href="#user-content-fn-3">"canbus"</a>: <a data-footnote-ref href="#user-content-fn-4">"canivore"</a>
   },
   "invertedIMU": true,
   "modules": [
@@ -27,3 +27,11 @@ The Swerve Drive JSON configuration file configures everything related to the ov
 </code></pre>
 
 [^1]: See more information [gyroscope.md](../../devices/gyroscope.md "mention")
+
+[^2]: When the IMU/gyro is connected to the roboRIO this should be the channel number that it is on, if it is not connected via the SPI or MXP port. \
+    \
+    If the device is a CAN device this would be the CAN ID of the device.
+
+[^3]: In this example the CANivore is named `"canivore"` and the `pigeon2` is connected to the CANivore instead of the roboRIO's CAN loop (which would be `null` or `"rio"` if the device were located on it).
+
+[^4]: If the IMU/gyroscope is not on a CANivore this should be `null` or `"rio"`. &#x20;
