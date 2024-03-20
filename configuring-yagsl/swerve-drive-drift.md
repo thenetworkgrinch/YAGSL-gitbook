@@ -38,7 +38,7 @@ Incorrect wiring can be further broken down into 3 categories for the swerve dri
 
 * [ ] Magnet not secured to the swerve module and slips while in motion.&#x20;
   * Absolute encoder offsets would constantly need to be readjusted until magnet is secured.
-* [ ] Magnetic encoder is note secured to the swerve module.
+* [ ] Magnetic encoder is not secured to the swerve module.
 
 #### Motor
 
