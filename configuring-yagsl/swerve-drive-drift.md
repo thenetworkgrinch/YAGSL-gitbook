@@ -71,6 +71,7 @@ Incorrect wiring can be further broken down into 3 categories for the swerve dri
 * [ ] Use of [`SwerveDrive.setGyroOffset`](https://broncbotz3481.github.io/YAGSL/swervelib/SwerveDrive.html#setMaximumSpeeds\(double,double,double\))
 * [ ] Use of [`SwerveDrive.updateCacheValidityPeriods`](https://broncbotz3481.github.io/YAGSL/swervelib/SwerveDrive.html#updateCacheValidityPeriods\(long,long,long\))
 * [ ] Use of [`SwerveDrive.setOdometryPeriod`](https://broncbotz3481.github.io/YAGSL/swervelib/SwerveDrive.html#setOdometryPeriod\(double\))
+* [ ] Use of [`SwerveDrive.addVisionMeasurement`](https://broncbotz3481.github.io/YAGSL/swervelib/SwerveDrive.html#addVisionMeasurement\(edu.wpi.first.math.geometry.Pose2d,double\))
 
 ### PathPlanner
 
