@@ -22,7 +22,7 @@ Conversion factors are applied to your motor convert from native units (usually 
 
 ## The Absolute Encoder Offset
 
-The absolute encoder offset is what allows your swerve module to maintain the wheel orientation between power offs. It is vital to a functioning swerve drive.&#x20;
+The absolute encoder offset is what allows your swerve module to maintain the wheel orientation between power offs. It is vital to a functioning swerve drive.
 
 1. Line up all wheels so that the bevels are facing to the left like this.
 
@@ -33,18 +33,20 @@ The absolute encoder offset is what allows your swerve module to maintain the wh
 4. Open shuffleboard.
 5.
 
-    <figure><img src="../.gitbook/assets/shuffleboard_open_tab.png" alt=""><figcaption><p>Open network tables</p></figcaption></figure>
-
+```
+<figure><img src="../.gitbook/assets/shuffleboard_open_tab.png" alt=""><figcaption><p>Open network tables</p></figcaption></figure>
+```
 
 6.
 
-    <figure><img src="../.gitbook/assets/shuffleboard_read_vals.png" alt=""><figcaption></figcaption></figure>
-
+```
+<figure><img src="../.gitbook/assets/shuffleboard_read_vals.png" alt=""><figcaption></figcaption></figure>
+```
 
 7. Take note of the `Module[...] Raw Absolute Encoder` value's and use them for `absoluteEncoderOffset` in the module JSONs.
 
 {% hint style="warning" %}
-## Special note to MAXSwerve teams!
+### Special note to MAXSwerve teams!
 
 When you align using the MAXSwerveModules and find the `absoluteEncoderOffset` for each module you may need to **+/-`90` from the `absoluteEncoderOffset`** to correct the module position. The `absoluteEncoderInverted` must also be `true` in every module configuration as well.
 
