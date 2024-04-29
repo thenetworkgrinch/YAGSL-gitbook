@@ -35,7 +35,7 @@ For the examples we label with numbers as to be less confused, however when chan
 3. `backleft.json`
 4. `backright.json`
 
-#### Swapping `frontleft.json` with `backleft.json`
+**Swapping `frontleft.json` with `backleft.json`**
 
 <pre class="language-json" data-title="frontleft.json"><code class="lang-json">{
 <strong>  "drive": {
@@ -95,7 +95,7 @@ For the examples we label with numbers as to be less confused, however when chan
 
 Swap the highlighted lines and you have swapped the module configurations correctly.
 
-## The easy way
+### The easy way
 
 1. Change the location negations to the desired module side.
 2. Rename the files without overwriting eachother.
@@ -108,8 +108,6 @@ Swap the highlighted lines and you have swapped the module configurations correc
 
 <summary>Challenge</summary>
 
-
-
 Here is a challenge for you, how can you solve this misconfiguration?
 
 <img src="../../.gitbook/assets/id_spin1.png" alt="While rotating right" data-size="original"><img src="../../.gitbook/assets/challenge_reorder2.png" alt="Translating right" data-size="original">
@@ -119,8 +117,6 @@ Here is a challenge for you, how can you solve this misconfiguration?
 <details>
 
 <summary>Solution</summary>
-
-
 
 <img src="../../.gitbook/assets/challenge_reorder1.png" alt="" data-size="original">
 

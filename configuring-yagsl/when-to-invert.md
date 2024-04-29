@@ -19,13 +19,15 @@ When you spin your motor counterclockwise the value in Shuffleboard/NetworkTable
 1. Open shuffleboard.
 2.
 
-    <figure><img src="../.gitbook/assets/shuffleboard_open_tab.png" alt=""><figcaption><p>Open network tables</p></figcaption></figure>
-
+```
+<figure><img src="../.gitbook/assets/shuffleboard_open_tab.png" alt=""><figcaption><p>Open network tables</p></figcaption></figure>
+```
 
 3.
 
-    <figure><img src="../.gitbook/assets/shuffleboard_read_vals.png" alt=""><figcaption></figcaption></figure>
-
+```
+<figure><img src="../.gitbook/assets/shuffleboard_read_vals.png" alt=""><figcaption></figcaption></figure>
+```
 
 4. Take note of the `Module[...] Raw Absolute Encoder` value's and use them for `absoluteEncoderOffset` in the module JSONs.
 
@@ -112,11 +114,11 @@ Sometimes you may need to invert these if when you rotate the robot changes it's
 {% endhint %}
 
 {% hint style="danger" %}
-## Odometry mismatch
+### Odometry mismatch
 
 Whenever your robot is driving backwards in odometry and forwards in real life while maintaining that a spin-in-place generates Counter-Clockwise-Positive movement you may need to apply this patch.
 
-You must add `180` to every `absoluteEncoderOffset` in every module file to correct this behavior.&#x20;
+You must add `180` to every `absoluteEncoderOffset` in every module file to correct this behavior.
 {% endhint %}
 
 ### If the `Module[...] Raw Drive Encoder` is decreasing...
@@ -177,7 +179,5 @@ You should notice the `Raw IMU Yaw` field in Shuffleboard increase. If it doesn'
   ]
 }
 </code></pre>
-
-
 
 [^1]: See more information [gyroscope.md](../devices/gyroscope.md "mention")
