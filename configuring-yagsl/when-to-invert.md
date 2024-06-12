@@ -114,7 +114,7 @@ Sometimes you may need to invert these if when you rotate the robot changes it's
 {% endhint %}
 
 {% hint style="danger" %}
-### Odometry mismatch
+#### Odometry mismatch
 
 Whenever your robot is driving backwards in odometry and forwards in real life while maintaining that a spin-in-place generates Counter-Clockwise-Positive movement you may need to apply this patch.
 

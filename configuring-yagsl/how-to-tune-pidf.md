@@ -49,7 +49,7 @@ The PIDF values will vary for every robot so tuning and testing are required. He
 
 {% tabs %}
 {% tab title="Drive Motor" %}
-### SparkMax
+#### SparkMax
 
 When the `drive` motor `type` for every module is `sparkmax` then this is what the starting point can be.
 
@@ -71,7 +71,7 @@ When the `drive` motor `type` for every module is `sparkmax` then this is what t
 }
 </code></pre>
 
-### TalonFX
+#### TalonFX
 
 When the drive motor `type` for every module is `talonfx` or alike (`kraken`/`falcon`) then this is what the starting point can be.
 
@@ -95,7 +95,7 @@ When the drive motor `type` for every module is `talonfx` or alike (`kraken`/`fa
 {% endtab %}
 
 {% tab title="Angle Motor" %}
-### SparkMax
+#### SparkMax
 
 When the `angle` motor `type` for every module is `sparkmax` then this is what the starting point can be.
 
@@ -117,7 +117,7 @@ When the `angle` motor `type` for every module is `sparkmax` then this is what t
 </strong>}
 </code></pre>
 
-### TalonFX
+#### TalonFX
 
 When the `angle` motor `type` for every module is `talonfx` or alike (`kraken`/`falcon`) then this is what the starting point can be.
 
