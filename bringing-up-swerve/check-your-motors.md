@@ -36,7 +36,7 @@ The absolute encoder offset is what allows your swerve module to maintain the wh
     <figure><img src="../.gitbook/assets/shuffleboard_open_tab.png" alt=""><figcaption></figcaption></figure>
 6.
 
-    <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>swerve/modules/... view in Shuffleboard</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/ShuffleboardAbsoluteEncoderHighlight.png" alt=""><figcaption><p>swerve/modules/... view in Shuffleboard</p></figcaption></figure>
 7. Take note of the `swerve/modules/.../Raw Absolute Encoder` value's and use them for `absoluteEncoderOffset` in the module JSONs.
 
 {% hint style="warning" %}

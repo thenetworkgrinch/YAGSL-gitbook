@@ -2,7 +2,7 @@
 
 YAGSL supports most common FRC absolute encoders. Absolute encoders are required if you are using a brushed motor .
 
-The absolute encoder value will show up in shuffleboard under `Module[...] Raw Absolute Encoder` and can be used to tune the `absoluteEncoderOffset` in module JSON configuration files under most circumstances.
+The absolute encoder value will show up in shuffleboard under `swerve/modules/.../Raw Absolute Encoder` and can be used to tune the `absoluteEncoderOffset` in module JSON configuration files under most circumstances.
 
 ## Absolute Encoder Checklist
 

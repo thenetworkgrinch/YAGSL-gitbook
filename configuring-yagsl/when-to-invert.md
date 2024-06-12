@@ -12,24 +12,14 @@ IF you are inverted incorrectly your modules or robot may spin "out-of-control"
 
 ## Swerve Motors
 
-When you spin your motor counterclockwise the value in Shuffleboard/NetworkTables `Module[...] Raw Absolute Encoder` and `Module[...] Raw Angle Encoder` should both increase.
+When you spin your motor counterclockwise the value in Shuffleboard/NetworkTables `swerve/modules/.../Raw Absolute Encoder` and `swerve/modules/.../Raw Angle Encoder` should both increase.
 
 ## How to open Shuffleboard
 
 1. Open shuffleboard.
-2.
-
-```
-<figure><img src="../.gitbook/assets/shuffleboard_open_tab.png" alt=""><figcaption><p>Open network tables</p></figcaption></figure>
-```
-
-3.
-
-```
-<figure><img src="../.gitbook/assets/shuffleboard_read_vals.png" alt=""><figcaption></figcaption></figure>
-```
-
-4. Take note of the `Module[...] Raw Absolute Encoder` value's and use them for `absoluteEncoderOffset` in the module JSONs.
+2. ![](../.gitbook/assets/shuffleboard\_open\_tab.png)
+3. ![](../.gitbook/assets/ShuffleboardAbsoluteEncoderHighlight.png)
+4. Take note of the `swerve/modules/.../Raw Absolute Encoder` value's and use them for `absoluteEncoderOffset` in the module JSONs.
 
 ## Spin your module counterclockwise
 
@@ -41,7 +31,7 @@ Spin your modules **COUNTERclockwise** from the top down view.
 
 The swerve drive should be on it's side or otherwise lifted. Your swerve module bevels must be facing the left like shown. To rotate the swerve modules they must be rotated counterclockwise like shown.
 
-### If the `Module[...] Raw Angle Encoder` is decreasing...
+### If the `swerve/modules/.../Raw Angle Encoder` is decreasing...
 
 Invert your angle motor for every module that is decreasing!
 
@@ -74,7 +64,7 @@ Invert your angle motor for every module that is decreasing!
 }
 </code></pre>
 
-### If the `Module[...] Raw Absolute Encoder` is decreasing...
+### If the `swerve/modules/.../Raw Absolute Encoder` is decreasing...
 
 Invert the absolute encoder in the module JSON with `absoluteEncoderInverted` as shown here.
 
@@ -121,7 +111,7 @@ Whenever your robot is driving backwards in odometry and forwards in real life w
 You must add `180` to every `absoluteEncoderOffset` in every module file to correct this behavior.
 {% endhint %}
 
-### If the `Module[...] Raw Drive Encoder` is decreasing...
+### If the `swerve/modules/.../Raw Drive Encoder` is decreasing...
 
 Invert your drive motor for every module that is decreasing!
 
