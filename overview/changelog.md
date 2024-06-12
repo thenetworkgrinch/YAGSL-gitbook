@@ -19,6 +19,8 @@ All PR's should be based off of and merged into here. YAGSL is propagated often 
 ## 2024.4.8.7
 
 * [ ] Increased logging verbosity to introduce logging modes for the field and data. (PR [#185](https://github.com/BroncBotz3481/YAGSL-Example/pull/185) by [5010](https://github.com/5010TigerDynasty))
+* [ ] Added `SwerveDrive.setChassisDiscretization` to allow for changing of the discrete value between cycle times which can be tuned to reduce drift. (PR [#194](https://github.com/BroncBotz3481/YAGSL-Example/pull/194) by [TechnologyMan00](https://github.com/Technologyman00))
+* [ ] Renamed `SwerveDrive.pushOffsetsToControllers` to `SwerveDrive.pushOffsetsToEncoders`. (PR [#194](https://github.com/BroncBotz3481/YAGSL-Example/pull/194) by [TechnologyMan00](https://github.com/Technologyman00))
 
 ## 2024.4.8.6
 
