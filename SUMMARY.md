@@ -65,15 +65,15 @@
 ## Analytics and Debugging
 
 * [FRC Web Components](analytics-and-debugging/frc-web-components.md)
-* [❌ Advantage Scope](analytics-and-debugging/advantage-scope.md)
+* [Advantage Scope](analytics-and-debugging/advantage-scope.md)
 
 ## Product Guides
 
 * [Java API](https://broncbotz3481.github.io/YAGSL/)
+* [PathPlanner](https://pathplanner.dev/home.html)
 * [❌ Tuning PID with REV Hardware Client](product-guides/tuning-pid-with-rev-hardware-client.md)
 * [❌ Drive Code](product-guides/drive-code.md)
 * [❌ Vision Processing](product-guides/vision-processing.md)
-* [PathPlanner](https://pathplanner.dev/home.html)
 
 ## Legacy Documentation
 
