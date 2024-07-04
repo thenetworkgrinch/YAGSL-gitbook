@@ -17,7 +17,7 @@ The integrated encoder value will show up in shuffleboard under `swerve/modules/
 
 YAGSL created wrappers over all supported Motor Controllers to uniformly fetch and set data that is needed for a Swerve Drive to operate. This wrapper is called [`SwerveMotor`](https://broncbotz3481.github.io/YAGSL/swervelib/motors/SwerveMotor.html). All [`SwerveMotor`](https://broncbotz3481.github.io/YAGSL/swervelib/motors/SwerveMotor.html)'s can be fetched via the [`SwerveModule`](https://broncbotz3481.github.io/YAGSL/swervelib/SwerveModule.html#configuration) configuration object [`SwerveModuleConfiguration`](https://broncbotz3481.github.io/YAGSL/swervelib/parser/SwerveModuleConfiguration.html) motor definitions [`angleMotor`](https://broncbotz3481.github.io/YAGSL/swervelib/parser/SwerveModuleConfiguration.html#angleMotor) and [`driveMotor`](https://broncbotz3481.github.io/YAGSL/swervelib/parser/SwerveModuleConfiguration.html#driveMotor). The [`SwerveModule`](https://broncbotz3481.github.io/YAGSL/swervelib/SwerveModule.html) is able to be fetched by [`SwerveDrive.getModules()`](https://broncbotz3481.github.io/YAGSL/swervelib/SwerveDrive.html#getModules\(\)) easily.
 
-<pre class="language-java"><code class="lang-java"> /**
+<pre class="language-java" data-full-width="true"><code class="lang-java"> /**
    * Initialize {@link SwerveDrive} with the directory provided.
    *
    * @param directory Directory of swerve drive config files.
@@ -48,8 +48,8 @@ YAGSL created wrappers over all supported Motor Controllers to uniformly fetch a
     for(SwerveModule m : swerveDrive.getModules())
     {
       System.out.println("Module Name: "+m.configuration.name);
-      <a data-footnote-ref href="#user-content-fn-1">CANSparkMax</a> steeringMotor = (<a data-footnote-ref href="#user-content-fn-2">CANSparkMax</a>)m.configuration.angleMotor.getMotor();
-      <a data-footnote-ref href="#user-content-fn-3">CANSparkMax</a> driveMotor = (<a data-footnote-ref href="#user-content-fn-4">CANSparkMax</a>)m.configuration.driveMotor.getMotor();
+      <a data-footnote-ref href="#user-content-fn-1">CANSparkMax</a> steeringMotor = (<a data-footnote-ref href="#user-content-fn-2">CANSparkMax</a>)m.getAngleMotor().getMotor();
+      <a data-footnote-ref href="#user-content-fn-3">CANSparkMax</a> driveMotor = (<a data-footnote-ref href="#user-content-fn-4">CANSparkMax</a>)m.getDriveMotor().getMotor();
     }
   }
 </code></pre>
