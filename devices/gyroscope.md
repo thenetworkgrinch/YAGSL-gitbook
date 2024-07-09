@@ -40,7 +40,7 @@ YAGSL creates wrappers over all supported Gyroscope types to uniformly fetch and
     }
     swerveDrive.setHeadingCorrection(false); // Heading correction should only be used while controlling the robot via angle.
 
-<strong>    <a data-footnote-ref href="#user-content-fn-2">AHRS</a> navx = (<a data-footnote-ref href="#user-content-fn-3">AHRS</a>)swerveDrive.swerveDriveConfiguration.imu.getIMU();
+<strong>    <a data-footnote-ref href="#user-content-fn-2">AHRS</a> navx = (<a data-footnote-ref href="#user-content-fn-3">AHRS</a>)swerveDrive.getGyro().getIMU();
 </strong>
   }
 </code></pre>
