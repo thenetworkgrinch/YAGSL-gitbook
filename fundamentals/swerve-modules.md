@@ -318,6 +318,10 @@ WPILib has some documentation on a turret position controller which is the exact
 
 You must limit the currents of your motors to avoid pulling too much power and browning out, typically these are in the ranges of 20A for steering motors, and 40A for drive motors.
 
+{% hint style="warning" %}
+TalomFXs use the stator current limit **NOT** the supply current limit like the NEOs.
+{% endhint %}
+
 ## Example Code
 
 ```java
