@@ -16,7 +16,7 @@ YAGSL-Example dev branch
 
 All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
-## 2024.4.8.8
+## 2024.5.0.0
 
 * [ ] Changed input scaling to utilize Polar coordinate magnitude multiplication.
 * [ ] Simplify placeInAppropriate0To360Scope (PR [#213](https://github.com/BroncBotz3481/YAGSL-Example/pull/213) by [GoldenStack](https://github.com/GoldenStack))
