@@ -21,6 +21,7 @@ All PR's should be based off of and merged into here. YAGSL is propagated often 
 * [ ] Changed input scaling to utilize Polar coordinate magnitude multiplication.
 * [ ] Simplify placeInAppropriate0To360Scope (PR [#213](https://github.com/BroncBotz3481/YAGSL-Example/pull/213) by [GoldenStack](https://github.com/GoldenStack))
 * [ ] Added auto-centering modules setting.
+* [ ] Added back composite conversion factors.
 
 ## 2024.4.8.7
 
