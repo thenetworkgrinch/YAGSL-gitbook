@@ -78,6 +78,7 @@ Just download all of the vendordeps from WPILib online with this list.[#vendor-u
 * Control over `ChassisSpeeds.discretize` via `SwerveDrive.setChassisSpeedsDisctretization`
 * Cosine compensation via `SwerveDrive.setCosineCompensator`
 * Heading correction with `SwerveDrive.setHeadingCorrection`
+* Auto-centering modules allows for modules to center to 0 whenever no input is given. This can be controlled by `SwerveDrive.setAutoCenteringModules`
 
 ## Safety Features
 
