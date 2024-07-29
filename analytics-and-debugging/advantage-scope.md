@@ -5,7 +5,7 @@ description: >-
   debugging.
 ---
 
-# ❌ Advantage Scope
+# Advantage Scope
 
 ## Opening
 
@@ -15,7 +15,7 @@ Since the 2024 Season, [Advantage Scope](https://github.com/Mechanical-Advantage
 
 1. Connect laptop to robot
 2. Open `AdvantageScope (WPILib)` or in VS Code open the command palette and type in `WPILib: Start Tool` and click `AdvantageScope`
-3. Click `Help` then `Show Preferences`&#x20;
+3. Click `Help` then `Show Preferences`
 
 <figure><img src="../.gitbook/assets/AdvantageScope-Preferences.png" alt=""><figcaption><p>Advantage Scope's help menu</p></figcaption></figure>
 
@@ -40,12 +40,10 @@ Since the 2024 Season, [Advantage Scope](https://github.com/Mechanical-Advantage
    2. From the same menu drag the `measuredStates` into the `States (Blue)` field.
    3. From the same menu drag the `robotRotation` into the `Robot Rotation` field.
 
-
-
 <figure><img src="../.gitbook/assets/AdvantageScope-Swerve-Fields.png" alt=""><figcaption><p>Connecting data from network tables to the swerve fields</p></figcaption></figure>
 
 9. Adjust the Data column to your Swerve Drive's properties.
-   1. Under the `Data` column change the `Max Speed` field to the value of `SmartDashboard/swerve/maxSpeed` entry.&#x20;
+   1. Under the `Data` column change the `Max Speed` field to the value of `SmartDashboard/swerve/maxSpeed` entry.
    2. Change the `Rotation Units` to match what the `SmartDashboard/swerve/rotationUnit` shows.
 
 <figure><img src="../.gitbook/assets/AdvantageScope-Swerve-Data.png" alt=""><figcaption><p>Change the swerve drive's data to match your robot</p></figcaption></figure>
@@ -56,7 +54,7 @@ Since the 2024 Season, [Advantage Scope](https://github.com/Mechanical-Advantage
 
 ## Overview
 
-<figure><img src="../.gitbook/assets/FRC_web_component_snapshot.png" alt=""><figcaption><p>Swerve Drivebase while in motion with an incorrect configuration. <br>(Need to change this to an actual picture of Advantage Scope)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/FRC_web_component_snapshot.png" alt=""><figcaption><p>Swerve Drivebase while in motion with an incorrect configuration.<br>(Need to change this to an actual picture of Advantage Scope)</p></figcaption></figure>
 
 {% hint style="info" %}
 The **BLUE** lines are the measured velocity and position of the swerve module.
