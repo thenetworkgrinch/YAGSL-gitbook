@@ -75,6 +75,9 @@ Just download all of the vendordeps from WPILib online with this list.[#vendor-u
 * Ability to use Chassis Velocity Correction using `SwerveDrive.chassisVelocityCorrection` only affecting the `SwerveDrive.drive` functions.
 * Ability to control using different center of rotation with `SwerveDrive.drive`.
 * Push the offsets to the motor controllers via `SwerveDrive.pushOffsetsToControllers`
+* Control over `ChassisSpeeds.discretize` via `SwerveDrive.setChassisSpeedsDisctretization`
+* Cosine compensation via `SwerveDrive.setCosineCompensator`
+* Heading correction with `SwerveDrive.setHeadingCorrection`
 
 ## Safety Features
 
@@ -90,7 +93,6 @@ Just download all of the vendordeps from WPILib online with this list.[#vendor-u
 
 ## Odometry
 
-* ~~`SwerveDrive.updateOdometry` should be called periodically (every 20ms)~~
 * `SwerveDrive.updateOdometry` is called every 20ms, the period can be changed via `SwerveDrive.setOdometryPeriod`.
 * To stop the odometry thread use `SwerveDrive.stopOdometryThread` and update odometry in a periodic.
 * To zero the gyroscope call `SwerveDrive.zeroGyro`
@@ -98,6 +100,7 @@ Just download all of the vendordeps from WPILib online with this list.[#vendor-u
 * Robot pose can be fetched via `SwerveDrive.getPose`
 * Robot gyroscope readings can be fetched via `SwerveDrive.getGyroRotation3d` or `SwerveDrive.getYaw`, `SwerveDrive.getPitch`, `SwerveDrive.getRoll`.
 * Robot pose can be updated with vision inputs through `SwerveDrive.addVisionMeasurement` optional standard deviation pass through.
+* Gyroscope offset can be configured via `SwerveDrive.setGyroOffset` and should be used for pathplanner.
 * If your translational odometry is off but controls are correct you can invert you translational odometry with the attribute `SwerveDrive.invertOdometry`
 
 ## Telemetry
@@ -106,5 +109,6 @@ Just download all of the vendordeps from WPILib online with this list.[#vendor-u
 * Every module angle is reported for both relative and absolute encoders.
 * Every module velocity is reported.
 * The desired chassis speed is reported.
-* There is a Field2d which is created and updated continously to represent the robots current position and orientation on the field.
+* There is a Field2d which is created and updated continuously to represent the robots current position and orientation on the field.
 * You can add trajectories to the field with `SwerveDrive.postTrajectory` when testing.
+
