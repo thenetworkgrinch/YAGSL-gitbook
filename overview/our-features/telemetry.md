@@ -2,7 +2,7 @@
 
 ## How it works?
 
-YAGSL uses telemetry in `SwerveDrive` and `SwerveModule` for consolidation. There are a few remainders of telemetry which is pushed from `SwerveDrive.updateOdometry()`. All Telemtry is bound by a verbosity level in `SwerveDriveTelemtry.verbosity` as a static variable. The following are the options which you can utilize.
+YAGSL uses telemetry in `SwerveDrive` and `SwerveModule` for consolidation. There are a few remainders of telemetry which is pushed from [`SwerveDrive.updateOdometry()`](https://broncbotz3481.github.io/YAGSL/swervelib/SwerveDrive.html#updateOdometry\(\)). All Telemtry is bound by a verbosity level in [`SwerveDriveTelemtry.verbosity`](https://broncbotz3481.github.io/YAGSL/swervelib/telemetry/SwerveDriveTelemetry.html#verbosity) as a static variable. The following are the options which you can utilize.
 
 ```java
 /**
@@ -43,7 +43,7 @@ YAGSL uses telemetry in `SwerveDrive` and `SwerveModule` for consolidation. Ther
 Higher telemetry could induce some lag on the robot and slow down the cycle times. So be cautious on what you chose!
 {% endhint %}
 
-To configure the telemetry please change `SwerveDriveTelemetry` to one of the enum values that you desire.&#x20;
+To configure the telemetry please change [`SwerveDriveTelemetry.verbosity`](https://broncbotz3481.github.io/YAGSL/swervelib/telemetry/SwerveDriveTelemetry.html#verbosity) to one of the [enum values](https://broncbotz3481.github.io/YAGSL/swervelib/telemetry/SwerveDriveTelemetry.TelemetryVerbosity.html) that you desire.&#x20;
 
 <pre class="language-java"><code class="lang-java">  /**
    * Initialize {@link SwerveDrive} with the directory provided.

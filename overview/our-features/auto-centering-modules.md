@@ -8,9 +8,11 @@ description: >-
 
 ## What is auto-centering modules?
 
-Auto-centering is how your robot will center the wheels when there is no input provided. When auto-centering is enabled the Swerve Module will "snap" to `0` every time there is no input form the controller or autonomous. This can be desired by some teams but it is in no way recommended. Auto-centering causes issues at startup that sometimes misaligns your robot for autonomous, this can also cause more drift than normal. Auto-centering modules works by calling `SwerveModule.setAntiJitter(false)` so all side-effects of that action are present in swerve drives which use this!
+Auto-centering is how your robot will center the wheels when there is no input provided. When auto-centering is enabled the Swerve Module will "snap" to `0` every time there is no input form the controller or autonomous. This can be desired by some teams but it is in no way recommended. Auto-centering causes issues at startup that sometimes misaligns your robot for autonomous, this can also cause more drift than normal. Auto-centering modules works by calling [`SwerveModule.setAntiJitter(false)`](https://broncbotz3481.github.io/YAGSL/swervelib/SwerveModule.html#setAntiJitter\(boolean\)) so all side-effects of that action are present in swerve drives which use this!
 
 ## How do I enable auto-centering modules?
+
+You enable auto-centering by using `SwerveDrive.setAutoCenteringModules(true)`
 
 <pre class="language-java"><code class="lang-java">  /**
    * Initialize {@link SwerveDrive} with the directory provided.

@@ -10,6 +10,10 @@ YAGSL Simulates the entire robot using the same simulation modules provided by v
 
 ## How do I enable it?
 
+{% hint style="warning" %}
+Cosine compensation and heading correction should be disabled when running simulation or else the simulation may be uncontrollable!
+{% endhint %}
+
 For simulation to work properly all you have to do is ensure that heading compensation and cosine compensation are disabled like in the example below.
 
 <pre class="language-java"><code class="lang-java"> /**
