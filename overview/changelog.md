@@ -16,6 +16,11 @@ YAGSL-Example dev branch
 
 All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
+## 2024.5.0.1
+
+* [ ] Added `SwerveDrive.setVisionMeasurementStdDevs(Matrix<N3, N1> visionMeasurementStdDevs)`
+* [ ] Add ability to get the rotation rate from the IMU (PR [#216](https://github.com/BroncBotz3481/YAGSL-Example/pull/216) by [@clrozeboom](https://github.com/clrozeboom))
+
 ## 2024.5.0.0
 
 * [ ] Changed input scaling to utilize Polar coordinate magnitude multiplication.
