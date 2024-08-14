@@ -323,7 +323,7 @@ TalonFXs use the stator current limit **NOT** the supply current limit like the 
 
 {% endhint %}
 
-{% embed 
+{% embed
 url="https://v6.docs.ctr-electronics.com/en/stable/docs/hardware-reference/talonfx/improving-performance-with-current-limits.html" %}
 
 ## Example Code
