@@ -321,7 +321,7 @@ You must limit the currents of your motors to avoid pulling too much power and b
 {% hint style="warning" %}
 TalonFXs use the stator current limit **NOT** the supply current limit like the NEOs.
 
-{% embed
+{% embed 
 url="https://v6.docs.ctr-electronics.com/en/stable/docs/hardware-reference/talonfx/improving-performance-with-current-limits.html" %}
 
 {% endhint %}
