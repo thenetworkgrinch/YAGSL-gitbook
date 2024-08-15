@@ -259,8 +259,6 @@ $$
 SteeringConverionFactor = \frac{1_{degree}}{1_{rot}} = \frac{1_{rot}}{12.8_{rot}} * \frac{1_{rot}}{360_{deg}}
 $$
 
-
-
 The drive conversion factor will take _**rotations/minute**_ given by the motor encoder and convert them to _**meters/second**_.
 
 For the following example we will use the gear ratio `6.75:1` [(SDS MK4 L2 Drive Ratio)](https://www.swervedrivespecialties.com/collections/kits/products/mk4-swerve-module) which means the rotor spins `6.75` times for the wheel to complete a rotation.
@@ -281,7 +279,7 @@ The conversion factor is extremely important and if it is wrong the motor **COUL
 
 ### PID Control
 
-PID stands for Percent-Integral-Derivative. Swerve Drive's should try to use the most up to date feedback sensors so we will be using the on-board PID feature of the SparkMAX.&#x20;
+PID stands for Percent-Integral-Derivative. Swerve Drive's should try to use the most up to date feedback sensors so we will be using the on-board PID feature of the SparkMAX.
 
 WPILib has a great guide to learning PID's here. The turret position example is how we will control the steering motors.
 
@@ -291,7 +289,7 @@ REV's documentation on this is available and shows how it works (mostly) on the 
 
 {% embed url="https://docs.revrobotics.com/sparkmax/operating-modes/closed-loop-control" %}
 
-There are 2 PID's you need to control create to control a Swerve Module one for the drive motor, the other for the steering motors.&#x20;
+There are 2 PID's you need to control create to control a Swerve Module one for the drive motor, the other for the steering motors.
 
 #### Drive Motor PID
 
@@ -303,7 +301,7 @@ For a drive wheel there may be a feedforward you want to always use to ensure th
 
 #### Steering Motor PID
 
-The Steering Motor PID controls the angle of the wheel in degrees based off of the feedback sensor. A few tricks are necessary to do this effectively though.&#x20;
+The Steering Motor PID controls the angle of the wheel in degrees based off of the feedback sensor. A few tricks are necessary to do this effectively though.
 
 1. PID Wrapping ensures the wheel will always choose the shortest path to the destination angle.
 2. Grease your gears often!!!
@@ -320,11 +318,9 @@ You must limit the currents of your motors to avoid pulling too much power and b
 
 {% hint style="warning" %}
 TalonFXs use the stator current limit **NOT** the supply current limit like the NEOs.
-
 {% endhint %}
 
-{% embed
-url="https://v6.docs.ctr-electronics.com/en/stable/docs/hardware-reference/talonfx/improving-performance-with-current-limits.html" %}
+{% embed url="https://v6.docs.ctr-electronics.com/en/stable/docs/hardware-reference/talonfx/improving-performance-with-current-limits.html" %}
 
 ## Example Code
 
