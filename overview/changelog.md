@@ -16,6 +16,11 @@ YAGSL-Example dev branch
 
 All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
+## 2024.5.0.3
+
+* [ ] Fixed `SparkMaxAnalogEncoder` wrapper to work. The expected read values are in volts, 3.3v max. (Found and fixed by team Austin from team 2377)
+* [ ] Changed default behavior of setting an attached absolute encoder up without calling `SwerevDrive.pushOffsetsToEncoders` which is now an optional optimization for MAX Swerve modules instead of a requirement. MAX Swerve no longer need to use `360` as the conversion factor IF they do not use `SwerveDrive.pushOffsetsToEncoders`
+
 ## 2024.5.0.1
 
 * [ ] Added `SwerveDrive.setVisionMeasurementStdDevs(Matrix<N3, N1> visionMeasurementStdDevs)`
