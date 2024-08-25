@@ -16,9 +16,14 @@ YAGSL-Example dev branch
 
 All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
+## 2024.5.0.4
+
+* [ ] Added PhotonVision `Vision` class to example and integrate it with the example code.
+
 ## 2024.5.0.3
 
 * [ ] Fixed `SparkMaxAnalogEncoder` wrapper to work. The expected read values are in volts, 3.3v max. (Found and fixed by team Austin from team 2377)
+* [ ] Fixed `CanandCoder` to `CanandMag` due to product rename. (Credit to [TurboJax07](https://github.com/Turbojax07))
 * [ ] Changed default behavior of setting an attached absolute encoder up without calling `SwerevDrive.pushOffsetsToEncoders` which is now an optional optimization for MAX Swerve modules instead of a requirement. MAX Swerve no longer need to use `360` as the conversion factor IF they do not use `SwerveDrive.pushOffsetsToEncoders`
 
 ## 2024.5.0.1
