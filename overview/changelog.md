@@ -19,6 +19,11 @@ All PR's should be based off of and merged into here. YAGSL is propagated often 
 ## 2024.5.0.4
 
 * [ ] Added PhotonVision `Vision` class to example and integrate it with the example code.
+* [ ] Added `getAprilTagPose` method to `Vision` (PR [#226](https://github.com/BroncBotz3481/YAGSL-Example/pull/226) by  [**kreidljj**](https://github.com/kreidljj))
+* [ ] Update the vision simulation on `Vision.updatePoseEstimation` (PR [#224](https://github.com/BroncBotz3481/YAGSL-Example/pull/224) by [**brandonzx3**](https://github.com/brandonzx3)**)**
+* [ ] Add Standard Deviations for YAGSL SwerveDrive Pose Estimator (PR [#222](https://github.com/BroncBotz3481/YAGSL-Example/pull/222) by [**maxikyuu**](https://github.com/maxikyuu)**)**
+* [ ] Updating Vendordeps and renaming CanandCoders to CanandMags (PR [#219](https://github.com/BroncBotz3481/YAGSL-Example/pull/219) by [**Turbojax07**](https://github.com/Turbojax07) and YAGSL devs)
+* [ ] Fixed documentation issue with `SwerveDriveTelemetry`&#x20;
 
 ## 2024.5.0.3
 
