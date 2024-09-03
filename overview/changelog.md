@@ -24,6 +24,7 @@ All PR's should be based off of and merged into here. YAGSL is propagated often 
 * [ ] Add Standard Deviations for YAGSL SwerveDrive Pose Estimator (PR [#222](https://github.com/BroncBotz3481/YAGSL-Example/pull/222) by [**maxikyuu**](https://github.com/maxikyuu)**)**
 * [ ] Updating Vendordeps and renaming CanandCoders to CanandMags (PR [#219](https://github.com/BroncBotz3481/YAGSL-Example/pull/219) by [**Turbojax07**](https://github.com/Turbojax07) and YAGSL devs)
 * [ ] Fixed documentation issue with `SwerveDriveTelemetry` (Issue [#233 ](https://github.com/BroncBotz3481/YAGSL-Example/issues/223)by [**DanPeled**](https://github.com/DanPeled) )
+* [ ] Fixed AbsoluteEncoders attached to the SparkMAX like Throughbores.
 
 ## 2024.5.0.3
 
