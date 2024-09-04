@@ -5,7 +5,7 @@ This page serves a standard set of conversion factors for a few typical modules.
 {% hint style="warning" %}
 IF you are using absolute encoders attached to your SparkMAX data port (on the top of the SparkMAX) the `angle` conversion factor should be set to `360`!
 
-For example an MK4i L1 with an absolute encoder attached to the SparkMAX (like a canandcoder) should be set with these conversion factors.
+For example an MK4i L1 with an absolute encoder attached to the SparkMAX (like a `CanandMag`) should be set with these conversion factors.
 
 ```json
 "conversionFactors": {
@@ -43,8 +43,8 @@ These conversion factors assume you are using 3in wheels!
 {% tab title="12T" %}
 ```json
 "conversionFactors": {
-    "angle": {"factor": 360},
-    "drive": {"factor": 0.04352533821882586}
+    "angle": {"gearRatio": 46.42},
+    "drive": {"gearRatio": 5.50, "diameter": 3}
 }
 ```
 {% endtab %}
@@ -52,8 +52,8 @@ These conversion factors assume you are using 3in wheels!
 {% tab title="13T" %}
 ```json
 "conversionFactors": {
-    "angle": {"factor": 360},
-    "drive": {"factor": 0.04712388980384689}
+    "angle": {"gearRatio": 46.42},
+    "drive": {"gearRatio": 5.08, "diameter": 3}
 }
 ```
 {% endtab %}
@@ -61,8 +61,8 @@ These conversion factors assume you are using 3in wheels!
 {% tab title="14T" %}
 ```json
 "conversionFactors": {
-    "angle": {"factor": 360},
-    "drive": {"factor": 0.05082576649756735}
+    "angle": {"gearRatio": 46.42},
+    "drive": {"gearRatio": 4.71, "diameter": 3}
 }
 ```
 {% endtab %}
@@ -78,8 +78,8 @@ These conversion factors assume you are using 4in wheels!&#x20;
 {% tab title="MK4i L1 " %}
 ```json
 "conversionFactors": {
-	"angle": {"factor": 16.8},
-	"drive": {"factor": 0.03921201641335663}
+	"angle": {"gearRatio": 21.4285714286},
+	"drive": {"gearRatio": 8.14, "diameter": 4}
 }
 ```
 {% endtab %}
@@ -87,8 +87,8 @@ These conversion factors assume you are using 4in wheels!&#x20;
 {% tab title="MK4i L2" %}
 ```json
 "conversionFactors": {
-	"angle": {"factor": 16.8},
-	"drive": {"factor": 0.047286787200699704}
+	"angle": {"gearRatio": 21.4285714286},
+	"drive": {"gearRatio": 6.75, "diameter": 4}
 }
 ```
 {% endtab %}
@@ -96,8 +96,8 @@ These conversion factors assume you are using 4in wheels!&#x20;
 {% tab title="MK4i L3" %}
 ```json
 "conversionFactors": {
-	"angle": {"factor": 16.8},
-	"drive": {"factor": 0.05215454470665408}
+	"angle": {"gearRatio": 21.4285714286},
+	"drive": {"gearRatio": 6.12, "diameter": 4}
 }
 ```
 {% endtab %}
@@ -107,8 +107,8 @@ These conversion factors assume you are using 4in wheels!&#x20;
 {% tab title="MK4 L1" %}
 ```json
 "conversionFactors": {
-	"angle": {"factor": 28.125},
-	"drive": {"factor": 0.03921201641335663}
+	"angle": {"gearRatio": 12.8},
+	"drive": {"gearRatio": 8.14, "diameter": 4}
 }
 ```
 {% endtab %}
@@ -116,8 +116,8 @@ These conversion factors assume you are using 4in wheels!&#x20;
 {% tab title="MK4 L2" %}
 ```json
 "conversionFactors": {
-	"angle": {"factor": 28.125},
-	"drive": {"factor": 0.047286787200699704}
+	"angle": {"gearRatio": 12.8},
+	"drive": {"gearRatio": 6.75, "diameter": 4}
 }
 ```
 {% endtab %}
@@ -125,8 +125,8 @@ These conversion factors assume you are using 4in wheels!&#x20;
 {% tab title="MK4 L3" %}
 ```json
 "conversionFactors": {
-	"angle": {"factor": 28.125},
-	"drive": {"factor": 0.05215454470665408}
+	"angle": {"gearRatio": 12.8},
+	"drive": {"gearRatio": 6.12, "diameter": 4}
 }
 ```
 {% endtab %}
@@ -134,8 +134,8 @@ These conversion factors assume you are using 4in wheels!&#x20;
 {% tab title="MK4 L4" %}
 ```json
 "conversionFactors": {
-	"angle": {"factor": 28.125},
-	"drive": {"factor": 0.06209840731609397}
+	"angle": {"gearRatio": 12.8},
+	"drive": {"gearRatio": 5.14, "diameter": 4}
 }
 ```
 {% endtab %}
