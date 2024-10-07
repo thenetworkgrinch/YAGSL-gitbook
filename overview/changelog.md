@@ -16,6 +16,12 @@ YAGSL-Example dev branch
 
 All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
+## 2024.5.0.5
+
+* [ ] Merge Swerve configuration test changes (PR [#228](https://github.com/BroncBotz3481/YAGSL-Example/pull/228) by [**clrozeboom**](https://github.com/clrozeboom)**)**
+* [ ] Sparkmax optimizations, changes to avg filter etc (PR [#233](https://github.com/BroncBotz3481/YAGSL-Example/pull/233) by [**yapplejack**](https://github.com/yapplejack)**)**
+* [ ] Suggestion for desaturateWheelSpeeds() to use desiredChassisSpeeds (PR [#232](https://github.com/BroncBotz3481/YAGSL-Example/pull/232) by [**yapplejack**](https://github.com/yapplejack)**)**
+
 ## 2024.5.0.4
 
 * [ ] Added PhotonVision `Vision` class to example and integrate it with the example code.
