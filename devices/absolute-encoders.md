@@ -11,10 +11,6 @@ The absolute encoder value will show up in shuffleboard under `swerve/modules/..
 * [ ] Absolute Encoders have unique CAN ID's or Analog Input Channel's.
 * [ ] Absolute Encoder are defined with the correct ID or Analog Input Channel.
 
-{% hint style="warning" %}
-**IF** you are attaching the absolute encoder to the motor controller the gearing and counts per revolution are not relevant and should be `360` instead of the calculated conversion factor for the angle motor!
-{% endhint %}
-
 ## Swerve Absolute Encoder Wrapper
 
 YAGSL created wrappers over all supported Absolute Encoders to uniformly fetch and set data that is needed for a Swerve Module to operate. This wrapper is called [`SwerveAbsoluteEncoder`](https://broncbotz3481.github.io/YAGSL/swervelib/encoders/SwerveAbsoluteEncoder.html). All [`SwerveAbsoluteEncoder`](https://broncbotz3481.github.io/YAGSL/swervelib/encoders/SwerveAbsoluteEncoder.html)'s can be fetched via the [`SwerveModule`](https://broncbotz3481.github.io/YAGSL/swervelib/SwerveModule.html#configuration) configuration object [`SwerveModuleConfiguration`](https://broncbotz3481.github.io/YAGSL/swervelib/parser/SwerveModuleConfiguration.html) absolute encoder attribute [`absoluteEncoder`](https://broncbotz3481.github.io/YAGSL/swervelib/parser/SwerveModuleConfiguration.html#absoluteEncoder). The [`SwerveModule`](https://broncbotz3481.github.io/YAGSL/swervelib/SwerveModule.html) is able to be fetched by [`SwerveDrive.getModules()`](https://broncbotz3481.github.io/YAGSL/swervelib/SwerveDrive.html#getModules\(\)) easily.
