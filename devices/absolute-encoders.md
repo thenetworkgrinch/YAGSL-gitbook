@@ -93,8 +93,8 @@ Inside any module JSON such as `frontleft.json`,`frontright.json`,`backleft.json
 
 ## Possible Absolute Encoder Types
 
-{% hint style="warning" %}
-Conversion Factor for steering/angle/azimuth motors should be `360` if the absolute encoder is attached to the SparkMAX!
+{% hint style="success" %}
+If your absolute encoder is attached to your SparkMAX, use the function [`SwerveDrive.pushOffsetsToEncoders()`](https://broncbotz3481.github.io/YAGSL/swervelib/SwerveDrive.html#pushOffsetsToEncoders\(\)) for the best performance. This sets the onboard PID sensor to the attached encoder!
 {% endhint %}
 
 {% hint style="warning" %}
