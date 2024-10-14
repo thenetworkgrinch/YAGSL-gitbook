@@ -24,6 +24,7 @@ All PR's should be based off of and merged into here. YAGSL is propagated often 
 * [ ] Addded `sparkmax_analog5v` as a valid absolute encoder type.
 * [ ] Suggestion for desaturateWheelSpeeds() to use desiredChassisSpeeds (PR [#232](https://github.com/BroncBotz3481/YAGSL-Example/pull/232) by [**yapplejack**](https://github.com/yapplejack)**)**
 * [ ] Made auto synchronization optional and configurable by `SwerveDrive.setModuleEncoderAutoSynchronize`
+* [ ] Fixed configurator problem for `TalonFXSwerve`
 
 ## 2024.5.0.4
 
