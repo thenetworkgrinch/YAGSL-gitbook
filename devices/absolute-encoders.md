@@ -10,6 +10,7 @@ The absolute encoder value will show up in shuffleboard under `swerve/modules/..
 * [ ] Magnetic Absolute encoders have a good read on the magnet while still and in operation (while the robot moves).
 * [ ] Absolute Encoders have unique CAN ID's or Analog Input Channel's.
 * [ ] Absolute Encoder are defined with the correct ID or Analog Input Channel.
+* [ ] Absolute Encoders have full range (`0`-`360`)
 
 ## Swerve Absolute Encoder Wrapper
 
@@ -61,6 +62,10 @@ YAGSL created wrappers over all supported Motor Controllers to uniformly fetch a
 Only CTRE devices currently support the `canbus` option, if your device is using the roboRIO `canbus` you must use the value of `null` or `"rio"` for supported CTRE devices. If you are using a CANivore, and the device is on the CANivore bus, the name must match the CANivore name.
 {% endhint %}
 
+{% hint style="success" %}
+If your absolute encoder is attached to your SparkMAX, use the function [`SwerveDrive.pushOffsetsToEncoders()`](https://broncbotz3481.github.io/YAGSL/swervelib/SwerveDrive.html#pushOffsetsToEncoders\(\)) for the best performance. This sets the onboard PID sensor to the attached encoder!
+{% endhint %}
+
 Inside any module JSON such as `frontleft.json`,`frontright.json`,`backleft.json`,`backright.json` this is what you would see to configure a absolute encoder.
 
 <pre class="language-json"><code class="lang-json">{
@@ -84,24 +89,21 @@ Inside any module JSON such as `frontleft.json`,`frontright.json`,`backleft.json
     "angle": <a data-footnote-ref href="#user-content-fn-13">false</a>
   },
   "absoluteEncoderOffset": <a data-footnote-ref href="#user-content-fn-14">-18.281</a>,
+  "absoluteEncoderInverted": <a data-footnote-ref href="#user-content-fn-15">false</a>,
   "location": {
-    "front": <a data-footnote-ref href="#user-content-fn-15">-12</a>,
-    "left": <a data-footnote-ref href="#user-content-fn-16">-12</a>
+    "front": <a data-footnote-ref href="#user-content-fn-16">-12</a>,
+    "left": <a data-footnote-ref href="#user-content-fn-17">-12</a>
   }
 }
 </code></pre>
 
 ## Possible Absolute Encoder Types
 
-{% hint style="success" %}
-If your absolute encoder is attached to your SparkMAX, use the function [`SwerveDrive.pushOffsetsToEncoders()`](https://broncbotz3481.github.io/YAGSL/swervelib/SwerveDrive.html#pushOffsetsToEncoders\(\)) for the best performance. This sets the onboard PID sensor to the attached encoder!
-{% endhint %}
-
 {% hint style="warning" %}
 Try inverting your steering/angle/azimuth motor if your module keeps spinning around.
 {% endhint %}
 
-<table data-full-width="true"><thead><tr><th width="538">Device</th><th width="269">type</th></tr></thead><tbody><tr><td>None</td><td><code>none</code></td></tr><tr><td><a href="https://docs.revrobotics.com/brushless/spark-max/encoders/absolute#data-port-connector-information">Integrated/Attached</a> (via SparkMAX DutyCycle)</td><td><a data-footnote-ref href="#user-content-fn-17"><code>attached</code></a></td></tr><tr><td><a href="https://docs.revrobotics.com/brushless/spark-max/encoders/absolute#data-port-connector-information">SparkMax Analog</a> (via SparkMAX Analog Pin)</td><td><a data-footnote-ref href="#user-content-fn-18"><code>sparkmax_analog</code></a></td></tr><tr><td><a href="https://docs.revrobotics.com/brushless/spark-max/encoders/absolute#data-port-connector-information">SparkMax Analog</a> (via SparkMAX Analog Pin  with 5V power)</td><td><a data-footnote-ref href="#user-content-fn-19"><code>sparkmax_analog5v</code></a></td></tr><tr><td><a href="https://docs.reduxrobotics.com/canandmag/spark-max#using-the-pwm-output-with-spark-max">Canandmag</a> (via SparkMAX)</td><td><a data-footnote-ref href="#user-content-fn-20"><code>canandmag</code></a></td></tr><tr><td><a href="https://docs.reduxrobotics.com/canandmag/getting-started">Canandmag </a>(via CAN)</td><td><a data-footnote-ref href="#user-content-fn-21"><code>canandmag_can</code></a></td></tr><tr><td><a href="https://pro.docs.ctr-electronics.com/en/latest/docs/hardware-reference/cancoder/index.html">CANcoder</a></td><td><a data-footnote-ref href="#user-content-fn-22"><code>cancoder</code></a></td></tr><tr><td><a href="https://www.revrobotics.com/rev-11-1271/">Throughbore</a> (via PWM)</td><td><a data-footnote-ref href="#user-content-fn-23"><code>throughbore</code></a></td></tr><tr><td><a href="https://www.thethriftybot.com/products/thrifty-absolute-magnetic-encoder">Thrifty Absolute Magnetic Encoder</a> (via Analog Input)</td><td><a data-footnote-ref href="#user-content-fn-24"><code>thrifty</code></a></td></tr><tr><td><a href="https://www.andymark.com/products/ma3-absolute-encoder-with-cable">MA3</a> (via Analog Input)</td><td><a data-footnote-ref href="#user-content-fn-25"><code>ma3</code></a></td></tr><tr><td><a href="https://store.ctr-electronics.com/srx-mag-encoder/">SRX Mag</a> (via PWM)</td><td><a data-footnote-ref href="#user-content-fn-26"><code>ctre_mag</code></a></td></tr><tr><td><a href="https://www.andymark.com/products/am-mag-encoder">AM Mag</a> (via PWM)</td><td><a data-footnote-ref href="#user-content-fn-27"><code>am_mag</code></a></td></tr><tr><td>PWM DutyCycle</td><td><code>dutycycle</code></td></tr><tr><td>Analog Encoder</td><td><code>analog</code></td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th width="538">Device</th><th width="269">type</th></tr></thead><tbody><tr><td>None</td><td><code>none</code></td></tr><tr><td><a href="https://docs.revrobotics.com/brushless/spark-max/encoders/absolute#data-port-connector-information">Integrated/Attached</a> (via SparkMAX DutyCycle)</td><td><a data-footnote-ref href="#user-content-fn-18"><code>attached</code></a></td></tr><tr><td><a href="https://docs.revrobotics.com/brushless/spark-max/encoders/absolute#data-port-connector-information">SparkMax Analog</a> (via SparkMAX Analog Pin)</td><td><a data-footnote-ref href="#user-content-fn-19"><code>sparkmax_analog</code></a></td></tr><tr><td><a href="https://docs.revrobotics.com/brushless/spark-max/encoders/absolute#data-port-connector-information">SparkMax Analog</a> (via SparkMAX Analog Pin  with 5V power)</td><td><a data-footnote-ref href="#user-content-fn-20"><code>sparkmax_analog5v</code></a></td></tr><tr><td><a href="https://docs.reduxrobotics.com/canandmag/spark-max#using-the-pwm-output-with-spark-max">Canandmag</a> (via SparkMAX)</td><td><a data-footnote-ref href="#user-content-fn-21"><code>canandmag</code></a></td></tr><tr><td><a href="https://docs.reduxrobotics.com/canandmag/getting-started">Canandmag </a>(via CAN)</td><td><a data-footnote-ref href="#user-content-fn-22"><code>canandmag_can</code></a></td></tr><tr><td><a href="https://pro.docs.ctr-electronics.com/en/latest/docs/hardware-reference/cancoder/index.html">CANcoder</a></td><td><a data-footnote-ref href="#user-content-fn-23"><code>cancoder</code></a></td></tr><tr><td><a href="https://www.revrobotics.com/rev-11-1271/">Throughbore</a> (via PWM)</td><td><a data-footnote-ref href="#user-content-fn-24"><code>throughbore</code></a></td></tr><tr><td><a href="https://www.thethriftybot.com/products/thrifty-absolute-magnetic-encoder">Thrifty Absolute Magnetic Encoder</a> (via Analog Input)</td><td><a data-footnote-ref href="#user-content-fn-25"><code>thrifty</code></a></td></tr><tr><td><a href="https://www.andymark.com/products/ma3-absolute-encoder-with-cable">MA3</a> (via Analog Input)</td><td><a data-footnote-ref href="#user-content-fn-26"><code>ma3</code></a></td></tr><tr><td><a href="https://store.ctr-electronics.com/srx-mag-encoder/">SRX Mag</a> (via PWM)</td><td><a data-footnote-ref href="#user-content-fn-27"><code>ctre_mag</code></a></td></tr><tr><td><a href="https://www.andymark.com/products/am-mag-encoder">AM Mag</a> (via PWM)</td><td><a data-footnote-ref href="#user-content-fn-28"><code>am_mag</code></a></td></tr><tr><td>PWM DutyCycle</td><td><code>dutycycle</code></td></tr><tr><td>Analog Encoder</td><td><code>analog</code></td></tr></tbody></table>
 
 [^1]: [`CANcoder`](https://api.ctr-electronics.com/phoenix6/release/java/com/ctre/phoenix6/hardware/CANcoder.html) from Phoenix 6, initialized via CAN bus and CAN ID from configurations.
 
@@ -133,21 +135,15 @@ Try inverting your steering/angle/azimuth motor if your module keeps spinning ar
     \
     Offsets are in degrees.
 
-[^15]: The center of this module is `-12`in from the center of the robot "frontwise".
+[^15]: This should rarely, if ever, be true.
 
-[^16]: The center of this module is `-12`in from the center of the robot "left".
+[^16]: The center of this module is `-12`in from the center of the robot "frontwise".
 
-[^17]: ```json
-    "encoder": {
-        "type": "attached",
-        "id": 11,
-        "canbus": null
-      },
-    ```
+[^17]: The center of this module is `-12`in from the center of the robot "left".
 
 [^18]: ```json
     "encoder": {
-        "type": "sparkmax_analog",
+        "type": "attached",
         "id": 11,
         "canbus": null
       },
@@ -163,7 +159,7 @@ Try inverting your steering/angle/azimuth motor if your module keeps spinning ar
 
 [^20]: ```json
     "encoder": {
-        "type": "canandmag",
+        "type": "sparkmax_analog",
         "id": 11,
         "canbus": null
       },
@@ -171,7 +167,7 @@ Try inverting your steering/angle/azimuth motor if your module keeps spinning ar
 
 [^21]: ```json
     "encoder": {
-        "type": "canandmag_can",
+        "type": "canandmag",
         "id": 11,
         "canbus": null
       },
@@ -179,7 +175,7 @@ Try inverting your steering/angle/azimuth motor if your module keeps spinning ar
 
 [^22]: ```json
     "encoder": {
-        "type": "cancoder",
+        "type": "canandmag_can",
         "id": 11,
         "canbus": null
       },
@@ -187,7 +183,7 @@ Try inverting your steering/angle/azimuth motor if your module keeps spinning ar
 
 [^23]: ```json
     "encoder": {
-        "type": "throughbore",
+        "type": "cancoder",
         "id": 11,
         "canbus": null
       },
@@ -195,7 +191,7 @@ Try inverting your steering/angle/azimuth motor if your module keeps spinning ar
 
 [^24]: ```json
     "encoder": {
-        "type": "thrifty",
+        "type": "throughbore",
         "id": 11,
         "canbus": null
       },
@@ -203,7 +199,7 @@ Try inverting your steering/angle/azimuth motor if your module keeps spinning ar
 
 [^25]: ```json
     "encoder": {
-        "type": "ma3",
+        "type": "thrifty",
         "id": 11,
         "canbus": null
       },
@@ -211,13 +207,21 @@ Try inverting your steering/angle/azimuth motor if your module keeps spinning ar
 
 [^26]: ```json
     "encoder": {
-        "type": "ctre_mag",
+        "type": "ma3",
         "id": 11,
         "canbus": null
       },
     ```
 
 [^27]: ```json
+    "encoder": {
+        "type": "ctre_mag",
+        "id": 11,
+        "canbus": null
+      },
+    ```
+
+[^28]: ```json
     "encoder": {
         "type": "am_mag",
         "id": 11,

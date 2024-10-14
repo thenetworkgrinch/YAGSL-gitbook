@@ -16,6 +16,8 @@
   * [Auto-centering Modules](overview/our-features/auto-centering-modules.md)
   * [Offset Offloading](overview/our-features/offset-offloading.md)
   * [Cosine Compensation](overview/our-features/cosine-compensation.md)
+  * [Module Auto-synchronization](overview/our-features/module-auto-synchronization.md)
+  * [Angular Velocity Compensation](overview/our-features/angular-velocity-compensation.md)
 * [Changelog](overview/changelog.md)
 * [Java API](https://broncbotz3481.github.io/YAGSL/)
 * [Example Code](https://github.com/BroncBotz3481/YAGSL-Example/tree/main)
@@ -82,7 +84,6 @@
 * [PathPlanner](https://pathplanner.dev/home.html)
 * [❌ Tuning PID with REV Hardware Client](product-guides/tuning-pid-with-rev-hardware-client.md)
 * [❌ Drive Code](product-guides/drive-code.md)
-* [❌ Vision Processing](product-guides/vision-processing.md)
 
 ## Legacy Documentation
 
