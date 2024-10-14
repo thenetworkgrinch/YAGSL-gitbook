@@ -16,7 +16,7 @@ YAGSL-Example dev branch
 
 All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
-## 2024.5.0.5
+## 2024.6.0.0
 
 * [ ] Merge Swerve configuration test changes (PR [#228](https://github.com/BroncBotz3481/YAGSL-Example/pull/228) by [**clrozeboom**](https://github.com/clrozeboom)**)**
 * [ ] Angular velocity correction (huge update that massively improves YAGSL!) (PR [#231](https://github.com/BroncBotz3481/YAGSL-Example/pull/231) by [yapplejack](https://github.com/yapplejack))
