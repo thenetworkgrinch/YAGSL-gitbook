@@ -10,7 +10,7 @@ For example an MK4i L1 with an absolute encoder attached to the SparkMAX (like a
 ```json
 "conversionFactors": {
 	"angle": {"factor": 360},
-	"drive": {"factor": 0.03921201641335663}
+	"drive": {"gearRatio": 8.14, "diameter": 4}
 }
 ```
 {% endhint %}
@@ -34,10 +34,6 @@ For example an MK4i L1 with an absolute encoder attached to the SparkMAX (like a
 ```
 
 ## MAX Swerve
-
-{% hint style="warning" %}
-These conversion factors assume you are using 3in wheels!
-{% endhint %}
 
 {% tabs %}
 {% tab title="12T" %}
@@ -69,10 +65,6 @@ These conversion factors assume you are using 3in wheels!
 {% endtabs %}
 
 ## Swerve Drive Specialties (SDS)
-
-{% hint style="warning" %}
-These conversion factors assume you are using 4in wheels!&#x20;
-{% endhint %}
 
 {% tabs %}
 {% tab title="MK4i L1 " %}
@@ -140,3 +132,84 @@ These conversion factors assume you are using 4in wheels!&#x20;
 ```
 {% endtab %}
 {% endtabs %}
+
+## Thrifty Swerve
+
+{% tabs %}
+{% tab title="18T" %}
+
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Thrifty Swerve Gear Ratio Table</p></figcaption></figure>
+
+The following example is for 18T Output Gear, and 12T pinion gear with a 3in wheel controlled by NEOs. Please refer to the chart above for your configuration.
+
+```json
+"conversionFactors": {
+	"angle": {"gearRatio": 25},
+	"drive": {"gearRatio": 15, "diameter": 3}
+}
+```
+{% endtab %}
+
+{% tab title="16T" %}
+
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Thrifty Swerve Gear Ratio Table</p></figcaption></figure>
+
+The following example is for 16T Output Gear, and 12T pinion gear with a 3in wheel controlled by NEOs. Please refer to the chart above for your configuration.
+
+```json
+"conversionFactors": {
+	"angle": {"gearRatio": 25},
+	"drive": {"gearRatio": 16.9, "diameter": 3}
+}
+```
+{% endtab %}
+{% endtabs %}
+
+
+
+## Plummer Industries
+
+{% tabs %}
+{% tab title="Corner Mid Ratio" %}
+```json
+"conversionFactors": {
+	"angle": {"gearRatio": 28},
+	"drive": {"gearRatio": 4, "diameter": 2.5}
+}
+```
+{% endtab %}
+
+{% tab title="Corner High Ratio" %}
+```json
+"conversionFactors": {
+	"angle": {"gearRatio": 28},
+	"drive": {"gearRatio": 3.25, "diameter": 2.5}
+}
+```
+{% endtab %}
+{% endtabs %}
+
+{% tabs %}
+{% tab title="Corner Mid Ratio - Linear" %}
+```json
+"conversionFactors": {
+	"angle": {"gearRatio": 28},
+	"drive": {"gearRatio": 4, "diameter": 2.5}
+}
+```
+{% endtab %}
+
+{% tab title="Corner High Ratio - Linear" %}
+```json
+"conversionFactors": {
+	"angle": {"gearRatio": 28},
+	"drive": {"gearRatio": 3.25, "diameter": 2.5}
+}
+```
+{% endtab %}
+{% endtabs %}
+
+
+
