@@ -1,5 +1,9 @@
 # Check your motors
 
+{% hint style="danger" %}
+Make sure your CAN ID's are unique! There is a known issue where if the CAN ID of your REV Power Distribution Hub is the same as the CAN ID of the SparkMAX it will **cause the SparkMAX to not move** the motor!
+{% endhint %}
+
 ## Physically Label each component with their ID's
 
 There is no easier way to screw up configuring a swerve drive (or any other kind of drive system) than putting the wrong channel number, CAN ID, or even CAN bus (if your device is on a CANivore) for a component whether it is the drive motor, angle motor, absolute encoder, or gyroscope. Some components don't have ID's like NavX's and instead have a few different `type`'s which define the connection method (`navx_spi`, `navx_usb`, `navx_i2c`) these just have to be known beforehand.
