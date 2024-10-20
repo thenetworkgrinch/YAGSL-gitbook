@@ -16,6 +16,11 @@ YAGSL-Example dev branch
 
 All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
+## 2024.6.1.0
+
+* [ ] Added `Canandgyro` support.
+* [ ] A tiny bug fix in the aim-at-speaker command of the example swerve subsystem code by (PR [#239](https://github.com/BroncBotz3481/YAGSL-Example/pull/239) by [catr1xLiu](https://github.com/catr1xLiu))
+
 ## 2024.6.0.0
 
 * [ ] Merge Swerve configuration test changes (PR [#228](https://github.com/BroncBotz3481/YAGSL-Example/pull/228) by [**clrozeboom**](https://github.com/clrozeboom)**)**
