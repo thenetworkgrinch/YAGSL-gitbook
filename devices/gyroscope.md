@@ -1,6 +1,6 @@
 # Gyroscope
 
-YAGSL supports a wide variety of Gyroscopes in an effort to best help teams of all budgets, while we do recommend the NavX or Pigeon2 and officially support and have tested them, we do try to support others with varying degrees of success.&#x20;
+YAGSL supports a wide variety of Gyroscopes in an effort to best help teams of all budgets, while we do recommend the NavX or Pigeon2 and officially support and have tested them, we do try to support others with varying degrees of success.
 
 ## Gyroscope Checklist
 
@@ -87,18 +87,19 @@ If your robot spins out of control without any controller input you probably nee
 
 ### Possible Gyroscope Types
 
-| Device                              | type                | Communication                                      |
-| ----------------------------------- | ------------------- | -------------------------------------------------- |
-| [Pigeon](gyroscope/pigeon.md)       | `pigeon`            | CAN; does not support CANivore.                    |
-| [Pigeon2](gyroscope/pigeon-2.0.md)  | `pigeon2`           | CAN; supports CANivore                             |
-| [NavX](gyroscope/navx.md)           | `navx` , `navx_spi` | roboRIO MXP SPI                                    |
-| [NavX ](gyroscope/navx.md)          | `navx_i2c`          | I2C port on the roboRIO MXP. Not recommended!      |
-| [NavX](gyroscope/navx.md)           | `navx_usb`          | Serial over USB Cable to roboRIO (not recommended) |
-| [NavX](gyroscope/navx.md)           | `navx_mxp_serial`   | Serial over roboRIO MXP                            |
-| [ADIS16448](gyroscope/adis16448.md) | `adis16448`         | roboRIO MXP                                        |
-| [ADIS16470](gyroscope/adis16470.md) | `adis16470`         | roboRIO SPI port                                   |
-| [ADXRS450](gyroscope/adxrs450.md)   | `adxrs450`          | roboRIO SPI port.                                  |
-| Analog Gyro                         | `analog`            | AnalogInput                                        |
+| Device                                                                  | type                | Communication                                      |
+| ----------------------------------------------------------------------- | ------------------- | -------------------------------------------------- |
+| [Pigeon](gyroscope/pigeon.md)                                           | `pigeon`            | CAN; does not support CANivore.                    |
+| [Pigeon2](gyroscope/pigeon-2.0.md)                                      | `pigeon2`           | CAN; supports CANivore                             |
+| [Canandgyro](https://docs.reduxrobotics.com/canandgyro/getting-started) | `canandgyro`        | CAN; does not support CANivore.                    |
+| [NavX](gyroscope/navx.md)                                               | `navx` , `navx_spi` | roboRIO MXP SPI                                    |
+| [NavX](gyroscope/navx.md)                                               | `navx_i2c`          | I2C port on the roboRIO MXP. Not recommended!      |
+| [NavX](gyroscope/navx.md)                                               | `navx_usb`          | Serial over USB Cable to roboRIO (not recommended) |
+| [NavX](gyroscope/navx.md)                                               | `navx_mxp_serial`   | Serial over roboRIO MXP                            |
+| [ADIS16448](gyroscope/adis16448.md)                                     | `adis16448`         | roboRIO MXP                                        |
+| [ADIS16470](gyroscope/adis16470.md)                                     | `adis16470`         | roboRIO SPI port                                   |
+| [ADXRS450](gyroscope/adxrs450.md)                                       | `adxrs450`          | roboRIO SPI port.                                  |
+| Analog Gyro                                                             | `analog`            | AnalogInput                                        |
 
 [^1]: Also known as CounterClockWise Positive or CCW+
 
