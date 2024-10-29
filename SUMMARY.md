@@ -19,7 +19,7 @@
   * [Module Auto-synchronization](overview/our-features/module-auto-synchronization.md)
   * [Angular Velocity Compensation](overview/our-features/angular-velocity-compensation.md)
 * [Changelog](overview/changelog.md)
-* [Java API](https://broncbotz3481.github.io/YAGSL/)
+* [Java API](https://broncbotz3481.github.io/YAGSL-Lib/docs/)
 * [Example Code](https://github.com/BroncBotz3481/YAGSL-Example/tree/main)
 * [Config Generator](https://broncbotz3481.github.io/YAGSL-Example/)
 * [💸 Donations](https://ko-fi.com/yagsl)

@@ -137,11 +137,11 @@ For example an MK4i L1 with an absolute encoder attached to the SparkMAX (like a
 
 {% tabs %}
 {% tab title="18T" %}
-
-
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Thrifty Swerve Gear Ratio Table</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/thriftswerve.PNG" alt=""><figcaption><p>Thrifty Swerve Gear Ratio Table</p></figcaption></figure>
 
 The following example is for 18T Output Gear, and 12T pinion gear with a 3in wheel controlled by NEOs. Please refer to the chart above for your configuration.
+
+The steering motor gear ratio is **25:1**
 
 ```json
 "conversionFactors": {
@@ -154,9 +154,11 @@ The following example is for 18T Output Gear, and 12T pinion gear with a 3in whe
 {% tab title="16T" %}
 
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Thrifty Swerve Gear Ratio Table</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/thriftswerve.PNG" alt=""><figcaption><p>Thrifty Swerve Gear Ratio Table</p></figcaption></figure>
 
-The following example is for 16T Output Gear, and 12T pinion gear with a 3in wheel controlled by NEOs. Please refer to the chart above for your configuration.
+The following example is for 16T Output Gear, and 12T pinion gear with a 3in wheel controlled by NEOs. Please refer to the chart above for your configuration.&#x20;
+
+The steering motor gear ratio is **25:1**
 
 ```json
 "conversionFactors": {
