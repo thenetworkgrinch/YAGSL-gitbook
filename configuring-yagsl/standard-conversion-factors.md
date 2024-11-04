@@ -133,6 +133,35 @@ For example an MK4i L1 with an absolute encoder attached to the SparkMAX (like a
 {% endtab %}
 {% endtabs %}
 
+{% tabs %}
+{% tab title="MK4n L1" %}
+```json
+"conversionFactors": {
+	"angle": {"gearRatio": 18.75},
+	"drive": {"gearRatio": 7.13, "diameter": 4}
+}
+```
+{% endtab %}
+
+{% tab title="MK4n L2" %}
+```json
+"conversionFactors": {
+	"angle": {"gearRatio": 18.75},
+	"drive": {"gearRatio": 5.9, "diameter": 4}
+}
+```
+{% endtab %}
+
+{% tab title="MK4n L3" %}
+```json
+"conversionFactors": {
+	"angle": {"gearRatio": 18.75},
+	"drive": {"gearRatio": 5.36, "diameter": 4}
+}
+```
+{% endtab %}
+{% endtabs %}
+
 ## Thrifty Swerve
 
 {% tabs %}
