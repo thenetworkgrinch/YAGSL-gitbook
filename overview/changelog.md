@@ -18,6 +18,10 @@ All PR's should be based off of and merged into here. YAGSL is propagated often 
 
 ## 2024.6.1.0
 
+* [ ] Added inversion redundancy check.
+
+## 2024.6.1.0
+
 * [ ] Added `Canandgyro` support.
 * [ ] A tiny bug fix in the aim-at-speaker command of the example swerve subsystem code by (PR [#239](https://github.com/BroncBotz3481/YAGSL-Example/pull/239) by [catr1xLiu](https://github.com/catr1xLiu))
 
