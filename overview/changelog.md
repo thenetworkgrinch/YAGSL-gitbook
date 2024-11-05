@@ -16,9 +16,10 @@ YAGSL-Example dev branch
 
 All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
-## 2024.6.1.0
+## 2024.7.0 - Last version for 2024 WPILib
 
 * [ ] Added inversion redundancy check to SparkMAX and SparkFlex.
+* [ ] Add Warmup for Pathfinding (PR [#241](https://github.com/BroncBotz3481/YAGSL-Example/pull/241) by [TechnologyMan00](https://github.com/Technologyman00))
 
 ## 2024.6.1.0
 
