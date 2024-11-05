@@ -18,7 +18,7 @@ All PR's should be based off of and merged into here. YAGSL is propagated often 
 
 ## 2024.6.1.0
 
-* [ ] Added inversion redundancy check.
+* [ ] Added inversion redundancy check to SparkMAX and SparkFlex.
 
 ## 2024.6.1.0
 
