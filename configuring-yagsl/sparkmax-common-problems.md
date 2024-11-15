@@ -20,3 +20,9 @@ Usually if there's a status frame error it means that your connection to the REV
 
 If you see this be sure to check **ALL SENSOR CABLES GOING INTO THAT SPARKMAX!**
 
+## Configuring the offset
+
+The offset must be set in the REV Hardware Client for MAXSwerve setups. **The \`absoluteEncoderOffset\` in JSON should be set to 0!** Align your wheels as shown below then use the zeroing tool on the REV Hardware Client.
+
+<figure><img src="../.gitbook/assets/devilbots_cropped_swerve_orientation.png" alt=""><figcaption></figcaption></figure>
+
