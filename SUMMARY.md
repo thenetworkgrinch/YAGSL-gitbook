@@ -59,6 +59,7 @@
 * [The eight steps](configuring-yagsl/the-eight-steps.md)
 * [Swerve Drive Drift](configuring-yagsl/swerve-drive-drift.md)
 * [SparkMAX Common Problems](configuring-yagsl/sparkmax-common-problems.md)
+* [Verifying your Module Locations](configuring-yagsl/verifying-your-module-locations.md)
 
 ## Devices
 
