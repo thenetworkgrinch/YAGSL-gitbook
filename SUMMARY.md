@@ -58,6 +58,7 @@
 * [Flowcharts](configuring-yagsl/flowcharts.md)
 * [The eight steps](configuring-yagsl/the-eight-steps.md)
 * [Swerve Drive Drift](configuring-yagsl/swerve-drive-drift.md)
+* [SparkMAX Common Problems](configuring-yagsl/sparkmax-common-problems.md)
 
 ## Devices
 
