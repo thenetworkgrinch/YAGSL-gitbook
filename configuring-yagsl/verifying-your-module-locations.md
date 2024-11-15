@@ -18,6 +18,10 @@ If it doesnt look like this in real life than you need to change the offending m
 
 ## Rotate the robot
 
-Your robot should rotate CCW+ but for the verification step after confirming your modules are driving straight. As long as the robot appears to be doing either one of these while attempting to rotate you should be fine. However you may still need to do [the eight steps](the-eight-steps.md) if your translational axis changes based off your robots heading.
+Your robot should rotate CCW+ but for the verification step after confirming your modules are driving straight. As long as the robot appears to be doing either one of these while attempting to rotate you should be fine.&#x20;
+
+{% hint style="warning" %}
+The depiction on the left would require you running through [the eight steps](the-eight-steps.md) since your translational axis changes based off your robots heading.&#x20;
+{% endhint %}
 
 <figure><img src="../.gitbook/assets/image-48.png" alt=""><figcaption></figcaption></figure>
