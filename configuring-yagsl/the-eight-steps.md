@@ -187,7 +187,7 @@ Swap the highlighted lines and you have swapped the module configurations correc
 
 [^1]: Change the device configuration for the drive AND angle motor controllers AND the absolute encoders in the following way.\
     \
-    Front Left -> Back Right\
-    Front Right -> Back Left\
-    Back Left -> Front Right\
-    Back Right -> Front Left
+    (Front Left -> Back Right)  \
+    (Front Right -> Back Left)  \
+    (Back Left -> Front Right)  \
+    (Back Right -> Front Left) &#x20;
