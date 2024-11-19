@@ -51,16 +51,18 @@ public class SwerveSubsytem extends SubsystemBase
   {
     // swerveDrive.setHeadingCorrection(true); // Normally you would want heading correction for this kind of control.
     return run(() -> {
-      double xInput = Math.pow(translationX.getAsDouble(), 3); // Smooth controll out
-      double yInput = Math.pow(translationY.getAsDouble(), 3); // Smooth controll out
+
+      Translation2d scaledInputs = SwerveMath.scaleTranslation(new Translation2d(translationX.getAsDouble(),
+                                                                                 translationY.getAsDouble()), 0.8);
+
       // Make the robot move
-<strong>      driveFieldOriented(swerveDrive.swerveController.getTargetSpeeds(xInput, yInput,
+<strong>      driveFieldOriented(swerveDrive.swerveController.getTargetSpeeds(scaledInputs.getX(), scaledInputs.getY(),
 </strong><strong>                                                                      headingX.getAsDouble(),
 </strong><strong>                                                                      headingY.getAsDouble(),
 </strong><strong>                                                                      swerveDrive.getOdometryHeading().getRadians(),
 </strong><strong>                                                                      swerveDrive.getMaximumVelocity()));
-</strong><strong>    });
-</strong>  }
+</strong>    });
+  }
   
   /**
    * Drive the robot given a chassis field oriented velocity.
@@ -106,6 +108,12 @@ You are not expected to complete all of these steps to achieve a functioning swe
 {% hint style="danger" %}
 IF none of these work you most likely have a incorrect hardware configuration, something is not working as expected, or something is wired incorrectly.
 {% endhint %}
+
+## Verifying behaviour
+
+Sometimes the 8 steps doesnt look like its done when it really is. Here is an example on which the bot is actually tuned correctly but the desired front of the robot is really the back of the robot.
+
+
 
 <details>
 
