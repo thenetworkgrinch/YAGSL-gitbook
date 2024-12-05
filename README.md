@@ -8,6 +8,8 @@ description: Brought to you by Yet Another Generic Swerve Library (YAGSL)
 If your swerve drive uses only [CANivore](https://store.ctr-electronics.com/canivore/), [Falcon500](https://store.ctr-electronics.com/falcon-500-powered-by-talon-fx/)/[Kraken](https://store.ctr-electronics.com/kraken-x60/), [Pigeon2.0](https://store.ctr-electronics.com/pigeon-2/), and [CANCoder](https://store.ctr-electronics.com/cancoder/) from [CTRE](https://pro.docs.ctr-electronics.com/en/latest/index.html) please use the [Tuner X Swerve Drive Generator](https://pro.docs.ctr-electronics.com/en/latest/docs/tuner/tuner-swerve/index.html)!
 {% endhint %}
 
+<figure><img src=".gitbook/assets/YAGSL.png" alt=""><figcaption></figcaption></figure>
+
 ## Overview
 
 YAGSL is a Swerve Library Developed by current and former BroncBotz mentors for all FRC Teams. The goal of YAGSL is to help teams of all experience levels with all types of swerve modules to control their swerve drive as easy as a `DifferentialDrive` we all know.  YAGSL is well documented, actively maintained, and always accepting help!
