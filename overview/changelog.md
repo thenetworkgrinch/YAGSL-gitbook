@@ -16,6 +16,16 @@ YAGSL-Example dev branch
 
 All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
+## 2025.0.0
+
+* [ ] AHRS imu variable is lost after constructor scope ends by [@clrozeboom](https://github.com/clrozeboom) in [#254](https://github.com/BroncBotz3481/YAGSL-Example/pull/254)
+* [ ] Add Maple-Sim by [@catr1xLiu](https://github.com/catr1xLiu) in [#251](https://github.com/BroncBotz3481/YAGSL-Example/pull/251)
+* [ ] Implement support for kA by [@Etaash-mathamsetty](https://github.com/Etaash-mathamsetty) in [#258](https://github.com/BroncBotz3481/YAGSL-Example/pull/258)
+* [ ] Update to WPILIb 2025 Beta-2 by [@thenetworkgrinch](https://github.com/thenetworkgrinch) in [#257](https://github.com/BroncBotz3481/YAGSL-Example/pull/257)
+* [ ] Add support to Talon SRX for an integrated absolute encoder by [@WispySparks](https://github.com/WispySparks) in [#208](https://github.com/BroncBotz3481/YAGSL-Example/pull/208)
+* [ ] Implemented Path Planner DriveFeedForward using DCMotor modeling by [@catr1xLiu](https://github.com/catr1xLiu) in [#260](https://github.com/BroncBotz3481/YAGSL-Example/pull/260)
+* [ ] Fixed NavX inversion.
+
 ## 2024.7.0 - Last version for 2024 WPILib
 
 * [ ] Added inversion redundancy check to SparkMAX and SparkFlex.
