@@ -22,6 +22,7 @@ All PR's should be based off of and merged into here. YAGSL is propagated often 
 * [ ] Updated to Maple-Sim 0.2.3 by [@catr1xLiu](https://github.com/catr1xLiu) in [#262](https://github.com/BroncBotz3481/YAGSL-Example/pull/262)
 * [ ] Fixed spark max brushed motor controller encoder null-ptr exceptions
 * [ ] Fixed `SwerveMath.scaleTranslation`issue
+* [ ] Fixed `Vision`update with `resultLists`check by @jwt388 FRC Team 151
 
 ## 2025.0.0
 
