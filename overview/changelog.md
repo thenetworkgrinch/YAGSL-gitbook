@@ -16,7 +16,7 @@ YAGSL-Example dev branch
 
 All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
-## 2025.0.1
+## 2025.1.0
 
 * [ ] Fixed vision file null-ptr exception.
 * [ ] Updated to Maple-Sim 0.2.4; added `SwerveDrive.getMapleSimDrive()`  by [@catr1xLiu](https://github.com/catr1xLiu) in [#262](https://github.com/BroncBotz3481/YAGSL-Example/pull/262)
