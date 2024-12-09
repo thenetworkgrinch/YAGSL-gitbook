@@ -16,6 +16,12 @@ YAGSL-Example dev branch
 
 All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
+## 2025.0.1
+
+* [ ] Fixed vision file null-ptr exception.
+* [ ] Updated to Maple-Sim 0.2.3 by [@catr1xLiu](https://github.com/catr1xLiu) in [#262](https://github.com/BroncBotz3481/YAGSL-Example/pull/262)
+* [ ] Fixed spark max brushed motor controller encoder null-ptr exceptions
+
 ## 2025.0.0
 
 * [ ] AHRS imu variable is lost after constructor scope ends by [@clrozeboom](https://github.com/clrozeboom) in [#254](https://github.com/BroncBotz3481/YAGSL-Example/pull/254)
@@ -25,6 +31,7 @@ All PR's should be based off of and merged into here. YAGSL is propagated often 
 * [ ] Add support to Talon SRX for an integrated absolute encoder by [@WispySparks](https://github.com/WispySparks) in [#208](https://github.com/BroncBotz3481/YAGSL-Example/pull/208)
 * [ ] Implemented Path Planner DriveFeedForward using DCMotor modeling by [@catr1xLiu](https://github.com/catr1xLiu) in [#260](https://github.com/BroncBotz3481/YAGSL-Example/pull/260)
 * [ ] Fixed NavX inversion.
+* [ ] Fixed Absolute Encoder issue on MAXSwerve with help from Team 457 Grease Monkeys
 
 ## 2024.7.0 - Last version for 2024 WPILib
 
