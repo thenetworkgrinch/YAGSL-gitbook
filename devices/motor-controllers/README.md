@@ -10,6 +10,7 @@ The integrated encoder value will show up in shuffleboard under `swerve/modules/
 * [ ] PID is tuned to the best of your abilities.
 * [ ] Motor is updated to the latest firmware.
 * [ ] Motor has unique CAN ID.
+* [ ] Motor type is set.
 * [ ] CAN ID given corresponds to the one in the JSON module.
 * [ ] Wheels are aligned forwards with all bevels facing the same way.
 
@@ -92,13 +93,13 @@ Inside any module JSON such as `frontleft.json`,`frontright.json`,`backleft.json
 
 ## &#x20;Possible Motor Controller Types
 
-| Device                    | type               |
-| ------------------------- | ------------------ |
-| [SparkMAX](sparkmax.md)   | `sparkmax`         |
-| [SparkFlex](sparkflex.md) | `sparkflex`        |
-| [TalonFX](talonfx.md)     | `talonfx`          |
-| TalonSRX                  | `talonsrx`         |
-| SparkMAX Brushed          | `sparkmax_brushed` |
+| Device                    | type                                                                                  |
+| ------------------------- | ------------------------------------------------------------------------------------- |
+| [SparkMAX](sparkmax.md)   | `sparkmax` (same as `neo`);`neo` ; `neo550`                                           |
+| [SparkFlex](sparkflex.md) | `sparkflex` (same as `vortex`); `vortex`; `sparkflex_neo`; `sparkflex_vortex`         |
+| [TalonFX](talonfx.md)     | `talonfx`(same as `krakenx60`);`falcon500`;`falcon500foc`;`krakenx60`; `krakenx60foc` |
+| TalonSRX                  | `talonsrx`                                                                            |
+| SparkMAX Brushed          | `sparkmax_brushed`                                                                    |
 
 {% hint style="warning" %}
 At this time I do not provide documentation on brushed motor utilization, like `sparkmax_brushed` and `talonsrx`.

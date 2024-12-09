@@ -23,6 +23,16 @@ All PR's should be based off of and merged into here. YAGSL is propagated often 
 * [ ] Fixed spark max brushed motor controller encoder null-ptr exceptions
 * [ ] Fixed `SwerveMath.scaleTranslation`issue
 * [ ] Fixed `Vision`update with `resultLists`check by @jwt388 FRC Team 151
+* [ ] Changed `SwerveDrive.getMaximumVelocity()`-> `SwerveDrive.getMaximumChassisVelocity()`
+* [ ] Changed `SwerveDrive.getMaximumAngularVelocity()` -> `SwerveDrive.getMaximumChassisAngularVelocity()`&#x20;
+* [ ] Used known motor types to calculate the drive motor feedforward.&#x20;
+* [ ] Extended the parser to know the motor type attached to the motor controller. (Except brushed)
+* [ ] Separated chassis maximum velocity from module maximum velocity.&#x20;
+* [ ] Added `navx_mxp_serial` back.&#x20;
+* [ ] Added motor specifiers `krakenx60foc`, `krakenx60`, `falcon500foc`, `falcon500`, `sparkmax_neo550`, `sparkmax_neo`, `sparkflex_neo`, `sparkflex_vortex`, `sparkflex_neo550`&#x20;
+* [ ] Create the drive motor feedforward in `SwerveModule` constructor.&#x20;
+* [ ] Added module max speeds to `SwerveModule.maxDriveVelocity` and `SwerveModule.maxAngularVelocity`&#x20;
+* [ ] Updated the web configuration
 
 ## 2025.0.0
 
