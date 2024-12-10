@@ -16,6 +16,10 @@ YAGSL-Example dev branch
 
 All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
+## 2025.1.1
+
+* [ ] Added configuration redundancy for SparkMAX, and SparkFlex.
+
 ## 2025.1.0
 
 * [ ] Fixed vision file null-ptr exception.
