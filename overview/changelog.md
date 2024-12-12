@@ -19,6 +19,9 @@ All PR's should be based off of and merged into here. YAGSL is propagated often 
 ## 2025.1.1
 
 * [ ] Added configuration redundancy for SparkMAX, and SparkFlex.
+* [ ] Fix loop time and use field oriented control for driveWithSetpointGenerator (PR [#271 ](https://github.com/BroncBotz3481/YAGSL-Example/pull/271)by @[**jwt388**](https://github.com/jwt388)**)**
+* [ ] Added cycle times to telemetry.
+* [ ] Optimized telemetry to only post settings when `SwerveDriveTelemetry.updateSettings`is `true`.
 
 ## 2025.1.0
 
