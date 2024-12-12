@@ -22,6 +22,10 @@ All PR's should be based off of and merged into here. YAGSL is propagated often 
 * [ ] Fix loop time and use field oriented control for driveWithSetpointGenerator (PR [#271 ](https://github.com/BroncBotz3481/YAGSL-Example/pull/271)by @[**jwt388**](https://github.com/jwt388)**)**
 * [ ] Added cycle times to telemetry.
 * [ ] Optimized telemetry to only post settings when `SwerveDriveTelemetry.updateSettings`is `true`.
+* [ ] Reduced retry delay for SparkMAX and SparkFlex to 5ms from 10ms.
+* [ ] Reduced on the fly configuration delay to 10ms from 100ms.
+* [ ] Added warning for on the fly configuration delay past init.
+* [ ] Fixed `SimpleMotorFeedForward.calculate`to use only the velocity. This ignores acceleration unfortunately.
 
 ## 2025.1.0
 
