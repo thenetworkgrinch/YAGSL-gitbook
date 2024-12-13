@@ -26,6 +26,8 @@ All PR's should be based off of and merged into here. YAGSL is propagated often 
 * [ ] Reduced on the fly configuration delay to 10ms from 100ms.
 * [ ] Added warning for on the fly configuration delay past init.
 * [ ] Fixed `SimpleMotorFeedForward.calculate`to use only the velocity. This ignores acceleration unfortunately.
+* [ ] Changed `SmartDashboard.put`to NT4 Publishers
+* [ ] Removed `IMUVelocity`in favor of using library velocity fetches.
 
 ## 2025.1.0
 
