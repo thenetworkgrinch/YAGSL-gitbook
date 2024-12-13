@@ -28,6 +28,7 @@ All PR's should be based off of and merged into here. YAGSL is propagated often 
 * [ ] Fixed `SimpleMotorFeedForward.calculate`to use only the velocity. This ignores acceleration unfortunately.
 * [ ] Changed `SmartDashboard.put`to NT4 Publishers
 * [ ] Removed `IMUVelocity`in favor of using library velocity fetches.
+* [ ] Renamed `SwerveIMU.getRate()`-> `SwerveIMU.getYawAngularVelocity()`and made it return an `AngularVelocity`object.
 
 ## 2025.1.0
 
