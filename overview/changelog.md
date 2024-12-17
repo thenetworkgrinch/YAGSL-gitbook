@@ -16,7 +16,7 @@ YAGSL-Example dev branch
 
 All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
-## 2025.1.1
+## 2025.1.0.1
 
 * [ ] Added configuration redundancy for SparkMAX, and SparkFlex.
 * [ ] Fix loop time and use field oriented control for driveWithSetpointGenerator (PR [#271 ](https://github.com/BroncBotz3481/YAGSL-Example/pull/271)by @[**jwt388**](https://github.com/jwt388)**)**
@@ -29,6 +29,7 @@ All PR's should be based off of and merged into here. YAGSL is propagated often 
 * [ ] Changed `SmartDashboard.put`to NT4 Publishers
 * [ ] Removed `IMUVelocity`in favor of using library velocity fetches.
 * [ ] Renamed `SwerveIMU.getRate()`-> `SwerveIMU.getYawAngularVelocity()`and made it return an `AngularVelocity`object.
+* [ ] Added `SwerveInputStream`object for easy controller conversions.
 
 ## 2025.1.0
 
