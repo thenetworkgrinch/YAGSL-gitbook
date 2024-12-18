@@ -16,6 +16,10 @@ YAGSL-Example dev branch
 
 All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
+## 2025.1.0.2
+
+* [ ] Fixed telemetry publishing problem. Telemetry is now published under the `SmartDashboard` network table.
+
 ## 2025.1.0.1
 
 * [ ] Added configuration redundancy for SparkMAX, and SparkFlex.
