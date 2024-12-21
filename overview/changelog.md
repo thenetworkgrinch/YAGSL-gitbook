@@ -16,12 +16,13 @@ YAGSL-Example dev branch
 
 All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
-## 2025.1.0.3
+## 2025.1.1
 
 * [ ] Fixed telemetry publishing problem. Telemetry is now published under the `SmartDashboard` network table.
 * [ ] Throw an error when SparkMAX or SparkFlex configuration changes are done while the robot is enabled.
 * [ ] Changed example to not set the drive motor idle mode.
 * [ ] Added ThirftyNova support.
+* [ ] Added `SwerveInputStream.robotRelative`and `SwerveInputStream.allianceRelativeControl`
 
 ## 2025.1.0.1
 
