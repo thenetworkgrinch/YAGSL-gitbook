@@ -14,6 +14,12 @@ If your swerve drive uses only [CANivore](https://store.ctr-electronics.com/cani
 
 YAGSL is a Swerve Library Developed by current and former BroncBotz mentors for all FRC Teams. The goal of YAGSL is to help teams of all experience levels with all types of swerve modules to control their swerve drive as easy as a `DifferentialDrive` we all know.  YAGSL is well documented, actively maintained, and always accepting help!
 
+{% embed url="https://datawrapper.dwcdn.net/ZVxvE/6/" %}
+want your team to be added? email mentors@broncbotz.org or send a message in the YAGSL discord!
+{% endembed %}
+
+
+
 ## Our Philosophy
 
 Your program does not revolve around your swerve drive. Your constants file doesn't have to take 10 minutes to find the right option. Different robots should be able to work with the same code.&#x20;
