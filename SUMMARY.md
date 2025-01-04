@@ -23,7 +23,7 @@
 * [Example Code](https://github.com/BroncBotz3481/YAGSL-Example/tree/main)
 * [Config Generator](https://broncbotz3481.github.io/YAGSL-Example/)
 * [💸 Donations](https://ko-fi.com/yagsl)
-* [👕 Merch](https://www.bonfire.com/store/yagsl/)
+* [👕 Merch](https://shop.yagsl.com)
 * [Discord](https://discord.gg/5pYxSDnymr)
 
 ## Fundamentals
