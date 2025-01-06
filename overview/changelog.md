@@ -16,6 +16,19 @@ YAGSL-Example dev branch
 
 All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
+## 2025.1.3
+
+* [ ] Fixed `Adjusted IMU Yaw` and set it to publish under `SmartDashboard`
+* [ ] Added simulation velocities and readings to module output.
+* [ ] Added `srxmag_standalone`absolute encoder type for SRX Mag Encoders attached to a stand alone TalonSRX.
+
+## 2025.1.2
+
+* [ ] Updated to WPILib 2025.1.1
+* [ ] Updated CTRE/REV/Studica/Redux vendordeps.
+* [ ] Fixed some javadocs failures.
+* [ ] Touched up comments by [@yapplejack](https://github.com/yapplejack) in [#278](https://github.com/BroncBotz3481/YAGSL-Example/pull/278)
+
 ## 2025.1.1
 
 * [ ] Fixed telemetry publishing problem. Telemetry is now published under the `SmartDashboard` network table.
