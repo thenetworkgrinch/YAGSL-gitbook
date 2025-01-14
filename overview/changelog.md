@@ -17,6 +17,9 @@ YAGSL-Example dev branch
 All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
 ## 2025.2.1
+* [ ] Fixed optimization using the relative encoder
+
+## 2025.2.0
 
 * [ ] Disabled kA for the drive motor feedforward by default.
 * [ ] Fix getMaxVelocity used in feedforward by [@jwt388](https://github.com/jwt388) in [#286](https://github.com/BroncBotz3481/YAGSL-Example/pull/286)
