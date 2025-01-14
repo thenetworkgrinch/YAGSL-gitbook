@@ -16,6 +16,13 @@ YAGSL-Example dev branch
 
 All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
+## 2025.2.1
+
+* [ ] Disabled kA for the drive motor feedforward by default.
+* [ ] Fix getMaxVelocity used in feedforward by [@jwt388](https://github.com/jwt388) in [#286](https://github.com/BroncBotz3481/YAGSL-Example/pull/286)
+* [ ] Maximum speed settings do not allow limiting robot to less than full speed by [@clrozeboom](https://github.com/clrozeboom) in [#277](https://github.com/BroncBotz3481/YAGSL-Example/pull/277)
+* [ ] Sim modules SysId routines & New maple-sim version by [@catr1xLiu](https://github.com/catr1xLiu) in [#288](https://github.com/BroncBotz3481/YAGSL-Example/pull/288)
+
 ## 2025.1.3
 
 * [ ] Fixed `Adjusted IMU Yaw` and set it to publish under `SmartDashboard`
