@@ -20,7 +20,7 @@ All PR's should be based off of and merged into here. YAGSL is propagated often 
 * [ ] Fixed optimization using the relative encoder
 * [ ] Fix absolute encoders detection in `SparkMaxSwerve.isAbsoluteEncoderAttached()` by changing null check to `Optional.isPresent()` (Discovered by Team 217!)
 * [ ] Changed `absoluteEncoder` to an `Optional` for SparkMax's (by Team 217) 
-* [ ] Added a way to sysId while spinning in place
+* [ ] Added a way to sysId while spinning in place, changed parameters to `SwerveDriveTest.setDriveSysIdRoutine(new Config(),this, swerveDrive, 12, true)`
 
 ## 2025.2.0
 
