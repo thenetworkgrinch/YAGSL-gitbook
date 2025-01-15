@@ -31,6 +31,8 @@ Incorrect wiring can be further broken down into 3 categories for the swerve dri
 * [ ] Field Relative robot control may be unusable.
 * [ ] Autonomous drifts uncontrollably.
 * [ ] Errors in the driver station may appear.
+* [ ] If your gyro is moving/shaking violently.
+* [ ] If your gyro shifted during movement.
 
 ### Physical Components
 
@@ -49,6 +51,7 @@ Incorrect wiring can be further broken down into 3 categories for the swerve dri
 
 #### Swerve Module
 
+* [ ] If your wheels were misaligned
 * [ ] Modules are inconsistent with the same PID.
   * Grease may need to be applied to the gears.
 
