@@ -18,7 +18,7 @@ All PR's should be based off of and merged into here. YAGSL is propagated often 
 
 ## 2025.2.1
 * [ ] Fixed optimization using the relative encoder
-
+* [ ] Fix absolute encoders detection in `SparkMaxSwerve.isAbsoluteEncoderAttached()` by changing null check to `Optional.isPresent()` (Discovered by Team 217!)
 ## 2025.2.0
 
 * [ ] Disabled kA for the drive motor feedforward by default.
