@@ -19,6 +19,7 @@ All PR's should be based off of and merged into here. YAGSL is propagated often 
 ## 2025.2.2
 
 * [ ] Fixed `swerve/measuredChassisSpeeds`to report both vx and vy.
+* [ ] Fixed `SwerveInputStream.robotRelative` by Team 151
 
 ## 2025.2.1
 
