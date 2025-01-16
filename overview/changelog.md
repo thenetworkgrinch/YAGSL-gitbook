@@ -2,7 +2,7 @@
 
 ## Pull Requests are always reviewed!
 
-I highly encourage anyone who wants to help make YAGSL better to create pull requests with any modifications you have made that increases your quality of life.&#x20;
+I highly encourage anyone who wants to help make YAGSL better to create pull requests with any modifications you have made that increases your quality of life.
 
 {% embed url="https://github.com/BroncBotz3481/YAGSL-Example/pulls?q=is%3Apr+is%3Aclosed" %}
 
@@ -16,10 +16,15 @@ YAGSL-Example dev branch
 
 All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
+## 2025.2.2
+
+* [ ] Fixed `swerve/measuredChassisSpeeds`to report both vx and vy.
+
 ## 2025.2.1
+
 * [ ] Fixed optimization using the relative encoder
 * [ ] Fix absolute encoders detection in `SparkMaxSwerve.isAbsoluteEncoderAttached()` by changing null check to `Optional.isPresent()` (Discovered by Team 217!)
-* [ ] Changed `absoluteEncoder` to an `Optional` for SparkMax's (by Team 217) 
+* [ ] Changed `absoluteEncoder` to an `Optional` for SparkMax's (by Team 217)
 * [ ] Added a way to sysId while spinning in place, changed parameters to `SwerveDriveTest.setDriveSysIdRoutine(new Config(),this, swerveDrive, 12, true)`
 
 ## 2025.2.0
@@ -68,19 +73,19 @@ All PR's should be based off of and merged into here. YAGSL is propagated often 
 ## 2025.1.0
 
 * [ ] Fixed vision file null-ptr exception.
-* [ ] Updated to Maple-Sim 0.2.4; added `SwerveDrive.getMapleSimDrive()`  by [@catr1xLiu](https://github.com/catr1xLiu) in [#262](https://github.com/BroncBotz3481/YAGSL-Example/pull/262)
+* [ ] Updated to Maple-Sim 0.2.4; added `SwerveDrive.getMapleSimDrive()` by [@catr1xLiu](https://github.com/catr1xLiu) in [#262](https://github.com/BroncBotz3481/YAGSL-Example/pull/262)
 * [ ] Fixed spark max brushed motor controller encoder null-ptr exceptions
 * [ ] Fixed `SwerveMath.scaleTranslation`issue
 * [ ] Fixed `Vision`update with `resultLists`check by @jwt388 FRC Team 151
 * [ ] Changed `SwerveDrive.getMaximumVelocity()`-> `SwerveDrive.getMaximumChassisVelocity()`
-* [ ] Changed `SwerveDrive.getMaximumAngularVelocity()` -> `SwerveDrive.getMaximumChassisAngularVelocity()`&#x20;
-* [ ] Used known motor types to calculate the drive motor feedforward.&#x20;
+* [ ] Changed `SwerveDrive.getMaximumAngularVelocity()` -> `SwerveDrive.getMaximumChassisAngularVelocity()`
+* [ ] Used known motor types to calculate the drive motor feedforward.
 * [ ] Extended the parser to know the motor type attached to the motor controller. (Except brushed)
-* [ ] Separated chassis maximum velocity from module maximum velocity.&#x20;
-* [ ] Added `navx_mxp_serial` back.&#x20;
-* [ ] Added motor specifiers `krakenx60foc`, `krakenx60`, `falcon500foc`, `falcon500`, `sparkmax_neo550`, `sparkmax_neo`, `sparkflex_neo`, `sparkflex_vortex`, `sparkflex_neo550`&#x20;
-* [ ] Create the drive motor feedforward in `SwerveModule` constructor.&#x20;
-* [ ] Added module max speeds to `SwerveModule.maxDriveVelocity` and `SwerveModule.maxAngularVelocity`&#x20;
+* [ ] Separated chassis maximum velocity from module maximum velocity.
+* [ ] Added `navx_mxp_serial` back.
+* [ ] Added motor specifiers `krakenx60foc`, `krakenx60`, `falcon500foc`, `falcon500`, `sparkmax_neo550`, `sparkmax_neo`, `sparkflex_neo`, `sparkflex_vortex`, `sparkflex_neo550`
+* [ ] Create the drive motor feedforward in `SwerveModule` constructor.
+* [ ] Added module max speeds to `SwerveModule.maxDriveVelocity` and `SwerveModule.maxAngularVelocity`
 * [ ] Updated the web configuration
 
 ## 2025.0.0
@@ -117,7 +122,7 @@ All PR's should be based off of and merged into here. YAGSL is propagated often 
 ## 2024.5.0.4
 
 * [ ] Added PhotonVision `Vision` class to example and integrate it with the example code.
-* [ ] Added `getAprilTagPose` method to `Vision` (PR [#226](https://github.com/BroncBotz3481/YAGSL-Example/pull/226) by  [**kreidljj**](https://github.com/kreidljj))
+* [ ] Added `getAprilTagPose` method to `Vision` (PR [#226](https://github.com/BroncBotz3481/YAGSL-Example/pull/226) by [**kreidljj**](https://github.com/kreidljj))
 * [ ] Update the vision simulation on `Vision.updatePoseEstimation` (PR [#224](https://github.com/BroncBotz3481/YAGSL-Example/pull/224) by [**brandonzx3**](https://github.com/brandonzx3)**)**
 * [ ] Add Standard Deviations for YAGSL SwerveDrive Pose Estimator (PR [#222](https://github.com/BroncBotz3481/YAGSL-Example/pull/222) by [**maxikyuu**](https://github.com/maxikyuu)**)**
 * [ ] Updating Vendordeps and renaming CanandCoders to CanandMags (PR [#219](https://github.com/BroncBotz3481/YAGSL-Example/pull/219) by [**Turbojax07**](https://github.com/Turbojax07) and YAGSL devs)
@@ -152,7 +157,7 @@ All PR's should be based off of and merged into here. YAGSL is propagated often 
 ## 2024.4.8.6
 
 * [ ] Added PIDF helper functions `SwerveModule.setDrivePIDF` and `SwerveModule.setAnglePIDF` alongside `SwerveModule.getDrivePIDF` and `SwerveModule.getAnglePIDF`.
-* [ ] Changed feedforward around to use `SwerveModule.setFeedforward` instead of directly modifying `SwerveModule.feedforward`&#x20;
+* [ ] Changed feedforward around to use `SwerveModule.setFeedforward` instead of directly modifying `SwerveModule.feedforward`
 * [ ] Renamed `SwerveModule.feedforward` to `SwerveModule.driveFeedforward`.
 * [ ] Added anti-jitter disabling option via `SwerveModule.setAntiJitter` which also modifies the encoder offsets that are pushed to the motor controllers.
 * [ ] Updated vendordeps
@@ -227,7 +232,7 @@ All PR's should be based off of and merged into here. YAGSL is propagated often 
 ## 2024.4.5
 
 * [ ] Fix for TalonFX Angle motor control (by [@bhall-ctre](https://github.com/bhall-ctre), and @Wackyvert 2225 Mentor) .
-  1. TalonFX's needed to use conversion factor as gear ratio rather than gear ratio + unit conversion.&#x20;
+  1. TalonFX's needed to use conversion factor as gear ratio rather than gear ratio + unit conversion.
   2. Conversion factor needed to be inverted.
   3. setPosition update to reflect current position.
 * [ ] Changed `ma3` encoders to be read via analog input. (Discovered by [@CoZm0](https://github.com/CoZ-m0))
