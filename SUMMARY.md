@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Welcome to Yet Another Swerve Document](README.md)
+  * [Resources](readme/resources.md)
 
 ## Overview
 
