@@ -16,6 +16,11 @@ YAGSL-Example dev branch
 
 All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
+## 2025.3.0
+
+* [ ] Added `SwerveDrive.setModuleStateOptimization`to allow for easier debugging.
+* [ ] Fixed `sparkmax_analog`
+
 ## 2025.2.2
 
 * [ ] Fixed `swerve/measuredChassisSpeeds`to report both vx and vy.
