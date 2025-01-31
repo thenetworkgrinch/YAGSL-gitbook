@@ -1,6 +1,6 @@
-# SparkFlex
+# Spark Flex
 
-This page refers to the REV SparkFlex while attached to a **BRUSHLESS MOTOR (REV Vortex's)** .
+This page refers to the REV Spark Flex while attached to a **BRUSHLESS MOTOR (REV Vortex's)** .
 
 {% embed url="https://www.revrobotics.com/next-generation-spark-neo/" %}
 
@@ -21,7 +21,7 @@ new CANSparkFlex(<a data-footnote-ref href="#user-content-fn-1">10</a>, MotorTyp
 
 ## Documentation
 
-The SparkFlex allows you to test the motor controller PID, run the motor at a set percentage, and update the firmware all from the REV Hardware Client. Installation of the REV Hardware client is required to use the SparkFlex for YAGSL.
+The Spark Flex allows you to test the motor controller PID, run the motor at a set percentage, and update the firmware all from the REV Hardware Client. Installation of the REV Hardware client is required to use the SparkFlex for YAGSL.
 
 {% embed url="https://docs.revrobotics.com/rev-hardware-client/gs/install" %}
 REV Hardware Client Installation guide + download
@@ -32,26 +32,26 @@ Make it spin using the REV Hardware Client
 {% endembed %}
 
 {% hint style="warning" %}
-The SparkFlex must be disconnected from the CAN bus **on startup** to run via the REV Hardware Client!
+The Spark Flex must be disconnected from the CAN bus **on startup** to run via the REV Hardware Client!
 {% endhint %}
 
 ## Tuning PID
 
-To tune the PID of the SparkFlex you need to open up the REV Hardware Client select the SparkFlex then open the telemetry tab and set it to position control while messing with the parameters in the lefthand pane.
+To tune the PID of the Spark Flex you need to open up the REV Hardware Client select the Spark Flex then open the telemetry tab and set it to position control while messing with the parameters in the lefthand pane.
 
 {% embed url="https://docs.revrobotics.com/rev-hardware-client/ion/telemetry" %}
 
 ## YAGSL Checklist
 
-* [ ] Set all SparkFlex's to unique CAN ID's.
-* [ ] Update all SparkFlex's to the latest firmware.
-* [ ] The SparkFlex rotates the motor counterclockwise positive. (Invert the SparkFlex programmatically if it does not rotate counterclockwise positive).
+* [ ] Set all Spark Flex's to unique CAN ID's.
+* [ ] Update all Spark Flex's to the latest firmware.
+* [ ] The Spark Flex rotates the motor counterclockwise positive. (Invert the SparkFlex programmatically if it does not rotate counterclockwise positive).
 * [ ] Tune the PID value's for one drive motor.
 * [ ] Tune the PID value's for one steering/azimuth/angle motor.
 
 ## Communication
 
-The SparkFlex is only capable of communicating via CAN and may see some exciting new features soon with CAN FD support!
+The Spark Flex is only capable of communicating via CAN and may see some exciting new features soon with CAN FD support!
 
 ## Module example configuration
 
@@ -125,25 +125,25 @@ The following example is one for a module configuration file, e.g. `frontleft.js
 }
 </code></pre>
 
-[^1]: Refers to the SparkFlex with the CAN ID of `10`
+[^1]: Refers to the Spark Flex with the CAN ID of `10`
 
-[^2]: SparkFlex is selected as the motor type.
+[^2]: Spark Flex is selected as the motor type.
 
-[^3]: CAN ID for this drive motor controller SparkFlex is `5`
+[^3]: CAN ID for this drive motor controller Spark Flex is `5`
 
-[^4]: SparkFlex's are not compatible with CANivore's so this must be `null` or `""`. This may change in the future!
+[^4]: Spark Flex's are not compatible with CANivore's so this must be `null` or `""`. This may change in the future!
 
-[^5]: SparkFlex is selected as the motor type.
+[^5]: Spark Flex is selected as the motor type.
 
 [^6]: CAN ID for this drive motor controller SparkFlex is `6`
 
-[^7]: SparkFlex's are not compatible with CANivore's so this must be `null` or `""`. This may change in the future!
+[^7]: Spark Flex's are not compatible with CANivore's so this must be `null` or `""`. This may change in the future!
 
 [^8]: Drive motor does not need to be inverted to rotate counterclockwise positively.
 
 [^9]: Steering/azimuth/angle motor does not need to be inverted to rotate counterclockwise positively.
 
-[^10]: This is the kP which is used on the SparkFlex to maintain the desired velocity as meters/second.
+[^10]: This is the kP which is used on the Spark Flex to maintain the desired velocity as meters/second.
 
 [^11]: kI usually does not need to be set.
 
@@ -151,7 +151,7 @@ The following example is one for a module configuration file, e.g. `frontleft.js
 
 [^13]: This is the static feedforward as a percentage of voltage to have the wheel spin.
 
-[^14]: This is the kP which is used on the SparkFlex to maintain the desired angle as degrees.
+[^14]: This is the kP which is used on the Spark Flex to maintain the desired angle as degrees.
 
 [^15]: kI usually does not need to be set.
 
