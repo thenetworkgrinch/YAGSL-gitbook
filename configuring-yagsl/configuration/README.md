@@ -10,7 +10,7 @@ YAGSL maintains a somewhat complete configuration tool to aid you in creating co
 **IF** you are using an Absolute Encoder which is attached to your SparkMAX then the `angle` conversion factor is `360`.
 {% endhint %}
 
-From this webpage you should be able to download all files and place them into your `deploy` directory to use for [`new SwerveParser(new File(Filesystem.getDeployDirectory(),"swerve")`](https://broncbotz3481.github.io/YAGSL/swervelib/parser/SwerveParser.html#%3Cinit%3E\(java.io.File\))[`.createSwerveDrive(Units.feetToMeters(4.5));`](https://broncbotz3481.github.io/YAGSL/swervelib/parser/SwerveParser.html#createSwerveDrive\(double\)) .
+From this webpage you should be able to download all files and place them into your `deploy` directory to use for [`new SwerveParser(new File(Filesystem.getDeployDirectory(),"swerve")`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/parser/SwerveParser.html#%3Cinit%3E\(java.io.File\))[`.createSwerveDrive(Units.feetToMeters(4.5));`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/parser/SwerveParser.html#createSwerveDrive\(double\)) .
 
 We also maintain a repository for known working configurations here!
 

@@ -10,7 +10,7 @@ Lock Pose is a special circumstance when you want to stay in a position and beco
 
 ## How do I use Lock Pose?
 
-You call the function [`SwerveDrive.lockPose()`](https://broncbotz3481.github.io/YAGSL/swervelib/SwerveDrive.html#lockPose\(\)) repeatedly instead of passing any controller input.&#x20;
+You call the function [`SwerveDrive.lockPose()`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/SwerveDrive.html#lockPose\(\)) repeatedly instead of passing any controller input.&#x20;
 
 <pre class="language-java"><code class="lang-java">public class RobotContainer
 {

@@ -2,7 +2,7 @@
 
 ## Swerve Controller (`controllerproperties.json`)
 
-The Swerve Controller stores configuration options relating it how the swerve drive works during autonomous and drive modes which set the heading of the robot based off a joystick. The JSON files maps 1:1 with [`ControllerPropertiesJson`](https://broncbotz3481.github.io/YAGSL/swervelib/parser/json/ControllerPropertiesJson.html) which creates a [`SwerveControllerConfiguration`](https://broncbotz3481.github.io/YAGSL/swervelib/parser/SwerveControllerConfiguration.html). The values within here are **EXTREMELY** important to autonomous because the robot heading PID needs to be tuned correctly in order for Autonomous functions to work.
+The Swerve Controller stores configuration options relating it how the swerve drive works during autonomous and drive modes which set the heading of the robot based off a joystick. The JSON files maps 1:1 with [`ControllerPropertiesJson`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/parser/json/ControllerPropertiesJson.html) which creates a [`SwerveControllerConfiguration`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/parser/SwerveControllerConfiguration.html). The values within here are **EXTREMELY** important to autonomous because the robot heading PID needs to be tuned correctly in order for Autonomous functions to work.
 
 ## Fields
 
@@ -20,4 +20,4 @@ The Swerve Controller stores configuration options relating it how the swerve dr
 }
 </code></pre>
 
-[^1]: Used with [`SwerveController.getTargetSpeeds`](https://broncbotz3481.github.io/YAGSL/swervelib/SwerveController.html#getTargetSpeeds\(double,double,double,double,double,double\)) to set a deadband when finding the angle to rotate to based off of 2 axis.
+[^1]: Used with [`SwerveController.getTargetSpeeds`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/SwerveController.html#getTargetSpeeds\(double,double,double,double,double,double\)) to set a deadband when finding the angle to rotate to based off of 2 axis.

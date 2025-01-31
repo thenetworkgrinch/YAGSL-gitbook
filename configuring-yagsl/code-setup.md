@@ -32,7 +32,7 @@ YAGSL is unique in the fact that you can create a swerve drive based entirely of
 
 ### How to create a SwerveDrive using JSON.
 
-This example program creates the [`SwerveDrive`](https://broncbotz3481.github.io/YAGSL/swervelib/SwerveDrive.html) in the [`SwerveSubsystem`](https://github.com/BroncBotz3481/YAGSL-Example/blob/main/src/main/java/frc/robot/subsystems/swervedrive/SwerveSubsystem.java), as you should only interact with it in the [`SwerveSubsystem`](https://github.com/BroncBotz3481/YAGSL-Example/blob/main/src/main/java/frc/robot/subsystems/swervedrive/SwerveSubsystem.java) if you are using command based programming.
+This example program creates the [`SwerveDrive`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/SwerveDrive.html) in the [`SwerveSubsystem`](https://github.com/BroncBotz3481/YAGSL-Example/blob/main/src/main/java/frc/robot/subsystems/swervedrive/SwerveSubsystem.java), as you should only interact with it in the [`SwerveSubsystem`](https://github.com/BroncBotz3481/YAGSL-Example/blob/main/src/main/java/frc/robot/subsystems/swervedrive/SwerveSubsystem.java) if you are using command based programming.
 
 <pre class="language-java"><code class="lang-java">import java.io.File;
 import edu.wpi.first.wpilibj.Filesystem;
@@ -123,6 +123,6 @@ Inside the `SwerveSubsystem` you can make your own drive code as easy as a few l
 
 [^2]: Maximum speed **MUST** be in Meters!
 
-[^3]: This [value ](https://broncbotz3481.github.io/YAGSL/swervelib/telemetry/SwerveDriveTelemetry.html#verbosity)is static and changes the telemetry given to the DriverStation and SmartDashboard.
+[^3]: This [value ](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/telemetry/SwerveDriveTelemetry.html#verbosity)is static and changes the telemetry given to the DriverStation and SmartDashboard.
 
-[^4]: [Telemetry Verbosity](https://broncbotz3481.github.io/YAGSL/swervelib/telemetry/SwerveDriveTelemetry.TelemetryVerbosity.html) comes in several different modes.
+[^4]: [Telemetry Verbosity](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/telemetry/SwerveDriveTelemetry.TelemetryVerbosity.html) comes in several different modes.
