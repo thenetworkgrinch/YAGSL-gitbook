@@ -20,6 +20,10 @@ All PR's should be based off of and merged into here. YAGSL is propagated often 
 
 * [ ] Added `SwerveDrive.setModuleStateOptimization`to allow for easier debugging.
 * [ ] Fixed `sparkmax_analog`
+* [ ] Null pointer crash when there have been no vision results by [@jwt388](https://github.com/jwt388) in [#307](https://github.com/BroncBotz3481/YAGSL-Example/pull/307)
+* [ ] Adding PigeonViaTalonSRX and attached SparkFlex by [@konnorreynolds](https://github.com/konnorreynolds) in [#292](https://github.com/BroncBotz3481/YAGSL-Example/pull/292)
+* [ ] Throw an error when module configs are incorrectly set to 0 by [@wackyvert](https://github.com/wackyvert) in [#308](https://github.com/BroncBotz3481/YAGSL-Example/pull/308)
+* [ ] Fixed rawAbsoluteEncoder position. by [@konnorreynolds](https://github.com/konnorreynolds) in [#309](https://github.com/BroncBotz3481/YAGSL-Example/pull/309)
 
 ## 2025.2.2
 
