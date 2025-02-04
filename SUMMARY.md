@@ -62,6 +62,7 @@
 * [Swerve Drive Drift](configuring-yagsl/swerve-drive-drift.md)
 * [SparkMAX Common Problems](configuring-yagsl/sparkmax-common-problems.md)
 * [Verifying your Module Locations](configuring-yagsl/verifying-your-module-locations.md)
+* [Tuning out Drift](configuring-yagsl/tuning-out-drift.md)
 
 ## Devices
 
