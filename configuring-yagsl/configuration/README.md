@@ -6,10 +6,6 @@ YAGSL maintains a somewhat complete configuration tool to aid you in creating co
 
 {% embed url="https://broncbotz3481.github.io/YAGSL-Example/" %}
 
-{% hint style="warning" %}
-**IF** you are using an Absolute Encoder which is attached to your SparkMAX then the `angle` conversion factor is `360`.
-{% endhint %}
-
 From this webpage you should be able to download all files and place them into your `deploy` directory to use for [`new SwerveParser(new File(Filesystem.getDeployDirectory(),"swerve")`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/parser/SwerveParser.html#%3Cinit%3E\(java.io.File\))[`.createSwerveDrive(Units.feetToMeters(4.5));`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/parser/SwerveParser.html#createSwerveDrive\(double\)) .
 
 We also maintain a repository for known working configurations here!
@@ -95,7 +91,7 @@ For the examples we label with numbers as to be less confused, however when chan
 
 Swap the highlighted lines and you have swapped the module configurations correctly.
 
-#### The easy way
+**The easy way**
 
 1. Change the location negations to the desired module side.
 2. Rename the files without overwriting eachother.
@@ -141,7 +137,7 @@ To correctly get the `absoluteEncoderOffset` your swerve modules must be facing 
 
 ### JSON Files
 
-JSON stands for "JavaScript Object Notation" it is a popular format for configuration, and string data representation. Learn more [here](https://www.w3schools.com/js/js\_json\_intro.asp)
+JSON stands for "JavaScript Object Notation" it is a popular format for configuration, and string data representation. Learn more [here](https://www.w3schools.com/js/js_json_intro.asp)
 
 ### What does the swerve directory need to look like?
 
