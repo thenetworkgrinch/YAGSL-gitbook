@@ -11,6 +11,8 @@ To download and install this please choose the correct file and run it from this
 
 ## Configuring FRC Web Components
 
+<figure><img src="../.gitbook/assets/yagsl_fwc.gif" alt=""><figcaption></figcaption></figure>
+
 1. Connect the laptop to the robot
 2. Open "FRC Web Components"
 3. Click "Settings"
