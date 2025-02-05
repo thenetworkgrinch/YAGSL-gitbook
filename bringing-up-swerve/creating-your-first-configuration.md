@@ -36,7 +36,7 @@ _Note: When viewed from the top, make sure the sides of the wheel with the bevel
 
 <table data-full-width="true"><thead><tr><th>Module</th><th>X "Front" (Inches)</th><th>Y "Left" (Inches)</th></tr></thead><tbody><tr><td><em>Front Left (FL)</em></td><td>+</td><td>+</td></tr><tr><td><em>Front Right (FR)</em></td><td>+</td><td>-</td></tr><tr><td><em>Back Left (BL)</em></td><td>-</td><td>+</td></tr><tr><td><em>Back Right (BR)</em></td><td>-</td><td>-</td></tr></tbody></table>
 
-2. Measure the wheel diameter _in meters_
+2. Measure the wheel diameter _in inches_
 3. [Determine the _reported_ internal encoder resolution](#user-content-fn-1)[^1]
    * _Note: Most encoders now normalize the reported values to `-1` to `1`, so the Encoder Resolution when computing the conversion factors should generally be “`1`”. Only known exception is the TalonSRX._
 4. Find the drive/angle gear ratio from the swerve module manufacturer specs
