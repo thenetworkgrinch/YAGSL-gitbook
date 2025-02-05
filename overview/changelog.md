@@ -16,6 +16,14 @@ YAGSL-Example dev branch
 
 All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
+## 2025.3.1
+
+* [ ] Made the old method for conversion factors throw an exception instead of throwing a warning.&#x20;
+* [ ] Added TalonFXS Support.&#x20;
+* [ ] Renamed <kbd>SwerveMotor.isAttachedAbsoluteEncoder</kbd> to <kbd>SwerveMotor.usingExternalFeedbackSensor</kbd>.
+* [ ] Deprecated <kbd>SwerveDrive.pushOffsetsToEncoders</kbd> in favor of <kbd>SwerveDrive.useExternalFeedbackSensor</kbd>.&#x20;
+* [ ] Deprecated <kbd>SwerveDrive.restoreInternalOffset</kbd> in favor of <kbd>SwerveDrive.useInternalFeedbackSensor</kbd>.
+
 ## 2025.3.0
 
 * [ ] Added `SwerveDrive.setModuleStateOptimization`to allow for easier debugging.
