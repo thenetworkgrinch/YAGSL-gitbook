@@ -40,13 +40,11 @@ _Note: When viewed from the top, make sure the sides of the wheel with the bevel
 3. [Determine the _reported_ internal encoder resolution](#user-content-fn-1)[^1]
    * _Note: Most encoders now normalize the reported values to `-1` to `1`, so the Encoder Resolution when computing the conversion factors should generally be “`1`”. Only known exception is the TalonSRX._
 4. Find the drive/angle gear ratio from the swerve module manufacturer specs
-5. Calculate the [drive/angle conversion factors](#user-content-fn-2)[^2]
+5. (Optional) Calculate the [drive/angle conversion factors](#user-content-fn-2)[^2]
    * Drive Motor Conversion Factor (meters/rotation) = (PI \* WHEEL DIAMETER IN METERS) / (GEAR RATIO \* ENCODER RESOLUTION)
    * Angle Motor Conversion Factor (degrees/rotation) = 360 / (GEAR RATIO \* ENCODER RESOLUTION)
 
-{% hint style="warning" %}
-_Note: For Absolute Encoders attached **directly** to the dataport on the SparkMAX, the Conversion Factor is **`360`**_
-{% endhint %}
+
 
 <table data-full-width="true"><thead><tr><th>Motor</th><th align="center">Wheel Diameter (meters)</th><th>Gear Ratio</th><th align="center">Encoder Resolution (CPR)</th><th>Conversion Factor</th></tr></thead><tbody><tr><td><em>Drive</em></td><td align="center"></td><td></td><td align="center">1</td><td></td></tr><tr><td><em>Angle</em></td><td align="center"><strong>N/A</strong></td><td></td><td align="center">1</td><td></td></tr></tbody></table>
 
