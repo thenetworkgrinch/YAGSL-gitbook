@@ -24,7 +24,11 @@ When you spin your motor while the robot is disabled you will notice `swerve/mod
 
 Conversion factors are applied to your motor convert from native units (usually _**rotations**_) to degrees for steering/azimuth/angle motors, and meters for drive motors. Conversion factors are only relevant to motor controllers, except if there is an absolute encoder attached to your motor controller.
 
-## The Absolute Encoder Offset
+## The Absolute Encoder offset
+
+{% hint style="warning" %}
+All the examples here use Shuffleboard as the driver dashboard, but can be done using any other alternative such as [Advantage Scope](https://docs.advantagescope.org/) or [Elastic](https://github.com/Gold872/elastic-dashboard)
+{% endhint %}
 
 The absolute encoder offset is what allows your swerve module to maintain the wheel orientation between power offs. It is vital to a functioning swerve drive.
 
@@ -34,7 +38,7 @@ The absolute encoder offset is what allows your swerve module to maintain the wh
 
 2. Deploy your code.
 3. **DO NOT ENABLE YOUR ROBOT!**
-4. Open shuffleboard.
+4. Open your driver dashboard.
 5.
 
     <figure><img src="../.gitbook/assets/shuffleboard_open_tab.png" alt=""><figcaption></figcaption></figure>

@@ -51,7 +51,7 @@ This way is fast and easy, no more large unmaintainable and daunting constants f
 
 ## Telemetry
 
-Telemetry can be great when you want it and YAGSL has no shortage of useful telemetry, such as the `Module[...]` fields you will see in Shuffleboard or SmartDashboard. However Telemetry causes delays and slowdowns to the program so sometimes it is best to the them off. To do this change
+Telemetry can be great when you want it and YAGSL has no shortage of useful telemetry, such as the `Module[...]` fields you will see in a driver dashboard. However Telemetry causes delays and slowdowns to the program so sometimes it is best to the them off. To do this change
 
 <pre class="language-java"><code class="lang-java">import swervelib.telemetry.SwerveDriveTelemetry;
 import swervelib.telemetry.SwerveDriveTelemetry.TelemetryVerbosity;
