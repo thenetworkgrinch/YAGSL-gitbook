@@ -34,7 +34,7 @@ The absolute encoder offset is what allows your swerve module to maintain the wh
 
 2. Deploy your code.
 3. **DO NOT ENABLE YOUR ROBOT!**
-4. Open shuffleboard.
+4. Open your driver dashboard.
 5.
 
     <figure><img src="../.gitbook/assets/shuffleboard_open_tab.png" alt=""><figcaption></figcaption></figure>

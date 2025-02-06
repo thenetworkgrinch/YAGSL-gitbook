@@ -12,14 +12,10 @@ IF you are inverted incorrectly your modules or robot may spin "out-of-control"
 
 ## Swerve Motors
 
-When you spin your motor counterclockwise the value in Shuffleboard/NetworkTables `swerve/modules/.../Raw Absolute Encoder` and `swerve/modules/.../Raw Angle Encoder` should both increase.
+When you spin your motor counterclockwise the value in NetworkTables `swerve/modules/.../Raw Absolute Encoder` and `swerve/modules/.../Raw Angle Encoder` should both increase.
 
-## How to open Shuffleboard
-
-1. Open shuffleboard.
-2. ![](../.gitbook/assets/shuffleboard\_open\_tab.png)
-3. ![](../.gitbook/assets/ShuffleboardAbsoluteEncoderHighlight.png)
-4. Take note of the `swerve/modules/.../Raw Absolute Encoder` value's and use them for `absoluteEncoderOffset` in the module JSONs.
+* ![](../.gitbook/assets/ShuffleboardAbsoluteEncoderHighlight.png)
+* Take note of the `swerve/modules/.../Raw Absolute Encoder` value's and use them for `absoluteEncoderOffset` in the module JSONs.
 
 ## Spin your module counterclockwise
 
@@ -152,7 +148,7 @@ Keep in mind that your robot spinning counter clockwise should look like this wh
 
 <figure><img src="../.gitbook/assets/id_change1.png" alt=""><figcaption><p>ID's relocated in swerve module files</p></figcaption></figure>
 
-You should notice the `Raw IMU Yaw` field in Shuffleboard increase. If it doesn't you need to invert your IMU like this.
+You should notice the `Raw IMU Yaw` field in your driver dashboard increase. If it doesn't you need to invert your IMU like this.
 
 <pre class="language-json"><code class="lang-json">{
   "imu": {
