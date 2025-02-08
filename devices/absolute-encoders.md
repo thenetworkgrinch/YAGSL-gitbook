@@ -159,7 +159,7 @@ Try inverting your steering/angle/azimuth motor if your module keeps spinning ar
 
 [^20]: ```json
     "encoder": {
-        "type": "sparkmax_analog",
+        "type": "sparkmax_analog5v",
         "id": 11,
         "canbus": null
       },
