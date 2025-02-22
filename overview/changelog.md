@@ -16,14 +16,25 @@ YAGSL-Example dev branch
 
 All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
-## 2025.3.1
+## 2025.7.0
 
-* [ ] Made the old method for conversion factors throw an exception instead of throwing a warning.&#x20;
-* [ ] Added TalonFXS Support.&#x20;
+* [ ] Made the old method for conversion factors throw an exception instead of throwing a warning.
+* [ ] Added TalonFXS Support.
 * [ ] Renamed <kbd>SwerveMotor.isAttachedAbsoluteEncoder</kbd> to <kbd>SwerveMotor.usingExternalFeedbackSensor</kbd>.
-* [ ] Deprecated <kbd>SwerveDrive.pushOffsetsToEncoders</kbd> in favor of <kbd>SwerveDrive.useExternalFeedbackSensor</kbd>.&#x20;
+* [ ] Deprecated <kbd>SwerveDrive.pushOffsetsToEncoders</kbd> in favor of <kbd>SwerveDrive.useExternalFeedbackSensor</kbd>.
 * [ ] Deprecated <kbd>SwerveDrive.restoreInternalOffset</kbd> in favor of <kbd>SwerveDrive.useInternalFeedbackSensor</kbd>.
 * [ ] Updated references from Shuffleboard to any dashboard by [@DanPeled](https://github.com/DanPeled)
+* [ ] Fixed Absolute Encoders attached to SparkFlex's.
+* [ ] Attached absolute encoders are no longer set as the feedback device, must be explicitly called.
+* [ ] Added `SwerveInputStream.driveToPose`
+* [ ] Add optional optimization of module states in drive function that uses feedforward by [@clrozeboom](https://github.com/clrozeboom) in [#314](https://github.com/BroncBotz3481/YAGSL-Example/pull/314)
+* [ ] Make all closable items implement `AutoClosable` by [@kytpbs](https://github.com/kytpbs) in [#317](https://github.com/BroncBotz3481/YAGSL-Example/pull/317)
+* [ ] remove useless imports and variables by [@kytpbs](https://github.com/kytpbs) in [#318](https://github.com/BroncBotz3481/YAGSL-Example/pull/318)
+* [ ] Set IZone of PIDControllers created from PIDFConfigs by [@CoffeeCoder1](https://github.com/CoffeeCoder1) in [#319](https://github.com/BroncBotz3481/YAGSL-Example/pull/319)
+* [ ] Fix typo by [@fletch3555](https://github.com/fletch3555) in [#323](https://github.com/BroncBotz3481/YAGSL-Example/pull/323)
+* [ ] Rev Through bore via DIO by [@wackyvert](https://github.com/wackyvert) in [#325](https://github.com/BroncBotz3481/YAGSL-Example/pull/325)
+* [ ] stop setMotorBrake from constantly executing by [@rakosi2](https://github.com/rakosi2) in [#327](https://github.com/BroncBotz3481/YAGSL-Example/pull/327)
+* [ ] Prevent rotation if controller heading inputs are not past axisDeadband by [@MrFast-js](https://github.com/MrFast-js) in [#328](https://github.com/BroncBotz3481/YAGSL-Example/pull/328)
 
 ## 2025.3.0
 
