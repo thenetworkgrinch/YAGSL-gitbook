@@ -22,6 +22,7 @@ All PR's should be based off of and merged into here. YAGSL is propagated often 
 * Prevent crashing midmatch if robot code restarts.
 * Added `SwerveInputStream.translationHeadingOffset`
 * Removed gyro zeroing from YAGSL startup. You must now call gyro zero on `autonomousInit` or use the `RobotModeTriggers`
+* `Added RobotModeTriggers.autonomous().onTrue(Commands.runOnce(this::zeroGyroWithAlliance));`to the example code.
 
 ## 2025.7.0
 
