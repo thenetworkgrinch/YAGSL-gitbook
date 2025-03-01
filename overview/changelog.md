@@ -16,6 +16,13 @@ YAGSL-Example dev branch
 
 All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
+## 2025.7.1
+
+* Fixed `SwerveInputStream.allianceRelativeControl`
+* Prevent crashing midmatch if robot code restarts.
+* Added `SwerveInputStream.translationHeadingOffset`
+* Removed gyro zeroing from YAGSL startup. You must now call gyro zero on `autonomousInit` or use the `RobotModeTriggers`
+
 ## 2025.7.0
 
 * [ ] Made the old method for conversion factors throw an exception instead of throwing a warning.
