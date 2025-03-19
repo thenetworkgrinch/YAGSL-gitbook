@@ -1,6 +1,11 @@
 # ADXRS450
 
 {% hint style="warning" %}
+ADXRS450 has a limit of ±300°/sec and will stop providing rotation data past the limits.
+This gyro is not recommended to be used for competitions.
+{% endhint %}
+
+{% hint style="warning" %}
 Keep your robot still at startup EVERY TIME with this gyroscope.
 {% endhint %}
 
