@@ -16,6 +16,12 @@ YAGSL-Example dev branch
 
 All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
+## 2025.7.2
+
+* fix setAbsoluteEncoderOffset() by [@MEisSCAMMER](https://github.com/MEisSCAMMER) in [#338](https://github.com/BroncBotz3481/YAGSL-Example/pull/338)
+* Enable Continuous Input for omegaPIDController by [@Sate04](https://github.com/Sate04) in [#337](https://github.com/BroncBotz3481/YAGSL-Example/pull/337)
+* Patched crash when starting while enabled.
+
 ## 2025.7.1
 
 * Fixed `SwerveInputStream.allianceRelativeControl`
