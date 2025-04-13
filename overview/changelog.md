@@ -16,6 +16,10 @@ YAGSL-Example dev branch
 
 All PR's should be based off of and merged into here. YAGSL is propagated often to the other repositories.
 
+## 2025.8.0
+
+* Fix attached absolute encoders with brushed SparkMAX's
+
 ## 2025.7.2
 
 * fix setAbsoluteEncoderOffset() by [@MEisSCAMMER](https://github.com/MEisSCAMMER) in [#338](https://github.com/BroncBotz3481/YAGSL-Example/pull/338)
