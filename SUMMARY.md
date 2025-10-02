@@ -25,7 +25,7 @@
 * [Config Generator](https://broncbotz3481.github.io/YAGSL-Example/)
 * [💸 Donations](https://ko-fi.com/yagsl)
 * [👕 Merch](https://shop.yagsl.com)
-* [Discord](https://discord.gg/5pYxSDnymr)
+* [Discord](https://discord.gg/yass)
 
 ## Fundamentals
 
