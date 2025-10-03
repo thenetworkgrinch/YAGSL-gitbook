@@ -39,16 +39,17 @@ The absolute encoder offset is what allows your swerve module to maintain the wh
 2. Deploy your code.
 3. **DO NOT ENABLE YOUR ROBOT!**
 4. Open your driver dashboard.
-5.
 
-    <figure><img src="../.gitbook/assets/shuffleboard_open_tab.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
 6.
 
-    <figure><img src="../.gitbook/assets/ShuffleboardAbsoluteEncoderHighlight.png" alt=""><figcaption><p>swerve/modules/... view in Shuffleboard</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/ShuffleboardAbsoluteEncoderHighlight.png" alt=""><figcaption></figcaption></figure>
+
 7. Take note of the `swerve/modules/.../Raw Absolute Encoder` value's and use them for `absoluteEncoderOffset` in the module JSONs.
 
 {% hint style="warning" %}
-#### Special note to MAXSwerve teams!
+**Special note to MAXSwerve teams!**
 
 When you align using the MAXSwerveModules and find the `absoluteEncoderOffset` for each module you may need to **+/-`90` from the `absoluteEncoderOffset`** to correct the module position. The `absoluteEncoderInverted` must also be `true` in every module configuration as well.
 
