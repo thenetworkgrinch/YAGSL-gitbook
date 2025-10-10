@@ -55,7 +55,7 @@ Since the 2024 Season, [Advantage Scope](https://github.com/Mechanical-Advantage
 <figure><img src="../.gitbook/assets/FRC_web_component_snapshot.png" alt=""><figcaption><p>Swerve Drivebase while in motion with an incorrect configuration.<br>(Need to change this to an actual picture of Advantage Scope)</p></figcaption></figure>
 
 {% hint style="info" %}
-The **BLUE** lines are the measured velocity and position of the swerve module.
+The **RED** lines are the measured velocity and position of the swerve module.
 
-The **RED** lines is the velocity and position of the module sent!
+The **BLUE** lines is the velocity and position of the module sent!
 {% endhint %}
