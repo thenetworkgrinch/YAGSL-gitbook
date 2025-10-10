@@ -23,8 +23,8 @@
 * [Java API](https://broncbotz3481.github.io/YAGSL-Lib/docs/)
 * [Example Code](https://github.com/BroncBotz3481/YAGSL-Example/tree/main)
 * [Config Generator](https://broncbotz3481.github.io/YAGSL-Example/)
-* [💸 Donations](https://ko-fi.com/yagsl)
-* [👕 Merch](https://shop.yagsl.com)
+* [💸 Donations](https://yetanothersoftwaresuite.com/)
+* [👕 Merch](https://yagsl.com/)
 * [Discord](https://discord.gg/yass)
 
 ## Fundamentals
@@ -60,7 +60,7 @@
 * [Flowcharts](configuring-yagsl/flowcharts.md)
 * [The eight steps](configuring-yagsl/the-eight-steps.md)
 * [Swerve Drive Drift](configuring-yagsl/swerve-drive-drift.md)
-* [SparkMAX Common Problems](configuring-yagsl/sparkmax-common-problems.md)
+* [SparkMax and SparkFlex Common Problems](configuring-yagsl/sparkmax-common-problems.md)
 * [Verifying your Module Locations](configuring-yagsl/verifying-your-module-locations.md)
 * [Tuning out Drift](configuring-yagsl/tuning-out-drift.md)
 
