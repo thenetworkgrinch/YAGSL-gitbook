@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Angular Velocity Compensation
 
 YAGSL utilizes a method pioneered by Jack-in-the-bot for angular velocity compensation. To enable this you would use `SwerveDrive.setAngularVelocityCompensation(true, true, 0.1);` where the first parameter is the enabled state in teleop, second is enabled in autonomous, and third is the coefficient to use.

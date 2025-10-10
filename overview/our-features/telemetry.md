@@ -43,7 +43,7 @@ YAGSL uses telemetry in `SwerveDrive` and `SwerveModule` for consolidation. Ther
 Higher telemetry could induce some lag on the robot and slow down the cycle times. So be cautious on what you chose!
 {% endhint %}
 
-To configure the telemetry please change [`SwerveDriveTelemetry.verbosity`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/telemetry/SwerveDriveTelemetry.html#verbosity) to one of the [enum values](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/telemetry/SwerveDriveTelemetry.TelemetryVerbosity.html) that you desire.&#x20;
+To configure the telemetry please change [`SwerveDriveTelemetry.verbosity`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/telemetry/SwerveDriveTelemetry.html#verbosity) to one of the [enum values](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/telemetry/SwerveDriveTelemetry.TelemetryVerbosity.html) that you desire.
 
 <pre class="language-java"><code class="lang-java">  /**
    * Initialize {@link SwerveDrive} with the directory provided.
@@ -62,23 +62,23 @@ To configure the telemetry please change [`SwerveDriveTelemetry.verbosity`](http
 
 Telemetry outputs relevant Swerve Drive data to NetworkTables on the roboRIO. You can view these using any dashboard you like!
 
-Some dashboard support swerve drive widgets based off of the `SmartDashboard/swerve` NetworkTable entry.&#x20;
+Some dashboard support swerve drive widgets based off of the `SmartDashboard/swerve` NetworkTable entry.
 
 All Swerve Module data is stored under the relevant modules in `SmartDashboard/swerve/modules/` which is invaluable during setup.
 
 ### Swerve Module
 
-<figure><img src="../../.gitbook/assets/image.png" alt="Shuffleboard Tree"><figcaption><p>Swerve Module Telemetry in Shuffleboard</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt="Shuffleboard Tree"><figcaption><p>Swerve Module Telemetry in Shuffleboard</p></figcaption></figure>
 
 ### Swerve Drive
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Swerve Drive Telemetry in Shuffleboard with circled relevant keys</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Swerve Drive Telemetry in Shuffleboard with circled relevant keys</p></figcaption></figure>
 
 ## Recommended Shuffleboard Layout
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Raw Absolute Encoder group on left side, Raw Angle Encoder group on right side.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Raw Absolute Encoder group on left side, Raw Angle Encoder group on right side.</p></figcaption></figure>
 
-I use this layout during setup to ensure all modules are reading CCW+. This is the most common overlooked part while configuring swerve drives.&#x20;
+I use this layout during setup to ensure all modules are reading CCW+. This is the most common overlooked part while configuring swerve drives.
 
 If the **Raw Angle Encoder** is CCW- (decreasing while rotated counter clockwise) then the angle motor needs to be inverted in the configuration file for that module.
 

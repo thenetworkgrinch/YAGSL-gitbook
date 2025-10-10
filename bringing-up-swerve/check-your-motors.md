@@ -40,7 +40,7 @@ The absolute encoder offset is what allows your swerve module to maintain the wh
 3. **DO NOT ENABLE YOUR ROBOT!**
 4. Open your driver dashboard.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 6.
 

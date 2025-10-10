@@ -35,22 +35,20 @@ Since the 2024 Season, [Advantage Scope](https://github.com/Mechanical-Advantage
 
 <figure><img src="../.gitbook/assets/AdvantageScope-Swerve.png" alt=""><figcaption><p>Swerve tab</p></figcaption></figure>
 
-8. Connect the module states and rotation from Smart Dashboard to the Fields.
-   1. Under the `SmartDashboard/swerve` menu drag the `desiredStates` into the `States (Red)` field.
-   2. From the same menu drag the `measuredStates` into the `States (Blue)` field.
-   3. From the same menu drag the `robotRotation` into the `Robot Rotation` field.
+8.  Connect the module states and rotation from Smart Dashboard to the Fields.
 
-<figure><img src="../.gitbook/assets/AdvantageScope-Swerve-Fields.png" alt=""><figcaption><p>Connecting data from network tables to the swerve fields</p></figcaption></figure>
+    1. Under the `SmartDashboard/swerve` menu drag the everything from `advantagescope/` into the `Sources` field.
+    2. You may need to enable your robot before you can add `SmartDashboard/swerve/advantagescope/desiredStates`
 
-9. Adjust the Data column to your Swerve Drive's properties.
-   1. Under the `Data` column change the `Max Speed` field to the value of `SmartDashboard/swerve/maxSpeed` entry.
-   2. Change the `Rotation Units` to match what the `SmartDashboard/swerve/rotationUnit` shows.
+    <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+9.  Adjust the Data column to your Swerve Drive's properties.
 
-<figure><img src="../.gitbook/assets/AdvantageScope-Swerve-Data.png" alt=""><figcaption><p>Change the swerve drive's data to match your robot</p></figcaption></figure>
+    1. Under the `Data` column change the `Max Speed` field to the value of `SmartDashboard/swerve/maxSpeed` entry.
 
-10. (Optional) Adjust the Display column to accurately display your robot's chassis dimensions by changing the Size (Left-Right) and Size (Front-Back) to match what is under SmartDashboard/`swerve/sizeLeftRight` and `SmartDashboard/swerve/sizeFrontBack`
+    <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+10. (Optional) Adjust the Display column to accurately display your robot's chassis dimensions by changing the Size (Left-Right) and Size (Front-Back) to match what is under `SmartDashboard/swerve/sizeLeftRight` and `SmartDashboard/swerve/sizeFrontBack`
 
-<figure><img src="../.gitbook/assets/AdvantageScope-Swerve-Display.png" alt=""><figcaption><p>Change the swerve's display parameters to represent your robot's actual dimensions</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Overview
 
