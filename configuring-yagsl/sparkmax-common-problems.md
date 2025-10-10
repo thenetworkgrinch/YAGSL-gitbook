@@ -16,6 +16,10 @@ The wire should also be tensioned just right, if its over tensioned the wire mgi
 
 ## Throughbore's not adjusting to the absolute encoder offset
 
+{% hint style="danger" %}
+It is no longer necessary to set you `factor` to `360` with attached absolute encoders, but doing so is explained below.
+{% endhint %}
+
 When you are using Absolute Encoders attached to the SparkMax via an Absolute Encoder board it normally identifies as a DutyCycleEncoder.
 
 You can use this as the primary feedback device by setting the `factor` in `physicalproperties.json` to `360` **HOWEVER** when you do this the absolut encoder offset given is in the JSON **IS NOT** applied. So you should use [`SwerveDrive.useExternalFeedbackSensor()`](https://broncbotz.org/YAGSL-Lib/docs/swervelib/SwerveDrive.html#useExternalFeedbackSensor\(\)) which **WILL** set the encoder offset into the SparkMAX DutyCycleEncoder Offset Flash Config.
