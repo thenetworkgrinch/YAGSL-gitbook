@@ -44,8 +44,6 @@ _Note: When viewed from the top, make sure the sides of the wheel with the bevel
    * Drive Motor Conversion Factor (meters/rotation) = (PI \* WHEEL DIAMETER IN METERS) / (GEAR RATIO \* ENCODER RESOLUTION)
    * Angle Motor Conversion Factor (degrees/rotation) = 360 / (GEAR RATIO \* ENCODER RESOLUTION)
 
-
-
 <table data-full-width="true"><thead><tr><th>Motor</th><th align="center">Wheel Diameter (meters)</th><th>Gear Ratio</th><th align="center">Encoder Resolution (CPR)</th><th>Conversion Factor</th></tr></thead><tbody><tr><td><em>Drive</em></td><td align="center"></td><td></td><td align="center">1</td><td></td></tr><tr><td><em>Angle</em></td><td align="center"><strong>N/A</strong></td><td></td><td align="center">1</td><td></td></tr></tbody></table>
 
 ### Step 3: Electrical Characteristics
@@ -82,14 +80,12 @@ _Note: If you are using the hardware utilities for accessing the motors controll
 
 ### Step 5: Input data into the configuration webpage
 
-Open the webpage and import your data into the config files. \
-[https://broncbotz3481.github.io/YAGSL-Example/](https://broncbotz3481.github.io/YAGSL-Example/)
+Open the webpage and import your data into the config files.\
+[https://yet-another-software-suite.github.io/YAGSL/config\_generator/](https://yet-another-software-suite.github.io/YAGSL/config_generator/)
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="broken-reference/" %}
+[broken-reference](broken-reference/)
 {% endcontent-ref %}
-
-
 
 [^1]: IF you are using a SparkMAX or TalonFX this is going to be `1`!
 
