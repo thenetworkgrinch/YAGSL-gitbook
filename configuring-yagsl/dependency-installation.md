@@ -14,7 +14,7 @@
 
 ## Vendor URLs
 
-Bellow is a list of URL's that are required to be installed for YAGSL to work properly, these are publicisized on the vendor websites and over YAGSL documentation. To install them follow this guide on WPILib docs.
+Bellow is a list of URL's that are required to be installed for YAGSL to work properly, these are publicised on the vendor websites and over YAGSL documentation. To install them follow this guide on WPILib docs.
 
 {% embed url="https://docs.wpilib.org/en/stable/docs/software/vscode-overview/3rd-party-libraries.html#installing-libraries" %}
 
