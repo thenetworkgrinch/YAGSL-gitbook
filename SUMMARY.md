@@ -88,8 +88,6 @@
 
 * [Java API](https://broncbotz3481.github.io/YAGSL/)
 * [PathPlanner](https://pathplanner.dev/home.html)
-* [❌ Tuning PID with REV Hardware Client](product-guides/tuning-pid-with-rev-hardware-client.md)
-* [❌ Drive Code](product-guides/drive-code.md)
 
 ## Legacy Documentation
 

@@ -16,7 +16,7 @@ The integrated encoder value will show up in your driver dashboard under `swerve
 
 ## Swerve Motor Wrapper
 
-YAGSL created wrappers over all supported Motor Controllers to uniformly fetch and set data that is needed for a Swerve Drive to operate. This wrapper is called [`SwerveMotor`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/motors/SwerveMotor.html). All [`SwerveMotor`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/motors/SwerveMotor.html)'s can be fetched via the [`SwerveModule`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/SwerveModule.html#configuration) configuration object [`SwerveModuleConfiguration`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/parser/SwerveModuleConfiguration.html) motor definitions [`angleMotor`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/parser/SwerveModuleConfiguration.html#angleMotor) and [`driveMotor`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/parser/SwerveModuleConfiguration.html#driveMotor). The [`SwerveModule`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/SwerveModule.html) is able to be fetched by [`SwerveDrive.getModules()`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/SwerveDrive.html#getModules\(\)) easily.
+YAGSL created wrappers over all supported Motor Controllers to uniformly fetch and set data that is needed for a Swerve Drive to operate. This wrapper is called `SwerveMotor`. All `SwerveMotor`'s can be fetched via the `SwerveModule` configuration object `SwerveModuleConfiguration` motor definitions `angleMotor` and `driveMotor`. The `SwerveModule` is able to be fetched by `SwerveDrive.getModules()` easily.
 
 <pre class="language-java" data-full-width="true"><code class="lang-java"> /**
    * Initialize {@link SwerveDrive} with the directory provided.
@@ -50,7 +50,7 @@ YAGSL created wrappers over all supported Motor Controllers to uniformly fetch a
     {
       System.out.println("Module Name: "+m.configuration.name);
       CANSparkMax steeringMotor = (<a data-footnote-ref href="#user-content-fn-1">CANSparkMax</a>)m.getAngleMotor().getMotor(); 
-      CANSparkMax driveMotor = (<a data-footnote-ref href="#user-content-fn-2">CANSparkMax</a>)m.getDriveMotor().getMotor(); 
+      CANSparkMax driveMotor = (<a data-footnote-ref href="#user-content-fn-1">CANSparkMax</a>)m.getDriveMotor().getMotor(); 
     }
   }
 </code></pre>
@@ -65,14 +65,14 @@ Inside any module JSON such as `frontleft.json`,`frontright.json`,`backleft.json
 
 <pre class="language-json"><code class="lang-json">{
   "drive": {
-<strong>    "type": <a data-footnote-ref href="#user-content-fn-3">"sparkmax"</a>,
-</strong><strong>    "id": <a data-footnote-ref href="#user-content-fn-4">5</a>,
-</strong><strong>    "canbus": <a data-footnote-ref href="#user-content-fn-5">null</a>
+<strong>    "type": <a data-footnote-ref href="#user-content-fn-2">"sparkmax"</a>,
+</strong><strong>    "id": <a data-footnote-ref href="#user-content-fn-3">5</a>,
+</strong><strong>    "canbus": <a data-footnote-ref href="#user-content-fn-4">null</a>
 </strong>  },
   "angle": {
-<strong>    "type": <a data-footnote-ref href="#user-content-fn-6">"sparkmax"</a>,
-</strong><strong>    "id": <a data-footnote-ref href="#user-content-fn-7">6</a>,
-</strong><strong>    "canbus": <a data-footnote-ref href="#user-content-fn-8">null</a>
+<strong>    "type": <a data-footnote-ref href="#user-content-fn-2">"sparkmax"</a>,
+</strong><strong>    "id": <a data-footnote-ref href="#user-content-fn-5">6</a>,
+</strong><strong>    "canbus": <a data-footnote-ref href="#user-content-fn-4">null</a>
 </strong>  },
   "encoder": {
     "type": "cancoder",
@@ -80,18 +80,18 @@ Inside any module JSON such as `frontleft.json`,`frontright.json`,`backleft.json
     "canbus": null
   },
   "inverted": {
-    "drive": <a data-footnote-ref href="#user-content-fn-9">false</a>,
-    "angle": <a data-footnote-ref href="#user-content-fn-10">false</a>
+    "drive": <a data-footnote-ref href="#user-content-fn-6">false</a>,
+    "angle": <a data-footnote-ref href="#user-content-fn-7">false</a>
   },
   "absoluteEncoderOffset": -18.281,
   "location": {
-    "front": <a data-footnote-ref href="#user-content-fn-11">-12</a>,
-    "left": <a data-footnote-ref href="#user-content-fn-12">-12</a>
+    "front": <a data-footnote-ref href="#user-content-fn-8">-12</a>,
+    "left": <a data-footnote-ref href="#user-content-fn-9">-12</a>
   }
 }
 </code></pre>
 
-## &#x20;Possible Motor Controller Types
+## Possible Motor Controller Types
 
 | Device                    | type                                                                                  |
 | ------------------------- | ------------------------------------------------------------------------------------- |
@@ -102,29 +102,23 @@ Inside any module JSON such as `frontleft.json`,`frontright.json`,`backleft.json
 | SparkMAX Brushed          | `sparkmax_brushed`                                                                    |
 
 {% hint style="warning" %}
-At this time I do not provide documentation on brushed motor utilization, like `sparkmax_brushed` and `talonsrx`.
+At this time we do not provide documentation on brushed motor utilization, like `sparkmax_brushed` and `talonsrx`.
 {% endhint %}
 
 [^1]: Cast the motor controller object that `SwerveMotor` wraps around back to the original class, in this case `CANSparkMax`
 
-[^2]: Cast the motor controller object that `SwerveMotor` wraps around back to the original class, in this case `CANSparkMax`
+[^2]: SparkMAX brushless mode is selected.
 
-[^3]: SparkMAX brushless mode is selected.
+[^3]: The SparkMAX has a CAN ID of `5`.
 
-[^4]: The SparkMAX has a CAN ID of `5`.
+[^4]: SparkMAX is not compatible with CANivore so the `canbus` should be `null` or `""`.
 
-[^5]: SparkMAX is not compatible with CANivore so the `canbus` should be `null` or `""`.
+[^5]: The SparkMAX has a CAN ID of `6`.
 
-[^6]: SparkMAX brushless mode is selected.
+[^6]: The drive motor spins counter clockwise positive without any inversion.
 
-[^7]: The SparkMAX has a CAN ID of `6`.
+[^7]: The steering/angle/azimuth motor spins counterclockwise positive without inversion.
 
-[^8]: SparkMAX is not compatible with CANivore so the `canbus` should be `null` or `""`.
+[^8]: The center of this module is `-12`in from the center of the robot "frontwise".
 
-[^9]: The drive motor spins counter clockwise positive without any inversion.
-
-[^10]: The steering/angle/azimuth motor spins counterclockwise positive without inversion.
-
-[^11]: The center of this module is `-12`in from the center of the robot "frontwise".
-
-[^12]: The center of this module is `-12`in from the center of the robot "left".
+[^9]: The center of this module is `-12`in from the center of the robot "left".

@@ -8,12 +8,6 @@ Use WPILib vendor deps to install it.
 
 {% embed url="https://docs.wpilib.org/en/stable/docs/software/vscode-overview/3rd-party-libraries.html#rd-party-libraries" %}
 
-The URL for YAGSL vendordep is
-
-```
-https://broncbotz3481.github.io/YAGSL-Lib/yagsl/yagsl.json
-```
-
 ### Offline
 
 Copy the [`swervelib` directory from YAGSL-Example](https://github.com/BroncBotz3481/YAGSL-Example/tree/main/src/main/java) into `src/main/java` into your project.
@@ -43,7 +37,7 @@ import edu.wpi.first.math.util.Units;
 
 double <a data-footnote-ref href="#user-content-fn-1">maximumSpeed </a>= Units.feetToMeters(4.5)
 File swerveJsonDirectory = new File(Filesystem.getDeployDirectory(),"swerve");
-SwerveDrive  swerveDrive = new SwerveParser(directory).createSwerveDrive(<a data-footnote-ref href="#user-content-fn-2">maximumSpeed</a>);
+SwerveDrive  swerveDrive = new SwerveParser(directory).createSwerveDrive(<a data-footnote-ref href="#user-content-fn-1">maximumSpeed</a>);
 
 </code></pre>
 
@@ -56,15 +50,15 @@ Telemetry can be great when you want it and YAGSL has no shortage of useful tele
 <pre class="language-java"><code class="lang-java">import swervelib.telemetry.SwerveDriveTelemetry;
 import swervelib.telemetry.SwerveDriveTelemetry.TelemetryVerbosity;
 
-<a data-footnote-ref href="#user-content-fn-3">SwerveDriveTelemetry.verbosity</a> = <a data-footnote-ref href="#user-content-fn-4">TelemetryVerbosity.HIGH</a>;
+<a data-footnote-ref href="#user-content-fn-2">SwerveDriveTelemetry.verbosity</a> = <a data-footnote-ref href="#user-content-fn-3">TelemetryVerbosity.HIGH</a>;
 </code></pre>
 
 ## Follow along the example here!
 
-{% embed url="https://github.com/BroncBotz3481/YAGSL-Example/tree/main/src/main/java/frc/robot" %}
+{% embed url="https://github.com/Yet-Another-Software-Suite/YAGSL/tree/main/examples" %}
 
 {% hint style="info" %}
-Sometimes I like to include really advanced features in the example (like last year I had a drive to point command) so be sure to check back and see what we have done!
+Sometimes we like to include really advanced features in the example (like last year we had a drive to point command) so be sure to check back and see what we have done!
 {% endhint %}
 
 ## Drive Code
@@ -121,8 +115,6 @@ Inside the `SwerveSubsystem` you can make your own drive code as easy as a few l
 
 [^1]: Maximum speed **MUST** be in Meters!
 
-[^2]: Maximum speed **MUST** be in Meters!
+[^2]: This [value ](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/telemetry/SwerveDriveTelemetry.html#verbosity)is static and changes the telemetry given to the DriverStation and SmartDashboard.
 
-[^3]: This [value ](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/telemetry/SwerveDriveTelemetry.html#verbosity)is static and changes the telemetry given to the DriverStation and SmartDashboard.
-
-[^4]: [Telemetry Verbosity](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/telemetry/SwerveDriveTelemetry.TelemetryVerbosity.html) comes in several different modes.
+[^3]: [Telemetry Verbosity](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/telemetry/SwerveDriveTelemetry.TelemetryVerbosity.html) comes in several different modes.
