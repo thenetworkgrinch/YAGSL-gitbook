@@ -26,6 +26,9 @@
 * [💸 Donations](https://yetanothersoftwaresuite.com/)
 * [👕 Merch](https://yagsl.com/)
 * [Discord](https://discord.gg/yass)
+* [YAMS](https://yams.yamgen.com/)
+* [YAMG](https://yamgen.com/)
+* [YALL](https://github.com/Yet-Another-Software-Suite/YALL)
 
 ## Fundamentals
 
