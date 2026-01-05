@@ -4,9 +4,9 @@ Tuning Webpage
 
 YAGSL maintains a somewhat complete configuration tool to aid you in creating configuration files from scratch here.
 
-{% embed url="https://broncbotz3481.github.io/YAGSL-Example/" %}
+{% embed url="https://github.com/Yet-Another-Software-Suite/YAGSL/tree/main/examples" %}
 
-From this webpage you should be able to download all files and place them into your `deploy` directory to use for [`new SwerveParser(new File(Filesystem.getDeployDirectory(),"swerve")`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/parser/SwerveParser.html#%3Cinit%3E\(java.io.File\))[`.createSwerveDrive(Units.feetToMeters(4.5));`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/parser/SwerveParser.html#createSwerveDrive\(double\)) .
+From this webpage you should be able to download all files and place them into your `deploy` directory to use for `new SwerveParser(new File(Filesystem.getDeployDirectory(),"swerve").createSwerveDrive(Units.feetToMeters(4.5));` .
 
 We also maintain a repository for known working configurations here!
 
