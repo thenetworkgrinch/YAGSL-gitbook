@@ -9,16 +9,16 @@ description: This one is a bit complicated
 YAGSL stores the maximum speed and uses it in the following functions
 
 * [ ] [`SwerveDriveKinematics.desaturateWheelSpeeds`](https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/SwerveDriveKinematics.html#desaturateWheelSpeeds\(edu.wpi.first.math.kinematics.SwerveModuleState\[],double\))
-* [ ] [`SwerveMath.calculateMaxAngularVelocity`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/math/SwerveMath.html#calculateMaxAngularVelocity\(double,double,double\))
-* [ ] [`SwerveDriveTelemetry.maxSpeed`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/telemetry/SwerveDriveTelemetry.html#maxSpeed)
-* [ ] [`SwerveMath.antiJitter`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/math/SwerveMath.html#antiJitter\(edu.wpi.first.math.kinematics.SwerveModuleState,edu.wpi.first.math.kinematics.SwerveModuleState,double\))
-* [ ] [`SwerveMath.createDriveFeedforward`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/math/SwerveMath.html#createDriveFeedforward\(double,double,double\))
+* [ ] [`SwerveMath.calculateMaxAngularVelocity`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/math/SwerveMath.html#calculateMaxAngularVelocity(double,double,double))
+* [ ] [`SwerveDriveTelemetry.maxSpeed`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/telemetry/SwerveDriveTelemetry.html#maxSpeed)
+* [ ] [`SwerveMath.antiJitter`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/math/SwerveMath.html#antiJitter(edu.wpi.first.math.kinematics.SwerveModuleState,edu.wpi.first.math.kinematics.SwerveModuleState,double))
+* [ ] [`SwerveMath.createDriveFeedforward`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/math/SwerveMath.html#createDriveFeedforward(double,double,double))
 
 The maximum speed represents the physical maximum speed of the robot.
 
 ## How do I change my Max Speed?
 
-You can change your maximum speed by using `SwerveDrive.setMaximumSpeed` the initial maximum speed is given in [`SwerveParser.createSwerveDrive`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/parser/SwerveParser.html#createSwerveDrive\(double\)) for initial values like the maximum angular velocity and drive feedforward and telemetry maximum speed.
+You can change your maximum speed by using `SwerveDrive.setMaximumSpeed` the initial maximum speed is given in [`SwerveParser.createSwerveDrive`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/parser/SwerveParser.html#createSwerveDrive(double)) for initial values like the maximum angular velocity and drive feedforward and telemetry maximum speed.
 
 {% hint style="info" %}
 The maximum speed in telemetry does not change because most widgets do not support this and it might break them!

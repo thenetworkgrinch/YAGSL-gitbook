@@ -6,9 +6,11 @@ I highly encourage anyone who wants to help make YAGSL better to create pull req
 
 {% embed url="https://github.com/BroncBotz3481/YAGSL-Example/pulls?q=is%3Apr+is%3Aclosed" %}
 
+{% embed url="https://github.com/Yet-Another-Software-Suite/YAGSL/pulls?q=is%3Apr+is%3Aclosed" %}
+
 ## Contributing
 
-YAGSL development is done on the `dev` branch of the YAGSL-Example repository here at `src/main/java/swervelib`.
+YAGSL development is done on the `dev` branch of the YAGSL repository here at `yagsl/java/swervelib`.
 
 {% embed url="https://github.com/BroncBotz3481/YAGSL-Example/tree/dev" %}
 YAGSL-Example dev branch

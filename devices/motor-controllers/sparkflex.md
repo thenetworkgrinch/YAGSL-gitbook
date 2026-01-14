@@ -23,8 +23,8 @@ new CANSparkFlex(<a data-footnote-ref href="#user-content-fn-1">10</a>, MotorTyp
 
 The Spark Flex allows you to test the motor controller PID, run the motor at a set percentage, and update the firmware all from the REV Hardware Client. Installation of the REV Hardware client is required to use the SparkFlex for YAGSL.
 
-{% embed url="https://docs.revrobotics.com/rev-hardware-client/gs/install" %}
-REV Hardware Client Installation guide + download
+{% embed url="https://docs.revrobotics.com/rev-hardware-client-2" %}
+REV Hardware Client 2 Installation guide + download
 {% endembed %}
 
 {% embed url="https://docs.revrobotics.com/brushless/spark-flex/gs/make-it-spin" %}

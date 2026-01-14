@@ -8,11 +8,11 @@ Heading correction was added to YAGSL by Team 1466 and improved upon by 7525 Pio
 
 ## How do I enable it?
 
-You can enable or disable heading correction using [`SwerveDrive.setHeadingCorrection`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/SwerveDrive.html#setHeadingCorrection\(boolean\)) from anywhere. The deadband is an arbitrary value that represents both meters persecond and radians epr second.&#x20;
+You can enable or disable heading correction using [`SwerveDrive.setHeadingCorrection`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveDrive.html#setHeadingCorrection(boolean)) from anywhere. The deadband is an arbitrary value that represents both meters persecond and radians epr second.&#x20;
 
 ## What does heading correction do in code?
 
-Heading correction is used in [`SwerveDrive.drive`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/SwerveDrive.html#drive\(edu.wpi.first.math.kinematics.ChassisSpeeds,boolean,edu.wpi.first.math.geometry.Translation2d\)) to control the heading via the deadband [`SwerveDrive.setHeadingCorrection`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/SwerveDrive.html#setHeadingCorrection\(boolean,double\)). Heading correction uses the heading PID from `controllerproperties.json` and the current yaw to calculate an omega turning speed using [`SwerveController.headingCalculate`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/SwerveController.html#headingCalculate\(double,double\)).
+Heading correction is used in [`SwerveDrive.drive`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveDrive.html#drive(edu.wpi.first.math.kinematics.ChassisSpeeds,boolean,edu.wpi.first.math.geometry.Translation2d)) to control the heading via the deadband [`SwerveDrive.setHeadingCorrection`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveDrive.html#setHeadingCorrection(boolean,double)). Heading correction uses the heading PID from `controllerproperties.json` and the current yaw to calculate an omega turning speed using [`SwerveController.headingCalculate`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveController.html#headingCalculate(double,double)).
 
 ```java
     // Heading Angular Velocity Deadband, might make a configuration option later.

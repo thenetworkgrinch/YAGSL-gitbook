@@ -2,7 +2,7 @@
 
 ## PIDF Configuration
 
-The PIDF configurations map 1:1 with [`PIDFConfig`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/parser/PIDFConfig.html) which stores information regarding the PID or PIDF configurations for the robot, such as module velocity & position, and robot heading. Not every parameter is used on every PIDF configuration. For example `heading` only takes into account the PID.
+The PIDF configurations map 1:1 with [`PIDFConfig`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/parser/PIDFConfig.html) which stores information regarding the PID or PIDF configurations for the robot, such as module velocity & position, and robot heading. Not every parameter is used on every PIDF configuration. For example `heading` only takes into account the PID.
 
 ## Fields
 

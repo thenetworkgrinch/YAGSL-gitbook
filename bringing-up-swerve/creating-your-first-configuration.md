@@ -12,10 +12,10 @@ Updated: 2024-02-03
 
 ## Resources
 
-* [YAGSL Wiki](https://yagsl.gitbook.io/yagsl/) - [https://yagsl.gitbook.io/yagsl/](https://yagsl.gitbook.io/yagsl/)
-* [REV Robotics Hardware Client](https://docs.revrobotics.com/rev-hardware-client/) - [https://docs.revrobotics.com/rev-hardware-client/](https://docs.revrobotics.com/rev-hardware-client/)
+* [YAGSL Wiki](https://docs.yagsl.com/) - [https://yagsl.gitbook.io/yagsl/](https://docs.yagsl.com/)
+* [REV Robotics Hardware Client 2](https://docs.revrobotics.com/rev-hardware-client-2) - [https://docs.revrobotics.com/rev-hardware-client-2](https://docs.revrobotics.com/rev-hardware-client-2)
   * _for configuring Spark Max Motor Controllers and other Rev devices_
-* [Phoenix Tuner X](https://pro.docs.ctr-electronics.com/en/stable/docs/hardware-reference/cancoder/index.html) - [https://v6.docs.ctr-electronics.com/en/stable/docs/tuner/index.html](https://v6.docs.ctr-electronics.com/en/stable/docs/tuner/index.html)
+* [Phoenix Tuner X](https://v6.docs.ctr-electronics.com/en/stable/docs/tuner/index.html) - [https://v6.docs.ctr-electronics.com/en/stable/docs/tuner/index.html](https://v6.docs.ctr-electronics.com/en/stable/docs/tuner/index.html)
   * _for configuring CanCoders and other CTR devices_
 
 ## Swerve Orientation Diagram
@@ -81,11 +81,7 @@ _Note: If you are using the hardware utilities for accessing the motors controll
 ### Step 5: Input data into the configuration webpage
 
 Open the webpage and import your data into the config files.\
-[https://yet-another-software-suite.github.io/YAGSL/config\_generator/](https://yet-another-software-suite.github.io/YAGSL/config_generator/)
-
-{% content-ref url="broken-reference/" %}
-[broken-reference](broken-reference/)
-{% endcontent-ref %}
+[https://yet-another-software-suite.github.io/YAGSL/config_generator/](https://yet-another-software-suite.github.io/YAGSL/config_generator/)
 
 [^1]: IF you are using a SparkMAX or TalonFX this is going to be `1`!
 

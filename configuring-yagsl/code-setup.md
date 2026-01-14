@@ -10,7 +10,7 @@ Use WPILib vendor deps to install it.
 
 ### Offline
 
-Copy the [`swervelib` directory from YAGSL-Example](https://github.com/BroncBotz3481/YAGSL-Example/tree/main/src/main/java) into `src/main/java` into your project.
+Copy the [`swervelib` directory from YAGSL-Example](https://github.com/Yet-Another-Software-Suite/YAGSL) into `src/main/java` into your project.
 
 {% hint style="warning" %}
 You cannot have both the offline and online versions installed at the same time! Errors will occur!
@@ -26,7 +26,7 @@ YAGSL is unique in the fact that you can create a swerve drive based entirely of
 
 ### How to create a SwerveDrive using JSON.
 
-This example program creates the [`SwerveDrive`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/SwerveDrive.html) in the [`SwerveSubsystem`](https://github.com/BroncBotz3481/YAGSL-Example/blob/main/src/main/java/frc/robot/subsystems/swervedrive/SwerveSubsystem.java), as you should only interact with it in the [`SwerveSubsystem`](https://github.com/BroncBotz3481/YAGSL-Example/blob/main/src/main/java/frc/robot/subsystems/swervedrive/SwerveSubsystem.java) if you are using command based programming.
+This example program creates the [`SwerveDrive`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveDrive.html) in the [`SwerveSubsystem`](https://github.com/BroncBotz3481/YAGSL-Example/blob/main/src/main/java/frc/robot/subsystems/swervedrive/SwerveSubsystem.java), as you should only interact with it in the [`SwerveSubsystem`](https://github.com/BroncBotz3481/YAGSL-Example/blob/main/src/main/java/frc/robot/subsystems/swervedrive/SwerveSubsystem.java) if you are using command based programming.
 
 <pre class="language-java"><code class="lang-java">import java.io.File;
 import edu.wpi.first.wpilibj.Filesystem;
@@ -115,6 +115,6 @@ Inside the `SwerveSubsystem` you can make your own drive code as easy as a few l
 
 [^1]: Maximum speed **MUST** be in Meters!
 
-[^2]: This [value ](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/telemetry/SwerveDriveTelemetry.html#verbosity)is static and changes the telemetry given to the DriverStation and SmartDashboard.
+[^2]: This [value ](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/telemetry/SwerveDriveTelemetry.html#verbosity)is static and changes the telemetry given to the DriverStation and SmartDashboard.
 
-[^3]: [Telemetry Verbosity](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/telemetry/SwerveDriveTelemetry.TelemetryVerbosity.html) comes in several different modes.
+[^3]: [Telemetry Verbosity](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/telemetry/SwerveDriveTelemetry.TelemetryVerbosity.html) comes in several different modes.
