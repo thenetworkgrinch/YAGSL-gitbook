@@ -2,15 +2,15 @@
 
 ## Documentation
 
-{% embed url="https://broncbotz3481.github.io/YAGSL/" %}
+{% embed url="https://yet-another-software-suite.github.io/YAGSL/javadocs/" %}
 Javadocs for YAGSL
 {% endembed %}
 
-{% embed url="https://broncbotz3481.github.io/YAGSL-Example/" %}
+{% embed url="https://yet-another-software-suite.github.io/YAGSL/config_generator/" %}
 Tuning webpage to create configurations
 {% endembed %}
 
-{% embed url="https://github.com/BroncBotz3481/YAGSL-Example" %}
+{% embed url="https://github.com/Yet-Another-Software-Suite/YAGSL" %}
 Example code repository
 {% endembed %}
 
@@ -59,11 +59,11 @@ Just download all of the vendordeps from WPILib online from this list: [#vendor-
 
 ## Simulation
 
-* There is full simulation support out of the box in `YAGSl-Example`.
+* There is full simulation support out of the box in `YAGSL/examples`.
 
 ## Control
 
-* PathPlanner is supported and there is a example in `YAGSL-Example`
+* PathPlanner is supported and there is a example in `YAGSL/examples`
 * Control can be based entirely off of desired angle compared to current angle (`SwerveController.getTargetSpeeds`) or passed directly to the `SwerveDrive` in the correct units.
 * The function `SwerveDrive.lockPose` moves all of the wheels to face inwards making the robot nearly impossible to move.
 * Drive motors can be set to coast or brake using the function `SwerveDrive.setMotorIdleMode`

@@ -89,7 +89,7 @@
 
 ## Product Guides
 
-* [Java API](https://broncbotz3481.github.io/YAGSL/)
+* [Java API](https://yet-another-software-suite.github.io/YAGSL/javadocs/)
 * [PathPlanner](https://pathplanner.dev/home.html)
 
 ## Legacy Documentation

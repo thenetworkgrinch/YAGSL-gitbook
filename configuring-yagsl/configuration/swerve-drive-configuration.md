@@ -2,7 +2,7 @@
 
 ## Swerve Drive (`swervedrive.json`)
 
-The Swerve Drive JSON configuration file configures everything related to the overall Swerve Drive. It maps 1:1 to [`SwerveDriveJson`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/parser/json/SwerveDriveJson.html) which creates a [`SwerveDriveConfiguration`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/parser/SwerveDriveConfiguration.html) that is used to create the [`SwerveDrive`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/SwerveDrive.html) object.
+The Swerve Drive JSON configuration file configures everything related to the overall Swerve Drive. It maps 1:1 to [`SwerveDriveJson`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/parser/json/SwerveDriveJson.html) which creates a [`SwerveDriveConfiguration`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/parser/SwerveDriveConfiguration.html) that is used to create the [`SwerveDrive`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveDrive.html) object.
 
 ## JSON Fields
 

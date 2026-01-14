@@ -81,5 +81,5 @@ We've put together some helpful guides for you to get setup with our product qui
 ## YAGSL Online Installation
 
 ```
-https://broncbotz3481.github.io/YAGSL-Lib/yagsl/yagsl.json
+https://yet-another-software-suite.github.io/YAGSL/yagsl.json
 ```

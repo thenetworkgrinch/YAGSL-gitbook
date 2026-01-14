@@ -65,16 +65,16 @@ Incorrect wiring can be further broken down into 3 categories for the swerve dri
 * [ ] Maximum physical velocity is not set correctly.
 * [ ] If using open loop, modules run at different speeds.
 * [ ] Controller input filtering.
-* [ ] Use of [`SwerveDrive.setCosineCompensator`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/SwerveDrive.html#setCosineCompensator\(boolean\))
-* [ ] Use of [`SwerveDrive.setHeadingCorrection`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/SwerveDrive.html#setHeadingCorrection\(boolean\))
-* [ ] Use of  [`SwerveModule.setAntiJitter`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/SwerveModule.html#setAntiJitter\(boolean\))
-* [ ] Use of  [`SwerveDrive.chassisVelocityCorrection`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/SwerveDrive.html#chassisVelocityCorrection)
-* [ ] Use of [`SwerveDrive.setMaximumSpeeds`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/SwerveDrive.html#setMaximumSpeeds\(double,double,double\))
-* [ ] Use of [`SwerveDrive.replaceSwerveModuleFeedforward`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/SwerveDrive.html#replaceSwerveModuleFeedforward\(edu.wpi.first.math.controller.SimpleMotorFeedforward\))
-* [ ] Use of [`SwerveDrive.setGyroOffset`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/SwerveDrive.html#setMaximumSpeeds\(double,double,double\))
-* [ ] Use of [`SwerveDrive.updateCacheValidityPeriods`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/SwerveDrive.html#updateCacheValidityPeriods\(long,long,long\))
-* [ ] Use of [`SwerveDrive.setOdometryPeriod`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/SwerveDrive.html#setOdometryPeriod\(double\))
-* [ ] Use of [`SwerveDrive.addVisionMeasurement`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/SwerveDrive.html#addVisionMeasurement\(edu.wpi.first.math.geometry.Pose2d,double\))
+* [ ] Use of [`SwerveDrive.setCosineCompensator`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveDrive.html#setCosineCompensator(boolean))
+* [ ] Use of [`SwerveDrive.setHeadingCorrection`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveDrive.html#setHeadingCorrection(boolean))
+* [ ] Use of  [`SwerveModule.setAntiJitter`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveModule.html#setAntiJitter(boolean))
+* [ ] Use of  [`SwerveDrive.chassisVelocityCorrection`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveDrive.html#chassisVelocityCorrection)
+* [ ] Use of [`SwerveDrive.setMaximumSpeeds`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveDrive.html#setMaximumAllowableSpeeds(double,double))
+* [ ] Use of [`SwerveDrive.replaceSwerveModuleFeedforward`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveDrive.html#replaceSwerveModuleFeedforward(edu.wpi.first.math.controller.SimpleMotorFeedforward))
+* [ ] Use of [`SwerveDrive.setGyroOffset`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveDrive.html#setGyroOffset(edu.wpi.first.math.geometry.Rotation3d))
+* [ ] Use of [`SwerveDrive.updateCacheValidityPeriods`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveDrive.html#updateCacheValidityPeriods(long,long,long))
+* [ ] Use of [`SwerveDrive.setOdometryPeriod`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveDrive.html#setOdometryPeriod(double))
+* [ ] Use of [`SwerveDrive.addVisionMeasurement`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveDrive.html#addVisionMeasurement(edu.wpi.first.math.geometry.Pose2d,double))
 * [ ] Use of `SwerveDrive.setChassisDiscretization`
 
 ### PathPlanner

@@ -2,7 +2,7 @@
 
 ## Swerve Module Configuration (`module/x.json`)
 
-The swerve module configuration configures unique properties of each swerve module. It maps 1:1 with [`ModuleJson`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/parser/json/ModuleJson.html) which is used to create [`SwerveModuleConfiguration`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/parser/SwerveModuleConfiguration.html). This configuration file interacts directly with swerve kinematics.
+The swerve module configuration configures unique properties of each swerve module. It maps 1:1 with [`ModuleJson`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/parser/json/ModuleJson.html) which is used to create [`SwerveModuleConfiguration`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/parser/SwerveModuleConfiguration.html). This configuration file interacts directly with swerve kinematics.
 
 {% hint style="warning" %}
 **IF** your angle motors spin out of control then you may need to invert them in `inverted`

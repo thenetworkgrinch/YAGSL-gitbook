@@ -30,9 +30,9 @@ It is no longer necessary to set you `factor` to `360` with attached absolute en
 
 When you are using Absolute Encoders attached to the SparkMax via an Absolute Encoder board it normally identifies as a DutyCycleEncoder.
 
-You can use this as the primary feedback device by setting the `factor` in `physicalproperties.json` to `360` **HOWEVER** when you do this the absolut encoder offset given is in the JSON **IS NOT** applied. So you should use [`SwerveDrive.useExternalFeedbackSensor()`](https://broncbotz.org/YAGSL-Lib/docs/swervelib/SwerveDrive.html#useExternalFeedbackSensor\(\)) which **WILL** set the encoder offset into the SparkMAX DutyCycleEncoder Offset Flash Config.
+You can use this as the primary feedback device by setting the `factor` in `physicalproperties.json` to `360` **HOWEVER** when you do this the absolut encoder offset given is in the JSON **IS NOT** applied. So you should use [`SwerveDrive.useExternalFeedbackSensor()`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveDrive.html#useExternalFeedbackSensor()) which **WILL** set the encoder offset into the SparkMAX DutyCycleEncoder Offset Flash Config.
 
-To reset the SparkMax DutyCycleEncoder Offset you should use [`SwerveDrive.useInternalFeedbackSensor()`](https://broncbotz.org/YAGSL-Lib/docs/swervelib/SwerveDrive.html#useInternalFeedbackSensor\(\)) which will set the Spark DutyCycleEncoder Offset to 0.
+To reset the SparkMax DutyCycleEncoder Offset you should use [`SwerveDrive.useInternalFeedbackSensor()`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveDrive.html#useInternalFeedbackSensor()) which will set the Spark DutyCycleEncoder Offset to 0.
 
 ## Status Frame Error
 

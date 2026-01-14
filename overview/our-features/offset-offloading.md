@@ -10,7 +10,11 @@ Offset Offloading is where the absolute encoder offset is stored on the absolute
 
 ## How do I enable Offset Offloading?
 
-Offset offloading is enabled by [`SwerveDrive.pushOffsetsToEncoders`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/SwerveDrive.html#pushOffsetsToEncoders\(\)) and disabled by using [`SwerveDrive.restoreInternalOffset`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/SwerveDrive.html#restoreInternalOffset\(\)) both of these call  a function of the same name in `SwerveModule` for every instiantiated module.
+{% hint style="warning" %}
+[`SwerveDrive.pushOffsetsToEncoders`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveDrive.html#pushOffsetsToEncoders()) and [`SwerveDrive.restoreInternalOffset`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveDrive.html#restoreInternalOffset()) are now deprecated as of YAGSL 2026.
+{% endhint %}
+
+Offset offloading is enabled by [`SwerveDrive.pushOffsetsToEncoders`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveDrive.html#pushOffsetsToEncoders()) and disabled by using [`SwerveDrive.restoreInternalOffset`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveDrive.html#restoreInternalOffset()) both of these call  a function of the same name in `SwerveModule` for every instiantiated module.
 
 <pre class="language-java"><code class="lang-java">  /**
    * Initialize {@link SwerveDrive} with the directory provided.

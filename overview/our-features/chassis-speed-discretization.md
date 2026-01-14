@@ -6,11 +6,11 @@ description: More math...
 
 ## What is Chassis Speed discretization?
 
-Chassis Speed discretization is used to reduce the skew in translational movement of the Swerve Drive. It is called only if  [`SwerveDrive.chassisVelocityCorrection`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/SwerveDrive.html#chassisVelocityCorrection) is `true`.&#x20;
+Chassis Speed discretization is used to reduce the skew in translational movement of the Swerve Drive. It is called only if  [`SwerveDrive.chassisVelocityCorrection`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveDrive.html#chassisVelocityCorrection) is `true`.&#x20;
 
 ## How do I use Chassis Speed Discretization?
 
-Chassis Speed discretization simply allows you to set your own values for [`ChassisSpeeds.discretize`](https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/ChassisSpeeds.html#discretize\(edu.wpi.first.math.kinematics.ChassisSpeeds,double\)) in WPILib, the default value of `0.02`dt should be good enough for most teams. To enable and customize discretization all you have to do is call [`SwerveDrive.setChassisDiscretization`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/SwerveDrive.html#setChassisDiscretization\(boolean,double\)) as shown below.
+Chassis Speed discretization simply allows you to set your own values for [`ChassisSpeeds.discretize`](https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/ChassisSpeeds.html#discretize\(edu.wpi.first.math.kinematics.ChassisSpeeds,double\)) in WPILib, the default value of `0.02`dt should be good enough for most teams. To enable and customize discretization all you have to do is call [`SwerveDrive.setChassisDiscretization`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveDrive.html#setChassisDiscretization(boolean,double)) as shown below.
 
 <pre class="language-java"><code class="lang-java">  /**
    * Initialize {@link SwerveDrive} with the directory provided.
