@@ -54,35 +54,6 @@ This page serves a standard set of conversion factors for a few typical modules.
 ## Swerve Drive Specialties (SDS)
 
 {% tabs %}
-{% tab title="MK4i L1 " %}
-```json
-"conversionFactors": {
-	"angle": {"gearRatio": 21.4285714286},
-	"drive": {"gearRatio": 8.14, "diameter": 4}
-}
-```
-{% endtab %}
-
-{% tab title="MK4i L2" %}
-```json
-"conversionFactors": {
-	"angle": {"gearRatio": 21.4285714286},
-	"drive": {"gearRatio": 6.75, "diameter": 4}
-}
-```
-{% endtab %}
-
-{% tab title="MK4i L3" %}
-```json
-"conversionFactors": {
-	"angle": {"gearRatio": 21.4285714286},
-	"drive": {"gearRatio": 6.12, "diameter": 4}
-}
-```
-{% endtab %}
-{% endtabs %}
-
-{% tabs %}
 {% tab title="MK4 L1" %}
 ```json
 "conversionFactors": {
@@ -121,6 +92,64 @@ This page serves a standard set of conversion factors for a few typical modules.
 {% endtabs %}
 
 {% tabs %}
+{% tab title="MK4i L1 " %}
+```json
+"conversionFactors": {
+	"angle": {"gearRatio": 21.4285714286},
+	"drive": {"gearRatio": 8.14, "diameter": 4}
+}
+```
+{% endtab %}
+
+{% tab title="MK4i L2" %}
+```json
+"conversionFactors": {
+	"angle": {"gearRatio": 21.4285714286},
+	"drive": {"gearRatio": 6.75, "diameter": 4}
+}
+```
+{% endtab %}
+
+{% tab title="MK4i L3" %}
+```json
+"conversionFactors": {
+	"angle": {"gearRatio": 21.4285714286},
+	"drive": {"gearRatio": 6.12, "diameter": 4}
+}
+```
+{% endtab %}
+{% endtabs %}
+
+{% tabs %}
+{% tab title="MK5i R1" %}
+```json
+"conversionFactors": {
+	"angle": {"gearRatio": 26},
+	"drive": {"gearRatio": 7.03, "diameter": 4}
+}
+```
+{% endtab %}
+
+{% tab title="MK5i R2" %}
+```json
+"conversionFactors": {
+	"angle": {"gearRatio": 26},
+	"drive": {"gearRatio": 6.03, "diameter": 4}
+}
+```
+{% endtab %}
+
+{% tab title="MK5i R3" %}
+```json
+"conversionFactors": {
+	"angle": {"gearRatio": 26},
+	"drive": {"gearRatio": 5.27, "diameter": 4}
+}
+```
+{% endtab %}
+{% endtabs %}
+
+{% tabs %}
 {% tab title="MK4n L1" %}
 ```json
 "conversionFactors": {
@@ -144,6 +173,35 @@ This page serves a standard set of conversion factors for a few typical modules.
 "conversionFactors": {
 	"angle": {"gearRatio": 18.75},
 	"drive": {"gearRatio": 5.36, "diameter": 4}
+}
+```
+{% endtab %}
+{% endtabs %}
+
+{% tabs %}
+{% tab title="MK5n R1" %}
+```json
+"conversionFactors": {
+	"angle": {"gearRatio": 26.09},
+	"drive": {"gearRatio": 7.03, "diameter": 4}
+}
+```
+{% endtab %}
+
+{% tab title="MK5n R2" %}
+```json
+"conversionFactors": {
+	"angle": {"gearRatio": 26.09},
+	"drive": {"gearRatio": 6.03, "diameter": 4}
+}
+```
+{% endtab %}
+
+{% tab title="MK5n R3" %}
+```json
+"conversionFactors": {
+	"angle": {"gearRatio": 26.09},
+	"drive": {"gearRatio": 5.27, "diameter": 4}
 }
 ```
 {% endtab %}
