@@ -6,11 +6,13 @@ description: Vendor dependencies YAGSL requires and how to install them
 
 ## Install YAGSL
 
-The easiest way to install YAGSL is through the **WPILib Vendordep Tab**: open the WPILib VS Code
-extension's vendor library manager and search for **YAGSL**.
+YAGSL is listed directly in the **WPILib Vendor Dependencies** panel's catalog (VS Code sidebar) —
+open it and click **Install** next to YAGSL, no URL required.
 
-To install manually instead, use **Manage Vendor Libraries → Install new library (online)** and
-paste:
+<figure><img src="../assets/modern-yagsl.png" alt=""><figcaption><p>YAGSL listed directly in the WPILib Vendor Dependencies panel.</p></figcaption></figure>
+
+If your WPILib version predates YAGSL being in that catalog, install manually instead: use
+**Manage Vendor Libraries → Install new library (online)** and paste:
 
 ```
 https://yet-another-software-suite.github.io/YAGSL/yagsl/yagsl.json

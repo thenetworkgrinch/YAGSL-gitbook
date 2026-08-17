@@ -35,20 +35,20 @@ Since the 2024 season, [AdvantageScope](https://github.com/Mechanical-Advantage/
 
 <figure><img src="../.gitbook/assets/AdvantageScope-Swerve.png" alt=""><figcaption><p>Swerve tab</p></figcaption></figure>
 
-8. Connect the module states and rotation from SmartDashboard to the fields.
-   1. Under the `SmartDashboard/swerve` menu, drag everything from `advantagescope/` into the `Sources` field.
-   2. You may need to enable your robot before you can add `SmartDashboard/swerve/advantagescope/desiredStates`.
+8. Drag in each of these `Mechanisms/swerve` fields under the Sources field:
+   * `Mechanisms/swerve/states/current`
+   * `Mechanisms/swerve/states/desired`
+   * `Mechanisms/swerve/chassis/current`
+   * `Mechanisms/swerve/chassis/desired`
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-9. Adjust the Data column to match your swerve drive's properties.
-   1. Under the `Data` column, set `Max Speed` to the value of the `SmartDashboard/swerve/maxSpeed` entry.
+{% hint style="info" %}
+You may need to enable your robot before AdvantageScope shows values for these fields.
+{% endhint %}
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
-
-10. (Optional) Adjust the Display column to accurately reflect your robot's chassis dimensions by matching `Size (Left-Right)` and `Size (Front-Back)` to `SmartDashboard/swerve/sizeLeftRight` and `SmartDashboard/swerve/sizeFrontBack`.
-
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+To see the robot's pose on a 2D/3D field, add a **2D Field** or **3D Field** tab instead and drag in
+`Mechanisms/swerve/pose`.
 
 ## Reading the display
 

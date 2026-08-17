@@ -2,11 +2,15 @@
 
 ## Add the YAGSL vendordep
 
-The easiest way to install YAGSL is through the **WPILib Vendordep Tab**: open the WPILib VS Code
-extension, search for **YAGSL**, and click install.
+Installing YAGSL no longer requires typing a URL. Open the **WPILib Vendor Dependencies** panel in
+the VS Code sidebar (the WPILib extension icon) — YAGSL is listed directly in the catalog alongside
+the other common FRC vendor libraries (PathplannerLib, photonlib, REVLib, Studica, URCL, etc.).
+Click **Install** next to it.
 
-Alternatively, open **Manage Vendor Libraries → Install new library (online)** and paste the URL
-manually:
+<figure><img src="../assets/modern-yagsl.png" alt=""><figcaption><p>YAGSL listed directly in the WPILib Vendor Dependencies panel.</p></figcaption></figure>
+
+If your WPILib version doesn't have YAGSL in that catalog yet, install it the manual way instead:
+open **Manage Vendor Libraries → Install new library (online)** and paste the URL:
 
 ```
 https://yet-another-software-suite.github.io/YAGSL/yagsl/yagsl.json

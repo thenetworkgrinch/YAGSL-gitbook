@@ -8,8 +8,9 @@ YAGSL supports most common FRC absolute encoders. An absolute encoder is require
 module — it's what lets the angle motor know its true position on power-up, without needing to
 "home" against a hard stop.
 
-The live reading shows up on the dashboard under `swerve/modules/.../Raw Absolute Encoder` — use
-it to find the value for `absoluteEncoderOffset` in each module's JSON.
+The live reading shows up on the dashboard under `Mechanisms/swerve/modules/<name>/encoder`
+(degrees) — use it to find the value for `absoluteEncoderOffset` in each module's JSON. See
+[Telemetry, Simulation & Vision](../../explanation/telemetry-and-vision.md) for the full NT tree.
 
 ## Absolute Encoder Checklist
 

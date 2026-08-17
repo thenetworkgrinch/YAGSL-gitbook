@@ -6,7 +6,41 @@ description: Telemetry verbosity, simulation, and fusing vision pose estimates
 
 ## Telemetry
 
-YAMS pushes swerve drive and module data to NetworkTables under `SmartDashboard/swerve`, with per-module data under `SmartDashboard/swerve/modules/<name>/`. This is the data most dashboards (Shuffleboard, Elastic, AdvantageScope, FRC Web Components) read to render swerve widgets — see the [AdvantageScope](../how-to/set-up-advantagescope.md) and [FRC Web Components](../how-to/set-up-frc-web-components.md) how-to guides.
+YAMS pushes swerve drive and module data to NetworkTables under `Mechanisms/swerve` (the table name
+is currently always `swerve`, regardless of your subsystem's name). This is the data most dashboards
+(Shuffleboard, Elastic, AdvantageScope, FRC Web Components) read to render swerve widgets — see the
+[AdvantageScope](../how-to/set-up-advantagescope.md) and
+[FRC Web Components](../how-to/set-up-frc-web-components.md) how-to guides.
+
+<figure><img src="../assets/yagsl-telemetry.png" alt=""><figcaption><p>The Mechanisms/swerve NetworkTables tree as seen in AdvantageScope.</p></figcaption></figure>
+
+```
+Mechanisms/swerve/
+├── gyro                    (degrees)
+├── loopTime                (seconds)
+├── pose                    (Pose2d struct)
+├── chassis/
+│   ├── current             (ChassisSpeeds struct, robot-relative, measured)
+│   ├── desired              (ChassisSpeeds struct, robot-relative, commanded)
+│   └── field                (ChassisSpeeds struct, field-relative)
+├── states/
+│   ├── current              (SwerveModuleState[] struct array, measured)
+│   └── desired               (SwerveModuleState[] struct array, commanded)
+└── modules/<name>/
+    ├── encoder              (degrees — the module's raw absolute encoder reading)
+    ├── drive/                (that module's drive SmartMotorController telemetry)
+    │   ├── current/stator
+    │   └── mechanism/{position, velocity}
+    └── azimuth/              (that module's angle/steering SmartMotorController telemetry)
+        ├── current/stator
+        └── mechanism/{position, velocity}
+```
+
+{% hint style="warning" %}
+`modules/<name>/encoder` is the raw absolute encoder reading, in degrees — this is the value you
+read to determine `absoluteEncoderOffset` for that module. It sits directly under the module's
+table, as a sibling of `drive` and `azimuth`, not nested inside either of them.
+{% endhint %}
 
 How much gets published is controlled by `yams.motorcontrollers.SmartMotorControllerConfig.TelemetryVerbosity`:
 
@@ -35,10 +69,14 @@ Higher telemetry verbosity can induce some lag on the robot and slow down loop c
 
 ### Reading module telemetry while bringing up a robot
 
-Each module publishes its raw absolute encoder and raw angle (relative) encoder readings under `SmartDashboard/swerve/modules/<name>/`. This is the single most useful pair of values while bringing up a new robot:
+The most useful pair of values while bringing up a new robot are `modules/<name>/encoder` (the raw
+absolute encoder, in degrees) and `modules/<name>/azimuth/mechanism/position` (the angle motor's
+own relative encoder, tracking the absolute encoder once seeded):
 
-* If the **Raw Angle Encoder** decreases while the module is rotated counter-clockwise (should be CCW+), the angle motor needs to be inverted in that module's configuration.
-* If the **Raw Absolute Encoder** decreases while the wheel is rotated counter-clockwise (should be CCW+), the absolute encoder needs to be inverted for that module.
+* If the absolute encoder decreases while the module is rotated counter-clockwise (should be CCW+),
+  set `absoluteEncoderInverted` for that module.
+* If the drive or angle motor's telemetry decreases when it should be increasing (or vice versa),
+  invert that motor in `inverted.drive`/`inverted.angle`.
 
 See [Determine Motor/Encoder Inversion](../how-to/determine-inversion.md) for the full procedure.
 

@@ -27,17 +27,23 @@ before you start. This is the easiest step to get wrong and the hardest mistake 
 ## Check your motors
 
 Deploy your code with the config from step 3, then — **with the robot disabled** — spin each motor by
-hand and watch your driver dashboard's `swerve/modules/.../Raw Angle Encoder` (steering) and
-`swerve/modules/.../Raw Absolute Encoder` (absolute encoder) values.
+hand and watch AdvantageScope's `Mechanisms/swerve` NetworkTables tree.
 
-* Rotate the **drive** wheel forward (CCW as viewed from above). Its encoder value should **increase**.
-  If it doesn't, invert the drive motor.
-* Rotate the **angle** mechanism CCW (viewed from above). Both the relative *and* absolute encoder
-  values should **increase**. If either doesn't, invert that motor or encoder respectively.
-* Rotate the entire **robot** CCW. Gyro yaw should **increase**. If not, invert the gyroscope.
+<figure><img src="../assets/yagsl-telemetry.png" alt=""><figcaption><p>The Mechanisms/swerve tree in AdvantageScope — each module's drive/azimuth telemetry and raw absolute encoder are visible per-module.</p></figcaption></figure>
 
-See [When to Invert?](../how-to/determine-inversion.md) for the full decision procedure if
-any of these don't behave as expected.
+* Rotate the **drive** wheel forward (CCW as viewed from above). That module's
+  `modules/<name>/drive/mechanism/position` should **increase**. If it doesn't, invert the drive
+  motor.
+* Rotate the **angle** mechanism CCW (viewed from above). Both `modules/<name>/azimuth/mechanism/position`
+  (relative) and `modules/<name>/encoder` (absolute) should **increase**. If either doesn't, invert
+  that motor or encoder respectively.
+* Rotate the entire **robot** CCW. `Mechanisms/swerve/gyro` should **increase**. If not, invert the
+  gyroscope.
+
+See [Determine Inversion](../how-to/determine-inversion.md) for the full decision procedure if
+any of these don't behave as expected — or work through
+[config.yagsl.com/guide](https://config.yagsl.com/guide), which walks through this same alignment
+process interactively.
 
 {% hint style="warning" %}
 If you're using a hardware vendor client to poke at motors/encoders directly, the roboRIO must not be
@@ -55,8 +61,8 @@ cycles — it's essential to a functioning swerve drive.
 
 <figure><img src="../.gitbook/assets/devilbots_cropped_swerve_orientation.png" alt=""><figcaption><p>The left and right are physical left and right.</p></figcaption></figure>
 
-2. With the robot still disabled, open your driver dashboard and read each module's
-   `swerve/modules/.../Raw Absolute Encoder` value.
+2. With the robot still disabled, open AdvantageScope and read each module's
+   `Mechanisms/swerve/modules/<name>/encoder` value while it's held in that aligned position.
 3. Enter each value as that module's absolute encoder offset — either back in the
    [config generator](https://config.yagsl.com) (recommended: upload your existing config, update the
    four offset fields, and re-download) or directly in `absoluteEncoderOffset` in the module's JSON

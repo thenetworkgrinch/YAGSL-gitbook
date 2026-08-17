@@ -37,7 +37,7 @@ Download and install it from the releases page:
 
 <figure><img src="../.gitbook/assets/fwc_config2.png" alt=""><figcaption></figcaption></figure>
 
-9. Connect to `SmartDashboard/swerve` by selecting it here.
+9. Connect to `Mechanisms/swerve` by selecting it here.
 
 <figure><img src="../.gitbook/assets/FWC_config1.png" alt=""><figcaption></figcaption></figure>
 

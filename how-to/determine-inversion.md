@@ -6,6 +6,11 @@ description: Work out which motors, encoders, and the gyro need to be inverted.
 
 Swerve modules and swerve drives require some inversions to get working properly. The goal is to get everything to increase **counter-clockwise positive (CCW+)**.
 
+{% hint style="info" %}
+[config.yagsl.com/guide](https://config.yagsl.com/guide) walks through this exact process
+interactively, with animations, if you'd rather follow along there instead of on this page.
+{% endhint %}
+
 {% hint style="warning" %}
 If your gears are grinding on the ground but not while on blocks, and your wheels are facing and spinning in the right directions, you may need to [tune PID](tune-pidf-gains.md) instead of inverting anything!
 {% endhint %}
@@ -14,121 +19,107 @@ If your gears are grinding on the ground but not while on blocks, and your wheel
 If you invert incorrectly, your modules or robot may spin "out of control." If nothing here resolves it, see [debugging the eight steps](debug-the-eight-steps.md).
 {% endhint %}
 
-## Swerve motors
+All of the telemetry referenced below lives under `Mechanisms/swerve` in NetworkTables — see
+[Telemetry, Simulation & Vision](../explanation/telemetry-and-vision.md) for the full tree.
 
-When you spin your motor counterclockwise, the value in NetworkTables `swerve/modules/.../Raw Absolute Encoder` and `swerve/modules/.../Raw Angle Encoder` should both increase.
-
-* ![](../.gitbook/assets/ShuffleboardAbsoluteEncoderHighlight.png)
-* Take note of the `swerve/modules/.../Raw Absolute Encoder` values and use them for `absoluteEncoderOffset` in the module JSONs (or paste them into **[config.yagsl.com](https://config.yagsl.com)**).
-
-## Spin your module counterclockwise
-
-{% hint style="danger" %}
-Spin your modules **COUNTERclockwise** from the top-down view.
-{% endhint %}
+## 1. Confirm the absolute encoder reads CCW+
 
 <figure><img src="../.gitbook/assets/devilbots_cropped_swerve_orientation.png" alt=""><figcaption><p>Purple shows the way your bevels should be facing (photo by Team 2876)</p></figcaption></figure>
 
-The swerve drive should be on its side or otherwise lifted. Your swerve module bevels must be facing left, as shown. To rotate the swerve modules, rotate them counterclockwise as shown.
+With the robot lifted or on its side so the wheels spin freely, rotate one module by hand
+**counterclockwise** (viewed from directly above, robot front pointing away from you) and watch
+that module's `modules/<name>/encoder` value in AdvantageScope.
 
-### If `swerve/modules/.../Raw Angle Encoder` is decreasing...
-
-Invert the angle motor for every module that is decreasing, in that module's JSON file:
-
-```json
-{
-  "drive": { "type": "sparkmax_neo", "id": 2, "canbus": "" },
-  "angle": { "type": "sparkmax_neo", "id": 1, "canbus": "" },
-  "absoluteEncoder": { "type": "cancoder_can", "id": 10, "channel": 0, "canbus": "" },
-  "inverted": {
-    "drive": false,
-    "angle": true
-  },
-  "absoluteEncoderInverted": false,
-  "absoluteEncoderOffset": -50.977,
-  "location": { "front": 12, "left": -12 }
-}
-```
-
-### If `swerve/modules/.../Raw Absolute Encoder` is decreasing...
-
-Invert the absolute encoder in the module JSON with `absoluteEncoderInverted`:
+* If it **increases**, the absolute encoder is already correct — leave `absoluteEncoderInverted` as
+  `false`.
+* If it **decreases**, set `absoluteEncoderInverted` to `true` for that module. This is rare — most
+  absolute encoders already read CCW+ by default.
 
 ```json
 {
   "drive": { "type": "sparkmax_neo", "id": 2, "canbus": "" },
   "angle": { "type": "sparkmax_neo", "id": 1, "canbus": "" },
   "absoluteEncoder": { "type": "cancoder_can", "id": 10, "channel": 0, "canbus": "" },
-  "inverted": {
-    "drive": false,
-    "angle": false
-  },
+  "inverted": { "drive": false, "angle": false },
   "absoluteEncoderInverted": true,
   "absoluteEncoderOffset": -50.977,
   "location": { "front": 12, "left": -12 }
 }
 ```
 
-## Spin your wheel counterclockwise
+Once every module reads CCW+, rotate each wheel to point straight forward (bevel gear left) and
+record the `modules/<name>/encoder` value held in that position — that's the module's
+`absoluteEncoderOffset`. Enter it in the module's JSON, or paste it into
+**[config.yagsl.com](https://config.yagsl.com)**.
 
-{% hint style="warning" %}
-You may need to invert these if rotating the robot changes its perceived front/back while driving in field-oriented mode.
-{% endhint %}
+## 2. Confirm the gyro reads CCW+
 
-{% hint style="danger" %}
-#### Odometry mismatch
+With the robot lifted off the ground, rotate the **entire robot** counterclockwise (viewed from
+above) and watch `Mechanisms/swerve/gyro`.
 
-If your robot drives backwards in odometry but forwards in real life, while a spin-in-place still shows Counter-Clockwise-Positive movement, apply this patch: add `180` to every `absoluteEncoderOffset` in every module file.
-{% endhint %}
+* If it **increases**, leave `gyroInvert` alone — there's nothing to change.
+* If it **decreases**, set `gyroInvert` to `true` in `swervedrive.json`:
 
-### If `swerve/modules/.../Raw Drive Encoder` is decreasing...
+```json
+{
+  "gyro": { "type": "pigeon2_can", "id": 13, "canbus": "canivore" },
+  "gyroAxis": "yaw",
+  "gyroInvert": true,
+  "modules": ["frontleft.json", "frontright.json", "backleft.json", "backright.json"]
+}
+```
 
-Invert the drive motor for every module that is decreasing:
+See the [gyroscope reference](../reference/hardware/gyroscopes.md) for the full list of supported `gyro.type` values.
+
+## 3. Spin test — catch drive motor inversion and module swaps
+
+Still with the robot lifted off the ground, deploy code and drive with a joystick input that
+commands pure rotation (e.g. hold the rotation stick fully to one side). Watch the robot against
+AdvantageScope's Swerve widget (top-down view) — see
+[Set up AdvantageScope](set-up-advantagescope.md) — and compare:
+
+| Symptom                                                              | Likely cause                                                                                                    |
+| ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| Modules drift or translate instead of spinning cleanly in place          | Wrong CAN IDs for a module, or a wrong `absoluteEncoderOffset`.                                                    |
+| Spins cleanly, but the wrong way (clockwise instead of CCW)               | Inverted drive motor(s); a diagonal module swap (front-left ↔ back-right, front-right ↔ back-left); or an absolute encoder offset captured with the bevel gear facing right instead of left. |
+
+If a single module is spinning the wrong way, invert that module's drive motor:
 
 ```json
 {
   "drive": { "type": "sparkmax_neo", "id": 2, "canbus": "" },
   "angle": { "type": "sparkmax_neo", "id": 1, "canbus": "" },
   "absoluteEncoder": { "type": "cancoder_can", "id": 10, "channel": 0, "canbus": "" },
-  "inverted": {
-    "drive": true,
-    "angle": false
-  },
+  "inverted": { "drive": true, "angle": false },
   "absoluteEncoderInverted": false,
   "absoluteEncoderOffset": -50.977,
   "location": { "front": 12, "left": -12 }
 }
 ```
 
-## Rotate your robot counterclockwise
+If every module spins the wrong way at once, double-check for a diagonal module swap in
+`swervedrive.json`'s `modules` list before you start flipping individual `inverted.drive` fields —
+it's a more common cause than it sounds.
+
+## 4. Field-orientation check
+
+Once the spin test looks right, put the robot down and drive it forward/back/left/right at its
+starting heading while watching a 2D/3D Field tab fed from `Mechanisms/swerve/pose`. Then spin in
+place again, this time watching the field widget's heading instead of the swerve module widget.
+
+* **Wrong at every heading, including the start:** check `gyroInvert`.
+* **Only wrong once you rotate away from the starting heading:** an absolute encoder offset that's
+  off, a drive motor inversion mistake, a wrong module `location`, an absolute encoder wired to the
+  wrong motor controller, or a wrong CAN ID. Verify wiring and CAN IDs first — they're the fastest
+  to rule out.
+* **The spin test in step 3 looked right, but the field widget's heading spins backwards:** an
+  inverted gyro can flip the field widget even when the module states widget looked correct.
 
 {% hint style="danger" %}
-Your robot spinning counterclockwise should look like the diagram above when the wheels are powered! You **WILL** need to change your CAN IDs for each module file if it doesn't match.
+#### Odometry mismatch
+
+If your robot drives backwards in odometry but forwards in real life, while a spin-in-place still shows Counter-Clockwise-Positive movement, apply this patch: add `180` to every `absoluteEncoderOffset` in every module file.
 {% endhint %}
-
-<figure><img src="../.gitbook/assets/id_change1.png" alt=""><figcaption><p>IDs relocated in swerve module files</p></figcaption></figure>
-
-You should notice the `Raw Gyro Yaw` field in your driver dashboard increase as the robot turns CCW. If it doesn't, invert the gyro in `swervedrive.json`:
-
-```json
-{
-  "gyro": {
-    "type": "pigeon2_can",
-    "id": 13,
-    "canbus": "canivore"
-  },
-  "gyroAxis": "yaw",
-  "gyroInvert": true,
-  "modules": [
-    "frontleft",
-    "frontright",
-    "backleft",
-    "backright"
-  ]
-}
-```
-
-See the [gyroscope reference](../reference/hardware/gyroscopes.md) for the full list of supported `gyro.type` values.
 
 {% hint style="info" %}
 In older YAGSL configs (pre-2026.8.05) this section was named `imu`/`invertedIMU` instead of `gyro`/`gyroInvert` — see the [schema changes reference](../reference/schema-changes.md) if you're working from an old config.
