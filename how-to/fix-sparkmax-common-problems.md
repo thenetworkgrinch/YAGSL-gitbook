@@ -1,0 +1,47 @@
+---
+description: These usually show up on MAXSwerve robots.
+---
+
+# How to fix common SparkMAX/SparkFlex problems
+
+## NEOs are SparkMAX killers!
+
+When a NEO heats up enough from being stalled too long, it will short positive to the sensor cable, sending very high current through the low-current sensor channel and melting the SparkMax PCB. This WILL kill your SparkMAX, and every SparkMAX plugged into your killer NEO.
+
+This can also kill your laptop if you plug into a powered-on SparkMAX, because the short can extend to the USB port.
+
+{% embed url="https://docs.google.com/presentation/d/1uM_uPD5HjzGwYUOmzZOmmgb1-KANiTTKI3o9aIJlPcc/edit?slide=id.p#slide=id.p" %}
+
+## SparkMAX absolute encoder boards
+
+The [SparkMAX Absolute Encoder board](https://www.revrobotics.com/rev-11-3326/) should be zip-tied and hot-glued to the SparkMAX for redundancy and to prevent it from coming loose.
+
+### Throughbore connection to the absolute encoder board
+
+The connector between the [SparkMax Absolute Encoder board](https://www.revrobotics.com/rev-11-3326/) and the [REV Throughbore](https://www.revrobotics.com/rev-11-1271/) should be hot-glued down on **BOTH** connection points — these can come loose easily.
+
+The wire should also be tensioned just right. If it's over-tensioned, the wire might not be fully seated in the connector, and the data could be incomplete, corrupted, or unavailable.
+
+## Absolute encoder attached via the SparkMax's duty-cycle port
+
+When you use an absolute encoder wired to the SparkMax through its Absolute Encoder board, YAGSL identifies it as a `sparkmax`-type absolute encoder in the module JSON (see the [absolute encoder reference](../reference/hardware/absolute-encoders.md) for the exact type string for your device).
+
+```json
+{
+  "absoluteEncoder": { "type": "revthroughbore_attached", "id": 1, "channel": 0, "canbus": "" }
+}
+```
+
+{% hint style="success" %}
+As of the current parser, when the absolute encoder's vendor matches the azimuth motor controller's vendor (e.g. a REV Throughbore wired into a SparkMax), YAGSL automatically wires it up as the SparkMax's external feedback sensor and applies `absoluteEncoderOffset` for you — there is no manual "set the `factor` to `360`" workaround to remember, and no `useExternalFeedbackSensor()`/`useInternalFeedbackSensor()` calls to make in your own code. Just set `absoluteEncoderOffset` in the module JSON (or via **[config.yagsl.com](https://config.yagsl.com)**) and the parser handles the rest.
+{% endhint %}
+
+{% hint style="info" %}
+If you're migrating an old config that hand-set `physicalproperties.json`'s `factor` to `360` as a workaround, that field no longer exists — see the [schema changes reference](../reference/schema-changes.md).
+{% endhint %}
+
+## Status frame error
+
+Usually, a status frame error means your connection to the REV Throughbore is incomplete somehow, or the sensor cable from your motor is loose or broken.
+
+If you see this, check **ALL SENSOR CABLES GOING INTO THAT SPARKMAX**.
