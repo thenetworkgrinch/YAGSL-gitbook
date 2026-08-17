@@ -2,9 +2,9 @@
 description: Drift can be caused by anything and everything in a swerve drive...
 ---
 
-# How to diagnose and tune out swerve drive drift
+# Swerve Drive Drift: Causes and Tuning Order
 
-Swerve drive drift has been a persistent problem for many years, and there have been many discussions as to why it happens. This guide walks through the common causes of drift, then the tuning order that removes what's left.
+Swerve drive drift has been a persistent problem for many years, and there have been many discussions as to why it happens. This is a lookup of common causes, followed by the fixed tuning order that removes what's left. For step-by-step tuning instructions, see [How to Tune PIDF Gains](../how-to/tune-pidf-gains.md).
 
 It's important to keep in mind that SEVERAL of these issues could be present on your robot at once.
 
@@ -67,7 +67,7 @@ Incorrect, worn, or loose wiring produces different symptoms depending on which 
 * [ ] Gyro offset drifted — see `SwerveDrive.zeroGyro()` / `SwerveDriveConfig.withGyroOffset()`.
 
 {% hint style="info" %}
-Several runtime tuning knobs from older YAGSL versions (`setCosineCompensator`, `setHeadingCorrection`, `setAntiJitter`, `chassisVelocityCorrection`, `setMaximumSpeeds`, `replaceSwerveModuleFeedforward`, `setOdometryPeriod`, `updateCacheValidityPeriods`) no longer exist as runtime methods on `SwerveDrive`. Cosine compensation is now always enabled internally by the parser, and the rest are configured once, up front, via `SwerveDriveConfig`/`SwerveModuleConfig` (or `pidfproperties.json`'s `s`/`v`/`a` feedforward terms) rather than toggled at runtime. See the [API reference](../reference/api-reference.md) and [schema changes reference](../reference/schema-changes.md) for what replaced each.
+Several runtime tuning knobs from older YAGSL versions (`setCosineCompensator`, `setHeadingCorrection`, `setAntiJitter`, `chassisVelocityCorrection`, `setMaximumSpeeds`, `replaceSwerveModuleFeedforward`, `setOdometryPeriod`, `updateCacheValidityPeriods`) no longer exist as runtime methods on `SwerveDrive`. Cosine compensation is now always enabled internally by the parser, and the rest are configured once, up front, via `SwerveDriveConfig`/`SwerveModuleConfig` (or `pidfproperties.json`'s `s`/`v`/`a` feedforward terms) rather than toggled at runtime. See the [API reference](api-reference.md) and [schema changes reference](schema-changes.md) for what replaced each.
 {% endhint %}
 
 ### PathPlanner
@@ -80,22 +80,22 @@ Several runtime tuning knobs from older YAGSL versions (`setCosineCompensator`, 
 
 ## Configuration causes
 
-* [ ] Module locations aren't defined correctly — remember these are measured from the center of the robot to the center of the module. See [how to verify module locations](verify-module-locations.md).
+* [ ] Module locations aren't defined correctly — remember these are measured from the center of the robot to the center of the module. See [how to verify module locations](../how-to/verify-module-locations.md).
 * [ ] Swerve module JSON doesn't have the correct device definitions for the absolute encoder, angle motor, or drive motor.
 * [ ] A module's `gearing` override in its module JSON disagrees with the default in `physicalproperties.json`.
   * A per-module `gearing` override is completely **OPTIONAL** and shouldn't be defined unless you have a specific reason (e.g. one swapped module with a different ratio) — otherwise rely on `physicalproperties.json` to avoid drift between modules.
 * [ ] The gear ratio/wheel diameter is not correct.
   * If your swerve drive consistently travels further than expected with PathPlanner, this is a likely cause.
   * If your angle motors never align the module correctly, this can also cause it.
-* [ ] Drive and steering/azimuth/angle motor PIDs aren't tuned well enough — see [how to tune PIDF gains](tune-pidf-gains.md).
+* [ ] Drive and steering/azimuth/angle motor PIDs aren't tuned well enough — see [how to tune PIDF gains](../how-to/tune-pidf-gains.md).
 * [ ] The current limit (`statorCurrentLimit`) is too low.
-* [ ] [Translational axis changes with robot orientation](debug-the-eight-steps.md).
+* [ ] [Translational axis changes with robot orientation](../how-to/debug-the-eight-steps.md).
 
 ## Tuning order
 
 Once hardware and configuration issues are ruled out, tune in this order — each step builds on the last, so redoing an earlier one (or replacing hardware like your gyro) means redoing everything after it:
 
-1. **Drive and angle PID** — see [how to tune PIDF gains](tune-pidf-gains.md). Do this first; nothing else is worth tuning until the modules track their setpoints well.
+1. **Drive and angle PID** — see [how to tune PIDF gains](../how-to/tune-pidf-gains.md). Do this first; nothing else is worth tuning until the modules track their setpoints well.
 2. **Vision standard deviation**, if you're using vision to help odometry — tune `SwerveDrive.setVisionMeasurementStdDevs()` mostly by guess-and-check, scaling with distance. Some teams get better stability by filtering out vision poses beyond a certain distance.
 3. **Discretization**, to compensate for system delay — `SwerveDriveConfig.withDiscretizationTime()`. See [chassis control](../explanation/chassis-control.md) for what this does and why it matters.
 4. **Gyro angular velocity scale factor**, to compensate for gyro system delay — `SwerveDriveConfig.withGyroAngularVelocityScaleFactor()` (less necessary with a Pigeon 2 on a CANivore, which has very low latency).

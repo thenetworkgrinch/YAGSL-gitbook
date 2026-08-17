@@ -48,6 +48,6 @@ Do you have multiple robots and don't want to change any code to get them to wor
 ## Goals of this documentation
 
 * Teach the fundamentals of a `SwerveDrive` and `SwerveModule` so you can debug and reason about your robot, even though YAMS builds the actual objects for you. See [Swerve Drive Kinematics](swerve-drive-kinematics.md) and [Swerve Modules](swerve-modules.md).
-* Walk you through generating a configuration and bringing up your first YAGSL-driven robot — see the [Tutorials](../tutorials/README.md).
+* Walk you through generating a configuration and bringing up your first YAGSL-driven robot — see the [Tutorial](../tutorial/README.md).
 * Give you task-focused recipes for the debugging work every swerve team eventually needs — see the [How-to Guides](../how-to/README.md).
 * Document the current JSON schema and hardware support precisely — see the [Reference](../reference/README.md) section.

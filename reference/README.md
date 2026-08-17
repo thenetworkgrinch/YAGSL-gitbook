@@ -2,7 +2,7 @@
 
 Information-oriented lookup material: exact JSON field names/types, supported hardware, and the
 YAMS API surface YAGSL hands you. Come here when you already know what you're doing and need a
-precise answer — for step-by-step guidance see [Tutorials](../tutorials/README.md) or
+precise answer — for step-by-step guidance see [Tutorial](../tutorial/README.md) or
 [How-to Guides](../how-to/README.md).
 
 - [JSON Configuration Schema](json-schema/README.md) — every field in `swervedrive.json`, module
@@ -16,3 +16,5 @@ precise answer — for step-by-step guidance see [Tutorials](../tutorials/README
 - [API Reference](api-reference.md) — where to find docs for `SwerveDrive`, `SwerveModule`, and
   friends (they're YAMS classes).
 - [Schema Changes](schema-changes.md) — migrating a pre-2026.8.05 `swerve/` config directory.
+- [Swerve Drive Drift: Causes and Tuning Order](swerve-drift-causes.md) — hardware/software/config
+  causes of drift, and the fixed order to tune them out.

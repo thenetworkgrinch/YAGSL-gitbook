@@ -114,4 +114,4 @@ drive.addVisionMeasurement(visionPose, timestampSeconds, visionStdDevs);
 drive.setVisionMeasurementStdDevs(visionStdDevs);
 ```
 
-Feed this from your vision subsystem (PhotonVision, Limelight, etc.) every time a new pose estimate is available. Standard deviations control how much the pose estimator trusts a given vision measurement relative to odometry — tighter (smaller) values pull the estimate toward vision more aggressively; looser (larger) values let odometry dominate. Tune these empirically; see [Tuning Out Drift](../how-to/diagnose-swerve-drift.md) if pose estimates drift or jump unexpectedly.
+Feed this from your vision subsystem (PhotonVision, Limelight, etc.) every time a new pose estimate is available. Standard deviations control how much the pose estimator trusts a given vision measurement relative to odometry — tighter (smaller) values pull the estimate toward vision more aggressively; looser (larger) values let odometry dominate. Tune these empirically; see [Swerve Drive Drift Causes](../reference/swerve-drift-causes.md) if pose estimates drift or jump unexpectedly.

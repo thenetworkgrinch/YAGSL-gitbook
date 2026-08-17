@@ -115,4 +115,4 @@ and use it as `canbus`.
   couples translational vibration into the heading reading.
 - Always keep the robot still for a few seconds after power-on if your device does an on-the-fly
   calibration; moving during that window produces a bad heading for the rest of the match.
-- If the robot's heading drifts over a match, see [Diagnose Swerve Drift](../../how-to/diagnose-swerve-drift.md).
+- If the robot's heading drifts over a match, see [Swerve Drive Drift Causes](../swerve-drift-causes.md).

@@ -7,7 +7,7 @@ these files, since [config.yagsl.com](https://config.yagsl.com) generates them f
 the schema is useful for debugging, scripting, or hand-tweaking a single value.
 
 {% hint style="info" %}
-If you're setting up a robot for the first time, use the [Tutorials](../../tutorials/README.md)
+If you're setting up a robot for the first time, use the [Tutorial](../../tutorial/README.md)
 section instead — this is reference material for looking up exact field names and types.
 {% endhint %}
 

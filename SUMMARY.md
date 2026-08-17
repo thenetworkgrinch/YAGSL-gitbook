@@ -1,27 +1,25 @@
 # Table of contents
 
 * [Welcome to YAGSL](README.md)
-  * [Resources](readme/resources.md)
 
 ## Translations
 
 * [Turkish Translation by 9024](https://callister.gitbook.io/yagsl-turkish)
 
-## Tutorials
+## Tutorial
 
-* [Your First Swerve Robot](tutorials/README.md)
-* [1. Gather your robot information](tutorials/01-gather-your-robot-information.md)
-* [2. Install YAGSL](tutorials/02-install-yagsl.md)
-* [3. Generate your configuration](tutorials/03-generate-your-configuration.md)
-* [4. Verify and calibrate your hardware](tutorials/04-verify-and-calibrate-hardware.md)
-* [5. Deploy and drive](tutorials/05-deploy-and-drive.md)
+* [Your First Swerve Robot](tutorial/README.md)
+* [1. Gather your robot information](tutorial/01-gather-your-robot-information.md)
+* [2. Install YAGSL](tutorial/02-install-yagsl.md)
+* [3. Generate your configuration](tutorial/03-generate-your-configuration.md)
+* [4. Verify and calibrate your hardware](tutorial/04-verify-and-calibrate-hardware.md)
+* [5. Deploy and drive](tutorial/05-deploy-and-drive.md)
 
 ## How-to Guides
 
 * [Tune PIDF gains](how-to/tune-pidf-gains.md)
 * [Determine inversion](how-to/determine-inversion.md)
 * [Verify your module locations](how-to/verify-module-locations.md)
-* [Diagnose and tune out swerve drive drift](how-to/diagnose-swerve-drift.md)
 * [Debug the eight steps](how-to/debug-the-eight-steps.md)
 * [Fix common SparkMAX/SparkFlex problems](how-to/fix-sparkmax-common-problems.md)
 * [Set up AdvantageScope](how-to/set-up-advantagescope.md)
@@ -44,6 +42,7 @@
 * [Vendordep Installation](reference/vendordep-installation.md)
 * [API Reference](reference/api-reference.md)
 * [Schema Changes (Migrating from pre-2026.8.05)](reference/schema-changes.md)
+* [Swerve Drive Drift: Causes and Tuning Order](reference/swerve-drift-causes.md)
 
 ## Explanation
 
@@ -65,3 +64,7 @@
   * [YAMS](https://yams.yamgen.com/)
   * [YAMG](https://yamgen.com/)
   * [YALL](https://github.com/Yet-Another-Software-Suite/YALL)
+
+## Resources
+
+* [Resources](readme/resources.md)

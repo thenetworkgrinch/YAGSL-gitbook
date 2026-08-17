@@ -173,7 +173,7 @@ build field-relative driving with heading lock. **Both the file and the class ar
 Field-relative/heading-based driving is now built in your own robot code using YAMS's
 `yams.mechanisms.swerve.utility.SwerveInputStream`, not a JSON-configured heading PID. See
 [SwerveInputStream reference](https://yagsl.gitbook.io/yams/api-reference/java-reference/swerve/swerve-input-stream)
-and the [tutorial's driving step](../tutorials/05-deploy-and-drive.md) for the current pattern.
+and the [tutorial's driving step](../tutorial/05-deploy-and-drive.md) for the current pattern.
 
 ## Hardware support that was dropped, not just renamed
 
@@ -201,7 +201,7 @@ just JSON — this is a real capability change, not a documentation gap.
   It's now always applied by the parser — there's no way to disable it via config.
 - **Deploy directory construction** changed from directly instantiating `SwerveDrive`/module
   classes to `new SwerveParser(dir).createSwerveDrive(new SwerveDriveConfig()...)`. See
-  [Deploy and Drive](../tutorials/05-deploy-and-drive.md).
+  [Deploy and Drive](../tutorial/05-deploy-and-drive.md).
 
 ## Migration checklist
 

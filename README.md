@@ -22,7 +22,7 @@ your robot — describe your hardware once, generate the config at
 
 ## This documentation is organized into four sections
 
-* **[Tutorials](tutorials/README.md)** — never used YAGSL before? Start here. A single linear
+* **[Tutorial](tutorial/README.md)** — never used YAGSL before? Start here. A single linear
   walkthrough from a bare WPILib project to a driving swerve robot.
 * **[How-to Guides](how-to/README.md)** — already have a robot running? Task-focused recipes for
   tuning PIDF, determining inversion, diagnosing drift, and other work you'll come back to.
@@ -40,8 +40,8 @@ schema — see [Schema Changes](reference/schema-changes.md) before you do anyth
 
 {% embed url="https://www.youtube.com/watch?v=4Tcyn_oj_G0&list=PLdhNPDifsCMLLe5pZoyHGXrMMVxNpJOxP" %}
 
-{% content-ref url="tutorials/README.md" %}
-[README.md](tutorials/README.md)
+{% content-ref url="tutorial/README.md" %}
+[README.md](tutorial/README.md)
 {% endcontent-ref %}
 
 {% content-ref url="how-to/tune-pidf-gains.md" %}

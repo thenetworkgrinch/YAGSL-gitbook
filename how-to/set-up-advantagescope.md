@@ -58,4 +58,4 @@ The **RED** lines are the measured velocity and position of each swerve module.
 The **BLUE** lines are the velocity and position each module was commanded to.
 {% endhint %}
 
-Large, persistent gaps between the red and blue lines usually point to a tuning issue — see [how to tune PIDF gains](tune-pidf-gains.md) and [how to diagnose swerve drive drift](diagnose-swerve-drift.md).
+Large, persistent gaps between the red and blue lines usually point to a tuning issue — see [how to tune PIDF gains](tune-pidf-gains.md) and [swerve drive drift causes](../reference/swerve-drift-causes.md).
