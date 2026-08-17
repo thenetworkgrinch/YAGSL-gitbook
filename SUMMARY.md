@@ -23,6 +23,7 @@
 * [The 8 steps](how-to/the-8-steps.md)
 * [Fix common SparkMAX/SparkFlex problems](how-to/fix-sparkmax-common-problems.md)
 * [Set up AdvantageScope](how-to/set-up-advantagescope.md)
+* [View your DataLog in AdvantageScope](how-to/view-your-datalog-in-advantagescope.md)
 * [Troubleshooting flowchart](how-to/troubleshooting-flowchart.md)
 
 ## Reference

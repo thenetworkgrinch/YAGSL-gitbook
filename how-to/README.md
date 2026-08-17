@@ -11,4 +11,6 @@ assume a working config and address a specific task or problem.
   coupling debugging procedure
 - [How to fix common SparkMAX/SparkFlex problems](fix-sparkmax-common-problems.md)
 - [How to set up AdvantageScope](set-up-advantagescope.md)
+- [How to view your DataLog in AdvantageScope](view-your-datalog-in-advantagescope.md) — opening a
+  recorded `.wpilog` after the fact, not live telemetry
 - [Troubleshooting flowchart](troubleshooting-flowchart.md)
