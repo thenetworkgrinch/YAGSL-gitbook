@@ -1,0 +1,73 @@
+# 4. Verify and calibrate your hardware
+
+Before your first drive, confirm every sensor and motor reports direction consistently, and capture
+each module's absolute encoder offset. Skipping this step is the single most common cause of a
+swerve drive that "spins out" or drives in the wrong direction.
+
+{% hint style="danger" %}
+Make sure every CAN ID is unique across your entire robot. A known failure mode: if a SparkMAX shares
+a CAN ID with your REV Power Distribution Hub, the SparkMAX simply won't move — with no obvious error.
+{% endhint %}
+
+## Physically label everything
+
+Label each motor controller, encoder, and gyroscope with its CAN ID/channel and connection type
+before you start. This is the easiest step to get wrong and the hardest mistake to spot afterward.
+
+## Check your gyroscope
+
+* **Front is whatever the gyroscope reports as `0`.** Pick a front, and expect that you may need to
+  change it later if it turns out to be inconvenient.
+* The gyroscope must report **increasing yaw while the robot rotates counterclockwise**. If it
+  doesn't, invert it.
+* If you're using a NavX, recalibrate it once it arrives at your shop — NavX units ship calibrated to
+  the humidity of their factory, not your build space. Recalibrate again periodically, especially at
+  competition.
+
+## Check your motors
+
+Deploy your code with the config from step 3, then — **with the robot disabled** — spin each motor by
+hand and watch your driver dashboard's `swerve/modules/.../Raw Angle Encoder` (steering) and
+`swerve/modules/.../Raw Absolute Encoder` (absolute encoder) values.
+
+* Rotate the **drive** wheel forward (CCW as viewed from above). Its encoder value should **increase**.
+  If it doesn't, invert the drive motor.
+* Rotate the **angle** mechanism CCW (viewed from above). Both the relative *and* absolute encoder
+  values should **increase**. If either doesn't, invert that motor or encoder respectively.
+* Rotate the entire **robot** CCW. Gyro yaw should **increase**. If not, invert the gyroscope.
+
+See [When to Invert?](../how-to/determine-inversion.md) for the full decision procedure if
+any of these don't behave as expected.
+
+{% hint style="warning" %}
+If you're using a hardware vendor client to poke at motors/encoders directly, the roboRIO must not be
+active on the CAN bus at the same time. The most reliable way to do this without disturbing CAN bus
+termination is to briefly pull the roboRIO's breaker/fuse on the PDP, then power-cycle the robot.
+{% endhint %}
+
+## Capture absolute encoder offsets
+
+The absolute encoder offset is what lets your swerve module remember wheel orientation across power
+cycles — it's essential to a functioning swerve drive.
+
+1. Manually rotate all four wheels so they point in the same direction — bevel gears facing left, as
+   in the diagram below — and forward rotation increases the drive encoder.
+
+<figure><img src="../.gitbook/assets/devilbots_cropped_swerve_orientation.png" alt=""><figcaption><p>The left and right are physical left and right.</p></figcaption></figure>
+
+2. With the robot still disabled, open your driver dashboard and read each module's
+   `swerve/modules/.../Raw Absolute Encoder` value.
+3. Enter each value as that module's absolute encoder offset — either back in the
+   [config generator](https://config.yagsl.com) (recommended: upload your existing config, update the
+   four offset fields, and re-download) or directly in `absoluteEncoderOffset` in the module's JSON
+   file.
+
+{% hint style="warning" %}
+**Special note for MAXSwerve teams:** after aligning the wheels, you may need to add or subtract `90`
+from the measured offset to get the module pointing truly forward, and set `absoluteEncoderInverted`
+to `true`. This is a quirk of how MAXSwerve mounts its absolute encoder, not a bug in your
+measurement.
+{% endhint %}
+
+Once every module reports correctly and has a captured offset, move on to
+[deploying and driving](05-deploy-and-drive.md).

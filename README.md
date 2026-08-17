@@ -2,84 +2,68 @@
 description: Brought to you by Yet Another Generic Swerve Library (YAGSL)
 ---
 
-# Welcome to Yet Another Swerve Document
+# Welcome to YAGSL
 
 {% hint style="warning" %}
-If your swerve drive uses only [Falcon500](https://store.ctr-electronics.com/falcon-500-powered-by-talon-fx/)/[Kraken](https://store.ctr-electronics.com/kraken-x60/)/[TalonFXS](https://store.ctr-electronics.com/products/talon-fxs), [Pigeon2.0](https://store.ctr-electronics.com/pigeon-2/), and [CANCoder](https://store.ctr-electronics.com/cancoder/) from [CTRE](https://pro.docs.ctr-electronics.com/en/latest/index.html) please use the [Tuner X Swerve Drive Generator](https://pro.docs.ctr-electronics.com/en/latest/docs/tuner/tuner-swerve/index.html)!
+If your swerve drive uses only [Falcon500](https://store.ctr-electronics.com/falcon-500-powered-by-talon-fx/)/[Kraken](https://store.ctr-electronics.com/kraken-x60/)/[TalonFXS](https://store.ctr-electronics.com/products/talon-fxs), [Pigeon2.0](https://store.ctr-electronics.com/pigeon-2/), and [CANCoder](https://store.ctr-electronics.com/cancoder/) from [CTRE](https://pro.docs.ctr-electronics.com/en/latest/index.html) please also consider the [Tuner X Swerve Drive Generator](https://pro.docs.ctr-electronics.com/en/latest/docs/tuner/tuner-swerve/index.html)!
 {% endhint %}
 
 <figure><img src=".gitbook/assets/YAGSL.png" alt=""><figcaption></figcaption></figure>
 
 ## Overview
 
-YAGSL is a Swerve Library Developed by current and former BroncBotz mentors for all FRC Teams. The goal of YAGSL is to help teams of all experience levels with all types of swerve modules to control their swerve drive as easy as a `DifferentialDrive` we all know. YAGSL is well documented, actively maintained, and always accepting help!
+YAGSL is a Swerve Library developed by current and former BroncBotz mentors for all FRC teams. YAGSL
+is a JSON configuration parser that builds a [YAMS](https://yams.yamgen.com/) `SwerveDrive` for
+your robot — describe your hardware once, generate the config at
+**[config.yagsl.com](https://config.yagsl.com)**, and drive. See
+[What is YAGSL?](explanation/what-is-yagsl.md) for how the pieces fit together.
 
 {% embed url="https://datawrapper.dwcdn.net/ZVxvE/13/" %}
 
-## Our Philosophy
+## This documentation is organized into four sections
 
-Your program does not revolve around your swerve drive. Your constants file doesn't have to take 10 minutes to find the right option. Different robots should be able to work with the same code.
+* **[Tutorials](tutorials/README.md)** — never used YAGSL before? Start here. A single linear
+  walkthrough from a bare WPILib project to a driving swerve robot.
+* **[How-to Guides](how-to/README.md)** — already have a robot running? Task-focused recipes for
+  tuning PIDF, determining inversion, diagnosing drift, and other work you'll come back to.
+* **[Reference](reference/README.md)** — precise JSON schema field tables, supported hardware
+  type strings, and where to find the YAMS API docs.
+* **[Explanation](explanation/README.md)** — swerve drive theory and the reasoning behind how
+  YAGSL and YAMS behave.
 
-## Why do we exist?
+{% hint style="info" %}
+Upgrading an existing robot from before **2026.8.05**? Your `swerve/` config directory uses the old
+schema — see [Schema Changes](reference/schema-changes.md) before you do anything else.
+{% endhint %}
 
-Most swerve drive code out there are templates that teams are just expected to modify and fit to their robot. They are not generic and require a lot of time and effort to get working. Even after all of that effort there may be bugs that exist which may have been there all along or one of the changes you made doesn't work as you expected, etc... There is a better way!
-
-Do you have multiple robots and don't want to change any code to get them to work the same? YAGSL has come to to the rescue! We make it so all you have to do to get a robot working with the same code is create a configuration directory!
-
-## Quick links
-
-{% content-ref url="overview/what-we-do.md" %}
-[what-we-do.md](overview/what-we-do.md)
-{% endcontent-ref %}
-
-{% content-ref url="overview/our-features/" %}
-[our-features](overview/our-features/)
-{% endcontent-ref %}
-
-## Get Started
-
-We've put together some helpful guides for you to get setup with our product quickly and easily.
+## Get started
 
 {% embed url="https://www.youtube.com/watch?v=4Tcyn_oj_G0&list=PLdhNPDifsCMLLe5pZoyHGXrMMVxNpJOxP" %}
 
-{% content-ref url="fundamentals/swerve-drive.md" %}
-[swerve-drive.md](fundamentals/swerve-drive.md)
+{% content-ref url="tutorials/README.md" %}
+[README.md](tutorials/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="configuring-yagsl/getting-to-know-your-robot/" %}
-[getting-to-know-your-robot](configuring-yagsl/getting-to-know-your-robot/)
+{% content-ref url="how-to/tune-pidf-gains.md" %}
+[tune-pidf-gains.md](how-to/tune-pidf-gains.md)
 {% endcontent-ref %}
 
-{% content-ref url="configuring-yagsl/configuration/" %}
-[configuration](configuring-yagsl/configuration/)
+{% content-ref url="how-to/debug-the-eight-steps.md" %}
+[debug-the-eight-steps.md](how-to/debug-the-eight-steps.md)
 {% endcontent-ref %}
 
-{% content-ref url="configuring-yagsl/dependency-installation.md" %}
-[dependency-installation.md](configuring-yagsl/dependency-installation.md)
-{% endcontent-ref %}
-
-{% content-ref url="configuring-yagsl/code-setup.md" %}
-[code-setup.md](configuring-yagsl/code-setup.md)
-{% endcontent-ref %}
-
-{% content-ref url="analytics-and-debugging/frc-web-components.md" %}
-[frc-web-components.md](analytics-and-debugging/frc-web-components.md)
-{% endcontent-ref %}
-
-{% content-ref url="configuring-yagsl/when-to-invert.md" %}
-[when-to-invert.md](configuring-yagsl/when-to-invert.md)
-{% endcontent-ref %}
-
-{% content-ref url="configuring-yagsl/how-to-tune-pidf.md" %}
-[how-to-tune-pidf.md](configuring-yagsl/how-to-tune-pidf.md)
-{% endcontent-ref %}
-
-{% content-ref url="configuring-yagsl/the-eight-steps.md" %}
-[the-eight-steps.md](configuring-yagsl/the-eight-steps.md)
+{% content-ref url="reference/schema-changes.md" %}
+[schema-changes.md](reference/schema-changes.md)
 {% endcontent-ref %}
 
 ## YAGSL Online Installation
 
 ```
-https://yet-another-software-suite.github.io/YAGSL/yagsl.json
+https://yet-another-software-suite.github.io/YAGSL/yagsl/yagsl.json
 ```
+
+## Our Philosophy
+
+Your program does not revolve around your swerve drive. Your constants file doesn't have to take 10
+minutes to find the right option. Different robots should be able to work with the same code — swap
+the `swerve/` config directory and the same subsystem code drives a different robot.

@@ -1,0 +1,18 @@
+# Reference
+
+Information-oriented lookup material: exact JSON field names/types, supported hardware, and the
+YAMS API surface YAGSL hands you. Come here when you already know what you're doing and need a
+precise answer — for step-by-step guidance see [Tutorials](../tutorials/README.md) or
+[How-to Guides](../how-to/README.md).
+
+- [JSON Configuration Schema](json-schema/README.md) — every field in `swervedrive.json`, module
+  files, `physicalproperties.json`, and `pidfproperties.json`.
+- [Supported Hardware](hardware/README.md) — gyro, motor controller, and absolute encoder type
+  tables plus per-device notes.
+- [Standard Conversion Factors](standard-conversion-factors.md) — gear ratios/wheel diameters for
+  common COTS swerve modules.
+- [Vendordep Installation](vendordep-installation.md) — which vendor dependencies you need for
+  your hardware.
+- [API Reference](api-reference.md) — where to find docs for `SwerveDrive`, `SwerveModule`, and
+  friends (they're YAMS classes).
+- [Schema Changes](schema-changes.md) — migrating a pre-2026.8.05 `swerve/` config directory.
