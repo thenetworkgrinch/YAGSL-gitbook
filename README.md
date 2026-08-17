@@ -48,8 +48,8 @@ schema — see [Schema Changes](reference/schema-changes.md) before you do anyth
 [tune-pidf-gains.md](how-to/tune-pidf-gains.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to/debug-the-eight-steps.md" %}
-[debug-the-eight-steps.md](how-to/debug-the-eight-steps.md)
+{% content-ref url="how-to/the-8-steps.md" %}
+[the-8-steps.md](how-to/the-8-steps.md)
 {% endcontent-ref %}
 
 {% content-ref url="reference/schema-changes.md" %}

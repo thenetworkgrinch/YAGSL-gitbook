@@ -1,4 +1,4 @@
-# How to debug the eight steps
+# The 8 steps
 
 ## Something is wrong but it's driving-ish?
 

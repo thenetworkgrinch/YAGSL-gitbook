@@ -89,7 +89,7 @@ Several runtime tuning knobs from older YAGSL versions (`setCosineCompensator`, 
   * If your angle motors never align the module correctly, this can also cause it.
 * [ ] Drive and steering/azimuth/angle motor PIDs aren't tuned well enough — see [how to tune PIDF gains](../how-to/tune-pidf-gains.md).
 * [ ] The current limit (`statorCurrentLimit`) is too low.
-* [ ] [Translational axis changes with robot orientation](../how-to/debug-the-eight-steps.md).
+* [ ] [Translational axis changes with robot orientation](../how-to/the-8-steps.md).
 
 ## Tuning order
 

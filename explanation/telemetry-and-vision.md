@@ -8,9 +8,8 @@ description: Telemetry verbosity, simulation, and fusing vision pose estimates
 
 YAMS pushes swerve drive and module data to NetworkTables under `Mechanisms/swerve` (the table name
 is currently always `swerve`, regardless of your subsystem's name). This is the data most dashboards
-(Shuffleboard, Elastic, AdvantageScope, FRC Web Components) read to render swerve widgets — see the
-[AdvantageScope](../how-to/set-up-advantagescope.md) and
-[FRC Web Components](../how-to/set-up-frc-web-components.md) how-to guides.
+(Shuffleboard, Elastic, AdvantageScope) read to render swerve widgets — see the
+[AdvantageScope how-to guide](../how-to/set-up-advantagescope.md).
 
 <figure><img src="../assets/yagsl-telemetry.png" alt=""><figcaption><p>The Mechanisms/swerve NetworkTables tree as seen in AdvantageScope.</p></figcaption></figure>
 

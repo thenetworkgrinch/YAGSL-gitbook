@@ -23,10 +23,10 @@ Older gyroscopes like the Pigeon 1 and NavX 1 drift the longer they're powered o
 5. Did you check [how to determine inversion](determine-inversion.md) for inversion states?
 6. Did you [tune your PID](tune-pidf-gains.md)?
 
-If none of the above resolves it, move on to [debugging the eight steps](debug-the-eight-steps.md).
+If none of the above resolves it, move on to [The 8 steps](the-8-steps.md).
 
 ## Swerve drive "spins out of control"
 
 <figure><img src="../.gitbook/assets/flowchart4.png" alt=""><figcaption></figcaption></figure>
 
-See [how to determine inversion](determine-inversion.md) and [how to debug the eight steps](debug-the-eight-steps.md).
+See [how to determine inversion](determine-inversion.md) and [the 8 steps](the-8-steps.md).

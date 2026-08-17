@@ -16,7 +16,7 @@ If your gears are grinding on the ground but not while on blocks, and your wheel
 {% endhint %}
 
 {% hint style="warning" %}
-If you invert incorrectly, your modules or robot may spin "out of control." If nothing here resolves it, see [debugging the eight steps](debug-the-eight-steps.md).
+If you invert incorrectly, your modules or robot may spin "out of control." If nothing here resolves it, see [The 8 steps](the-8-steps.md).
 {% endhint %}
 
 All of the telemetry referenced below lives under `Mechanisms/swerve` in NetworkTables — see

@@ -20,10 +20,9 @@
 * [Tune PIDF gains](how-to/tune-pidf-gains.md)
 * [Determine inversion](how-to/determine-inversion.md)
 * [Verify your module locations](how-to/verify-module-locations.md)
-* [Debug the eight steps](how-to/debug-the-eight-steps.md)
+* [The 8 steps](how-to/the-8-steps.md)
 * [Fix common SparkMAX/SparkFlex problems](how-to/fix-sparkmax-common-problems.md)
 * [Set up AdvantageScope](how-to/set-up-advantagescope.md)
-* [Set up FRC Web Components](how-to/set-up-frc-web-components.md)
 * [Troubleshooting flowchart](how-to/troubleshooting-flowchart.md)
 
 ## Reference

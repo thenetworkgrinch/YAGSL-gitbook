@@ -12,7 +12,7 @@ description: How does Swerve Drive work?
 * Make sure the magnets (if you're using them) are glued in right!
 * Set aside time, assume you will mess up building 1 module or otherwise need a spare during competitions.
 * Programming a Swerve Drive is hard, and while YAGSL/YAMS try to make it easier there are many things you must know to fully understand what you are doing!
-* Use the right tools for the job! Debugging a Swerve Drive is difficult enough by text only, try out other Dashboards like [AdvantageScope](https://github.com/Mechanical-Advantage/AdvantageScope/tree/main), or [FRC Web Components](https://github.com/frc-web-components/app/releases) — they have excellent visualization tools that are sure to help you out! See the [how-to guides](../how-to/README.md) for setting these up.
+* Use the right tools for the job! Debugging a Swerve Drive is difficult enough by text only, try out a dashboard like [AdvantageScope](https://github.com/Mechanical-Advantage/AdvantageScope/tree/main) — it has excellent visualization tools that are sure to help you out! See [how to set up AdvantageScope](../how-to/set-up-advantagescope.md).
 
 ## The Basics
 
