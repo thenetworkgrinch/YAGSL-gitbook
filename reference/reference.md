@@ -1,9 +1,9 @@
-# Looking Up Exact Answers
+# Reference
 
 Information-oriented lookup material: exact JSON field names/types, supported hardware, and the
 YAMS API surface YAGSL hands you. Come here when you already know what you're doing and need a
 precise answer — for step-by-step guidance see [Tutorial](../tutorial/README.md) or
-[How-to Guides](../how-to/README.md).
+[How-to Guides](../how-to/how-to.md).
 
 - [JSON Configuration Schema](json-schema/README.md) — every field in `swervedrive.json`, module
   files, `physicalproperties.json`, and `pidfproperties.json`.

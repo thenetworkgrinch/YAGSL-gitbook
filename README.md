@@ -24,11 +24,11 @@ your robot — describe your hardware once, generate the config at
 
 * **[Tutorial](tutorial/README.md)** — never used YAGSL before? Start here. A single linear
   walkthrough from a bare WPILib project to a driving swerve robot.
-* **[How-to Guides](how-to/README.md)** — already have a robot running? Task-focused recipes for
+* **[How-to Guides](how-to/how-to.md)** — already have a robot running? Task-focused recipes for
   tuning PIDF, determining inversion, diagnosing drift, and other work you'll come back to.
-* **[Reference](reference/README.md)** — precise JSON schema field tables, supported hardware
+* **[Reference](reference/reference.md)** — precise JSON schema field tables, supported hardware
   type strings, and where to find the YAMS API docs.
-* **[Explanation](explanation/README.md)** — swerve drive theory and the reasoning behind how
+* **[Explanation](explanation/explanation.md)** — swerve drive theory and the reasoning behind how
   YAGSL and YAMS behave.
 
 {% hint style="info" %}

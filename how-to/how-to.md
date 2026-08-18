@@ -1,4 +1,4 @@
-# Tuning and Troubleshooting a Running Robot
+# How-to
 
 Goal-oriented recipes for a robot that's already running YAGSL. If you're setting up your first
 swerve robot, start with the [Tutorial](../tutorial/README.md) section instead — these guides

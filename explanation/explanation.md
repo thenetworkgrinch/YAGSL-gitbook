@@ -1,8 +1,8 @@
-# Understanding How It Works
+# Explanation
 
 Understanding-oriented background: swerve drive theory, how YAGSL/YAMS behave under the hood, and
 why. Nothing here is a step-by-step procedure — for that, see [Tutorial](../tutorial/README.md)
-or [How-to Guides](../how-to/README.md).
+or [How-to Guides](../how-to/how-to.md).
 
 - [What is YAGSL?](what-is-yagsl.md)
 - [Swerve Drive Kinematics](swerve-drive-kinematics.md)
