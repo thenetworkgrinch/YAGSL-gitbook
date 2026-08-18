@@ -9,15 +9,15 @@
 ## Tutorial
 
 * [Your First Swerve Robot](tutorial/README.md)
-* [1. Gather your robot information](tutorial/01-gather-your-robot-information.md)
-* [2. Install YAGSL](tutorial/02-install-yagsl.md)
-* [3. Generate your configuration](tutorial/03-generate-your-configuration.md)
-* [4. Verify and calibrate your hardware](tutorial/04-verify-and-calibrate-hardware.md)
-* [5. Deploy and drive](tutorial/05-deploy-and-drive.md)
+* [Gather your robot information](tutorial/01-gather-your-robot-information.md)
+* [Install YAGSL](tutorial/02-install-yagsl.md)
+* [Generate your configuration](tutorial/03-generate-your-configuration.md)
+* [Verify and calibrate your hardware](tutorial/04-verify-and-calibrate-hardware.md)
+* [Deploy and drive](tutorial/05-deploy-and-drive.md)
 
 ## How-to Guides
 
-* [How-to](how-to/how-to.md)
+* [What to expect?](how-to/how-to.md)
 * [Tune PIDF gains](how-to/tune-pidf-gains.md)
 * [Determine inversion](how-to/determine-inversion.md)
 * [Verify your module locations](how-to/verify-module-locations.md)
@@ -30,7 +30,7 @@
 
 ## Reference
 
-* [Reference](reference/reference.md)
+* [Information](reference/reference.md)
 * [JSON Configuration Schema](reference/json-schema/README.md)
   * [swervedrive.json](reference/json-schema/swervedrive-json.md)
   * [Module JSON](reference/json-schema/module-json.md)
@@ -49,7 +49,7 @@
 
 ## Explanation
 
-* [Explanation](explanation/explanation.md)
+* [Why?](explanation/explanation.md)
 * [What is YAGSL?](explanation/what-is-yagsl.md)
 * [Swerve Drive Kinematics](explanation/swerve-drive-kinematics.md)
 * [Swerve Modules](explanation/swerve-modules.md)
@@ -64,7 +64,7 @@
 * [Config Generator](https://config.yagsl.com)
 * [Example Code](https://github.com/Yet-Another-Software-Suite/YAGSL/tree/main/examples)
 * [Discord](https://discord.gg/yass)
-* YASS (Yet Another Software Suite)
+* [YASS (Yet Another Software Suite)](external-links/yass-yet-another-software-suite/README.md)
   * [YAMS](https://yams.yamgen.com/)
   * [YAMG](https://yamgen.com/)
   * [YALL](https://github.com/Yet-Another-Software-Suite/YALL)
