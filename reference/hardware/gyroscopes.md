@@ -40,16 +40,18 @@ In `swervedrive.json` the gyro is one object plus two drive-wide settings:
 - `gyro.type` — one of the supported types below, formatted `vendor_connection`, or `custom` to
   configure the gyro yourself (see [Custom Gyro](#custom-gyro)).
 - `gyro.id` — CAN ID of the device (ignored where not applicable).
-- `gyro.canbus` — CAN bus name. Use `""` for the roboRIO bus, or a CANivore name if the device is
-  on one.
+- `gyro.canbus` — CAN bus name. Use `""` for your control system's default bus (`rio` on a
+  roboRIO), or a CANivore name if the device is on one — see
+  [Control system and CAN buses](../json-schema/README.md#control-system-and-can-buses).
 - `gyroAxis` — which physical axis of the sensor to read as robot heading: `yaw` (default),
   `pitch`, or `roll`. Only change this if the sensor is mounted on an edge or angle.
 - `gyroInvert` — invert the heading reading. If your robot spins out of control with no controller
   input, invert this.
 
 {% hint style="warning" %}
-Only CTRE devices support the `canbus` option. If your device is on the roboRIO CAN bus, use
-`""`. If it's on a CANivore, `canbus` must match the CANivore's configured name.
+Only CTRE devices support the `canbus` option for a CANivore. If your device is on your control
+system's default CAN bus (`rio` on a roboRIO), use `""`. If it's on a CANivore, `canbus` must
+match the CANivore's configured name.
 {% endhint %}
 
 ## Supported gyroscope types
@@ -57,7 +59,7 @@ Only CTRE devices support the `canbus` option. If your device is on the roboRIO 
 | Device | `type` | Communication |
 |---|---|---|
 | [Pigeon 2](#pigeon-2) | `pigeon2_can` | CAN; supports CANivore |
-| [Canandgyro](https://docs.reduxrobotics.com/canandgyro/getting-started) | `canandgyro_can` | CAN; roboRIO bus only |
+| [Canandgyro](https://docs.reduxrobotics.com/canandgyro/getting-started) | `canandgyro_can` | CAN; default bus only, no CANivore |
 | [NavX3-CAN](#navx3-can) | `navx3_can` | CAN 2.0 / CAN FD |
 | SystemCore internal IMU | `systemcore_internal` | *listed in the config schema but not yet implemented — the parser throws if selected. Do not use yet.* |
 | [Custom](#custom-gyro) | `custom` | *any* — you construct and supply the gyro yourself |
@@ -116,7 +118,7 @@ you need directly in the `Supplier<Angle>` you pass to `withGyro()`, as shown ab
 ## NavX3-CAN
 
 {% hint style="info" %}
-NavX3-CAN supports CAN 2.0 (roboRIO) and has CAN-FD capability. See Studica's notes for CAN-FD
+NavX3-CAN supports CAN 2.0 and has CAN-FD capability. See Studica's notes for CAN-FD
 requirements.
 {% endhint %}
 
@@ -150,7 +152,7 @@ bus and make sure the bus is properly terminated.
 * [ ] Calibrated once installed on the robot.
 
 Communicates over CAN and can be paired with a [CANivore](https://store.ctr-electronics.com/canivore/)
-to keep it off the roboRIO's CAN bus — [set a CANivore name](https://pro.docs.ctr-electronics.com/en/latest/docs/canivore/canivore-setup.html)
+to keep it off your control system's default CAN bus — [set a CANivore name](https://pro.docs.ctr-electronics.com/en/latest/docs/canivore/canivore-setup.html)
 and use it as `canbus`.
 
 ## Canandgyro

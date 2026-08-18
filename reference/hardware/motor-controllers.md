@@ -54,7 +54,8 @@ your actual controller, and the `<motor>` suffix that matches what's physically 
 {% endhint %}
 
 Only CTRE controllers (`talonfx_*`, `talonfxs_*`) support the `canbus` field for CANivore use — set
-it to `""` for the roboRIO bus.
+it to `""` for your control system's default bus (`rio` on a roboRIO). See
+[Control system and CAN buses](../json-schema/README.md#control-system-and-can-buses).
 
 ## TalonFX (Kraken X60 / Kraken X44)
 

@@ -40,6 +40,11 @@ Used in [module json](module-json.md)'s `drive.type` and `angle.type`. Format is
 
 e.g. `talonfx_krakenx60`, `sparkmax_neo`, `sparkflex_vortex`, `nova_minion`.
 
+Every motor suffix above is a **brushless** motor. SparkMAX itself is still fully supported, but
+only in brushless mode — there is no `type` value for a brushed motor on any controller family
+(the old `sparkmax_brushed` and `talonsrx` types are gone). See
+[Motor Controllers](../hardware/motor-controllers.md) and [Schema Changes](../schema-changes.md).
+
 {% hint style="warning" %}
 The schema doesn't restrict every combination per-controller (e.g. `talonfx_neo` is syntactically
 valid JSON) — not every motor is actually usable on every controller family in practice. Stick to

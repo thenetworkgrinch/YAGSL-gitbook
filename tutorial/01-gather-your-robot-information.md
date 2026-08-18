@@ -17,7 +17,7 @@ etc.). Don't assume your numbers match another team's example.
 | Drive motor + controller for each module | e.g. Kraken X60 on TalonFX, NEO on SparkMAX, etc. |
 | Angle/steering motor + controller for each module | Same as above, per module. |
 | Absolute encoder model and connection for each module | e.g. CANcoder on CAN, REV Through Bore on a data port, attached to a SparkMAX analog/duty-cycle port. |
-| CAN bus name | `rio` unless you're running CTRE devices on a [CANivore](https://store.ctr-electronics.com/canivore/), in which case use the CANivore's configured name. |
+| CAN bus name | `rio` on a roboRIO, unless you're running CTRE devices on a [CANivore](https://store.ctr-electronics.com/canivore/) (use the CANivore's configured name). Starting with the 2027 SystemCore, name whichever of its several native CAN buses each device is actually on. |
 | CAN ID / channel of every motor controller, encoder, and gyro | Get this wrong and you'll be controlling the wrong device without realizing it. |
 
 ## Physical characteristics

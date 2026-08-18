@@ -56,3 +56,17 @@ Coming from a pre-2026.8.05 `swerve/` directory (`imu`, `encoder`, `conversionFa
 `controllerproperties.json`, PIDF `f`/`iz`)? See [Schema Changes](../schema-changes.md) for a full
 migration guide.
 {% endhint %}
+
+## Control system and CAN buses
+
+Every device's `canbus` field is just a bus name — `""` selects your control system's **default**
+CAN bus, and any other string must match a bus your control system actually exposes to WPILib.
+
+{% hint style="info" %}
+**2027 season note:** the roboRIO is being replaced by the SystemCore, which exposes several CAN
+buses natively instead of a single `rio` bus plus an optional CTRE CANivore. `canbus` isn't
+changing shape for this — it still just names whichever bus a device is on. Today, on a roboRIO,
+that's `""` for the `rio` bus, or a CANivore's configured name for CTRE devices on a CANivore.
+Once WPILib/vendor support for SystemCore's buses lands, do the same thing: `""` for the default
+bus, and the specific bus name for anything else.
+{% endhint %}

@@ -48,7 +48,7 @@ Note this is currently only supported on REV SPARK-family controllers in YAMS �
 
 ## Offset Offloading (External vs. Internal Feedback Sensor)
 
-Offset offloading is where the absolute encoder position (or an attached absolute encoder's offset) is used directly as the motor controller's feedback sensor, instead of the roboRIO reading the absolute encoder and re-seeding a separate relative encoder in software. This usually means a faster, more direct control loop, at the cost of a little resilience if that sensor connection drops mid-match.
+Offset offloading is where the absolute encoder position (or an attached absolute encoder's offset) is used directly as the motor controller's feedback sensor, instead of the control system (roboRIO today, SystemCore starting in 2027) reading the absolute encoder and re-seeding a separate relative encoder in software. This usually means a faster, more direct control loop, at the cost of a little resilience if that sensor connection drops mid-match.
 
 {% hint style="warning" %}
 `SwerveDrive.pushOffsetsToEncoders()` and `SwerveDrive.restoreInternalOffset()` — the old toggle methods — no longer exist. They were deprecated as of YAGSL 2026 in favor of external/internal feedback sensor selection, and have since been removed along with the rest of the pre-JSON-wrapper API.
