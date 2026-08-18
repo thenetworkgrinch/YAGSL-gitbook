@@ -17,6 +17,7 @@
 
 ## How-to Guides
 
+* [Tuning and Troubleshooting a Running Robot](how-to/README.md)
 * [Tune PIDF gains](how-to/tune-pidf-gains.md)
 * [Determine inversion](how-to/determine-inversion.md)
 * [Verify your module locations](how-to/verify-module-locations.md)
@@ -28,6 +29,7 @@
 
 ## Reference
 
+* [Looking Up Exact Answers](reference/README.md)
 * [JSON Configuration Schema](reference/json-schema/README.md)
   * [swervedrive.json](reference/json-schema/swervedrive-json.md)
   * [Module JSON](reference/json-schema/module-json.md)
@@ -46,6 +48,7 @@
 
 ## Explanation
 
+* [Understanding How It Works](explanation/README.md)
 * [What is YAGSL?](explanation/what-is-yagsl.md)
 * [Swerve Drive Kinematics](explanation/swerve-drive-kinematics.md)
 * [Swerve Modules](explanation/swerve-modules.md)

@@ -26,6 +26,11 @@ Top-level drive configuration. Parsed into `swervelib.parser.json.SwerveDriveJso
 
 | Field     | Type   | Description                                                              |
 | --------- | ------ | ------------------------------------------------------------------------- |
-| `type`    | string | Gyro type string — see [Device type strings](device-types.md#gyro).      |
+| `type`    | string | Gyro type string — see [Device type strings](device-types.md#gyro). Set to `custom` to skip YAGSL's gyro setup and configure the gyro yourself; see [Custom Gyro](../hardware/gyroscopes.md#custom-gyro). |
 | `id`      | number | CAN ID. Set to `0` if the gyro doesn't need one.                          |
 | `canbus`  | string | CAN bus name the gyro is on. `""` for the default (rio) bus.               |
+
+{% hint style="info" %}
+When `gyro.type` is `custom`, `gyroAxis` and `gyroInvert` above are also ignored — the parser
+never calls `SwerveDriveConfig.withGyro()`/`withGyroInverted()`, so you must call them yourself.
+{% endhint %}

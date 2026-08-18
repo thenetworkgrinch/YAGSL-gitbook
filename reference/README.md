@@ -1,4 +1,4 @@
-# Reference
+# Looking Up Exact Answers
 
 Information-oriented lookup material: exact JSON field names/types, supported hardware, and the
 YAMS API surface YAGSL hands you. Come here when you already know what you're doing and need a

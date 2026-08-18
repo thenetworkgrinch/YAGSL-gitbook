@@ -21,6 +21,7 @@ Used in [swervedrive.json](swervedrive-json.md)'s `gyro.type`.
 | `pigeon2_can`          | CTRE Pigeon 2.0, over CAN                    |
 | `canandgyro_can`       | Redux Canandgyro, over CAN                   |
 | `systemcore_internal`  | Internal gyro on the SystemCore control system |
+| `custom`               | Any gyro not built by the parser (e.g. a roboRIO SPI/I2C Studica AHRS) — you supply it yourself |
 
 See [Gyroscopes](../hardware/gyroscopes.md) for wiring/calibration notes per device.
 

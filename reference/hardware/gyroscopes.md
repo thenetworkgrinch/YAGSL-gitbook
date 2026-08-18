@@ -10,7 +10,8 @@ description: Supported gyroscope/IMU types for swervedrive.json's gyro field
 `navx_mxp_serial`/`navx_usb`), the original CTRE **Pigeon** (gen 1), and the analog SPI gyros
 (**ADXRS450**, **ADIS16448**, **ADIS16470**) are **not supported** by the current parser. If your
 robot uses one of those devices, see [Schema Changes](../schema-changes.md) — you'll need to
-either move to a supported CAN gyro or stay on a pre-2026.8.05 YAGSL release.
+either move to a supported CAN gyro or use the [`custom` gyro type](#custom-gyro) below to keep
+wiring it up yourself.
 {% endhint %}
 
 ## Gyroscope Checklist
@@ -36,7 +37,8 @@ In `swervedrive.json` the gyro is one object plus two drive-wide settings:
 }
 ```
 
-- `gyro.type` — one of the supported types below, formatted `vendor_connection`.
+- `gyro.type` — one of the supported types below, formatted `vendor_connection`, or `custom` to
+  configure the gyro yourself (see [Custom Gyro](#custom-gyro)).
 - `gyro.id` — CAN ID of the device (ignored where not applicable).
 - `gyro.canbus` — CAN bus name. Use `""` for the roboRIO bus, or a CANivore name if the device is
   on one.
@@ -58,9 +60,58 @@ Only CTRE devices support the `canbus` option. If your device is on the roboRIO 
 | [Canandgyro](https://docs.reduxrobotics.com/canandgyro/getting-started) | `canandgyro_can` | CAN; roboRIO bus only |
 | [NavX3-CAN](#navx3-can) | `navx3_can` | CAN 2.0 / CAN FD |
 | SystemCore internal IMU | `systemcore_internal` | *listed in the config schema but not yet implemented — the parser throws if selected. Do not use yet.* |
+| [Custom](#custom-gyro) | `custom` | *any* — you construct and supply the gyro yourself |
 
-If you need a gyro not on this list, an analog gyro on the roboRIO can still be wired up outside
-the JSON config and read manually — YAGSL's JSON parser itself only builds the types above.
+If you need a gyro not on this list — including the older roboRIO SPI/I2C/USB-serial NavX (AHRS)
+devices called out in the hint above, which the CAN-only parser no longer builds — use the
+`custom` type below.
+
+## Custom Gyro
+
+Set `gyro.type` to `custom` and YAGSL's parser skips gyro configuration entirely: it never calls
+`SwerveDriveConfig.withGyro()`/`withGyroInverted()`, and `gyroAxis`/`gyroInvert` in
+`swervedrive.json` are ignored. You're expected to call `withGyro()`/`withGyroInverted()` yourself
+on the `SwerveDriveConfig` you pass into `SwerveParser.createSwerveDrive(...)` — everything else in
+the config (modules, motor controllers, encoders) is still built normally from the JSON.
+
+This is the escape hatch for any gyro the parser doesn't build for you — most commonly the roboRIO
+SPI-mounted [Studica AHRS](https://www.studica.com/navx2-micro) (the classic NavX2), since only the
+CAN-based NavX3 is supported directly.
+
+```json title="swervedrive.json"
+{
+  "gyro": { "type": "custom", "id": 0, "canbus": "" },
+  "gyroAxis": "yaw",
+  "gyroInvert": false,
+  "modules": ["frontleft.json", "frontright.json", "backleft.json", "backright.json"]
+}
+```
+
+```java title="SwerveDriveSubsystem.java"
+import com.studica.frc.AHRS;
+import static edu.wpi.first.units.Units.Degrees;
+
+// Onboard MXP SPI port is the common mounting for a roboRIO AHRS.
+private final AHRS gyro = new AHRS(AHRS.NavXComType.kMXP_SPI);
+
+public SwerveDriveSubsystem() {
+  SwerveDriveConfig cfg = new SwerveDriveConfig()
+      .withSubsystem(this)
+      .withTelemetry(TelemetryVerbosity.HIGH)
+      // AHRS reports CW+; YAGSL/YAMS expect CCW+, so negate it here instead of relying on
+      // gyroInvert (which is ignored for a "custom" gyro).
+      .withGyro(() -> Degrees.of(-gyro.getAngle()))
+      .withGyroInverted(false);
+
+  drive = new SwerveParser(new File(Filesystem.getDeployDirectory(), "swerve/base"))
+      .createSwerveDrive(cfg);
+}
+```
+
+{% hint style="warning" %}
+Because `withGyroInverted()` is never called by the parser for a `custom` gyro, do any inversion
+you need directly in the `Supplier<Angle>` you pass to `withGyro()`, as shown above.
+{% endhint %}
 
 ## NavX3-CAN
 

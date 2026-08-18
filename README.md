@@ -41,19 +41,19 @@ schema — see [Schema Changes](reference/schema-changes.md) before you do anyth
 {% embed url="https://www.youtube.com/watch?v=4Tcyn_oj_G0&list=PLdhNPDifsCMLLe5pZoyHGXrMMVxNpJOxP" %}
 
 {% content-ref url="tutorial/README.md" %}
-[README.md](tutorial/README.md)
+[Your First Swerve Robot](tutorial/README.md)
 {% endcontent-ref %}
 
 {% content-ref url="how-to/tune-pidf-gains.md" %}
-[tune-pidf-gains.md](how-to/tune-pidf-gains.md)
+[Tune PIDF gains](how-to/tune-pidf-gains.md)
 {% endcontent-ref %}
 
 {% content-ref url="how-to/the-8-steps.md" %}
-[the-8-steps.md](how-to/the-8-steps.md)
+[The 8 steps](how-to/the-8-steps.md)
 {% endcontent-ref %}
 
 {% content-ref url="reference/schema-changes.md" %}
-[schema-changes.md](reference/schema-changes.md)
+[Schema Changes](reference/schema-changes.md)
 {% endcontent-ref %}
 
 ## YAGSL Online Installation
