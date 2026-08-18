@@ -21,6 +21,7 @@
 * [Tune PIDF gains](how-to/tune-pidf-gains.md)
 * [Determine inversion](how-to/determine-inversion.md)
 * [Verify your module locations](how-to/verify-module-locations.md)
+* [Use a custom gyro](how-to/use-a-custom-gyro.md)
 * [The 8 steps](how-to/the-8-steps.md)
 * [Fix common SparkMAX/SparkFlex problems](how-to/fix-sparkmax-common-problems.md)
 * [Set up AdvantageScope](how-to/set-up-advantagescope.md)

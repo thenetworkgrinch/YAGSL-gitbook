@@ -70,6 +70,11 @@ devices called out in the hint above, which the CAN-only parser no longer builds
 
 ## Custom Gyro
 
+{% hint style="info" %}
+This is the reference summary — for a full walkthrough see
+[How to use a custom gyro](../../how-to/use-a-custom-gyro.md).
+{% endhint %}
+
 Set `gyro.type` to `custom` and YAGSL's parser skips gyro configuration entirely: it never calls
 `SwerveDriveConfig.withGyro()`/`withGyroInverted()`, and `gyroAxis`/`gyroInvert` in
 `swervedrive.json` are ignored. You're expected to call `withGyro()`/`withGyroInverted()` yourself
