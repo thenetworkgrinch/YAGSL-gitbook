@@ -24,6 +24,7 @@
 * [Use a custom gyro](how-to/use-a-custom-gyro.md)
 * [Drive to a pose](how-to/drive-to-a-pose.md)
 * [Set up PathPlanner](how-to/setup-pathplanner.md)
+* [Access raw hardware devices](how-to/access-raw-hardware-devices.md)
 * [The 8 steps](how-to/the-8-steps.md)
 * [Fix common SparkMAX/SparkFlex problems](how-to/fix-sparkmax-common-problems.md)
 * [Set up AdvantageScope](how-to/set-up-advantagescope.md)

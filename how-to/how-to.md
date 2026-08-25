@@ -13,6 +13,8 @@ assume a working config and address a specific task or problem.
   needed
 - [How to set up PathPlanner](setup-pathplanner.md) — register a YAGSL-built `SwerveDrive` with
   PathPlanner's `AutoBuilder`
+- [How to access raw hardware devices](access-raw-hardware-devices.md) — get the actual vendor
+  motor controller/encoder/gyro objects `SwerveParser` built
 - [The 8 steps](the-8-steps.md) — the translational-axis/heading
   coupling debugging procedure
 - [How to fix common SparkMAX/SparkFlex problems](fix-sparkmax-common-problems.md)

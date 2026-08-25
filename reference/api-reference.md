@@ -16,6 +16,12 @@ authoritative API reference lives in the YAMS docs, not here.
 The full YAMS API reference (all mechanisms, motor controllers, units, and math helpers — not just
 swerve) is at [yagsl.gitbook.io/yams](https://yagsl.gitbook.io/yams/api-reference/java-reference).
 
+`SwerveParser.createSwerveDriveDevices(config)` is the one place YAGSL hands back something other
+than YAMS objects: alongside the `SwerveDrive`, it returns the raw vendor motor controller/encoder/
+gyro objects it built, for the rare case where you need to call a vendor-specific method
+`SmartMotorController` doesn't expose. See
+[How to access raw hardware devices](../how-to/access-raw-hardware-devices.md).
+
 {% hint style="info" %}
 Only `SwerveParser` and the JSON-file classes under `swervelib.parser.json` are YAGSL-specific. If
 you find yourself calling a method on `SwerveDrive`, `SwerveModule`, `SwerveDriveConfig`,
